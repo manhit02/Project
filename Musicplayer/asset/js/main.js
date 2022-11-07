@@ -21,56 +21,56 @@ const app = {
     config: JSON.parse(localStorage.getItem(PLAYER_STORAGE_KEY)) || {},
 
     songs: [{
-            name: 'ahihi',
-            singer: 'manh',
+            name: 'AI CHUNG TÌNH ĐƯỢC MÃI',
+            singer: 'ĐINH TÙNG HUY',
             path: '/js/Musicplayer/asset/audio/AI CHUNG TÌNH ĐƯỢC MÃI - ĐINH TÙNG HUY - OFFICIAL MUSIC VIDEO.mp3',
             image: '/js/Musicplayer/asset/img/1109233.jpg'
         },
         {
-            name: 'ahihi1',
-            singer: 'manh1',
+            name: 'Hoa Nở Không Màu',
+            singer: 'Hoài Lâm',
             path: '/js/Musicplayer/asset/audio/Hoa Nở Không Màu - Hoài Lâm - Acoustic Version.mp3',
             image: '/js/Musicplayer/asset/img/1109330.jpg'
         },
         {
-            name: 'ahihi2',
-            singer: 'manh1',
+            name: 'CHIỀU HÔM ẤY',
+            singer: 'JayKii',
             path: '/js/Musicplayer/asset/audio/JayKii - CHIỀU HÔM ẤY (Official MV).mp3',
             image: '/js/Musicplayer/asset/img/1110822.jpg'
         },
         {
-            name: 'ahihi3',
-            singer: 'manh1',
+            name: 'Những Bản Lofi Việt Nhẹ Nhàng Cực Chill',
+            singer: 'Nhạc Lofi Chill Buồn Nhất 2022 - Lofi Gây Nghiện Hay Nhất',
             path: '/js/Musicplayer/asset/audio/Những Bản Lofi Việt Nhẹ Nhàng Cực Chill - Nhạc Lofi Chill Buồn Nhất 2022 - Lofi Gây Nghiện Hay Nhất.mp3',
             image: '/js/Musicplayer/asset/img/1114243.jpg'
         },
         {
-            name: 'ahihi4',
-            singer: 'manh1',
+            name: 'Nếu Là Anh',
+            singer: 'The Men',
             path: '/js/Musicplayer/asset/audio/The Men - Nếu Là Anh - Official MV.mp3',
             image: '/js/Musicplayer/asset/img/1114249.jpg'
         },
         {
-            name: 'ahihi5',
-            singer: 'manh1',
+            name: 'VÌ MẸ ANH BẮT CHIA TAY',
+            singer: 'MIU LÊ x KARIK x CHÂU ĐĂNG KHOA',
             path: '/js/Musicplayer/asset/audio/VÌ MẸ ANH BẮT CHIA TAY - MIU LÊ x KARIK x CHÂU ĐĂNG KHOA - Official MV.mp3',
             image: '/js/Musicplayer/asset/img/1114875.jpg'
         },
         {
-            name: 'ahihi6',
-            singer: 'manh1',
+            name: 'Yêu 3',
+            singer: 'Rhymastic',
             path: '/js/Musicplayer/asset/audio/Yêu 3 (Acapella) - Rhymastic [Video Lyrics].mp3',
             image: '/js/Musicplayer/asset/img/1121702.jpg'
         },
         {
-            name: 'ahihi7',
-            singer: 'manh1',
+            name: 'BÔNG HOA ĐẸP NHẤT',
+            singer: 'QUÂN A.P',
             path: '/js/Musicplayer/asset/audio/QUÂN A.P - BÔNG HOA ĐẸP NHẤT [OFFICIAL LYRICS VIDEO].mp3',
             image: '/js/Musicplayer/asset/img/1124265.jpg'
         },
         {
-            name: 'ahihi8',
-            singer: 'manh1',
+            name: 'YÊU 5',
+            singer: 'Rhymastic',
             path: '/js/Musicplayer/asset/audio/Lyrics -- YÊU 5 - Rhymastic.mp3',
             image: '/js/Musicplayer/asset/img/1127036.jpg'
         }
