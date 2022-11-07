@@ -23,56 +23,56 @@ const app = {
     songs: [{
             name: 'AI CHUNG TÌNH ĐƯỢC MÃI',
             singer: 'ĐINH TÙNG HUY',
-            path: '/js/Musicplayer/asset/audio/AI CHUNG TÌNH ĐƯỢC MÃI - ĐINH TÙNG HUY - OFFICIAL MUSIC VIDEO.mp3',
-            image: '/js/Musicplayer/asset/img/1109233.jpg'
+            path: '/asset/audio/AI CHUNG TÌNH ĐƯỢC MÃI - ĐINH TÙNG HUY - OFFICIAL MUSIC VIDEO.mp3',
+            image: 'https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/5/a/d/e/5adeca0a259744a3b621fdbc5434e636.jpg'
         },
         {
             name: 'Hoa Nở Không Màu',
             singer: 'Hoài Lâm',
-            path: '/js/Musicplayer/asset/audio/Hoa Nở Không Màu - Hoài Lâm - Acoustic Version.mp3',
-            image: '/js/Musicplayer/asset/img/1109330.jpg'
+            path: '/asset/audio/Hoa Nở Không Màu - Hoài Lâm - Acoustic Version.mp3',
+            image: 'https://yt3.ggpht.com/ytc/AMLnZu89lZeCXUTxxEK3TI10jWldh9My5Fc79fbohTnLdw=s900-c-k-c0x00ffffff-no-rj'
         },
         {
             name: 'CHIỀU HÔM ẤY',
             singer: 'JayKii',
-            path: '/js/Musicplayer/asset/audio/JayKii - CHIỀU HÔM ẤY (Official MV).mp3',
-            image: '/js/Musicplayer/asset/img/1110822.jpg'
+            path: '/asset/audio/JayKii - CHIỀU HÔM ẤY (Official MV).mp3',
+            image: 'https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/7/0/7/9/7079e2378be283d04db6cd9825b2220b.jpg'
         },
         {
             name: 'Những Bản Lofi Việt Nhẹ Nhàng Cực Chill',
             singer: 'Nhạc Lofi Chill Buồn Nhất 2022 - Lofi Gây Nghiện Hay Nhất',
-            path: '/js/Musicplayer/asset/audio/Những Bản Lofi Việt Nhẹ Nhàng Cực Chill - Nhạc Lofi Chill Buồn Nhất 2022 - Lofi Gây Nghiện Hay Nhất.mp3',
-            image: '/js/Musicplayer/asset/img/1114243.jpg'
+            path: '/asset/audio/Những Bản Lofi Việt Nhẹ Nhàng Cực Chill - Nhạc Lofi Chill Buồn Nhất 2022 - Lofi Gây Nghiện Hay Nhất.mp3',
+            image: 'https://i.ytimg.com/vi/0uwUjJMCg_s/maxresdefault.jpg'
         },
         {
             name: 'Nếu Là Anh',
             singer: 'The Men',
-            path: '/js/Musicplayer/asset/audio/The Men - Nếu Là Anh - Official MV.mp3',
-            image: '/js/Musicplayer/asset/img/1114249.jpg'
+            path: '/asset/audio/The Men - Nếu Là Anh - Official MV.mp3',
+            image: 'https://media.ngoisao.vn/news/2015/10/12/tien-dung-the-men-xay-dung-lai-hinh-anh-bo-mac-trai-hu001-ngoisao.vn.jpg'
         },
         {
             name: 'VÌ MẸ ANH BẮT CHIA TAY',
             singer: 'MIU LÊ x KARIK x CHÂU ĐĂNG KHOA',
-            path: '/js/Musicplayer/asset/audio/VÌ MẸ ANH BẮT CHIA TAY - MIU LÊ x KARIK x CHÂU ĐĂNG KHOA - Official MV.mp3',
-            image: '/js/Musicplayer/asset/img/1114875.jpg'
+            path: '/asset/audio/VÌ MẸ ANH BẮT CHIA TAY - MIU LÊ x KARIK x CHÂU ĐĂNG KHOA - Official MV.mp3',
+            image: 'https://i.ytimg.com/vi/S7ElVoYZN0g/maxresdefault.jpg'
         },
         {
             name: 'Yêu 3',
             singer: 'Rhymastic',
-            path: '/js/Musicplayer/asset/audio/Yêu 3 (Acapella) - Rhymastic [Video Lyrics].mp3',
-            image: '/js/Musicplayer/asset/img/1121702.jpg'
+            path: '/asset/audio/Yêu 3 (Acapella) - Rhymastic [Video Lyrics].mp3',
+            image: 'https://static2.yan.vn/YanNews/202008/202008040123221554-1ebe653d-3f05-4dc7-a67a-576abf80704f.png'
         },
         {
             name: 'BÔNG HOA ĐẸP NHẤT',
             singer: 'QUÂN A.P',
-            path: '/js/Musicplayer/asset/audio/QUÂN A.P - BÔNG HOA ĐẸP NHẤT [OFFICIAL LYRICS VIDEO].mp3',
-            image: '/js/Musicplayer/asset/img/1124265.jpg'
+            path: '/asset/audio/QUÂN A.P - BÔNG HOA ĐẸP NHẤT [OFFICIAL LYRICS VIDEO].mp3',
+            image: 'https://spartabeerclub.vn/media/images/article/506/quan-ap-la-nam-ca-si-dien-trai.jpg'
         },
         {
             name: 'YÊU 5',
             singer: 'Rhymastic',
-            path: '/js/Musicplayer/asset/audio/Lyrics -- YÊU 5 - Rhymastic.mp3',
-            image: '/js/Musicplayer/asset/img/1127036.jpg'
+            path: '/asset/audio/Lyrics -- YÊU 5 - Rhymastic.mp3',
+            image: 'https://d9nqqwcssctr8.cloudfront.net/wp-content/uploads/2020/05/21121143/Lyrics-logo-1.png'
         }
     ],
     setConfig: function(key, value) {
