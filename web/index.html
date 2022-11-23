@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./asset/css/grid.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/respontive.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="grid wide w-900">
+        <div class="header">
+            <div class="row no-gutters">
+                <div class="col c-6 l-2 header-logo"><img src="./asset/img/logo.png" alt="">
+                </div>
+                <div class="col l-6 ma-0 header-search hide-tablet hide-mobi">
+                    <div class="header-search__tablet-pc hide-mobi">
+                        All categories
+                        <img src="./asset/icon/Expand_down_light.png" alt="" class="header-search__tablet-img">
+                    </div>
+                    <input type="text" class="header-search__input" placeholder="Search anything">
+                    <img src="./asset/icon/Search_light.png" alt="" class="header-search__btn">
+                </div>
+                <div class="col c-6 l-4 header-hug">
+                    <span class="header-hug__help hide-mobi">Help</span>
+                    <img src="./asset/icon/User.png" alt="" class="header-hug__user">
+                    <span class="hide-mobi">Account</span>
+                    <div class="header-hug__group">
+                        <img src="./asset/icon/Bag_alt.png" alt="" class="header-hug__cart">
+                        <div class="header-hug__after">16</div>
+                    </div>
+                    <span class="hide-mobi">Shoping</span>
+
+                </div>
+            </div>
+            <div class="row no-gutters p-b-16 hide-tablet hide-mobi">
+                <ul class="header-nav">
+                    <li class="header-nav__item"><a href="">Jewelry & Accessories</a>
+                        <div class="header-nav__after"></div>
+                    </li>
+                    <li class="header-nav__item"><a href="">Clothing & Shoes</a>
+                        <div class="header-nav__after"></div>
+                    </li>
+                    <li class="header-nav__item"><a href="">Home & Living</a>
+                        <div class="header-nav__after"></div>
+                    </li>
+                    <li class="header-nav__item active-pc"><a href="">Wedding & Party</a>
+                        <div class="header-nav__after active-pc"></div>
+                    </li>
+                    <li class="header-nav__item"><a href="">Toys & Entertainment</a>
+                        <div class="header-nav__after"></div>
+                    </li>
+                    <li class="header-nav__item"><a href="">Art & Collectibles</a>
+                        <div class="header-nav__after"></div>
+                    </li>
+                    <li class="header-nav__item"><a href="">Craft Supplies & Tools</a>
+                        <div class="header-nav__after"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="row no-gutters p-b-16 hide-pc">
+                <div class="col c-2 header-sort">
+                    <img src="./asset/icon/Sort.png" alt="" class="header-sort__in">
+                </div>
+                <div class="col c-10">
+                    <div class="header-search ">
+                        <div class="header-search__tablet-pc hide-mobi">
+                            All categories
+                            <img src="./asset/icon/Expand_down_light.png" alt="" class="header-search__tablet-img">
+                        </div>
+                        <input type="text" class="header-search__input" placeholder="Search anything">
+                        <img src="./asset/icon/Search_light.png" alt="" class="header-search__btn">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="grid wide w-900">
+        <div class="app">
+            <div class="row no-gutters m-l-r-12">
+                <div class="col c-12 app-topic m-4 l-4">
+                    <div class="app-topic__img"> <img src="./asset/img/topic-1.jpg" alt=""></div>
+                    <span class="app-topic__des">Clothing & Shoes</span>
+                </div>
+                <div class="col c-12 app-topic m-4 l-4">
+                    <div class="app-topic__img"> <img src="./asset/img/topic-2.jpg" alt=""></div>
+                    <span class="app-topic__des">Home & Living</span>
+                </div>
+                <div class="col c-12 app-topic m-4 l-4">
+                    <div class="app-topic__img"> <img src="./asset/img/topic-3.jpg" alt=""></div>
+                    <span class="app-topic__des">Art & Collectibles</span>
+                </div>
+
+            </div>
+            <div class="row no-gutters m-l-r-12">
+                <div class="app-product">
+                    <div class="col c-12 app-product__body m-4 l-3">
+                        <img src="./asset/img/produc-1.png" alt="" class="app-product__img">
+                        <img class="app-product__like" src="./asset/icon/Group 1.png">
+                        <div class="app-product__main">
+                            <span class="app-product__title">Color</span>
+                            <span class="list-ellipse">
+                                    <div class="ellipse"></div>
+                                    <div class="ellipse"></div>
+                                    <div class="ellipse"></div>
+                                    <div class="ellipse"></div>
+                                    <div class="ellipse"></div>
+                                    <div class="ellipse"></div>
+                                    <div class="ellipse"></div>
+                                </span>
+                            <span class="app-product__des">Vonna Neva Walnut
+                                    Sandalye Chair</span>
+                            <span class="app-product__price">195,13 $</span>
+                        </div>
+
+                    </div>
+                    <div class="col c-12 app-product__body m-4 hide-mobi l-3">
+                        <img src="./asset/img/produc-2.png" alt="" class="app-product__img">
+                        <img class="app-product__like" src="./asset/icon/Group 1.png">
+                        <div class="app-product__main">
+                            <span class="app-product__title">Color</span>
+                            <span class="list-ellipse">
+                                    <div class="ellipse"></div>
+                                    <div class="ellipse"></div>
+                                    <div class="ellipse"></div>
+                                    <div class="ellipse"></div>
+                                    <div class="ellipse"></div>
+                                    <div class="ellipse"></div>
+                                    <div class="ellipse"></div>
+                                </span>
+                            <span class="app-product__des">Wood lamp, Floor Lamp, Lambader, Decorative</span>
+                            <span class="app-product__price">458,43 $</span>
+                        </div>
+
+                    </div>
+                    <div class="col c-12 app-product__body m-4 hide-mobi l-3">
+                        <img src="./asset/img/produc-3.png" alt="" class="app-product__img">
+                        <img class="app-product__like" src="./asset/icon/Group 1.png">
+                        <div class="app-product__main">
+                            <span class="app-product__title">Color</span>
+                            <span class="list-ellipse ">
+                                    <div class="ellipse"></div>
+                                    <div class="ellipse"></div>
+                                    <div class="ellipse"></div>
+                                    <div class="ellipse"></div>
+                                    <div class="ellipse"></div>
+                                    <div class="ellipse"></div>
+                                    <div class="ellipse"></div>
+                                </span>
+                            <span class="app-product__des">NOCKEBY 3-Seat Sofa Cover Slipcover Hand Made</span>
+                            <span class="app-product__price">789,67 $</span>
+                        </div>
+
+                    </div>
+                    <div class="col c-12 app-product__body m-4 hide-mobi hide-tablet l-3">
+                        <img src="./asset/img/produc-3.png" alt="" class="app-product__img">
+                        <img class="app-product__like" src="./asset/icon/Group 1.png">
+                        <div class="app-product__main">
+                            <span class="app-product__title">Color</span>
+                            <span class="list-ellipse ">
+                                    <div class="ellipse"></div>
+                                    <div class="ellipse"></div>
+                                    <div class="ellipse"></div>
+                                    <div class="ellipse"></div>
+                                    <div class="ellipse"></div>
+                                    <div class="ellipse"></div>
+                                    <div class="ellipse"></div>
+                                </span>
+                            <span class="app-product__des">NOCKEBY 3-Seat Sofa Cover Slipcover Hand Made</span>
+                            <span class="app-product__price">789,67 $</span>
+                        </div>
+
+                    </div>
+                </div>
+                <span class="span-list hide-tablet hide-pc">
+                    <div class="ellipse"></div>
+                    <div class="ellipse active-mobi"></div>
+                    <div class="ellipse"></div>
+                    <div class="ellipse"></div>
+
+                </span>
+            </div>
+            <div class="row no-gutters center m-l-r-12 m-l-r-36">
+                <div class="app-service">
+                    <div class="col c-12 m-4 l-4 app-service__body">
+                        <img src="./asset/img/service-1.jpg" alt="" class="app-service__img">
+                        <span class="app-service__title">A community <br> doing
+                                good</span>
+                        <span class="app-service__des">Commerce is a global
+                                online <br> marketplace, where people.</span>
+                    </div>
+                    <div class="col c-12 m-4 l-4 app-service__body hide-mobi">
+                        <img src="./asset/img/service-2.jpg" alt="" class="app-service__img">
+                        <span class="app-service__title">Support independent <br>
+                                creators</span>
+                        <span class="app-service__des">Just millions of people selling <br> the things they love.</span>
+                    </div>
+
+                    <div class="col c-12 m-4 l-4 app-service__body hide-mobi">
+                        <img src="./asset/img/service-3.jpg" alt="" class="app-service__img">
+                        <span class="app-service__title">Peace <br>
+                                    of mind</span>
+                        <span class="app-service__des">Privacy is the highest priority <br> of our dedicated team.</span>
+                    </div>
+                </div>
+
+
+            </div>
+            <span class="span-list hide-tablet hide-pc">
+                    <div class="ellipse"></div>
+                    <div class="ellipse active-mobi"></div>
+                    <div class="ellipse"></div>
+                </span>
+            <div class="row no-gutters m-l-r-12">
+                <div class="app-polka">
+                    <div class="app-polka__title">
+                        <span class="hide-mobi">Find things you'll love.Support independent sellers.</span>
+                        <span class="hide-tablet hide-pc">Find things you'll love.</span>
+                        <span class="hide-tablet hide-pc">Support independent sellers.</span>
+                        <span class="app-polka__only">Only on polka.</span>
+                    </div>
+                    <div class="row no-gutters app-polka__list ">
+                        <div class="col c-6 m-2 app-polka__item">
+                            <div class="app-polka__img-boder m-r-8">
+                                <img src="./asset/img/produc-5.png" class="app-polka__img">
+                            </div>
+                            <span class="app-polka__des">Craft Kits</span>
+                        </div>
+                        <div class="col c-6 m-2 app-polka__item">
+                            <div class="app-polka__img-boder m-l-8">
+                                <img src="./asset/img/produc-6.png" class="app-polka__img">
+                            </div>
+                            <span class="app-polka__des">Throw Pillows</span>
+                        </div>
+                        <div class="col c-6 m-2 app-polka__item hide-mobi">
+                            <div class="app-polka__img-boder m-l-8">
+                                <img src="./asset/img/produc-7.png" class="app-polka__img">
+                            </div>
+                            <span class="app-polka__des">Natural Glass</span>
+                        </div>
+                        <div class="col c-6 m-2 app-polka__item hide-mobi">
+                            <div class="app-polka__img-boder m-l-8">
+                                <img src="./asset/img/produc-8.png" class="app-polka__img">
+                            </div>
+                            <span class="app-polka__des">Self-care</span>
+                        </div>
+                        <div class="col c-6 m-2 app-polka__item hide-mobi">
+                            <div class="app-polka__img-boder m-l-8">
+                                <img src="./asset/img/produc-9.png" class="app-polka__img">
+                            </div>
+                            <span class="app-polka__des">Gift Ideas</span>
+                        </div>
+                        <div class="col c-6 m-2 app-polka__item hide-mobi">
+                            <div class="app-polka__img-boder m-l-8">
+                                <img src="./asset/img/produc-10.jpg" class="app-polka__img">
+                            </div>
+                            <span class="app-polka__des">Wall Decor</span>
+                        </div>
+                        <div class="col c-6 m-2 app-polka__item hide-mobi">
+                            <div class="app-polka__img-boder m-l-8">
+                                <img src="./asset/img/produc-11.png" class="app-polka__img">
+                            </div>
+                            <span class="app-polka__des">Wedding</span>
+                        </div>
+                        <div class="col c-6 m-2 app-polka__item hide-mobi">
+                            <div class="app-polka__img-boder m-l-8">
+                                <img src="./asset/img/Rectangle 39.png" class="app-polka__img">
+                            </div>
+                            <span class="app-polka__des">Life Styler</span>
+                        </div>
+                    </div>
+                    <span class="hide-tablet hide-pc">
+                                    <div class="ellipse"></div>
+                                    <div class="ellipse active-mobi"></div>
+                                    <div class="ellipse"></div>
+                                    <div class="ellipse"></div>
+                                </span>
+                </div>
+            </div>
+            <div class="row no-gutters m-l-r-12">
+                <div class="col c-12 app-handpicked">
+                    <div class="app-handpicked__title">
+                        <span class="hide-mobi">Discover unique hand-picked items</span>
+                        <span class="hide-mobi">View all <img src="./asset/icon/Vector 9.png" alt=""> </span>
+                        <span class="hide-tablet hide-pc">Discover unique </span>
+                        <span class="hide-tablet hide-pc"> hand-picked items</span>
+                    </div>
+                    <div class="app-handpicked__list">
+                        <div class="col c-6 m-3 app-handpicked__item">
+                            <img src="./asset/img/produc-11.png" alt="" class="app-handpicked__img">
+                            <img class="app-product__like borde" src="./asset/icon/Group 1.png">
+                            <span class="app-handpicked__des">Distressed
+                                            Tote Leather Bag Leather Bag</span>
+                            <span class="app-handpicked__price">216,27 $</span>
+                        </div>
+                        <div class="col c-6 m-3 app-handpicked__item">
+                            <img src="./asset/img/produc-12.png" alt="" class="app-handpicked__img">
+                            <img class="app-product__like borde" src="./asset/icon/Group 1.png">
+                            <span class="app-handpicked__des">Womens Cognac
+                                            Leather Elastic Straps</span>
+                            <span class="app-handpicked__price">195,13 $</span>
+                        </div>
+                        <div class="col c-6 m-3 app-handpicked__item hide-mobi">
+                            <img src="./asset/img/produc-13.png" alt="" class="app-handpicked__img">
+                            <img class="app-product__like borde" src="./asset/icon/Group 1.png">
+                            <span class="app-handpicked__des">Distressed Tote Leather Bag Leather Bag</span>
+                            <span class="app-handpicked__price">910,76 $</span>
+                        </div>
+                        <div class="col c-6 m-3 app-handpicked__item hide-mobi">
+                            <img src="./asset/img/produc-14.png" alt="" class="app-handpicked__img">
+                            <img class="app-product__like borde" src="./asset/icon/Group 1.png">
+                            <span class="app-handpicked__des">High Top Canvas Shoes</span>
+                            <span class="app-handpicked__price">341,02 $</span>
+                        </div>
+                        <div class="col c-6 m-3 app-handpicked__item hide-mobi  hide-tablet">
+                            <img src="./asset/img/produc-15.png" alt="" class="app-handpicked__img">
+                            <img class="app-product__like borde" src="./asset/icon/Group 1.png">
+                            <span class="app-handpicked__des">Rose Gold Moissanite Vintage Wedding Ring Set</span>
+                            <span class="app-handpicked__price">3.344,13 $</span>
+                        </div>
+                        <div class="col c-6 m-3 app-handpicked__item hide-mobi hide-tablet">
+                            <img src="./asset/img/produc-16.png" alt="" class="app-handpicked__img">
+                            <img class="app-product__like borde" src="./asset/icon/Group 1.png">
+                            <span class="app-handpicked__des">Blue Topaz Bangle 24K Gold Plated Handmade</span>
+                            <span class="app-handpicked__price">789,09 $</span>
+                        </div>
+                    </div>
+                    <span class="hide-pc">
+                                    <div class="ellipse"></div>
+                                    <div class="ellipse active-mobi"></div>
+                                    <div class="ellipse"></div>
+                                    <div class="ellipse"></div>
+        
+        
+                                </span>
+                </div>
+
+            </div>
+            <div class="row no-gutters m-l-r-12 ">
+                <div class="app-category">
+                    <div class="col c-4 l-2 app-category__item">
+                        <span> Modern</span> <span>Farmhouse</span>
+                        <div class="app-category__line"></div>
+                    </div>
+                    <div class="col c-4 l-2 app-category__item ">
+                        <span>Eclectic</span>
+                        <span>Decor
+                        <div class="app-category__line active-mobi"></div>
+                    </div>
+                    <div class="col c-4 l-2 app-category__item">
+
+                        <span>Polka Boho </span>
+                        <span>Decor</span>
+                        <div class="app-category__line"></div>
+                    </div>
+                    <div class="col c-4 l-2 app-category__item hide-mobi">
+                        <span> Minimalist</span> <span>Style</span>
+                        <div class="app-category__line active-tablet active-pc"></div>
+                    </div>
+                    <div class="col c-4 l-2 app-category__item hide-mobi ">
+                        <span>Anniversary
+                            </span>
+                        <span>Gift
+                        <div class="app-category__line "></div>
+                    </div>
+                    <div class="col c-4 l-2 app-category__item hide-mobi">
+
+                        <span>Wedding
+                             </span>
+                        <span>Gifts</span>
+                        <div class="app-category__line"></div>
+                    </div>
+                </div>
+                <div class="app-categorys">
+                    <div class="col c-6 m-4 l-3">
+                        <div class="app-productsm ">
+                            <img src="./asset/img/topic-4.jpg" alt="" class="app-productsm__img-first">
+                        </div>
+                    </div>
+                    <div class="col c-6 m-4 l-3">
+                        <div class="app-productsm ">
+                            <div class="col c-12 app-productsm__body ">
+                                <img src="./asset/img/topic-5.png" alt="" class="app-productsm__img">
+                                <img class="app-productsm__like" src="./asset/icon/Group 1.png">
+                                <div class="app-productsm__main">
+                                    <span class="app-productsm__title">Color</span>
+                                    <span class="list-ellipse">
+                                                    <div class="ellipse ellipse-smoll"></div>
+                                                    <div class="ellipse ellipse-smoll"></div>
+                                                    <div class="ellipse ellipse-smoll"></div>
+                                                    <div class="ellipse ellipse-smoll"></div>
+                                                    <div class="ellipse ellipse-smoll"></div>
+                                                    <div class="ellipse ellipse-smoll"></div>
+                                                    <div class="ellipse ellipse-smoll"></div>
+                                                </span>
+                                    <span class="app-productsm__des">Vonna
+                                                    Neva Walnut Sandalye Chair</span>
+                                    <span class="app-productsm__price">195,13
+                                                    $</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col c-6 m-4 l-3 hide-mobi">
+                        <div class="app-productsm ">
+                            <div class="col c-12 app-productsm__body ">
+                                <img src="./asset/img/topic-6.png" alt="" class="app-productsm__img">
+                                <img class="app-productsm__like" src="./asset/icon/Group 1.png">
+                                <div class="app-productsm__main">
+                                    <span class="app-productsm__title">Color</span>
+                                    <span class="list-ellipse">
+                                                    <div class="ellipse ellipse-smoll"></div>
+                                                    <div class="ellipse ellipse-smoll"></div>
+                                                    <div class="ellipse ellipse-smoll"></div>
+                                                    <div class="ellipse ellipse-smoll"></div>
+                                                    <div class="ellipse ellipse-smoll"></div>
+                                                    
+                                                </span>
+                                    <span class="app-productsm__des">Iphone 12 128 GB (Red) Apple </span>
+                                    <span class="app-productsm__price">789,67 $</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col c-6 m-4 l-3 hide-mobi hide-tablet">
+                        <div class="app-productsm ">
+                            <div class="col c-12 app-productsm__body ">
+                                <img src="./asset/img/topic-7.png" alt="" class="app-productsm__img">
+                                <img class="app-productsm__like" src="./asset/icon/Group 1.png">
+                                <div class="app-productsm__main">
+                                    <span class="app-productsm__title">Color</span>
+                                    <span class="list-ellipse">
+                                                    <div class="ellipse ellipse-smoll"></div>
+                                                    <div class="ellipse ellipse-smoll"></div>
+                                                    <div class="ellipse ellipse-smoll"></div>
+                                                </span>
+                                    <span class="app-productsm__des">Rovena Riva Series 6 Pcs. Wide Seating Claret Red Chair </span>
+                                    <span class="app-productsm__price">789,67 $</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row no-gutters m-l-r-12">
+                <div class="col c-12 app-handpicked">
+
+                    <div class="app-handpicked__list">
+                        <div class="col c-6 m-3 app-handpicked__item" l-2>
+                            <img src="./asset/img/produc-11.png" alt="" class="app-handpicked__img">
+                            <img class="app-product__like borde" src="./asset/icon/Group 1.png">
+                            <span class="app-handpicked__des">Distressed
+                                            Tote Leather Bag Leather Bag</span>
+                            <span class="app-handpicked__price">216,27 $</span>
+                        </div>
+                        <div class="col c-6 m-3 app-handpicked__item" l-2>
+                            <img src="./asset/img/produc-12.png" alt="" class="app-handpicked__img">
+                            <img class="app-product__like borde" src="./asset/icon/Group 1.png">
+                            <span class="app-handpicked__des">Womens Cognac
+                                            Leather Elastic Straps</span>
+                            <span class="app-handpicked__price">195,13 $</span>
+                        </div>
+                        <div class="col c-6 m-3 app-handpicked__item l-2 hide-mobi">
+                            <img src="./asset/img/produc-13.png" alt="" class="app-handpicked__img">
+                            <img class="app-product__like borde" src="./asset/icon/Group 1.png">
+                            <span class="app-handpicked__des">Distressed Tote Leather Bag Leather Bag</span>
+                            <span class="app-handpicked__price">910,76 $</span>
+                        </div>
+                        <div class="col c-6 m-3 app-handpicked__item l-2 hide-mobi ">
+                            <img src="./asset/img/produc-14.png" alt="" class="app-handpicked__img">
+                            <img class="app-product__like borde" src="./asset/icon/Group 1.png">
+                            <span class="app-handpicked__des">High Top Canvas Shoes</span>
+                            <span class="app-handpicked__price">341,02 $</span>
+                        </div>
+                        <div class="col c-6 m-3 app-handpicked__item l-2 hide-mobi hide-tablet">
+                            <img src="./asset/img/produc-15.png" alt="" class="app-handpicked__img">
+                            <img class="app-product__like borde" src="./asset/icon/Group 1.png">
+                            <span class="app-handpicked__des">Rose Gold Moissanite Vintage Wedding Ring Set</span>
+                            <span class="app-handpicked__price">3.344,13 $</span>
+                        </div>
+                        <div class="col c-6 m-3 app-handpicked__item l-2 hide-mobi hide-tablet">
+                            <img src="./asset/img/produc-16.png" alt="" class="app-handpicked__img">
+                            <img class="app-product__like borde" src="./asset/icon/Group 1.png">
+                            <span class="app-handpicked__des">Blue Topaz Bangle 24K Gold Plated Handmade</span>
+                            <span class="app-handpicked__price">789,09 $</span>
+                        </div>
+                    </div>
+                </div>
+                <span class="hide-pc span-list">
+                                    <div class="ellipse"></div>
+                                    <div class="ellipse active-mobi"></div>
+                                    <div class="ellipse"></div>
+        
+        
+                                </span>
+            </div>
+
+        </div>
+
+        <div class="row no-gutters m-l-r-12">
+            <div class="col c-12 app-send">
+                <div class="app-send__body">
+                    <span class="app-send__title">YES!</span>
+                    <span class="app-send__des">
+                               <span>Send me exclusive offers, unique gift </span>
+                    <span>ideas, and personalized tips for shopping</span>
+                    <span>and selling on Commerce.</span>
+                    </span>
+                    <div class="app-send__group hide-mobi">
+                        <input type="text" class="app-send__input " placeholder="Drop your Email">
+                        <button class="app-send__btn ">Subscribe <img
+                                    src="./asset/icon/Arrow_right_light.png" alt=""></button>
+                    </div>
+                    <input type="text" class="app-send__input hide-tablet hide-pc" placeholder="Drop your Email">
+                    <button class="app-send__btn hide-tablet hide-pc">Subscribe <img
+                                    src="./asset/icon/Arrow_right_light.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col c-12 app-confirm">
+                <span class="hide-mobi">Commerce, is powered by 100% renewable electricity.</span>
+                <span class="hide-tablet hide-pc">Commerce, is powered</span>
+                <span class="hide-tablet hide-pc">by 100% renewable electricity.</span>
+            </div>
+        </div>
+        <div class="row no-gutters m-l-r-12 no-w overflow">
+            <div class="col m-2 l-2 app-menu__body-tablet hide-mobi m-l-r-12">
+                <div class="app-social">
+                    <div class="app-social__logo"><img src="./asset/img/logo.png" alt=""><span>Cricklewood,
+                            London NW2 6qg, Uk</span></div>
+                    <ul class="app-social__list">
+                        <li>
+                            <a href="" class="app-social__item"><img src="./asset/icon/facebook.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="" class="app-social__item"><img src="./asset/icon/twitter.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="" class="app-social__item"><img src="./asset/icon/linkedin.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="" class="app-social__item"><img src="./asset/icon/dribbble.png" alt=""></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col m-10 l-10 no-w m-l-r-16">
+                <div class="app-menu__body">
+                    <div class="col c-12 m-3 l-3 app-menu">
+                        <div class="app-menu__btn">
+                            <span>Shop</span>
+                            <img src="./asset/icon/Expand_down_light.png" alt="" class="hide-tablet hide-pc">
+                        </div>
+                        <ul class="app-menu__list hide-mobi">
+                            <li><a href="" class="app-menu__item">Gift cards</a></li>
+                            <li><a href="" class="app-menu__item">Site map</a></li>
+                            <li><a href="" class="app-menu__item">Polka blog</a></li>
+                            <li><a href="" class="app-menu__item">Login</a></li>
+                            <li><a href="" class="app-menu__item">Sign in</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="app-menu__body">
+                    <div class="col c-12 m-3 l-3 app-menu">
+                        <div class="app-menu__btn">
+                            <span>About</span>
+                            <img src="./asset/icon/Expand_down_light.png" alt="" class="hide-tablet hide-pc">
+                        </div>
+                    </div>
+                    <ul class="app-menu__list">
+                        <li><a href="" class="app-menu__item">Polka, Inc.</a></li>
+                        <li><a href="" class="app-menu__item">Policies</a></li>
+                        <li><a href="" class="app-menu__item">Investors</a></li>
+                        <li><a href="" class="app-menu__item">Careers</a></li>
+                        <li><a href="" class="app-menu__item">Press</a></li>
+                    </ul>
+
+
+
+                </div>
+
+                <div class="app-menu__body">
+                    <div class="col c-12 m-3 l-3 app-menu">
+                        <div class="app-menu__btn">
+                            <span>Sell</span>
+                            <img src="./asset/icon/Expand_down_light.png" alt="" class="hide-tablet hide-pc">
+                        </div>
+                        <ul class="app-menu__list hide-mobi">
+                            <li><a href="" class="app-menu__item">Sell on Polka</a></li>
+                            <li><a href="" class="app-menu__item">Teams</a></li>
+                            <li><a href="" class="app-menu__item">Forums</a></li>
+                            <li><a href="" class="app-menu__item">Affiliates</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="app-menu__body">
+                    <div class="col c-12 m-3 l-3 app-menu">
+                        <div class="app-menu__btn">
+                            <span>Help</span>
+                            <img src="./asset/icon/Expand_down_light.png" alt="" class="hide-tablet hide-pc">
+                        </div>
+                        <ul class="app-menu__list hide-mobi">
+                            <li><a href="" class="app-menu__item">Help Center</a></li>
+                            <li><a href="" class="app-menu__item">Trust and safety</a></li>
+                            <li><a href="" class="app-menu__item">Privacy settings</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="app-menu__body hide-tablet hide-pc m-l-r-16">
+                <div class="app-social">
+                    <ul class="app-social__list">
+                        <li>
+                            <a href="" class="app-social__item"><img src="./asset/icon/facebook.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="" class="app-social__item"><img src="./asset/icon/twitter.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="" class="app-social__item"><img src="./asset/icon/linkedin.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="" class="app-social__item"><img src="./asset/icon/dribbble.png" alt=""></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+    <div class="grid wide w-900">
+        <div class="footer m-l-r-12 ">
+            <div class="row no-gutters m-l-r-12 no-w max-w flexpt ">
+                <div class="col m-10 l-10 m-l-r-12 footer-copyright">
+                    <span class="col c-12 m-3 l-3 footer-copyright__item">© 2022 Commerce, Inc.</span>
+                    <span class="col c-12 m-3 l-3 footer-copyright__item hide-mobi">Privacy policy</span>
+                    <span class="col c-12 m-3 l-3 footer-copyright__item hide-mobi active-tablet active-pc">Terms of use</span>
+                    <span class="col c-12 m-3 l-3 footer-copyright__item hide-mobi">Cookies</span>
+                </div>
+                <div class="col m-2 l-2 footer-scoll hide-mobi"><span>Scroll to top</span><img src="./asset/icon/Arrow_top.png" alt=""></div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

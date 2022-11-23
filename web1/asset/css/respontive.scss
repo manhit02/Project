@@ -1,0 +1,178 @@
+@media (max-width:739px) {
+    $max-width: 390px;
+    .btn {
+        height: 32px;
+        padding: 4px 6px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .header {
+        padding: 0 12px;
+        max-width: $max-width;
+        height: 48px;
+        &-nav {
+            height: 48px;
+            &__logo {
+                width: 64px;
+                height: 32px;
+                margin-right: 12px;
+            }
+            &__link {
+                font-size: 12px;
+                &-item:nth-child(2) {
+                    margin: 0 12px;
+                }
+            }
+            &__login {
+                margin: 0 12px;
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+    }
+    .slide {
+        max-width: $max-width;
+        height: 32vh;
+        &-bg {
+            max-width: $max-width;
+        }
+        &-body {
+            top: 32px;
+            left: 12px;
+            right: 12px;
+            width: 300px;
+            margin: auto;
+            &__heading {
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 16px;
+            }
+            &__des {
+                font-size: 12px;
+                line-height: 16px;
+            }
+            button {
+                margin-right: 12px;
+                margin-top: 24px;
+            }
+        }
+    }
+    .app {
+        width: 390px;
+        max-width: $max-width;
+        padding: 0 12px;
+        &-heading {
+            margin-bottom: 24px;
+            &__title {
+                font-size: 16px;
+                line-height: 16px;
+                margin-bottom: 16px;
+                margin-top: 24px;
+            }
+            &__des {
+                font-size: 14px;
+                line-height: 14px;
+            }
+        }
+        &-service {
+            &__item {
+                width: 120px;
+                max-width: 120px;
+                align-items: none;
+                &-title {
+                    font-size: 16px;
+                    line-height: 16px;
+                    height: 32px;
+                    text-align: center;
+                }
+                &-icon {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+        &-topic {
+            justify-content: space-between;
+            &__item {
+                margin-top: 24px;
+                max-width: 171px;
+                &-title {
+                    font-size: 16px;
+                    line-height: 16px;
+                    margin-bottom: 16px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+                &-des {
+                    font-size: 14px;
+                    line-height: 14px;
+                    margin-bottom: 24px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+            }
+            &__item:nth-child(1) {
+                margin-right: 12px;
+            }
+            &__item:nth-child(3) {
+                margin-right: 12px;
+            }
+            &__send {
+                &-des {
+                    display: block;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+                &-btn {
+                    margin-bottom: 16px;
+                    input {
+                        margin-right: 24px;
+                        padding-left: 4px;
+                        margin-right: 12px;
+                        width: 80px;
+                    }
+                }
+            }
+            &__ship {
+                &-item {
+                    max-width: 255px;
+                }
+                &-item:first-child {
+                    margin-right: 0px;
+                }
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+        &-other {
+            margin-top: 24px;
+            &__item {
+                margin-right: 12px;
+                &-img {
+                    margin-bottom: 24px;
+                    width: 82.5px;
+                    height: auto;
+                }
+                &-title {
+                    margin-bottom: 12px;
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+                &-des {
+                    font-size: 8px;
+                    line-height: 14px;
+                    display: block;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    margin-bottom: 24px;
+                }
+            }
+        }
+    }
+}
