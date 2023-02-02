@@ -1,0 +1,54 @@
+.app {
+    &-hotnews {
+        &__item {
+            margin-top: 51px;
+        }
+    }
+    &-news {
+        margin-top: 0;
+        position: relative;
+        &__body {
+            &-control {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 25px;
+                height: 17px;
+                width: 100px;
+                span {
+                    color: #abb7dd;
+                    font-size: 16px;
+                    text-align: end;
+                    cursor: pointer;
+                    &.active {
+                        font-size: 20px;
+                        font-weight: bold;
+                        font-family: 'Open Sans ExtraBold';
+                    }
+                }
+                button {
+                    width: 9px;
+                    height: 13px;
+                    clip-path: polygon(60% 0, 23% 50%, 60% 100%, 40% 100%, 0% 50%, 40% 0);
+                    border: none;
+                    outline: none;
+                    background: #abb7dd;
+                    cursor: pointer;
+                    &:last-child {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+    &-adv {
+        z-index: 10;
+        img {
+            &:nth-child(3) {
+                margin-top: 46px;
+                margin-bottom: 56px;
+                height: 215px;
+            }
+        }
+    }
+}

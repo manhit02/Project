@@ -1,0 +1,52 @@
+@media (max-width:1023px) {
+    .app {
+        background-size: cover;
+        height: 800px;
+        &-highlight {
+            padding-top: 0;
+        }
+        &-heading {
+            margin-top: 0;
+        }
+        &-videohl {
+            margin-bottom: 200px;
+        }
+    }
+}
+
+@media (max-width:739px) {
+    .app {
+        background-size: cover;
+        height: 800px;
+        & .app-row {
+            margin-bottom: 60px;
+        }
+        &-highlight {
+            &__btn {
+                &-item {
+                    font-size: 12px;
+                    &1 {
+                        margin-top: 0;
+                    }
+                    &4 {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        &-videohl {
+            margin-bottom: 200px;
+            iframe {
+                margin-left: 0;
+            }
+        }
+        &-adv {
+            img {
+                &:nth-child(1) {
+                    right: unset;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

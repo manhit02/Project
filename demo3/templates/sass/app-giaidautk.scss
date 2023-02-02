@@ -1,0 +1,120 @@
+.app {
+    height: 1455px;
+    &-match {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        &__item {
+            width: 180px;
+            background: transparent;
+            border: 3px solid;
+            border-image-slice: 1;
+            -webkit-border-image-slice: 1;
+            border-image-source: linear-gradient(to bottom, #dfad58, #815112);
+            display: flex;
+            font-size: 20px;
+            font-family: "Open Sans";
+            color: #9a4c00;
+            &1,
+            &6 {
+                height: 66px;
+                background: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                z-index: 1;
+            }
+            &2,
+            &5 {
+                border: 3px solid #e1af5a;
+            }
+            &3,
+            &4 {
+                position: absolute;
+                height: 95px;
+                background: #4f4b7d;
+                color: #5fb5cb;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                text-align: center;
+                z-index: 1;
+                span {
+                    width: 100%;
+                }
+            }
+            &2 {
+                width: 31px;
+                height: 74px;
+                margin-top: -3px;
+                z-index: 1;
+                border-bottom: 3px solid #272249;
+                border-top: 3px solid transparent;
+            }
+            &3 {
+                left: 102px;
+                top: 105px;
+            }
+            &4 {
+                right: 102px;
+                top: 105px;
+            }
+            &5 {
+                height: 139px;
+                width: 553px;
+                margin-top: -3px;
+            }
+            &6 {
+                margin-top: -30px;
+            }
+        }
+    }
+    &-highlight {
+        &__btn {
+            top: 24px;
+            right: unset;
+            &-item {
+                width: 152px;
+                &3 {
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
+    &-help {
+        height: unset;
+        &__catalogue {
+            background: url("../aseets/images/Group441.jpg")#1b1738 no-repeat bottom;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            padding: 0 !important;
+            height: 923px;
+        }
+        &__body {
+            height: 923px;
+            padding: 26px 0 0 0!important;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            & .app-heading {
+                color: #ffe396;
+                margin-top: 0;
+            }
+            img {
+                margin-top: 77px;
+                margin-bottom: 0;
+                width: 165px;
+                height: 107px;
+            }
+        }
+    }
+    &-adv {
+        height: 0;
+    }
+}

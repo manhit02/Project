@@ -1,0 +1,666 @@
+@font-face {
+    font-family: 'UTM Talling';
+    src: url("../aseets/fonts/00176-UTM-Talling.ttf");
+}
+
+@font-face {
+    font-family: 'UTM Avo Bold';
+    src: url("../aseets/fonts/UTMAvoBold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'UTM Neutra';
+    src: url("../aseets/fonts/UTMNeutra.ttf");
+}
+
+@font-face {
+    font-family: 'UTM Tahoma';
+    src: url("../aseets/fonts/tahomabd.ttf");
+}
+
+@font-face {
+    font-family: 'UTM Colossalis';
+    src: url("../aseets/fonts/UTMColossalis.ttf");
+}
+
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url("../aseets/fonts/OpenSans-Light.ttf");
+}
+
+.app {
+    position: relative;
+    background: url("../aseets/images/landing2.jpg");
+    background-size: cover;
+    padding-top: 26px;
+    &>img {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        transform: rotate(180deg);
+    }
+    &-heading {
+        position: relative;
+        display: grid;
+        place-items: center;
+        background: url("../aseets/images/dailodanhvong1.png") no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 89px;
+        span {
+            position: absolute;
+            font-size: 60px;
+            font-family: 'UTM Talling';
+            color: transparent;
+            background: linear-gradient(to bottom, #f7f176, #c68a2d);
+            background-clip: text;
+            -webkit-background-clip: text;
+            text-transform: uppercase;
+            top: 0;
+            left: 250px;
+        }
+    }
+    &-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 80px 0;
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+        }
+        button {
+            position: relative;
+            width: 284px;
+            height: 125px;
+            margin-right: 42px;
+            background: transparent;
+            background: url("../aseets/images/Layer517copy2.png")no-repeat center;
+            background-size: contain;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover span {
+                color: red;
+                cursor: pointer;
+                &.active {
+                    color: red;
+                }
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            span {
+                background: linear-gradient(to bottom, #d9d9d9, #fff, #d9d9d9);
+                color: transparent;
+                background-clip: text;
+                -webkit-background-clip: text;
+                font-size: 36px;
+                font-family: 'UTM Talling';
+                text-transform: uppercase;
+                &.active {
+                    color: #ffe300;
+                    text-shadow: 0 0 3px #000, 0 0 3px #000, 0 0 3px #000;
+                }
+            }
+        }
+    }
+    &-control {
+        margin: 15px 0px 42px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        button {
+            padding: 0;
+            width: 51px;
+            height: 51px;
+            background: url("../aseets/images/Layer656.jpg") no-repeat;
+            background-size: contain;
+            margin-right: 7px;
+            cursor: pointer;
+            &.active {
+                span {
+                    color: #edb82a;
+                }
+            }
+            &:hover {
+                span {
+                    color: red;
+                    &.active {
+                        color: red;
+                    }
+                }
+            }
+            span {
+                font-family: 'UTM Colossalis';
+                font-size: 18px;
+                background: linear-gradient(to bottom, #d9d9d9, #fff, #d9d9d9);
+                color: transparent;
+                background-clip: text;
+                -webkit-background-clip: text;
+            }
+        }
+    }
+    &-rankings {
+        padding-bottom: 96px;
+        &__logo {
+            margin-bottom: 42px;
+            margin-left: auto;
+            display: flex;
+            margin-right: auto;
+        }
+        &__item {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 481px;
+            img {
+                margin-top: 100px;
+            }
+            span {
+                font-family: 'UTM Avo Bold';
+                font-size: 32px;
+                color: #fff;
+                text-transform: uppercase;
+                margin-top: 22px;
+                &:nth-child(4),
+                &:nth-child(3) {
+                    color: #441c02;
+                    font-size: 22px;
+                    bottom: 38px;
+                    margin-top: 18px;
+                }
+                strong {
+                    color: #9e0000;
+                }
+            }
+            &1 {
+                background: url("../aseets/images/Layer1.jpg") no-repeat center;
+                background-size: contain;
+                position: relative;
+                bottom: -65px;
+            }
+            &2 {
+                background: url("../aseets/images/Layer2.jpg") no-repeat center;
+                background-size: contain;
+                height: 508px;
+                margin-bottom: 80px;
+            }
+            &3 {
+                background: url("../aseets/images/Layer3.jpg") no-repeat center;
+                background-size: contain;
+                position: relative;
+                bottom: -65px;
+            }
+        }
+        &__btn {
+            position: relative;
+            width: 258px;
+            height: 66px;
+            font-size: 46px;
+            font-family: 'UTM Talling';
+            color: #9e0000;
+            text-transform: uppercase;
+            margin-right: 24px;
+            background: url("../aseets/images/doingay.png") no-repeat center;
+            background-size: contain;
+            &:hover {
+                color: red;
+                cursor: pointer;
+                &.active {
+                    color: red;
+                    cursor: pointer;
+                }
+            }
+            img {
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: -1;
+                width: 258px;
+                height: 66px;
+            }
+            &.active {
+                color: #e66700;
+            }
+        }
+        &__table {
+            position: relative;
+            margin-top: 89px;
+            width: 100%;
+            height: 635px;
+            background: url("../aseets/images/Layer192.png") no-repeat top center;
+            background-size: cover;
+            padding: 52px 12px 22px 12px;
+            &-search {
+                position: absolute;
+                right: 50px;
+                top: 0;
+                height: 41px;
+                width: 50%;
+                font-family: 'UTM Tahoma';
+                color: #c8641b;
+                background: url("../aseets/images/Shape2.png") center no-repeat;
+                background-size: contain;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                input {
+                    border: none;
+                    background: transparent;
+                    color: #c8641b;
+                    outline: none;
+                }
+            }
+            &-body {
+                height: 560px;
+                overflow-y: scroll;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+            ul {
+                width: 100%;
+                height: 52px;
+                display: flex;
+                &:nth-child(1) {
+                    li {
+                        border: none;
+                    }
+                }
+                &:nth-child(2) {
+                    background: linear-gradient(to bottom, #fbe67e, #b58524);
+                }
+                &:nth-child(3) {
+                    background: linear-gradient(to bottom, #0096fe, #046582);
+                }
+                &:nth-child(4) {
+                    background: linear-gradient(to bottom, #dc7a2a, #b93d07);
+                }
+                &:nth-child(5),
+                &:nth-child(7),
+                &:nth-child(9),
+                &:nth-child(11) {
+                    background: #441c02;
+                }
+                &:nth-child(6),
+                &:nth-child(8),
+                &:nth-child(10),
+                &:nth-child(12) {
+                    background: #5a2706;
+                }
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-right: 1px solid #75401f;
+                    font-family: 'UTM Tahoma';
+                    font-weight: bold;
+                    font-size: 18px;
+                    color: #ffe57e;
+                    &:nth-child(1) {
+                        width: 15%;
+                    }
+                    &:nth-child(2) {
+                        width: 30%;
+                    }
+                    &:nth-child(3) {
+                        width: 15%;
+                    }
+                    &:nth-child(4) {
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
+    &-even {
+        &__heading {
+            display: flex;
+            margin: auto;
+            width: 50%;
+        }
+        &__banner {
+            margin-bottom: 42px;
+            position: relative;
+            background: url("../aseets/images/Group151.png");
+            height: 501px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 98%;
+                margin-top: 40px;
+            }
+        }
+        &__btn {
+            margin-top: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            button {
+                width: 233px;
+                height: 64px;
+                background: url("../aseets/images/Group1.jpg");
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 12px;
+                cursor: pointer;
+                &:hover {
+                    span {
+                        color: red;
+                    }
+                }
+                &.active {
+                    filter: hue-rotate(175deg);
+                }
+                span {
+                    font-family: 'UTM Colossalis';
+                    font-size: 22px;
+                    text-transform: uppercase;
+                    color: transparent;
+                    background: linear-gradient(to bottom, #fff, #f4c585);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                }
+            }
+        }
+        &__notify {
+            position: relative;
+            color: #b39964;
+            font-family: 'UTM Tahoma';
+            font-size: 18px;
+            margin-top: 42px;
+            margin-bottom: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            span {
+                color: #f54200;
+            }
+            img {
+                position: absolute;
+                left: -60px;
+                top: -6px;
+            }
+        }
+        &__turn {
+            position: relative;
+            display: grid;
+            place-items: center;
+            width: 100%;
+            height: 651px;
+            &-item {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 24%;
+                height: 25%;
+                background: url("../aseets/images/Brightness_Contrast600.jpg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                &.active {
+                    background: url("../aseets/images/3.png");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 108px;
+                        height: 108px;
+                        background: url("../aseets/images/Shape1.png");
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        position: absolute;
+                    }
+                }
+                &1 {
+                    top: 0;
+                    left: 0;
+                }
+                &2 {
+                    top: 0;
+                    left: 25%;
+                }
+                &3 {
+                    top: 0;
+                    right: 25%;
+                }
+                &4 {
+                    top: 0;
+                    right: 0;
+                }
+                &5 {
+                    left: 0;
+                    top: 25%;
+                }
+                &6 {
+                    right: 0;
+                    top: 25%;
+                }
+                &7 {
+                    left: 0;
+                    top: 50%;
+                }
+                &8 {
+                    right: 0;
+                    top: 50%;
+                }
+                &9 {
+                    bottom: 0;
+                    left: 0;
+                }
+                &10 {
+                    left: 25%;
+                    bottom: 0;
+                    width: 50%;
+                    img {
+                        position: absolute;
+                        &:nth-child(1) {
+                            margin-bottom: -40px;
+                        }
+                        &:nth-child(2) {
+                            margin-bottom: -80px;
+                        }
+                    }
+                    &.active {
+                        background: url("../aseets/images/2.png");
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                    }
+                }
+                &11 {
+                    bottom: 0;
+                    right: 0;
+                }
+                &3,
+                &11,
+                &9,
+                &8 {
+                    img {
+                        margin-top: 45px;
+                    }
+                }
+            }
+            &-btn {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width: 50%;
+                &>span {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    width: 100%;
+                    height: 119px;
+                    border: 2px solid #3a2106;
+                    font-family: 'OpenSans-Light';
+                    font-size: 21px;
+                    color: #dbc499;
+                    text-transform: uppercase;
+                    span {
+                        font-size: 27px;
+                        color: #5bff01;
+                        font-weight: bold;
+                        margin-top: 18px;
+                    }
+                }
+                button {
+                    margin-top: 22px;
+                    width: 100%;
+                    height: 111px;
+                    background: url("../aseets/images/Group50.png") no-repeat center;
+                    background-size: contain;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    &:hover {
+                        span {
+                            color: red;
+                        }
+                    }
+                    span {
+                        font-family: 'UTM Colossalis';
+                        font-size: 42px;
+                        color: transparent;
+                        background: linear-gradient(to bottom, #fff2bf, #ffd470);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        &__note {
+            font-family: 'UTM Tahoma';
+            font-size: 18px;
+            color: #bba069;
+            margin: 52px 0;
+            display: block;
+            text-align: left;
+            width: 100%;
+        }
+        & .app-rankings__btn {
+            font-size: 36px;
+            width: 307px;
+            height: 56px;
+            color: #bf2800;
+            margin-bottom: 58px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 307px;
+                height: 56px;
+            }
+        }
+        &__buy {
+            display: flex;
+            justify-content: space-between;
+            &>span {
+                position: relative;
+                width: 560px;
+                height: 78px;
+                display: flex;
+                align-items: center;
+                background: url("../aseets/images/Shape11.jpg") no-repeat center;
+                background-size: contain;
+                font-family: 'UTM Tahoma';
+                font-size: 16px;
+                color: #d7b778;
+                padding-left: 52px;
+                button {
+                    position: absolute;
+                    right: 24px;
+                    width: 158px;
+                    height: 46px;
+                    background: url("../aseets/images/Layer81.jpg");
+                    background-size: contain;
+                    font-family: 'UTM Tahoma';
+                    font-size: 22px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    &:hover {
+                        color: red;
+                    }
+                }
+            }
+        }
+        & .app-btn2 {
+            button,
+            img {
+                width: 190px;
+                height: 84px;
+            }
+            button {
+                margin-right: 14px;
+            }
+        }
+        &__note1 {
+            font-family: 'UTM Tahoma';
+            font-size: 18px;
+            color: #bba069;
+            width: 100%;
+            display: block;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        &__choose {
+            width: 100%;
+            height: 543px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            &-item {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 19%;
+                height: 25%;
+                background: url("../aseets/images/Chuộtcopy2.jpg") no-repeat center;
+                background-size: contain;
+                img {
+                    width: 50%;
+                    height: 50%;
+                }
+            }
+        }
+    }
+    &-treatment {
+        & .app-btn {
+            button {
+                margin-right: 24px;
+            }
+        }
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        padding: 82px 42px;
+        background: url("../aseets/images/Group151.png") no-repeat;
+        p {
+            line-height: 32px;
+            font-size: 24px;
+            font-family: 'UTM Tahoma';
+            color: #d9ad84;
+            word-spacing: 1px;
+        }
+    }
+}

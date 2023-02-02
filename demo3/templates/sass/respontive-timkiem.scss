@@ -1,0 +1,20 @@
+@media (max-width:1023px) {
+    .app {
+        &-heading {
+            margin-bottom: 30px !important;
+        }
+        &-news {
+            &__body {
+                flex-direction: unset;
+                flex-wrap: wrap;
+            }
+            &__adv {
+                flex-direction: unset;
+                justify-content: space-around;
+            }
+        }
+        &-adv {
+            margin-bottom: 200px;
+        }
+    }
+}

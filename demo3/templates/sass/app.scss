@@ -1,0 +1,502 @@
+@mixin backgroup-gradient($color1, $color2) {
+    background: linear-gradient(to bottom, $color1, $color2);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.app {
+    background: url("../aseets/images/Group401.jpg") top center no-repeat;
+    &-slide {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        animation: scroll linear 5s;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        scroll-behavior: smooth;
+    }
+    &-row {
+        background: linear-gradient(to right, #fff3be, rgba(46, 36, 23, 0));
+        height: 2px;
+        margin-bottom: 35px;
+        margin-top: 8px;
+        width: 100%;
+        &.mid.green {
+            background: linear-gradient(to right, rgba(47, 37, 24, 0), rgba(55, 92, 140), rgba(47, 37, 24, 0));
+            width: 100%;
+        }
+        &.mid.light {
+            background: linear-gradient(to right, rgba(45, 75, 115, 0), #fef2be, rgba(46, 76, 115, 0));
+            width: 100%;
+        }
+    }
+    &-control {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+            width: 11px;
+            height: 11px;
+            background: #355784;
+            transform: rotate(45deg);
+            margin: 22px 13px 19px 0;
+            cursor: pointer;
+        }
+        span.active {
+            background-color: #ffe396;
+        }
+    }
+    &-table {
+        border: 1px solid #eeae75;
+        align-items: center;
+        justify-content: center;
+        background: url("../aseets/pattern/pattern_bang.png") #345f8d;
+        &__head {
+            display: flex;
+            flex-direction: column;
+            &>span {
+                font-weight: bold;
+                font-family: "Open Sans";
+                font-size: 28px;
+                color: #ffe396;
+                text-align: center;
+                &:nth-child(1) {
+                    margin-top: 18px;
+                }
+                &:nth-child(2) {
+                    font-size: 26px;
+                    color: #ffb14b;
+                }
+            }
+        }
+        &__body {
+            border-collapse: collapse;
+            width: 100%;
+            thead {
+                color: #ffe396;
+                font-size: 16px;
+                line-height: 55px;
+                tr {
+                    th {
+                        width: calc(100% / 4);
+                        height: 55px;
+                        text-align: left;
+                        padding-left: 28px;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    background: #212738;
+                    &:nth-child(1),
+                    &:nth-child(3),
+                    &:nth-child(5),
+                    &:nth-child(7) {
+                        background: #282e42;
+                    }
+                    th {
+                        vertical-align: middle;
+                        height: 65px;
+                        color: #a4afd4;
+                        text-align: left;
+                        padding-left: 28px;
+                        &:nth-child(1) {
+                            color: #65d3e3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-tablem {
+        border: 1px solid #eeae75;
+        align-items: center;
+        justify-content: center;
+        background: url("../aseets/pattern/pattern_lichthidau.png") #7e3030;
+        &__head {
+            display: flex;
+            background: url("../aseets/images/Rectangle8771.png") no-repeat center;
+            justify-content: center;
+            &>span {
+                font-weight: bold;
+                font-family: "Open Sans";
+                font-size: 16px;
+                color: #ffb14b;
+                text-align: center;
+                margin: 0 73px;
+            }
+            button {
+                width: 15px;
+                height: 21px;
+                background: #ffb14b;
+                clip-path: polygon(100% 30%, 65% 51%, 100% 70%, 80% 100%, 20% 50%, 80% 0);
+                cursor: pointer;
+                &:nth-child(3) {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        &__body {
+            border-collapse: collapse;
+            width: 100%;
+            thead {
+                color: #ffe396;
+                font-size: 16px;
+                th {
+                    width: 35%;
+                    height: 55px;
+                    text-align: left;
+                    padding-left: 13px;
+                    vertical-align: middle;
+                    &:nth-child(2) {
+                        width: 15%;
+                    }
+                    &:nth-child(3) {
+                        width: 25%;
+                    }
+                    &:nth-child(4) {
+                        width: 25%;
+                    }
+                }
+                margin-bottom: 25px;
+            }
+            tbody {
+                tr {
+                    background: #2e1c1c;
+                    &:nth-child(1),
+                    &:nth-child(3),
+                    &:nth-child(5),
+                    &:nth-child(7) {
+                        background: #392626;
+                    }
+                }
+                th {
+                    height: 65px;
+                    color: #e5b2b3;
+                    text-align: left;
+                    padding-left: 13px;
+                    vertical-align: middle;
+                    &:nth-child(1) {
+                        color: #65d3e3;
+                        span {
+                            color: #e5b2b3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-heading {
+        @include backgroup-gradient(#ffedc0,
+        #ffac63);
+        color: transparent;
+        font-family: "UTM Centur";
+        font-size: 34px;
+        font-weight: bold;
+        margin-top: 60px;
+    }
+    &-highlight {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        padding-top: 54px;
+        &__left,
+        &__right {
+            position: absolute;
+            width: 64px;
+            height: 82px;
+            background: url("../aseets/images/row.png") no-repeat;
+            background-size: contain;
+            border: none;
+            cursor: pointer;
+        }
+        iframe {
+            width: 100%;
+            height: 402px;
+            border: 1px solid #eeae75;
+        }
+        &__btn {
+            position: absolute;
+            top: 54px;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            min-width: 81px;
+            &-item {
+                width: 97px;
+                height: 36px;
+                font-size: 18px;
+                font-family: 'UTM Centur';
+                align-items: center;
+                justify-content: center;
+                @include backgroup-gradient(#e1b05b,
+                #7a4c0e);
+                border: 1px solid;
+                border-image-slice: 1;
+                -webkit-border-image-slice: 1;
+                border-image-source: linear-gradient(to bottom, #dfad58, #875816);
+                cursor: pointer;
+                &.active {
+                    background: linear-gradient(to bottom, #e1b05b, #7a4c0e);
+                    border: none;
+                    color: #4c2907;
+                }
+                &2 {
+                    margin-top: 12px;
+                }
+            }
+        }
+        &__left {
+            transform: rotate(180deg);
+            left: 12px;
+        }
+        &__right {
+            right: 12px;
+        }
+    }
+    &-hotnews {
+        display: flex;
+        flex-wrap: wrap;
+        &__item {
+            background: url("../aseets/images/Group282.jpg");
+            width: 100%;
+            height: 256px;
+            display: flex;
+            align-items: flex-end;
+            span {
+                font-family: "Open Sans";
+                font-size: 14px;
+                font-weight: 400;
+                color: #ffe396;
+                background: url("../aseets/pattern/pattern_tintieudiem.png") #2e4a71;
+                height: 69px;
+                width: inherit;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-left: 21px;
+                padding-right: 21px;
+                text-indent: 3px;
+            }
+            &1 {
+                height: 531px;
+                span {
+                    font-size: 22px;
+                    font-weight: bold;
+                    height: 144px;
+                }
+            }
+            &2 {
+                background: url("../aseets/images/Layer787.jpg") no-repeat;
+            }
+            &3 {
+                background: url("../aseets/images/Layer825.jpg") no-repeat;
+                margin-top: 18px;
+            }
+            &4 {
+                background: url("../aseets/images/Group.jpg") no-repeat;
+            }
+            &5 {
+                background: url("../aseets/images/Group1.jpg") no-repeat;
+            }
+            &6 {
+                background: url("../aseets/images/Group2.jpg") no-repeat;
+            }
+            &7 {
+                background: url("../aseets/images/Layer1.jpg") no-repeat center;
+                background-size: contain;
+                width: unset;
+                margin-top: 28px;
+            }
+        }
+    }
+    &-even {
+        &:nth-child(1) {
+            margin-bottom: 29px;
+        }
+    }
+    &-schedule {
+        &__banner {
+            background: url("../aseets/images/banner2.jpg");
+            background-size: contain;
+            width: 100%;
+            height: 300px;
+            margin-top: 30px;
+        }
+    }
+    &-result {
+        .app-tablem {
+            background: url("../aseets/pattern/pattern_ketquathidau.png") #2e4f77;
+            &__head {
+                background: url("../aseets/images/Rectangle8772.png");
+                height: 41px;
+                align-items: center;
+                span {
+                    font-size: 18px;
+                }
+            }
+            &__body {
+                thead {
+                    tr {
+                        th {
+                            vertical-align: middle;
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        background: #212738;
+                        &:nth-child(1),
+                        &:nth-child(3),
+                        &:nth-child(5),
+                        &:nth-child(7) {
+                            background: #282e42;
+                        }
+                        th {
+                            height: 65px;
+                            color: #e5b2b3;
+                            text-align: left;
+                            padding-left: 13px;
+                            &:nth-child(1) {
+                                color: #65d3e3;
+                                span {
+                                    color: #e5b2b3;
+                                }
+                            }
+                            &:nth-child(3),
+                            &:nth-child(4) {
+                                span {
+                                    position: relative;
+                                    left: 26px;
+                                    width: 37px;
+                                    height: 31px;
+                                    display: flex;
+                                    background: #f23535;
+                                    border-radius: 5px;
+                                    cursor: pointer;
+                                    &::after {
+                                        position: absolute;
+                                        top: 7px;
+                                        left: 50%;
+                                        transform: translateX(-50%);
+                                        content: "";
+                                        display: flex;
+                                        width: 0;
+                                        height: 0;
+                                        border-top: 8.5px solid transparent;
+                                        border-bottom: 8.5px solid transparent;
+                                        border-left: 15px solid #fff;
+                                        border-radius: 5px;
+                                        z-index: 1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-videohl {
+        width: 100%;
+        &__item {
+            width: 100%;
+            height: 203px;
+            margin-bottom: 30px;
+            display: flex;
+            border: 1px solid #eeae75;
+        }
+    }
+    &-news {
+        width: 750px;
+        margin-top: -340px;
+        margin-bottom: 46px;
+        &__body {
+            background: url("../aseets/pattern/pattern_tintuc_main.png") #243351;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 23px 46px 31px 29px;
+            &-item {
+                position: relative;
+                display: flex;
+                margin-bottom: 48px;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -23px;
+                    left: 6px;
+                    width: 100%;
+                    height: 2px;
+                    background: #14233e;
+                    display: flex;
+                }
+                img {
+                    margin-right: 16px;
+                }
+                &3 {
+                    margin-bottom: 0;
+                    &::after {
+                        display: none;
+                    }
+                }
+                span {
+                    font-size: 20px;
+                    font-weight: bold;
+                    font-family: "Open Sans";
+                    color: #ffe396;
+                    word-spacing: 2px;
+                    text-indent: 3px;
+                    &:last-child {
+                        color: #abb7dd;
+                        font-size: 16px;
+                        margin-top: 25px;
+                    }
+                }
+            }
+        }
+        &__btn {
+            width: 98px;
+            height: 37px;
+            background: linear-gradient(to bottom, #ffdf73, #ac6b11);
+            margin-top: 22px;
+            color: #4c2907;
+            font-size: 18px;
+            font-family: "UTM Centur";
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+    &-adv {
+        display: flex;
+        img {
+            &:nth-child(1) {
+                margin-top: 46px;
+                margin-bottom: 56px;
+                width: 100%;
+            }
+            &:nth-child(2) {
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                height: 130px;
+            }
+        }
+    }
+}

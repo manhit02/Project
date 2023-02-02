@@ -1,0 +1,712 @@
+    .app {
+        background: url("../img/backgroup.png") center no-repeat;
+        height: 4600px;
+        overflow-x: hidden;
+        @keyframes turn {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes mov {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-10px);
+            }
+        }
+        &-giftMold {
+            position: absolute;
+            bottom: 40px;
+            left: 322px;
+            right: 207px;
+            display: flex;
+            justify-content: space-around;
+            &__item {
+                position: relative;
+                &-background {
+                    position: absolute;
+                    bottom: 0;
+                    background: url("../img/Layer781.png") no-repeat;
+                    width: 137px;
+                    height: 152px;
+                    z-index: 1;
+                }
+                &.active {
+                    &:hover {
+                        span {
+                            animation: mov 0.5s linear;
+                        }
+                    }
+                    span {
+                        background: #fef8e3;
+                        color: #ff4e4a;
+                        bottom: 74px;
+                    }
+                    button {
+                        background: linear-gradient(to bottom, #ffeb7a, #ffca36);
+                        color: #c7891d;
+                    }
+                }
+                span,
+                button {
+                    font-size: 22px;
+                    color: #ba6224;
+                    font-weight: 400;
+                    font-family: "000 SignLanguage TB";
+                    text-align: center;
+                }
+                span {
+                    position: absolute;
+                    left: 11px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #fece96;
+                    width: 125px;
+                    height: 100px;
+                    border-radius: 15px;
+                    bottom: 64px;
+                }
+                button {
+                    position: absolute;
+                    bottom: 21px;
+                    left: 18px;
+                    width: 109px;
+                    height: 24px;
+                    font-size: 20px;
+                    background: linear-gradient(to bottom, #fec585, #ff8739);
+                    border-radius: 10px;
+                    line-height: 24px;
+                    outline: none;
+                    border: none;
+                    cursor: pointer;
+                    z-index: 1;
+                }
+            }
+        }
+        &-gift1,
+        &-gift2 {
+            position: absolute;
+            background: url("../img/Group132copy.png");
+            width: 250px;
+            height: 178px;
+            z-index: 3;
+            span {
+                position: absolute;
+                font-weight: 400;
+                font-family: "000 SignLanguage TB";
+                font-size: 22px;
+                color: #560607;
+                text-align: center;
+                width: 171px;
+            }
+        }
+        &-gift1 {
+            top: 399px;
+            left: 449px;
+            span {
+                top: 71px;
+                left: 46px;
+            }
+            span:last-child {
+                color: #cd3a30;
+                top: 100px;
+            }
+        }
+        &-gift2 {
+            position: absolute;
+            bottom: 145px;
+            left: 192px;
+            img {
+                position: absolute;
+                top: 53px;
+                left: 48px;
+                width: 50px;
+                height: 79px;
+            }
+            span {
+                position: absolute;
+                top: 53px;
+                left: 125px;
+                display: flex;
+                width: 1px;
+                height: 80px;
+                border: 1px #ccc;
+                border-style: dashed;
+            }
+            span:last-child {
+                top: 60px;
+                right: 33px;
+                left: unset;
+                width: 83px;
+                height: 73px;
+                font-size: 22px;
+                color: #cd3a30;
+                font-weight: 400;
+                font-family: "000 SignLanguage TB";
+                text-align: center;
+                border: none;
+            }
+        }
+        &-alert {
+            font-size: 16px;
+            color: #ffd100;
+            font-family: "Myriad Pro";
+            width: 253px;
+            height: 34px;
+            border-radius: 17px;
+            background: #d72007;
+            line-height: 36px;
+            text-align: center;
+            margin-top: 7px;
+        }
+        &-much {
+            position: absolute;
+            top: 55px;
+            right: 181px;
+            width: 209px;
+            height: 121px;
+            border-radius: 10px;
+            background-color: #b41c1b;
+            border: 5px solid #991111;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            &__item {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+                line-height: 16px;
+                span,
+                button {
+                    font-size: 16px;
+                }
+                &-quantity {
+                    color: #fff8d9;
+                    font-family: "U TM";
+                }
+                &-poin {
+                    color: #ffe87a;
+                }
+                &-btn {
+                    display: inline-block;
+                    width: 56px;
+                    height: 26px;
+                    border-radius: 5px;
+                    background-color: #fd8b13;
+                    color: #fff;
+                    text-align: center;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+        &-logo {
+            position: relative;
+            width: 844px;
+            height: 240px;
+            margin: 171px auto 0px;
+            &__light {
+                position: absolute;
+                top: -85px;
+                left: 50%;
+                transform: translate(-50%);
+                width: 365px;
+                height: 154px;
+            }
+            &__au {
+                background: url("../img/LogoAu.png");
+                position: absolute;
+                top: -85px;
+                left: 50%;
+                transform: translate(-50%);
+                width: 109px;
+                height: 107px;
+            }
+        }
+        &-check {
+            position: relative;
+            background: url("../img/Thưmục1.png");
+            width: 1344px;
+            height: 1112px;
+            &__header {
+                width: 791px;
+                height: 291px;
+                position: relative;
+            }
+            &__body {
+                &-days {
+                    position: absolute;
+                    top: 322px;
+                    left: 50%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 728px;
+                    transform: translateX(-44%);
+                    li {
+                        position: relative;
+                        background: url("../img/Layer749.png");
+                        cursor: pointer;
+                    }
+                    li,
+                    em {
+                        width: 83px;
+                        height: 87px;
+                        list-style: none;
+                        text-align: center;
+                        margin-right: 21px;
+                        margin-bottom: 16px;
+                        font-size: 30px;
+                        line-height: 109px;
+                        color: #cd3a30;
+                        font-weight: 400;
+                        font-family: "000 SignLanguage TB";
+                        &.active {
+                            background: url("../img/meochoitet.png");
+                            color: #f9e2b6;
+                        }
+                        &.defaut {
+                            filter: grayscale(1)
+                        }
+                        &.off {
+                            filter: opacity(0.5);
+                        }
+                    }
+                    em {
+                        position: absolute;
+                        top: -87px;
+                        left: 0;
+                    }
+                }
+                &-weekday {
+                    top: 240px;
+                }
+            }
+        }
+        &-notify {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 25px;
+            img {
+                margin-left: 30%;
+            }
+            marquee {
+                margin-left: 20px;
+                font-size: 18px;
+                color: #fee99b;
+                font-weight: 700;
+                font-style: italic;
+                font-family: "Nunito";
+                a {
+                    color: #f2462f;
+                    text-decoration: none;
+                }
+            }
+        }
+        &-lucky {
+            position: relative;
+            &__logo {
+                margin-top: 53px;
+                display: flex;
+                justify-content: center;
+            }
+            &__money {
+                position: relative;
+                background: url("../img/Group126.png") no-repeat;
+                width: 1306px;
+                height: 1067px;
+                img {
+                    position: absolute;
+                    top: 160px;
+                    right: 160px;
+                }
+                &>img {
+                    top: unset;
+                    left: -248px;
+                    bottom: 14px;
+                }
+                &-backgroup {
+                    background: url("../img/6.png");
+                    position: absolute;
+                    top: 116px;
+                    right: 456px;
+                    width: 405px;
+                    height: 477px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    span {
+                        position: absolute;
+                        top: 302px;
+                        width: 300px;
+                        font-size: 47px;
+                        line-height: 84px;
+                        color: transparent;
+                        background: linear-gradient(to bottom, #fecd43, #fce89b, #f9c945);
+                        background-clip: text;
+                        font-weight: bold;
+                        font-family: "U TM Avo Bold";
+                        text-align: center;
+                    }
+                }
+                &-body {
+                    position: absolute;
+                    top: 603px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    input {
+                        width: 536px;
+                        height: 70px;
+                        padding: 29px 0 23px 41px;
+                        border-radius: 5px;
+                        background-color: #860b08;
+                        border: 3px solid #f7b965;
+                        outline: none;
+                        font-size: 22px;
+                        color: #f7b965;
+                        font-family: "Myriad Pro";
+                    }
+                    button {
+                        margin-top: 16px;
+                        background: url("../img/5.png");
+                        width: 394px;
+                        height: 104px;
+                        border: none;
+                        font-size: 60px;
+                        color: #cc2828;
+                        font-weight: 400;
+                        font-family: "000 SignLanguage TB";
+                        filter: drop-shadow(0px 1px 0.5px #f9d8ba);
+                        line-height: 120px;
+                        cursor: pointer;
+                        outline: none;
+                    }
+                }
+            }
+            &__bonus {
+                left: 300px;
+                right: 395px;
+                bottom: 31px;
+                span {
+                    left: 6px;
+                }
+            }
+            &__gift {
+                right: 226px;
+                bottom: 211px;
+                left: unset;
+            }
+            &__alert {
+                position: absolute;
+                bottom: -17px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        &-turn {
+            display: flex;
+            flex-direction: column;
+            margin-top: 61px;
+            &__header {
+                height: 224px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img:last-child {
+                    margin-top: -22px;
+                }
+            }
+            &__body {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 190px;
+                button {
+                    position: absolute;
+                    width: 204px;
+                    height: 232px;
+                    background: url("../img/vongquay/tm1\).png");
+                    border: none;
+                    cursor: pointer;
+                    z-index: 4;
+                }
+                img {
+                    position: absolute;
+                }
+                &-img1 {
+                    bottom: -170px;
+                    left: 0;
+                    z-index: 1;
+                }
+                &-img2 {
+                    bottom: -153px;
+                    right: 40px;
+                    z-index: 2;
+                }
+                &-img3 {
+                    z-index: 4;
+                }
+                &-img4 {
+                    z-index: 4;
+                }
+                &-img5 {
+                    z-index: 3;
+                }
+                &-gift {
+                    top: -63px;
+                    right: 207px;
+                    left: unset;
+                    z-index: 4;
+                    width: 249px;
+                    height: 177px;
+                    span:last-child {
+                        top: 71px;
+                        font-size: 22px;
+                        color: #9f0707;
+                        font-family: "000 SignLanguage TB";
+                    }
+                }
+            }
+            &__footer {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top: 152px;
+                &>span {
+                    font-size: 24px;
+                    color: #ffde57;
+                    font-weight: 900;
+                    font-family: "Nunito";
+                    text-align: center;
+                    width: 465px;
+                    height: 61px;
+                    border-radius: 5px;
+                    background-color: #860b08;
+                    border: 3px solid #f7b965;
+                    line-height: 61px;
+                    &>span {
+                        color: #78ff00;
+                    }
+                }
+                &-buy {
+                    display: flex;
+                    &__menu:hover {
+                        .app-much {
+                            display: flex;
+                        }
+                    }
+                    &__menu {
+                        &>button {
+                            cursor: pointer;
+                            width: 322px;
+                            height: 82px;
+                            background: url("../img/Layer817.png");
+                            border: none;
+                            font-size: 24px;
+                            color: #9e0202;
+                            font-weight: 900;
+                            font-family: "Nunito";
+                            img {
+                                margin-left: 17px;
+                            }
+                        }
+                    }
+                    &>button {
+                        cursor: pointer;
+                        width: 322px;
+                        height: 82px;
+                        background: url("../img/Layer817.png");
+                        border: none;
+                        font-size: 24px;
+                        color: #9e0202;
+                        font-weight: 900;
+                        font-family: "Nunito";
+                        img {
+                            margin-left: 17px;
+                        }
+                    }
+                }
+                &-poin {
+                    margin-top: 20px;
+                }
+                &-times {
+                    margin-top: 16px;
+                }
+            }
+            &__list {
+                position: relative;
+                width: 640px;
+                height: 640px;
+                z-index: 3;
+                li {
+                    position: absolute;
+                    list-style: none;
+                    em {
+                        position: absolute;
+                        width: 350px;
+                        height: 350px;
+                        background: linear-gradient(to top, #fbd110, #ebce57);
+                        display: none;
+                        z-index: -1;
+                    }
+                    &.active {
+                        filter: drop-shadow(3px 4px 10px #ec0000);
+                        img {
+                            filter: drop-shadow(0 0 6px #fff);
+                        }
+                        em {
+                            display: block;
+                        }
+                    }
+                }
+                &-item1 {
+                    width: 102px;
+                    height: 125px;
+                    top: 45px;
+                    right: 210px;
+                    em {
+                        right: -187px;
+                        top: -75px;
+                        clip-path: polygon(16% 5%, 14% 100%, 66% 8%);
+                    }
+                }
+                &-item2 {
+                    width: 126px;
+                    height: 106px;
+                    top: 96px;
+                    right: 90px;
+                    em {
+                        right: -119px;
+                        top: -130px;
+                        clip-path: polygon(85% 50%, 0 100%, 60% 0);
+                    }
+                }
+                &-item3 {
+                    width: 116px;
+                    height: 110px;
+                    top: 200px;
+                    right: 54px;
+                    em {
+                        clip-path: polygon(100% 98%, 1% 99%, 100% 44%);
+                        top: -230px;
+                        right: -83px;
+                    }
+                }
+                &-item4 {
+                    width: 116px;
+                    height: 65px;
+                    top: 336px;
+                    right: 48px;
+                    em {
+                        clip-path: polygon(85% 100%, 0% 52%, 100% 53%);
+                        top: -199px;
+                        right: -79px;
+                    }
+                }
+                &-item5 {
+                    width: 116px;
+                    height: 117px;
+                    top: 430px;
+                    right: 94px;
+                    em {
+                        clip-path: polygon(49% 100%, 0% 19%, 100% 79%);
+                        top: -178px;
+                        right: -123px;
+                    }
+                }
+                &-item6 {
+                    width: 105px;
+                    height: 127px;
+                    top: 481px;
+                    right: 197px;
+                    em {
+                        clip-path: polygon(1% 100%, 0% 1%, 48% 86%);
+                        top: -161px;
+                        right: -226px;
+                    }
+                }
+                &-item12 {
+                    width: 100px;
+                    height: 132px;
+                    top: 29px;
+                    left: 206px;
+                    em {
+                        clip-path: polygon(0% 22%, 101% 84%, 0% 79%);
+                        top: -102px;
+                        right: -192px;
+                        transform: rotate(58deg);
+                    }
+                }
+                &-item11 {
+                    width: 134px;
+                    height: 142px;
+                    top: 80px;
+                    left: 83px;
+                    em {
+                        clip-path: polygon(0% 27%, 100% 82%, 0% 81%);
+                        top: -124px;
+                        right: -178px;
+                        transform: rotate(30deg);
+                    }
+                }
+                &-item10 {
+                    width: 123px;
+                    height: 110px;
+                    top: 190px;
+                    left: 30px;
+                    em {
+                        clip-path: polygon(0% 29%, 93% 82%, 0% 81%);
+                        top: -161px;
+                        right: -185px;
+                    }
+                }
+                &-item9 {
+                    width: 119px;
+                    height: 99px;
+                    top: 332px;
+                    left: 34px;
+                    em {
+                        clip-path: polygon(0% 43%, 89% 43%, 0% 94%);
+                        top: -161px;
+                        right: -185px;
+                    }
+                }
+                &-item8 {
+                    width: 114px;
+                    height: 113px;
+                    top: 428px;
+                    left: 95px;
+                    em {
+                        clip-path: polygon(-4% 63%, 77% 15%, 28% 99%);
+                        top: -161px;
+                        right: -185px;
+                    }
+                }
+                &-item7 {
+                    width: 90px;
+                    height: 125px;
+                    top: 479px;
+                    left: 209px;
+                    em {
+                        clip-path: polygon(0% 93%, 52% 0%, 51% 100%);
+                        top: -161px;
+                        right: -185px;
+                    }
+                }
+            }
+        }
+    }

@@ -1,0 +1,802 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: auto;
+}
+
+.flex, .header-nav__movtop, .header-nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-nav {
+  position: fixed;
+  right: 10px;
+  top: 120px;
+  display: flex;
+  flex-direction: column;
+  width: 186px;
+  z-index: 10;
+}
+.header-nav li {
+  list-style: none;
+}
+.header-nav a {
+  background: url("../img/Layer828.png");
+  width: 186px;
+  height: 69px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #b60400;
+  font-weight: 400;
+  font-family: "000 SignLanguage TB";
+}
+.header-nav__heading {
+  width: 174px !important;
+  height: 196px !important;
+  background: url("../img/Layer829.png") !important;
+  position: absolute;
+  top: -108px;
+  z-index: -1;
+}
+.header-nav__movtop {
+  position: absolute;
+  bottom: -154px;
+  background: url("../img/Layer830.png");
+  width: 95px;
+  height: 158px;
+  cursor: pointer;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header-nav__movtop span {
+  font-size: 23px;
+  color: transparent;
+  background: linear-gradient(to bottom, #ffff00, #ffa000, #ffff00);
+  -webkit-background-clip: text;
+          background-clip: text;
+  font-weight: 400;
+  font-family: "000 SignLanguage TB";
+  margin-top: -39px;
+}
+
+.app {
+  background: url("../img/backgroup.png") center no-repeat;
+  height: 4600px;
+  overflow-x: hidden;
+}
+@-webkit-keyframes turn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes turn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes mov {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+@keyframes mov {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+.app-giftMold {
+  position: absolute;
+  bottom: 40px;
+  left: 322px;
+  right: 207px;
+  display: flex;
+  justify-content: space-around;
+}
+.app-giftMold__item {
+  position: relative;
+}
+.app-giftMold__item-background {
+  position: absolute;
+  bottom: 0;
+  background: url("../img/Layer781.png") no-repeat;
+  width: 137px;
+  height: 152px;
+  z-index: 1;
+}
+.app-giftMold__item.active:hover span {
+  -webkit-animation: mov 0.5s linear;
+          animation: mov 0.5s linear;
+}
+.app-giftMold__item.active span {
+  background: #fef8e3;
+  color: #ff4e4a;
+  bottom: 74px;
+}
+.app-giftMold__item.active button {
+  background: linear-gradient(to bottom, #ffeb7a, #ffca36);
+  color: #c7891d;
+}
+.app-giftMold__item span,
+.app-giftMold__item button {
+  font-size: 22px;
+  color: #ba6224;
+  font-weight: 400;
+  font-family: "000 SignLanguage TB";
+  text-align: center;
+}
+.app-giftMold__item span {
+  position: absolute;
+  left: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fece96;
+  width: 125px;
+  height: 100px;
+  border-radius: 15px;
+  bottom: 64px;
+}
+.app-giftMold__item button {
+  position: absolute;
+  bottom: 21px;
+  left: 18px;
+  width: 109px;
+  height: 24px;
+  font-size: 20px;
+  background: linear-gradient(to bottom, #fec585, #ff8739);
+  border-radius: 10px;
+  line-height: 24px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+.app-gift1, .app-gift2 {
+  position: absolute;
+  background: url("../img/Group132copy.png");
+  width: 250px;
+  height: 178px;
+  z-index: 3;
+}
+.app-gift1 span, .app-gift2 span {
+  position: absolute;
+  font-weight: 400;
+  font-family: "000 SignLanguage TB";
+  font-size: 22px;
+  color: #560607;
+  text-align: center;
+  width: 171px;
+}
+.app-gift1 {
+  top: 399px;
+  left: 449px;
+}
+.app-gift1 span {
+  top: 71px;
+  left: 46px;
+}
+.app-gift1 span:last-child {
+  color: #cd3a30;
+  top: 100px;
+}
+.app-gift2 {
+  position: absolute;
+  bottom: 145px;
+  left: 192px;
+}
+.app-gift2 img {
+  position: absolute;
+  top: 53px;
+  left: 48px;
+  width: 50px;
+  height: 79px;
+}
+.app-gift2 span {
+  position: absolute;
+  top: 53px;
+  left: 125px;
+  display: flex;
+  width: 1px;
+  height: 80px;
+  border: 1px #ccc;
+  border-style: dashed;
+}
+.app-gift2 span:last-child {
+  top: 60px;
+  right: 33px;
+  left: unset;
+  width: 83px;
+  height: 73px;
+  font-size: 22px;
+  color: #cd3a30;
+  font-weight: 400;
+  font-family: "000 SignLanguage TB";
+  text-align: center;
+  border: none;
+}
+.app-alert {
+  font-size: 16px;
+  color: #ffd100;
+  font-family: "Myriad Pro";
+  width: 253px;
+  height: 34px;
+  border-radius: 17px;
+  background: #d72007;
+  line-height: 36px;
+  text-align: center;
+  margin-top: 7px;
+}
+.app-much {
+  position: absolute;
+  top: 55px;
+  right: 181px;
+  width: 209px;
+  height: 121px;
+  border-radius: 10px;
+  background-color: #b41c1b;
+  border: 5px solid #991111;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.app-much__item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  line-height: 16px;
+}
+.app-much__item span,
+.app-much__item button {
+  font-size: 16px;
+}
+.app-much__item-quantity {
+  color: #fff8d9;
+  font-family: "U TM";
+}
+.app-much__item-poin {
+  color: #ffe87a;
+}
+.app-much__item-btn {
+  display: inline-block;
+  width: 56px;
+  height: 26px;
+  border-radius: 5px;
+  background-color: #fd8b13;
+  color: #fff;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+.app-logo {
+  position: relative;
+  width: 844px;
+  height: 240px;
+  margin: 171px auto 0px;
+}
+.app-logo__light {
+  position: absolute;
+  top: -85px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 365px;
+  height: 154px;
+}
+.app-logo__au {
+  background: url("../img/LogoAu.png");
+  position: absolute;
+  top: -85px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 109px;
+  height: 107px;
+}
+.app-check {
+  position: relative;
+  background: url("../img/Thưmục1.png");
+  width: 1344px;
+  height: 1112px;
+}
+.app-check__header {
+  width: 791px;
+  height: 291px;
+  position: relative;
+}
+.app-check__body-days {
+  position: absolute;
+  top: 322px;
+  left: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 728px;
+  transform: translateX(-44%);
+}
+.app-check__body-days li {
+  position: relative;
+  background: url("../img/Layer749.png");
+  cursor: pointer;
+}
+.app-check__body-days li,
+.app-check__body-days em {
+  width: 83px;
+  height: 87px;
+  list-style: none;
+  text-align: center;
+  margin-right: 21px;
+  margin-bottom: 16px;
+  font-size: 30px;
+  line-height: 109px;
+  color: #cd3a30;
+  font-weight: 400;
+  font-family: "000 SignLanguage TB";
+}
+.app-check__body-days li.active,
+.app-check__body-days em.active {
+  background: url("../img/meochoitet.png");
+  color: #f9e2b6;
+}
+.app-check__body-days li.defaut,
+.app-check__body-days em.defaut {
+  filter: grayscale(1);
+}
+.app-check__body-days li.off,
+.app-check__body-days em.off {
+  filter: opacity(0.5);
+}
+.app-check__body-days em {
+  position: absolute;
+  top: -87px;
+  left: 0;
+}
+.app-check__body-weekday {
+  top: 240px;
+}
+.app-notify {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+.app-notify img {
+  margin-left: 30%;
+}
+.app-notify marquee {
+  margin-left: 20px;
+  font-size: 18px;
+  color: #fee99b;
+  font-weight: 700;
+  font-style: italic;
+  font-family: "Nunito";
+}
+.app-notify marquee a {
+  color: #f2462f;
+  text-decoration: none;
+}
+.app-lucky {
+  position: relative;
+}
+.app-lucky__logo {
+  margin-top: 53px;
+  display: flex;
+  justify-content: center;
+}
+.app-lucky__money {
+  position: relative;
+  background: url("../img/Group126.png") no-repeat;
+  width: 1306px;
+  height: 1067px;
+}
+.app-lucky__money img {
+  position: absolute;
+  top: 160px;
+  right: 160px;
+}
+.app-lucky__money > img {
+  top: unset;
+  left: -248px;
+  bottom: 14px;
+}
+.app-lucky__money-backgroup {
+  background: url("../img/6.png");
+  position: absolute;
+  top: 116px;
+  right: 456px;
+  width: 405px;
+  height: 477px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app-lucky__money-backgroup span {
+  position: absolute;
+  top: 302px;
+  width: 300px;
+  font-size: 47px;
+  line-height: 84px;
+  color: transparent;
+  background: linear-gradient(to bottom, #fecd43, #fce89b, #f9c945);
+  -webkit-background-clip: text;
+          background-clip: text;
+  font-weight: bold;
+  font-family: "U TM Avo Bold";
+  text-align: center;
+}
+.app-lucky__money-body {
+  position: absolute;
+  top: 603px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.app-lucky__money-body input {
+  width: 536px;
+  height: 70px;
+  padding: 29px 0 23px 41px;
+  border-radius: 5px;
+  background-color: #860b08;
+  border: 3px solid #f7b965;
+  outline: none;
+  font-size: 22px;
+  color: #f7b965;
+  font-family: "Myriad Pro";
+}
+.app-lucky__money-body button {
+  margin-top: 16px;
+  background: url("../img/5.png");
+  width: 394px;
+  height: 104px;
+  border: none;
+  font-size: 60px;
+  color: #cc2828;
+  font-weight: 400;
+  font-family: "000 SignLanguage TB";
+  filter: drop-shadow(0px 1px 0.5px #f9d8ba);
+  line-height: 120px;
+  cursor: pointer;
+  outline: none;
+}
+.app-lucky__bonus {
+  left: 300px;
+  right: 395px;
+  bottom: 31px;
+}
+.app-lucky__bonus span {
+  left: 6px;
+}
+.app-lucky__gift {
+  right: 226px;
+  bottom: 211px;
+  left: unset;
+}
+.app-lucky__alert {
+  position: absolute;
+  bottom: -17px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.app-turn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 61px;
+}
+.app-turn__header {
+  height: 224px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app-turn__header img:last-child {
+  margin-top: -22px;
+}
+.app-turn__body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 190px;
+}
+.app-turn__body button {
+  position: absolute;
+  width: 204px;
+  height: 232px;
+  background: url("../img/vongquay/tm1).png");
+  border: none;
+  cursor: pointer;
+  z-index: 4;
+}
+.app-turn__body img {
+  position: absolute;
+}
+.app-turn__body-img1 {
+  bottom: -170px;
+  left: 0;
+  z-index: 1;
+}
+.app-turn__body-img2 {
+  bottom: -153px;
+  right: 40px;
+  z-index: 2;
+}
+.app-turn__body-img3 {
+  z-index: 4;
+}
+.app-turn__body-img4 {
+  z-index: 4;
+}
+.app-turn__body-img5 {
+  z-index: 3;
+}
+.app-turn__body-gift {
+  top: -63px;
+  right: 207px;
+  left: unset;
+  z-index: 4;
+  width: 249px;
+  height: 177px;
+}
+.app-turn__body-gift span:last-child {
+  top: 71px;
+  font-size: 22px;
+  color: #9f0707;
+  font-family: "000 SignLanguage TB";
+}
+.app-turn__footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 152px;
+}
+.app-turn__footer > span {
+  font-size: 24px;
+  color: #ffde57;
+  font-weight: 900;
+  font-family: "Nunito";
+  text-align: center;
+  width: 465px;
+  height: 61px;
+  border-radius: 5px;
+  background-color: #860b08;
+  border: 3px solid #f7b965;
+  line-height: 61px;
+}
+.app-turn__footer > span > span {
+  color: #78ff00;
+}
+.app-turn__footer-buy {
+  display: flex;
+}
+.app-turn__footer-buy__menu:hover .app-much {
+  display: flex;
+}
+.app-turn__footer-buy__menu > button {
+  cursor: pointer;
+  width: 322px;
+  height: 82px;
+  background: url("../img/Layer817.png");
+  border: none;
+  font-size: 24px;
+  color: #9e0202;
+  font-weight: 900;
+  font-family: "Nunito";
+}
+.app-turn__footer-buy__menu > button img {
+  margin-left: 17px;
+}
+.app-turn__footer-buy > button {
+  cursor: pointer;
+  width: 322px;
+  height: 82px;
+  background: url("../img/Layer817.png");
+  border: none;
+  font-size: 24px;
+  color: #9e0202;
+  font-weight: 900;
+  font-family: "Nunito";
+}
+.app-turn__footer-buy > button img {
+  margin-left: 17px;
+}
+.app-turn__footer-poin {
+  margin-top: 20px;
+}
+.app-turn__footer-times {
+  margin-top: 16px;
+}
+.app-turn__list {
+  position: relative;
+  width: 640px;
+  height: 640px;
+  z-index: 3;
+}
+.app-turn__list li {
+  position: absolute;
+  list-style: none;
+}
+.app-turn__list li em {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(to top, #fbd110, #ebce57);
+  display: none;
+  z-index: -1;
+}
+.app-turn__list li.active {
+  filter: drop-shadow(3px 4px 10px #ec0000);
+}
+.app-turn__list li.active img {
+  filter: drop-shadow(0 0 6px #fff);
+}
+.app-turn__list li.active em {
+  display: block;
+}
+.app-turn__list-item1 {
+  width: 102px;
+  height: 125px;
+  top: 45px;
+  right: 210px;
+}
+.app-turn__list-item1 em {
+  right: -187px;
+  top: -75px;
+  -webkit-clip-path: polygon(16% 5%, 14% 100%, 66% 8%);
+          clip-path: polygon(16% 5%, 14% 100%, 66% 8%);
+}
+.app-turn__list-item2 {
+  width: 126px;
+  height: 106px;
+  top: 96px;
+  right: 90px;
+}
+.app-turn__list-item2 em {
+  right: -119px;
+  top: -130px;
+  -webkit-clip-path: polygon(85% 50%, 0 100%, 60% 0);
+          clip-path: polygon(85% 50%, 0 100%, 60% 0);
+}
+.app-turn__list-item3 {
+  width: 116px;
+  height: 110px;
+  top: 200px;
+  right: 54px;
+}
+.app-turn__list-item3 em {
+  -webkit-clip-path: polygon(100% 98%, 1% 99%, 100% 44%);
+          clip-path: polygon(100% 98%, 1% 99%, 100% 44%);
+  top: -230px;
+  right: -83px;
+}
+.app-turn__list-item4 {
+  width: 116px;
+  height: 65px;
+  top: 336px;
+  right: 48px;
+}
+.app-turn__list-item4 em {
+  -webkit-clip-path: polygon(85% 100%, 0% 52%, 100% 53%);
+          clip-path: polygon(85% 100%, 0% 52%, 100% 53%);
+  top: -199px;
+  right: -79px;
+}
+.app-turn__list-item5 {
+  width: 116px;
+  height: 117px;
+  top: 430px;
+  right: 94px;
+}
+.app-turn__list-item5 em {
+  -webkit-clip-path: polygon(49% 100%, 0% 19%, 100% 79%);
+          clip-path: polygon(49% 100%, 0% 19%, 100% 79%);
+  top: -178px;
+  right: -123px;
+}
+.app-turn__list-item6 {
+  width: 105px;
+  height: 127px;
+  top: 481px;
+  right: 197px;
+}
+.app-turn__list-item6 em {
+  -webkit-clip-path: polygon(1% 100%, 0% 1%, 48% 86%);
+          clip-path: polygon(1% 100%, 0% 1%, 48% 86%);
+  top: -161px;
+  right: -226px;
+}
+.app-turn__list-item12 {
+  width: 100px;
+  height: 132px;
+  top: 29px;
+  left: 206px;
+}
+.app-turn__list-item12 em {
+  -webkit-clip-path: polygon(0% 22%, 101% 84%, 0% 79%);
+          clip-path: polygon(0% 22%, 101% 84%, 0% 79%);
+  top: -102px;
+  right: -192px;
+  transform: rotate(58deg);
+}
+.app-turn__list-item11 {
+  width: 134px;
+  height: 142px;
+  top: 80px;
+  left: 83px;
+}
+.app-turn__list-item11 em {
+  -webkit-clip-path: polygon(0% 27%, 100% 82%, 0% 81%);
+          clip-path: polygon(0% 27%, 100% 82%, 0% 81%);
+  top: -124px;
+  right: -178px;
+  transform: rotate(30deg);
+}
+.app-turn__list-item10 {
+  width: 123px;
+  height: 110px;
+  top: 190px;
+  left: 30px;
+}
+.app-turn__list-item10 em {
+  -webkit-clip-path: polygon(0% 29%, 93% 82%, 0% 81%);
+          clip-path: polygon(0% 29%, 93% 82%, 0% 81%);
+  top: -161px;
+  right: -185px;
+}
+.app-turn__list-item9 {
+  width: 119px;
+  height: 99px;
+  top: 332px;
+  left: 34px;
+}
+.app-turn__list-item9 em {
+  -webkit-clip-path: polygon(0% 43%, 89% 43%, 0% 94%);
+          clip-path: polygon(0% 43%, 89% 43%, 0% 94%);
+  top: -161px;
+  right: -185px;
+}
+.app-turn__list-item8 {
+  width: 114px;
+  height: 113px;
+  top: 428px;
+  left: 95px;
+}
+.app-turn__list-item8 em {
+  -webkit-clip-path: polygon(-4% 63%, 77% 15%, 28% 99%);
+          clip-path: polygon(-4% 63%, 77% 15%, 28% 99%);
+  top: -161px;
+  right: -185px;
+}
+.app-turn__list-item7 {
+  width: 90px;
+  height: 125px;
+  top: 479px;
+  left: 209px;
+}
+.app-turn__list-item7 em {
+  -webkit-clip-path: polygon(0% 93%, 52% 0%, 51% 100%);
+          clip-path: polygon(0% 93%, 52% 0%, 51% 100%);
+  top: -161px;
+  right: -185px;
+}/*# sourceMappingURL=style.css.map */

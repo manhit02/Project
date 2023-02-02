@@ -1,0 +1,42 @@
+@media (max-width:1023px) {
+    .app {
+        &-help {
+            &__body {
+                overflow-y: auto;
+                img {
+                    width: 100%;
+                    margin: 0 0 34px 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:739px) {
+    .app {
+        &-highlight {
+            &__btn {
+                min-width: unset;
+                flex-direction: column;
+                &-item {
+                    width: 100%;
+                    font-size: 12px;
+                    &:nth-child(1) {
+                        margin: 0;
+                    }
+                    &:nth-child(3) {
+                        line-height: unset;
+                    }
+                }
+            }
+        }
+        &-adv {
+            img {
+                &:nth-child(1) {
+                    width: 100%;
+                    right: unset;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+@media (max-width:1023px) {
+    .app {
+        &-highlight {
+            &__btn {
+                &-item {
+                    width: 100%;
+                }
+            }
+        }
+        &-help {
+            &__catalogue {
+                height: 1253px;
+            }
+            &__body {
+                overflow-y: auto;
+                flex-direction: unset;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+        &-even {
+            width: 100%;
+        }
+        &-table {
+            width: 100%;
+        }
+        &-tablem {
+            width: 100%;
+        }
+        &-result {
+            width: 100%;
+            .app-tablem {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width:739px) {
+    .app {
+        &-help {
+            height: 100%;
+        }
+        &-highlight {
+            &__btn {
+                flex-direction: column;
+                &-item {
+                    width: 100%;
+                    margin-right: unset;
+                    font-size: 12px;
+                    line-height: 36px;
+                }
+            }
+        }
+        &-table {
+            width: 100%;
+            thead {
+                tr {
+                    th {
+                        padding-left: 12px;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    th {
+                        padding-left: 12px;
+                    }
+                }
+            }
+        }
+        &-tablem {
+            width: 100%;
+            thead {
+                tr {
+                    th {
+                        font-size: 12px;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    th {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        &-result {
+            & {
+                .app-tablem {
+                    width: 100%;
+                    &__body {
+                        tbody {
+                            tr {
+                                th {
+                                    &:nth-child(3),
+                                    &:nth-child(4) {
+                                        span {
+                                            left: 0px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-adv {
+            img {
+                &:nth-child(1) {
+                    right: unset;
+                }
+            }
+        }
+    }
+}

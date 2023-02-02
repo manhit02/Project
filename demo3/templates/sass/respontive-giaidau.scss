@@ -1,0 +1,47 @@
+@media (max-width:1023px) {
+    .app {
+        &-highlight {
+            &__btn {
+                top: 52px;
+                right: unset;
+            }
+        }
+        &-news {
+            &__body {
+                margin-top: 42px;
+            }
+        }
+    }
+}
+
+@media (max-width:739px) {
+    .app {
+        & .app-row {
+            margin-bottom: 60px;
+        }
+        &-highlight {
+            &__btn {
+                top: 60px;
+                left: unset;
+                right: unset;
+                transform: unset;
+                &-item {
+                    font-size: 12px;
+                    &1 {
+                        margin-top: 0;
+                    }
+                    &4 {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        &-adv {
+            img {
+                &:nth-child(3) {
+                    margin-bottom: 200px !important;
+                }
+            }
+        }
+    }
+}

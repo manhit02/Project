@@ -1,0 +1,70 @@
+$width:2000px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    &-nav {
+        position: fixed;
+        right: 10px;
+        top: 120px;
+        display: flex;
+        flex-direction: column;
+        width: 186px;
+        z-index: 10;
+        li {
+            list-style: none;
+        }
+        a {
+            @extend .flex;
+            background: url("../img/Layer828.png");
+            width: 186px;
+            height: 69px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #b60400;
+            font-weight: 400;
+            font-family: "000 SignLanguage TB";
+        }
+        &__heading {
+            width: 174px !important;
+            height: 196px !important;
+            background: url("../img/Layer829.png") !important;
+            position: absolute;
+            top: -108px;
+            z-index: -1;
+        }
+        &__movtop {
+            @extend .flex;
+            position: absolute;
+            bottom: -154px;
+            background: url("../img/Layer830.png");
+            width: 95px;
+            height: 158px;
+            cursor: pointer;
+            left: 50%;
+            transform: translateX(-50%);
+            span {
+                font-size: 23px;
+                color: transparent;
+                background: linear-gradient(to bottom, #ffff00, #ffa000, #ffff00);
+                background-clip: text;
+                font-weight: 400;
+                font-family: "000 SignLanguage TB";
+                margin-top: -39px;
+            }
+        }
+    }
+}

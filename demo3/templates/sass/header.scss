@@ -1,0 +1,106 @@
+.header {
+    height: 177px;
+    background: linear-gradient(to bottom, #0b1020, #2c385f);
+    &-heading {
+        padding-top: 42px;
+        &__download {
+            background: url("../aseets/images/tailauncherbtn.jpg") no-repeat center;
+            background-size: contain;
+            width: 214px;
+            height: 49px;
+            font-family: 'UTM Centur';
+            font-size: 16px;
+            color: #fff;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            &:hover {
+                color: red;
+            }
+        }
+        &__logo {
+            width: 420px;
+            height: 51px;
+            background: url("../aseets/images/franchise-logo-horiz.png") no-repeat center;
+            background-size: contain;
+            cursor: pointer;
+        }
+        &__icon {
+            background: url("../aseets/images/search.png") no-repeat center;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            text-decoration: none;
+            &:hover {
+                filter: hue-rotate(200deg);
+            }
+        }
+    }
+    &-nav {
+        display: flex;
+        justify-content: space-between;
+        z-index: 1;
+        &__item {
+            list-style: none;
+            cursor: pointer;
+            a {
+                position: relative;
+                font-family: 'UTM Centur';
+                font-size: 16px;
+                color: transparent;
+                background: linear-gradient(to bottom, #d7d5bd, #ffb16e);
+                background-clip: text;
+                -webkit-background-clip: text;
+                text-transform: uppercase;
+                font-weight: 600;
+                margin-top: 42px;
+                display: block;
+                text-indent: 2px;
+                text-align: center;
+                text-decoration: none;
+                &:hover {
+                    color: red;
+                }
+            }
+            a::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: 16px;
+                color: transparent;
+                text-shadow: 0 0 2px #4f2f26, 0 0 2px #4f2f26;
+                font-weight: 600;
+                display: block;
+                font-family: 'UTM Centur';
+                z-index: -1;
+            }
+        }
+        &__item1 {
+            a::after {
+                content: "tin tức";
+            }
+        }
+        &__item2 {
+            a::after {
+                content: "giải đấu";
+            }
+        }
+        &__item3 {
+            a::after {
+                content: "videos";
+            }
+        }
+        &__item4 {
+            a::after {
+                content: "hướng dẫn";
+            }
+        }
+        &__item5 {
+            a::after {
+                content: "cộng đồng";
+            }
+        }
+    }
+}

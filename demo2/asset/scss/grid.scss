@@ -1,0 +1,44 @@
+@use "sass.math";
+$maxwidth:2000px;
+$padding-x:5px;
+$grid-column:12;
+.grid {
+    width: 100%;
+    padding: 0;
+    display: block;
+}
+
+.wide {
+    max-width: $maxwidth;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -$padding-x;
+    margin-right: -$padding-x;
+}
+
+.row.center {
+    align-items: center;
+    justify-content: center;
+}
+
+.row.no-gutters {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.col {
+    padding-left: $padding-x;
+    padding-right: $padding-x;
+}
+
+.row.no-gutters .col {
+    padding-left: 0;
+    padding-right: 0;
+}
+@for $i from 1 through $grid-column{
+
+}

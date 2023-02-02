@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'UTM Talling';
+    src: url('../aseets/fonts/00176-UTM-Talling.ttf');
+}
+
+@font-face {
+    font-family: 'UTM Neo Sans';
+    src: url('../aseets/fonts/UTMNeoSansIntel.ttf');
+}
+
+.header {
+    position: relative;
+    &>img {
+        position: absolute;
+        bottom: -20px;
+        width: 100%;
+    }
+    height: 1048px;
+    background: url("../aseets/images/Layer825.jpg") no-repeat center;
+    background-size: cover;
+    &-logo {
+        margin-left: 10%;
+    }
+    &-login {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 35px;
+        border: none;
+        background: url("../aseets/images/Layer148copy5.png") no-repeat center;
+        background-size: contain;
+        color: #f9e5a7;
+        width: 100%;
+        span {
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        &__background {
+            position: absolute;
+            top: 0;
+            z-index: -1;
+        }
+        &__user {
+            filter: #f9e5a7;
+            margin-right: 12px;
+        }
+    }
+    &-nav__left,
+    &-nav__right {
+        margin-top: 54px;
+        font-size: 30px;
+        font-family: 'UTM Talling';
+        display: flex;
+        flex-wrap: wrap;
+        a {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #0efeff;
+            width: 264px;
+            height: 97px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            background: url("../aseets/images/Group4copy2.png") no-repeat center;
+            background-size: contain;
+            &:hover {
+                color: red;
+                cursor: pointer;
+            }
+            &.active {
+                color: #ffff4d;
+                text-shadow: 0 0 2px #000, 0 0 2px #000, 0 0 2px #000;
+                background: url("../aseets/images/Group41.png") no-repeat center;
+                background-size: contain;
+                &:hover {
+                    color: red;
+                    cursor: pointer;
+                }
+            }
+            img {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 264px;
+                height: 97px;
+                z-index: -1;
+            }
+        }
+    }
+    &-nav__left {
+        justify-content: end;
+        &-item {
+            &1 {
+                margin-right: 25%;
+            }
+            &2 {
+                margin-right: 35%;
+            }
+            &3 {
+                margin-right: 45%;
+            }
+            &4 {
+                margin-right: 45%;
+            }
+        }
+    }
+    &-nav__right {
+        &-item {
+            &1 {
+                margin-left: 25%;
+            }
+            &2 {
+                margin-left: 35%;
+            }
+            &3 {
+                margin-left: 45%;
+            }
+            &4 {
+                margin-left: 45%;
+            }
+        }
+    }
+    &-dowload {
+        position: fixed;
+        right: 10px;
+        top: 20px;
+        z-index: 10;
+        &__btn {
+            width: 100%;
+            height: 61px;
+            background: url("../aseets/images/Group61.png") center no-repeat;
+            background-size: contain;
+            border: none;
+            outline: none;
+        }
+        &__body {
+            width: 100%;
+            height: 205px;
+            background: url("../aseets/images/Group622.png") no-repeat;
+            display: flex;
+            background-size: cover;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 12px;
+        }
+        a {
+            font-family: 'UTM Neo Sans';
+            color: #fff;
+            font-size: 18px;
+            text-transform: uppercase;
+            &:nth-child(2) {
+                margin-top: 28px;
+                margin-bottom: 12px;
+            }
+        }
+        iframe {
+            width: 100%;
+            height: 105px;
+            border: 1px solid #192343;
+        }
+    }
+}

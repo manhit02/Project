@@ -1,0 +1,42 @@
+@media (max-width:1023px) {
+    .app {
+        &-help {
+            &__body {
+                overflow-y: auto;
+                img {
+                    width: 100%;
+                    margin: 0 0 34px 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:739px) {
+    .app {
+        &-help {
+            &__catalogue {
+                padding: 24px 12px !important;
+                li {
+                    width: unset;
+                    font-size: 12px;
+                    &:first-child {
+                        font-size: 14px;
+                    }
+                    &::after {
+                        left: -7px;
+                        top: 8px;
+                        width: 0;
+                        height: 0;
+                        border-top: 2px solid transparent;
+                        border-left: 4px solid aqua;
+                        border-bottom: 2px solid transparent;
+                    }
+                }
+            }
+            &__body {
+                padding: 24px 12px !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,549 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 2000px;
+  max-width: 2000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+img {
+  width: auto;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../img/clip.png") top center no-repeat;
+  height: 955px;
+  overflow: hidden;
+}
+.header-cloud {
+  position: absolute;
+  top: 0;
+  height: 955px;
+}
+.header-logo {
+  width: 733px;
+  height: 494px;
+  z-index: 1;
+  margin-top: -270px;
+  margin-left: 30px;
+}
+.header-even {
+  position: absolute;
+  top: 450px;
+  display: flex;
+}
+.header-even__item {
+  background: url("../img/landingsinhnhat.png");
+  position: relative;
+  cursor: pointer;
+  width: 253px;
+  height: 230px;
+}
+.header-even__item::after {
+  content: "LAN ĐING SINH NHẬT";
+  width: 112px;
+  display: block;
+  position: absolute;
+  top: 80px;
+  left: 90px;
+  font-size: 20.74px;
+  font-family: "UVN Mang Tre";
+  letter-spacing: 0px;
+  text-align: center;
+  line-height: 18px;
+  color: transparent;
+  text-shadow: -8px 1px 1px rgba(0, 0, 0, 0.2509803922), -8px 1px 1px rgba(0, 0, 0, 0.2509803922);
+}
+.header-even__item-2 {
+  margin-top: 103px;
+}
+.header-even__item-2::after {
+  content: "NGÀY HỘI TRÍ TUỆ";
+  width: 102px;
+  height: 45PX;
+}
+.header-even__item-3 {
+  margin-top: 103px;
+  margin-left: 16px;
+}
+.header-even__item-3::after {
+  content: "NGÀY HỘI SỨC MẠNH";
+}
+.header-even__item-4 {
+  margin-top: -18px;
+  margin-left: -40px;
+}
+.header-even__item-4::after {
+  content: "GALA SINH NHẬT ITC 17";
+  font-size: 18px;
+  left: 73px;
+  width: 146px;
+}
+.header-even__item-4 span {
+  left: 70px;
+  letter-spacing: -2px;
+}
+.header-even__item-4 span:first-child {
+  font-size: 18px;
+  left: 73px;
+}
+.header-even__item-4 span:last-child {
+  left: 100px;
+  letter-spacing: 0;
+}
+.header-even span {
+  position: absolute;
+  top: 80px;
+  left: 90px;
+  font-size: 20.74px;
+  font-family: "UVN Mang Tre";
+  letter-spacing: 0px;
+  text-align: center;
+  line-height: 18px;
+  color: transparent;
+  background: linear-gradient(to bottom, #de8b14, #ffffff, #f2cb4c);
+  -webkit-background-clip: text;
+          background-clip: text;
+  z-index: 1;
+}
+.header-even span:last-child {
+  top: 136px;
+  font-family: "iCiel Stabile";
+  color: #feee3c;
+}
+.header-tabs {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+.header-tabs__item {
+  position: relative;
+  cursor: pointer;
+}
+.header-tabs a {
+  position: absolute;
+  top: 65px;
+  font-family: "UTM Netmuc KT";
+  font-size: 36px;
+  color: #492009;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.header-menu {
+  position: fixed;
+  top: 160px;
+  margin-left: 1000px;
+  height: 347px;
+  z-index: 5;
+}
+.header-menu__list {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.header-menu__list-item:nth-child(2), .header-menu__list-item:nth-child(4) {
+  margin: 10px 0px;
+}
+.header-menu__list-item {
+  cursor: pointer;
+}
+
+.section {
+  overflow-x: hidden;
+  background: url("../img/bg .png") top center no-repeat;
+  padding-top: 76px;
+}
+.section-rules {
+  position: relative;
+  margin-left: 22%;
+  width: 900px;
+  z-index: 1;
+}
+.section-rules img {
+  position: absolute;
+  top: 10px;
+  right: 70px;
+  cursor: pointer;
+}
+.section-rules span {
+  font-size: 135px;
+  line-height: 100px;
+  background: linear-gradient(to bottom, #fdf447, #ffa626);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-family: "UTM Ong Do Gia";
+}
+.section-rules span::after {
+  content: "Tôi ra đây có phải";
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-shadow: 0px 0px 10px #fded45, 0px 0px 10px #fded45;
+  font-family: "UTM Ong Do Gia";
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-size: 135px;
+  line-height: 100px;
+  font-size: 135px;
+  z-index: -1;
+  opacity: 0.4;
+}
+.section-rules-1 img {
+  top: 5px;
+}
+.section-rules-1 span {
+  font-size: 80px;
+}
+.section-rules-1 span:nth-child(2) {
+  font-size: 135px;
+  margin-left: 80px;
+}
+.section-rules-1 span:nth-child(2)::after {
+  content: "Xưng danh";
+  top: 100px;
+  font-size: 135px;
+  left: 70px;
+}
+.section-rules-1 span:nth-child(3)::after {
+  font-size: 80px;
+  content: "không nhỉ";
+  top: 116px;
+  left: 545px;
+}
+.section-rules-1 span::after {
+  font-size: 80px;
+}
+.section-rules-2 span {
+  display: block;
+  margin-left: 50px;
+  height: 142px;
+}
+.section-rules-2 span::after {
+  content: "Gieo quẻ";
+  left: 45px;
+}
+.section-rules-3 span::after {
+  content: "ITC và bạn";
+  left: -5px;
+}
+.section-regiter {
+  margin-left: 22%;
+}
+.section-regiter input {
+  padding: 12px;
+  color: #727272;
+  font-size: 26px;
+  margin-bottom: 25px;
+  width: 625px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+.section-regiter__input {
+  margin-top: 70px;
+}
+.section-regiter__input span {
+  display: inline-block;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 26px;
+  width: 150px;
+}
+.section-regiter__random {
+  position: relative;
+  margin-top: 23px;
+  margin-bottom: 149px;
+}
+.section-regiter__random span {
+  position: absolute;
+  top: 100px;
+  left: 215px;
+  color: #dd2bab;
+  font-size: 26px;
+  text-align: center;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Merriweather";
+}
+.section-regiter__random span:last-child {
+  font-size: 76px;
+  font-family: "UTM Netmuc KT";
+  position: absolute;
+  top: 140px;
+  left: 380px;
+  font-style: unset;
+}
+.section-bonus {
+  margin-top: 48px;
+}
+.section-bonus__many {
+  display: flex;
+  align-items: center;
+  margin-left: -46px;
+}
+.section-bonus__many-group {
+  position: relative;
+  cursor: pointer;
+}
+.section-bonus__many span {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  text-align: center;
+  font-size: 30px;
+  color: #fff664;
+  font-family: "UTM Ong Do Gia";
+  width: 100%;
+  letter-spacing: -3px;
+}
+.section-bonus__day {
+  display: flex;
+}
+.section-bonus__day-group {
+  position: relative;
+  cursor: pointer;
+}
+.section-bonus__day-group span {
+  position: absolute;
+  top: 35px;
+  left: -3px;
+  color: red;
+  font-family: "UTM Netmuc KT";
+  font-size: 50px;
+  text-align: center;
+  width: 100%;
+  margin: 0 !important;
+  font-weight: 600;
+}
+.section-bonus__day-group.active span {
+  color: #1dae21;
+}
+.section-bonus__day-group.active::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+  border: 4px solid #1dae21;
+}
+.section-bonus__day-group.active::before {
+  content: "";
+  position: absolute;
+  right: 22px;
+  bottom: 16px;
+  width: 22px;
+  height: 23px;
+  border-radius: 50%;
+  background: #fff;
+  background-image: url("../img/Shape1.png");
+  z-index: 1;
+}
+.section-bonus__day-group.defaut span {
+  color: #757575;
+}
+.section-bonus__day-group.defaut::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+  border: 4px solid #757575;
+}
+.section-bonus__day-group.defaut::before {
+  content: "";
+  position: absolute;
+  right: 22px;
+  bottom: 16px;
+  width: 22px;
+  height: 23px;
+  border-radius: 50%;
+  background: #fff;
+  background-image: url("../img/VectorSmartObject.png");
+  z-index: 1;
+}
+.section-bonus > span {
+  display: block;
+  margin-top: 56px;
+  margin-bottom: 24px;
+  margin-left: 170px;
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Merriweather";
+}
+.section-bonus__group {
+  margin-left: 164px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 189px;
+}
+.section-bonus__group-act {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Merriweather";
+  margin-left: 160px;
+}
+.section-bonus__group-act a {
+  text-decoration: none;
+  color: #20e2ff;
+}
+.section-bonus__group-act img {
+  margin-top: 90px;
+  cursor: pointer;
+}
+.section-community {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.section-community__photo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.section-community__photo div {
+  border: 1px solid #feda3c;
+  padding: 10px;
+  box-shadow: 1px 1px 28px #feda3c, inset 1px 1px 28px #feda3c;
+  margin: 0 24px;
+}
+.section-community__photo-next, .section-community__photo-pre {
+  cursor: pointer;
+}
+.section-community__des {
+  margin-left: -165px;
+  margin-top: -45px;
+}
+.section-community__nav {
+  margin: 36px auto 90px;
+  display: flex;
+  align-items: center;
+  position: unset;
+  width: unset;
+}
+.section-community__nav span {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ff69c1;
+  margin: 0 16px;
+}
+.section-community__nav span.active {
+  border-radius: 5px;
+  width: 82px;
+  background: #fff;
+}
+.section-community__send {
+  margin-bottom: 110px;
+  cursor: pointer;
+}
+.section .left.carousel-control,
+.section .right.carousel-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.footer {
+  background: #1a1a1a;
+  display: flex;
+  padding: 36px 0;
+  align-items: center;
+  justify-content: center;
+  height: 228px;
+  color: #fff;
+}
+.footer span {
+  font-size: 24px;
+}
+.footer a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+}
+.footer-logo img {
+  width: 82px;
+  height: 36px;
+  margin-bottom: 24px;
+}
+.footer-logo span {
+  letter-spacing: -2px;
+}
+.footer-info {
+  margin: 0px 110px 0 65px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-info__contact, .footer-info__boss {
+  display: flex;
+  flex-direction: column;
+}
+.footer-info__boss {
+  margin-bottom: 32px;
+}
+.footer-info__contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-info__contact div {
+  display: flex;
+  flex-direction: column;
+}
+.footer-info__contact div a {
+  margin-left: 24px;
+}
+.footer-info__contact div i {
+  margin-bottom: 10px;
+}
+.footer-address div {
+  display: flex;
+  flex-direction: column;
+}
+.footer-address div:first-child {
+  margin-bottom: 32px;
+}
+.footer > .container {
+  flex-direction: unset;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,81 @@
+/* tablet and mobile */
+
+@media (max-width:1023px) {
+    .header {}
+    .app {}
+}
+
+
+/* tablet */
+
+@media (min-width:740px) and (max-width:1023px) {
+    .container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .header {
+        &-nav {
+            li {
+                a {
+                    font-size: 10px;
+                }
+            }
+            &__login {
+                display: flex;
+                button {
+                    padding: 8px 6px;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .app {
+        &-heading {
+            font-size: 30px;
+        }
+        &-more {
+            width: 100px;
+        }
+        &-dowload {
+            padding-bottom: 27px;
+            &__btn {
+                &-item {
+                    padding: 24px 12px;
+                    max-width: 200px;
+                    height: 75px;
+                    font-size: 12px;
+                }
+            }
+            &__slider {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        &-news {
+            &__btn {
+                button {
+                    font-size: 20px;
+                }
+            }
+            &__body {
+                &-item {
+                    span {
+                        font-size: 18px;
+                        &:last-child {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* mobile */
+
+@media (max-width:739px) {
+    .header {}
+    .app {}
+}

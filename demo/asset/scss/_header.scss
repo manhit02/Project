@@ -1,0 +1,172 @@
+$width:2000px;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 2000px;
+    max-width: 2000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+img {
+    width: auto;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../img/clip.png") top center no-repeat;
+    height: 955px;
+    overflow: hidden;
+    &-cloud {
+        position: absolute;
+        top: 0;
+        height: 955px;
+    }
+    &-logo {
+        width: 733px;
+        height: 494px;
+        z-index: 1;
+        margin-top: -270px;
+        margin-left: 30px;
+    }
+    &-even {
+        position: absolute;
+        top: 450px;
+        display: flex;
+        &__item {
+            background: url("../img/landingsinhnhat.png");
+            position: relative;
+            cursor: pointer;
+            width: 253px;
+            height: 230px;
+            &::after {
+                content: "LAN ĐING SINH NHẬT";
+                width: 112px;
+                display: block;
+                position: absolute;
+                top: 80px;
+                left: 90px;
+                font-size: 20.74px;
+                font-family: "UVN Mang Tre";
+                letter-spacing: 0px;
+                text-align: center;
+                line-height: 18px;
+                color: transparent;
+                text-shadow: -8px 1px 1px #00000040, -8px 1px 1px #00000040;
+            }
+            &-2 {
+                margin-top: 103px;
+                &::after {
+                    content: "NGÀY HỘI TRÍ TUỆ";
+                    width: 102px;
+                    height: 45PX;
+                }
+            }
+            &-3 {
+                &::after {
+                    content: "NGÀY HỘI SỨC MẠNH";
+                }
+                margin-top: 103px;
+                margin-left: 16px;
+            }
+            &-4 {
+                margin-top: -18px;
+                margin-left: -40px;
+                &::after {
+                    content: "GALA SINH NHẬT ITC 17";
+                    font-size: 18px;
+                    left: 73px;
+                    width: 146px;
+                }
+                span {
+                    left: 70px;
+                    letter-spacing: -2px;
+                }
+                span:first-child {
+                    font-size: 18px;
+                    left: 73px;
+                }
+                span:last-child {
+                    left: 100px;
+                    letter-spacing: 0;
+                }
+            }
+        }
+        span {
+            position: absolute;
+            top: 80px;
+            left: 90px;
+            font-size: 20.74px;
+            font-family: "UVN Mang Tre";
+            letter-spacing: 0px;
+            text-align: center;
+            line-height: 18px;
+            color: transparent;
+            background: linear-gradient(to bottom, #de8b14, #ffffff, #f2cb4c);
+            background-clip: text;
+            z-index: 1;
+        }
+        span:last-child {
+            top: 136px;
+            font-family: "iCiel Stabile";
+            color: #feee3c;
+        }
+    }
+    &-tabs {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: space-between;
+        z-index: 1;
+        &__item {
+            position: relative;
+            cursor: pointer;
+        }
+        a {
+            position: absolute;
+            top: 65px;
+            font-family: "UTM Netmuc KT";
+            font-size: 36px;
+            color: #492009;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+        }
+    }
+    &-menu {
+        position: fixed;
+        top: 160px;
+        margin-left: 1000px;
+        height: 347px;
+        z-index: 5;
+        &__list {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            &-item:nth-child(2),
+            &-item:nth-child(4) {
+                margin: 10px 0px;
+            }
+            &-item {
+                cursor: pointer;
+            }
+        }
+    }
+}

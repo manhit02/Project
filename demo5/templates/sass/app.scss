@@ -1,0 +1,175 @@
+.slider {
+    background: url("../assets/images/Layer7651.jpg") top center / cover no-repeat;
+    padding-top: 32%;
+    & .app-control {
+        margin-top: -20px;
+    }
+}
+
+.app {
+    &-heading {
+        font-size: 35px;
+        font-family: 'JosefinSans-bold';
+        color: #1373c5;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 56px;
+    }
+    &-more {
+        position: absolute;
+        bottom: 37px;
+        right: 10%;
+        width: 140px;
+        height: 39px;
+        background: transparent;
+        color: #1373c5;
+        border: 1px solid #58b2ff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+            display: block;
+            width: 0;
+            height: 0;
+            border-top: 9px solid transparent;
+            border-left: 9px solid #58b2ff;
+            border-bottom: 9px solid transparent;
+            margin-left: 9px;
+            &:last-child {
+                margin-left: 4px;
+            }
+        }
+    }
+    &-control {
+        display: flex;
+        width: 100%;
+        height: 4px;
+        margin-top: 12px;
+        justify-content: center;
+        span {
+            cursor: pointer;
+            width: 90px;
+            height: 4px;
+            background: #2a5878;
+            margin-right: 4px;
+            &.active {
+                background: #23c0f4;
+            }
+        }
+    }
+    &-dowload {
+        background: url("../assets/images/Untitled-1.jpg") top center/cover no-repeat;
+        padding-top: 27px;
+        & .app-control {
+            margin-bottom: 29px;
+        }
+        &__body {
+            display: flex;
+        }
+        &__btn {
+            display: flex;
+            flex-direction: column;
+            margin-right: 30px;
+            &-item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                max-width: 360px;
+                width: 360px;
+                height: 124px;
+                margin-bottom: 14px;
+                font-size: 16px;
+                font-family: 'JosefinSans-bold';
+                color: #fff;
+                padding: 46px 35px;
+                &.active {
+                    color: #142163;
+                }
+                &:hover {
+                    color: #142163;
+                }
+                &1 {
+                    background: linear-gradient(to right, #ff902e, #af2fff);
+                }
+                &2 {
+                    background: linear-gradient(to right, #b32eff, #004deb);
+                }
+                &3 {
+                    background: linear-gradient(to right, #0072ff, #44fff8);
+                    margin-bottom: 0;
+                }
+                &.active {
+                    color: #142163;
+                }
+            }
+        }
+        &__slider {
+            width: 80%;
+        }
+    }
+    &-news {
+        position: relative;
+        background: url('../assets/images/1.jpg') top center /cover no-repeat;
+        padding-top: 46px;
+        padding-bottom: 37px;
+        & .app-control {
+            margin-top: 62px;
+        }
+        &__btn {
+            display: flex;
+            margin-bottom: 41px;
+            button {
+                font-size: 24px;
+                line-height: 44px;
+                font-family: 'JosefinSans-bold';
+                color: #1373c5;
+                background: transparent;
+                width: 50%;
+                &.active {
+                    border-bottom: 5px solid #58b2ff;
+                }
+                &:hover {
+                    border-bottom: 5px solid rgba(88, 178, 255, 0.5);
+                }
+            }
+        }
+        &__body {
+            display: flex;
+            justify-content: space-between;
+            &-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 25%;
+                img {
+                    width: 90%;
+                }
+                span {
+                    font-size: 24px;
+                    font-family: 'JosefinSans-bold';
+                    color: #1373c5;
+                    text-align: center;
+                    margin-top: 21px;
+                    width: 80%;
+                    &:last-child {
+                        color: #535353;
+                        font-size: 14px;
+                        font-family: 'JosefinSans';
+                    }
+                }
+            }
+        }
+    }
+    &-help {
+        position: relative;
+        background: url('../assets/images/Layer1.jpg') top center /cover no-repeat;
+        padding-top: 46px;
+        padding-bottom: 37px;
+        & .app-heading {
+            color: #fff;
+        }
+        & .app-control {
+            margin-top: 62px;
+        }
+    }
+}

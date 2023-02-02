@@ -1,0 +1,220 @@
+.app
+    img(src="../aseets/images/Layer11.png")
+    .grid.wide
+        .app-heading
+            span đại lộ danh vọng
+        .app-btn
+            button
+                span.active.js-toggleControl đại gia phục kích
+            button
+                span.js-toggleControl vip phục kích
+        .app-rankings
+            img.app-rankings__logo(src="../aseets/images/daigiaphuckich1.png")
+            .row
+                    .app-rankings__item.app-rankings__item1.col-lg-4.col-sm-4.col-md-4
+                        img.app-rankings__item-avata(src="../aseets/images/22.png")
+                        span triple123
+                        span lực chiến: <strong>1703576</strong>
+                        span server 1
+                    .app-rankings__item.app-rankings__item2.col-lg-4.col-sm-4.col-md-4
+                        img.app-rankings__item-avata(src="../aseets/images/Group351.png")
+                        span triple123
+                        span lực chiến: <strong>1703576</strong>
+                        span server 1
+                    .app-rankings__item.app-rankings__item3.col-lg-4.col-sm-4.col-md-4
+                        img.app-rankings__item-avata(src="../aseets/images/Group35copy21.png")
+                        span triple123
+                        span lực chiến: <strong>1703576</strong>
+                        span server 1
+            .row.center
+                button.app-rankings__btn.app-rankings__btn1.active.js-toggleControl tuần
+                button.app-rankings__btn.app-rankings__btn2.js-toggleControl tháng
+                button.app-rankings__btn.app-rankings__btn3.js-toggleControl năm
+            .row
+                .col-lg-12.col-md-12.col-sm-12
+                    .app-rankings__table
+                        .app-rankings__table-search
+                            input(placeholder="Tìm UID..." )
+                            img(src="../aseets/images/magnifying-glass(1).png")
+                        .app-rankings__table-body
+                            ul
+                                li STT
+                                li TÊN NHÂN VẬT
+                                li UID
+                                li MỨC NẠP
+                            - let n = 1;
+                            -while (n <= 10)
+                                ul
+                                    li= n
+                                    li Moctieungu
+                                    li itc123456
+                                    li 2.000.000
+                                    - n++;           
+            .app-control
+                button.js-toggleControl.active 
+                    span 1
+                button.js-toggleControl
+                    span 2
+                button.js-toggleControl
+                    span 3
+                button.js-toggleControl
+                    span 4
+                button.js-toggleControl
+                        span 5
+        .app-heading
+            span sự kiện vip - giải đấu
+        .app-btn.app-btn1
+            button
+                span.active.js-toggleControl vòng quay kì diệu
+            button
+                span.js-toggleControl thêm sau
+            button
+                span.js-toggleControl thêm sau
+        .app-even
+            .row
+                .col-lg-12.col-sm-12.col-md-12
+                    .app-even__banner
+                        img(src="../aseets/images/Layer824.jpg")
+            img.app-even__heading(src="../aseets/images/1.png")
+            .app-even__btn
+                button.js-toggleControl
+                    span kho đồ
+                button.js-toggleControl
+                    span hướng dẫn
+                button.js-toggleControl
+                    span ls giao dịch
+                button.js-toggleControl.active
+                    span share facebook <br> nhận 1 lượt
+            marquee.app-even__notify Chúc mừng <span>ABCXYZ</span> đã trúng được súng <span>AK-47</span> Vip vĩnh viễn.
+                img(src="../aseets/images/megaphone.png")
+            .row.center
+                .col-lg-12.col-sm-12.col-md-12
+                    .app-even__turn
+                        ul
+                            li.app-even__turn-item.app-even__turn-item1
+                                img(src="../aseets/images/Layer17copy2.png")
+                            li.app-even__turn-item.app-even__turn-item2.active
+                                img(src="../aseets/images/Layer17copy2.png")
+                            li.app-even__turn-item.app-even__turn-item3
+                                img(src="../aseets/images/Layer16copy9.png")
+                            li.app-even__turn-item.app-even__turn-item4
+                                img(src="../aseets/images/Layer17copy4.png")
+                            li.app-even__turn-item.app-even__turn-item5
+                                img(src="../aseets/images/Layer17copy2.png")
+                            li.app-even__turn-item.app-even__turn-item6
+                                img(src="../aseets/images/Layer17copy4.png")
+                            li.app-even__turn-item.app-even__turn-item7
+                                img(src="../aseets/images/Layer17copy2.png")
+                            li.app-even__turn-item.app-even__turn-item8
+                                img(src="../aseets/images/Layer16copy9.png")
+                            li.app-even__turn-item.app-even__turn-item9
+                                img(src="../aseets/images/Layer16copy9.png")
+                            li.app-even__turn-item.app-even__turn-item10.active
+                                img(src="../aseets/images/Layer16copy9.png")
+                                img(src="../aseets/images/Layer16copy9.png")
+                                img(src="../aseets/images/Layer16copy9.png")
+                            li.app-even__turn-item.app-even__turn-item11
+                                img(src="../aseets/images/Layer16copy9.png")
+                        .app-even__turn-btn
+                            span chúc mừng bạn nhận được
+                                span ak-47 vip vĩnh viễn
+                            button
+                                span bắt đầu quay
+            span.app-even__note Lưu ý: Vòng quay miễn phí chỉ được chọn vũ khí phụ
+            .row.center
+                button.app-rankings__btn.active xóa ds đã chọn
+            
+            .app-even__buy
+                span
+                    span Tính năng 1
+                    button MUA NGAY
+                span
+                    span Tính năng 2
+                    button MUA NGAY
+            .app-btn.app-btn2
+                button
+                    img(src="../aseets/images/Layer517copy2.png")
+                    span.js-toggleControl.js-toggleControlve vũ khí chính
+                button
+                    img(src="../aseets/images/Layer517copy2.png")
+                    span.js-toggleControl vũ khí phụ
+                button
+                    img(src="../aseets/images/Layer517copy2.png")
+                    span.js-toggleControl cận chiến
+                button
+                    img(src="../aseets/images/Layer517copy2.png")
+                    span.js-toggleControl drone
+                button
+                    img(src="../aseets/images/Layer517copy2.png")
+                    span.js-toggleControl nhân vật
+                button
+                    img(src="../aseets/images/Layer517copy2.png")
+                    span.js-toggleControl lựu đạn
+            span.app-even__note1 Chọn vật phẩm trong danh sách dưới đây để đưa vào vòng quay
+            ul.app-even__choose
+                li.app-even__choose-item                    
+                    img(src="../aseets/images/Layer17copy2.png")
+                li.app-even__choose-item                    
+                    img(src="../aseets/images/Layer17copy2.png")
+                li.app-even__choose-item                    
+                    img(src="../aseets/images/Layer17copy2.png")
+                li.app-even__choose-item                    
+                    img(src="../aseets/images/Layer17copy2.png")
+                li.app-even__choose-item                    
+                    img(src="../aseets/images/Layer17copy2.png")
+                li.app-even__choose-item                    
+                    img(src="../aseets/images/Layer17copy2.png")
+                li.app-even__choose-item                    
+                    img(src="../aseets/images/Layer17copy2.png")
+                li.app-even__choose-item                    
+                    img(src="../aseets/images/Layer17copy2.png")
+                li.app-even__choose-item                    
+                    img(src="../aseets/images/Layer17copy2.png")
+                li.app-even__choose-item                    
+                    img(src="../aseets/images/Layer17copy2.png")
+                li.app-even__choose-item                    
+                    img(src="../aseets/images/Layer17copy2.png")
+                li.app-even__choose-item                    
+                    img(src="../aseets/images/Layer17copy2.png")
+                li.app-even__choose-item                    
+                    img(src="../aseets/images/Layer17copy2.png")
+                li.app-even__choose-item                    
+                    img(src="../aseets/images/Layer17copy2.png")
+                li.app-even__choose-item                    
+                    img(src="../aseets/images/Layer17copy2.png")
+                li.app-even__choose-item                    
+                    img(src="../aseets/images/Layer17copy2.png")
+                li.app-even__choose-item                    
+                    img(src="../aseets/images/Layer17copy2.png")
+                li.app-even__choose-item                    
+                    img(src="../aseets/images/Layer17copy2.png")
+                li.app-even__choose-item                    
+                    img(src="../aseets/images/Layer17copy2.png")
+                li.app-even__choose-item                    
+                    img(src="../aseets/images/Layer17copy2.png")
+            .app-control
+                button.js-toggleControl.active 
+                    span 1
+                button.js-toggleControl
+                    span 2
+                button.js-toggleControl
+                    span 3
+                button.js-toggleControl
+                    span 4
+                button.js-toggleControl
+                        span 5
+                        
+            .app-heading
+                span đãi ngộ vip
+            .app-btn
+                button
+                    img(src="../aseets/images/Layer517copy2.png")
+                    span.js-toggleControl.active đãi ngộ vip
+                button
+                    img(src="../aseets/images/Layer517copy2.png")
+                    span.js-toggleControl quà tặng đãi ngộ
+            .app-treatment
+                    p 1. Thời gian: Từ ngày 31/10/2022 - 1/11/2022  <br> 2. Điều kiện tham: Khách hàng có tạo tài khoản từ 25/10 - -10/11/022 khi nạp tích lũy đạt mốc 1500, 2000, 2700 kim cương trở lên sẽ nhận vật phẩm tương ứng <br>  3. Phần quà: <br>- Mốc 1500 KC: AK-47 Excavator vĩnh viễn <br>- Mốc 2000 KC: Thompson Xmas vĩnh viễn <br>- Mốc 2700 KC: Balo 7 vĩnh viễn <br>** Đặc biệt, xạ thủ hoàn thành 3 mốc trong ngày 31/10 sẽ nhận thêm 10 Lượng tử. <br>Lưu ý: Quà sẽ được trao sau khi sự kiện kết thúc <br>4. Truy cập ngay cách thức nạp gói trên website: https://napthe.vtcgame.vn/Nạp-Phục-Kích-2 <br>
+
+
+
