@@ -1,0 +1,74 @@
+.slider {
+    display: block;
+    width: 100%;
+    max-height: 550px;
+    background: url("../assets/images/Rectangle3.jpg") top center/cover no-repeat;
+}
+
+.app {
+    &-infouser {
+        background: #222529;
+        padding: 39px 0 134px 50px;
+        &__header {
+            position: relative;
+            display: flex;
+            img {
+                width: 173px;
+                height: 173px;
+                border-radius: 10px;
+                object-fit: cover;
+                margin-right: 35px;
+                margin-bottom: 46px;
+            }
+            &-des {
+                display: flex;
+                flex-direction: column;
+                color: #FFFFFF;
+                span {
+                    font-family: 'BeVietnam';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 44px;
+                    &:last-child {
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 35px;
+                    }
+                    strong {
+                        color: #FF7A00;
+                    }
+                }
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                width: 90%;
+                height: 1px;
+                background: #383838;
+            }
+        }
+        &__body {
+            display: flex;
+            flex-direction: column;
+            margin-top: 36px;
+            span {
+                position: relative;
+                font-family: 'BeVietnam';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 35px;
+                color: #FFFFFF;
+                margin-bottom: 12px;
+                strong {
+                    position: absolute;
+                    left: 40%;
+                    font-weight: 700;
+                    color: #FF7A00;
+                }
+            }
+        }
+    }
+}

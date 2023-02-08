@@ -1,0 +1,71 @@
+.app {
+    padding-top: 29px;
+    padding-bottom: 61px;
+    background: url("../assets/images/bg.jpg") top center/cover no-repeat;
+    &-even {
+        display: flex;
+        &__left {
+            padding-bottom: 48px;
+            width: 20%;
+            height: 800px;
+            background: url("../assets/images/Layer7777.jpg") top center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            h2 {
+                text-align: left;
+                font-size: 36px;
+                font-family: "JosefinSans-bold";
+
+                color: rgb(255, 255, 255);
+            }
+            span {
+                text-align: center;
+                padding-top: 57px;
+                font-size: 24px;
+                font-family: "JosefinSans";
+                color: rgb(255, 255, 255);
+            }
+        }
+        &__right {
+            margin-left: 86px;
+            width: 80%;
+            a {
+                font-size: 18px;
+                font-family: "JosefinSans";
+                color: rgb(62, 114, 154);
+            }
+            hr {
+                margin-block-start: 25px;
+                margin-block-end: 35px;
+                border-color: rgb(62, 114, 154);
+            }
+            h1 {
+                font-size: 30px;
+                font-family: "JosefinSans-bold";
+                color: rgb(19, 115, 197);
+            }
+            span {
+                margin-top: 11px;
+                margin-bottom: 48px;
+                display: block;
+                font-family: "Montserrat-Medium";
+
+                font-size: 18px;
+
+                color: rgb(62, 114, 154);
+            }
+            img{
+                margin-bottom: 32px;margin-top: 18px;width: 100%;
+            }
+            p{
+                font-size: 16px;
+                color: rgb(63, 63, 63);
+                font-family: "Montserrat-Medium";
+                word-spacing: 2px;
+                line-height: 24px;
+            }
+        }
+    }
+}

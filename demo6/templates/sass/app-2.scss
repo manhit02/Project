@@ -1,0 +1,100 @@
+.slider {
+    background: url("../assets/images/Rectangle3.jpg") top center/cover no-repeat;
+    display: block;
+    width: 100%;
+    max-height: 550px;
+}
+
+.app {
+    &-news {
+        padding-bottom: 337px;
+        &__item {
+            display: flex;
+            margin-bottom: 55px;
+            &5 {
+                margin-bottom: 136px;
+            }
+            img {
+                width: 481px;
+                height: 281px;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+                margin-right: 35px;
+            }
+            &-des {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                span {
+                    font-family: 'BeVietnam';
+                    font-style: normal;
+                    color: #FFFFFF;
+                    &:nth-child(2) {
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 26px;
+                    }
+                    &:nth-child(1) {
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 35px;
+                        margin-bottom: 17px;
+                    }
+                }
+                button {
+                    margin-top: 24px;
+                    width: 127px;
+                    height: 30px;
+                    background: #FF7A00;
+                    border-radius: 40px;
+                    font-family: 'Be Vietnam';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+        &__control {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            span {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 35px;
+                height: 35px;
+                background: #424545;
+                border-radius: 10px;
+                font-family: 'Be Vietnam';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 26px;
+                color: #FFFFFF;
+                margin-right: 10px;
+                img {
+                    margin-right: -7px;
+                    transform: rotate(-90deg);
+                    -webkit-transform: rotate(-90deg);
+                    -moz-transform: rotate(-90deg);
+                    -ms-transform: rotate(-90deg);
+                    -o-transform: rotate(-90deg);
+                }
+                &.active {
+                    background: #FF7A00;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

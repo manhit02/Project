@@ -10,3 +10,6 @@ $$('.js-toggleControl').forEach(control => {
 
     }
 });
+$(".js-toggleMenu").onclick=()=>{
+    $(".js-menu").classList.toggle("active")
+}

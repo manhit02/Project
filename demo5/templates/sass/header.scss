@@ -7,10 +7,24 @@
     font-family: 'JosefinSans-bold';
     src: url('../assets/fonts/JosefinSans-Bold.ttf');
 }
-
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('../assets/fonts/MyriadPro-Regular.otf');
+}
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../assets/fonts/Montserrat-Medium.ttf');
+}
+@font-face {
+    font-family: 'Montserrat-bold';
+    src: url('../assets/fonts/JosefinSans-Bold.ttf');
+}
+body{overflow-x: hidden;}
 .container {
     max-width: 1200px;
     margin: auto;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 button {
@@ -27,7 +41,8 @@ button {
         &__menu {
             display: flex;
             justify-content: space-between;
-            width: 50%;
+            width: 55%;
+            margin: 0px 12px;
             &>li:hover .header-nav__menu-subgt,
             &>li:hover .header-nav__menu-subhd {
                 display: block;
@@ -60,6 +75,7 @@ button {
                 left: 0;
                 width: 186px;
                 display: none;
+                z-index: 1;
                 &::before {
                     content: "";
                     position: absolute;

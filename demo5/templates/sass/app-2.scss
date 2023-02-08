@@ -1,0 +1,92 @@
+.slide {
+    background: url("../assets/images/Rectangle650copy.jpg") top center / cover no-repeat;
+    padding-top: 13%;
+    position: relative;
+
+    h2 {
+        position: absolute;
+        top: 25%;
+        font-family: "JosefinSans-bold";
+        font-size: 32px;
+        color: #1373c5;
+        margin-bottom: 17px;
+    }
+    span {
+        position: absolute;
+        top: 50%;
+        display: block;
+    
+        font-family: "MyriadPro";
+        font-size: 18px;
+        color: #3f3f3f;
+    }
+}
+.app {
+    background: url("../assets/images/Rectangle870copy5.jpg") top center / cover no-repeat;
+    &-news {
+        background: unset;
+        &__btn {
+            justify-content: space-between;
+            button {
+                width: 48%;
+                border: 1px solid #58b2ff;
+                &.active {
+                    background-color: rgb(101, 124, 204);
+                    color: #fff;
+                    border: 1px solid #58b2ff;
+                }
+            }
+        }
+        &__body {
+            overflow-x: scroll;
+            &-item {
+                margin-bottom: 51px;
+                background: #2e395e;
+                &:nth-child(4){
+                    margin-right: 31px;
+                }
+                img {
+                    width: 100%;
+                }
+                span {
+                    color: #fff;
+                    &:last-child {
+                        color: #fff;
+                    }
+                }
+            }
+            &-control {
+                display: flex;
+                align-items: baseline;
+                justify-content: space-between;
+                margin: 25px auto;
+                height: 17px;
+                width: 100px;
+                span {
+                    color: #abb7dd;
+                    font-size: 18px;
+                    text-align: end;
+                    cursor: pointer;
+                    &.active {
+                        font-size: 24px;
+
+                        font-family: "Montserrat-bold";
+                        color: rgb(101, 124, 204);
+                    }
+                }
+                button {
+                    width: 9px;
+                    height: 13px;
+                    clip-path: polygon(60% 0, 23% 50%, 60% 100%, 40% 100%, 0% 50%, 40% 0);
+                    border: none;
+                    outline: none;
+                    background: #abb7dd;
+                    cursor: pointer;
+                    &:last-child {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+}

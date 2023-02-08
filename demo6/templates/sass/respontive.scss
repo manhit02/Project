@@ -1,0 +1,199 @@
+/* tablet and mobile */
+
+@media (max-width: 1023px) {
+    .header {}
+    .app {}
+}
+
+// pc
+@media (min-width: 1024px) {
+    .header {}
+    .app {
+        &-game {
+            &__item {
+                &2,
+                &3,
+                &3,
+                &4,
+                &5 {
+                    display: none;
+                }
+                &-body {
+                    position: absolute;
+                    bottom: 74px;
+                    left: 45px;
+                }
+            }
+        }
+        &-news {
+            padding-top: 120px;
+            &__left {
+                &-item {
+                    &5,
+                    &6,
+                    &7 {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .header {}
+    .app {
+        &-game {
+            &__item {
+                &2,
+                &3,
+                &3,
+                &4,
+                &5 {
+                    display: none;
+                }
+                &-body {
+                    position: absolute;
+                    bottom: 74px;
+                    left: 45px;
+                }
+            }
+            &__slide {
+                overflow-x: scroll;
+                justify-content: flex-start;
+                img {
+                    &:nth-child(2) {
+                        margin-left: 0;
+                    }
+                    &:nth-last-child(2) {
+                        margin-right: 0;
+                    }
+                }
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+                button {
+                    display: none;
+                }
+            }
+        }
+        &-news {
+            padding-top: 120px;
+            &__left {
+                width: 100%;
+                margin-bottom: 24px;
+                &-item {
+                    &5,
+                    &6,
+                    &7 {
+                        display: none;
+                    }
+                    &::after {
+                        width: 93%;
+                    }
+                    span {
+                        br {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            &__right {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+
+/* mobile */
+
+@media (max-width: 739px) {
+    .app {
+        &-heading {
+            h2 {
+                font-size: 28px;
+            }
+        }
+        &-game {
+            &__item {
+                &>img {
+                    margin-bottom: 25px;
+                    height: 206px;
+                    object-fit: cover;
+                }
+                &1 {
+                    display: none;
+                }
+                &-body {
+                    width: 100%;
+                    margin-right: 0;
+                    .span {
+                        &3 {
+                            margin-top: 19px;
+                            display: flex;
+                            align-items: center;
+                            img {
+                                margin-bottom: 0;
+                                margin-right: 4px;
+                                &:first-child {
+                                    margin-left: 9px;
+                                }
+                            }
+                        }
+                    }
+                    &__btn {
+                        margin-bottom: 55px;
+                        flex-wrap: nowrap;
+                        justify-content: space-between;
+                        button {
+                            min-width: 150px;
+                            margin-bottom: 0;
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+            &__slide {
+                display: none;
+            }
+        }
+        &-news {
+            &__left {
+                background: unset;
+                width: 100%;
+                &-item {
+                    flex-direction: column;
+                    padding: 0;
+                    align-items: flex-start;
+                    img {
+                        width: 100%;
+                        margin-right: 0;
+                        height: 206px;
+                        margin-bottom: 18px;
+                        margin-top: 52px;
+                    }
+                    &::after {
+                        display: none;
+                    }
+                    &1,
+                    &2,
+                    &3,
+                    &4 {
+                        display: none;
+                    }
+                }
+                button {
+                    display: none;
+                }
+            }
+            &__right {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,258 @@
+/* tablet and mobile */
+
+@media (max-width: 1023px) {
+    .header {}
+    .app {}
+}
+
+// pc
+@media (min-width: 1024px) {
+    .header {
+        &-nav {
+            &__menumb {
+                display: none;
+            }
+        }
+    }
+    .app {}
+}
+
+// pc low
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .container {
+        max-width: 1000px;
+    }
+    .header {
+        &-nav {
+            &__menu {
+                margin: 0;
+            }
+        }
+    }
+    .app {
+        &-game {
+            &__slide {
+                justify-content: space-between;
+                img {
+                    margin: 0;
+                    &:nth-child(2) {
+                        margin: 0;
+                    }
+                    &:nth-last-child(2) {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        &-news {
+            justify-content: space-between;
+            &__left {
+                width: 49%;
+            }
+            &__right {
+                width: 49%;
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+
+/* tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .container {
+        max-width: 700px;
+    }
+    .header {
+        &-nav {
+            justify-content: space-between;
+            width: 100%;
+            &__logo {
+                font-size: 30px;
+            }
+            &__menu {
+                min-width: 400px;
+                margin: 0;
+                margin-right: 24px;
+                &>li {
+                    &>a {
+                        font-size: 14px;
+                        padding-right: 24px;
+                    }
+                }
+                &mb {
+                    display: none;
+                }
+            }
+            &__info {
+                font-size: 12px;
+            }
+            &__login {
+                font-size: 12px;
+            }
+        }
+    }
+    .slider {
+        button {
+            height: 50px;
+            min-width: 200px;
+            font-size: 24px;
+        }
+    }
+    ƒ .app {}
+}
+
+
+/* mobile */
+
+@media (max-width: 739px) {
+    .container {
+        max-width: 355px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .slider {
+        height: 423px;
+        button {
+            font-size: 24px;
+            line-height: 35px;
+            min-width: 194px;
+            height: 50px;
+        }
+        .control {
+            span {
+                width: 17px;
+                height: 17px;
+                &.active {
+                    &::after {
+                        width: 11px;
+                        height: 11px;
+                    }
+                }
+            }
+        }
+    }
+    .header {
+        &-nav {
+            height: 56px;
+            &__logo {
+                font-size: 24px;
+                min-width: unset;
+            }
+            &__menu {
+                display: none;
+                &mb {
+                    position: relative;
+                    & .overlay {
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        opacity: 0;
+                        background: #000;
+                        z-index: 2;
+                        display: none;
+                        &.active {
+                            display: block;
+                        }
+                    }
+                    button {
+                        padding: 0;
+                        background: transparent;
+                        span {
+                            width: 31px;
+                            height: 5px;
+                            margin-bottom: 7px;
+                            background: #fff;
+                            display: block;
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                    ul {
+                        position: absolute;
+                        top: 11px;
+                        right: -1px;
+                        background: #222529;
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        width: 230px;
+                        display: none;
+                        z-index: 4;
+                        &.active {
+                            display: block;
+                        }
+                        li {
+                            list-style: none;
+                            &:last-child {
+                                a {
+                                    &::after {
+                                        display: none;
+                                    }
+                                }
+                            }
+                            a {
+                                position: relative;
+                                display: flex;
+                                align-items: center;
+                                justify-content: right;
+                                padding-right: 20px;
+                                font-family: 'BeVietnam';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 18px;
+                                line-height: 26px;
+                                color: #fff;
+                                height: 74px;
+                                &::after {
+                                    content: "";
+                                    width: 95%;
+                                    display: block;
+                                    background-color: #3E3E3E;
+                                    height: 1px;
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 5px;
+                                }
+                                &.active {
+                                    color: #FF7A00;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &__login,
+            &__info {
+                display: none;
+                font-size: 14px;
+                line-height: 20px;
+                span {
+                    width: 24px;
+                    height: 24px;
+                    img {
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+            }
+        }
+        &-download {
+            display: none;
+        }
+    }
+    .app {
+        &-heading {
+            h2 {
+                margin-top: 12px;
+                margin-bottom: 29px;
+                font-size: 28px;
+            }
+        }
+        &-news {
+            padding-bottom: 0;
+        }
+    }
+}
