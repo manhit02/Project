@@ -1,11 +1,11 @@
-.slider
+.slider.js-slider
     button Chơi ngay
-    .control    
-        span.active.js-toggleControl
-        span.js-toggleControl
-        span.js-toggleControl
-        span.js-toggleControl
-        span.js-toggleControl
+    .control
+        span.js-toggleSlide.js-toggleSlide1
+        span.active.js-toggleSlide.js-toggleSlide2
+        span.js-toggleSlide.js-toggleSlide3
+        span.js-toggleSlide.js-toggleSlide4
+        span.js-toggleSlide.js-toggleSlide5
 .app    
     .container 
         .app-game
@@ -13,7 +13,7 @@
                 span VTCFUN 
                 h2 TRÒ CHƠI TRÊN DI ĐỘNG
             .app-game__item.app-game__item1
-                img(src="../assets/images/20.jpg")
+                img(src="../assets/images/20.jpg").js-game
                 .app-game__item-body
                     span.span1 TÊN CỦA GAME
                     span.span2 Thể loại: 
@@ -81,47 +81,53 @@
                         button.btn2 Xem chi tiết
                            
             .app-game__slide
-                button 
+                button
                     img(src="../assets/images/45.svg")
-                img(src="../assets/images/Rectangle3.jpg")
-                img(src="../assets/images/17.jpg")
-                img(src="../assets/images/12.jpg")
-                img(src="../assets/images/11.jpg")
-                img(src="../assets/images/21.jpg")
-                button 
+                img(src="../assets/images/Rectangle3.jpg").js-btnGame.js-btnGame1
+                img(src="../assets/images/17.jpg").js-btnGame.js-btnGame2
+                img(src="../assets/images/12.jpg").js-btnGame.js-btnGame3
+                img(src="../assets/images/11.jpg").js-btnGame.js-btnGame4
+                img(src="../assets/images/21.jpg").js-btnGame.js-btnGame5
+                button
                     img(src="../assets/images/45.svg")
         .app-news 
             .app-heading 
                 span VTCFUN 
                 h2 TRÒ CHƠI TRÊN DI ĐỘNG
             .app-news__left 
-                .app-news__left-item.app-news__left-item1 
+                .app-news__left-item.app-news__left-item1.js-toggleSlideNews.js-toggleSlideNews1
                     img(src="../assets/images/18.jpg")
-                    span [HOT] Sự kiện Tết "LÁ SỐ MAY<br> MẮN" của VTC Pay chính thức <br>lên sóng!
-                .app-news__left-item.app-news__left-item2
+                    a [HOT] Sự kiện Tết "LÁ SỐ MAY<br> MẮN" của VTC Pay chính thức <br>lên sóng!
+                .app-news__left-item.app-news__left-item2.js-toggleSlideNews.js-toggleSlideNews2
                     img(src="../assets/images/18.jpg")
-                    span [HOT] Sự kiện Tết "LÁ SỐ MAY<br> MẮN" của VTC Pay chính thức <br>lên sóng!
-                .app-news__left-item.app-news__left-item3 
+                    a [HOT] Sự kiện Tết "LÁ SỐ MAY<br> MẮN" của VTC Pay chính thức <br>lên sóng!
+                .app-news__left-item.app-news__left-item3.js-toggleSlideNews.js-toggleSlideNews3
                     img(src="../assets/images/18.jpg")
-                    span [HOT] Sự kiện Tết "LÁ SỐ MAY<br> MẮN" của VTC Pay chính thức <br>lên sóng!
-                .app-news__left-item.app-news__left-item4
+                    a [HOT] Sự kiện Tết "LÁ SỐ MAY<br> MẮN" của VTC Pay chính thức <br>lên sóng!
+                .app-news__left-item.app-news__left-item4.js-toggleSlideNews.js-toggleSlideNews4
                     img(src="../assets/images/18.jpg")
-                    span [HOT] Sự kiện Tết "LÁ SỐ MAY<br> MẮN" của VTC Pay chính thức <br>lên sóng! 
+                    a [HOT] Sự kiện Tết "LÁ SỐ MAY<br> MẮN" của VTC Pay chính thức <br>lên sóng! 
                                                          
                 .app-news__left-item.app-news__left-item5 
                     img(src="../assets/images/21.jpg")
-                    span Đẳng cấp khác biệt của rich kid Dubai: Xây sở thú trong nhà, bọc xe bằng Louis Vuitton, 
+                    a Đẳng cấp khác biệt của rich kid Dubai: Xây sở thú trong nhà, bọc xe bằng Louis Vuitton, 
                                                          
                 .app-news__left-item.app-news__left-item6
                     img(src="../assets/images/12.jpg")
-                    span Đẳng cấp khác biệt của rich kid Dubai: Xây sở thú trong nhà, bọc xe bằng Louis Vuitton, 
+                    a Đẳng cấp khác biệt của rich kid Dubai: Xây sở thú trong nhà, bọc xe bằng Louis Vuitton, 
                                                          
                 .app-news__left-item.app-news__left-item7
                     img(src="../assets/images/61.jpg")
-                    span Đẳng cấp khác biệt của rich kid Dubai: Xây sở thú trong nhà, bọc xe bằng Louis Vuitton, 
+                    a Đẳng cấp khác biệt của rich kid Dubai: Xây sở thú trong nhà, bọc xe bằng Louis Vuitton, 
                                                          
                 button Xem thêm
-            .app-news__right
+            .app-news__right.js-sliderNews
+                  .control
+                    span.js-toggleSlideNews.js-toggleSlideNews1
+                    span.active.js-toggleSlideNews.js-toggleSlideNews2
+                    span.js-toggleSlideNews.js-toggleSlideNews3
+                    span.js-toggleSlideNews.js-toggleSlideNews4
+                    span.js-toggleSlideNews.js-toggleSlideNews5
                 
 
 

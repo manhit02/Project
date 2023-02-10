@@ -34,16 +34,20 @@ button {
         align-items: center;
         justify-content: space-between;
         &__logo {
-            min-width: 146px;
-            font-family: 'UVNBaiSauNang';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 40px;
-            line-height: 57px;
-            color: #02AFEF;
-            strong {
-                color: #FF7A00;
+            h1 {
+                min-width: 146px;
+                font-family: 'UVNBaiSauNang';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 57px;
+                color: #02AFEF;
+                strong {
+                    color: #FF7A00;
+                }
             }
+            cursor: pointer;
+            text-decoration: none;
         }
         &__menu {
             display: flex;
@@ -193,6 +197,11 @@ button {
         -o-border-radius: 15px;
         z-index: 5;
         &.active {
+            animation: all ease 3s;
+            -webkit-animation: all ease 3s;
+            -moz-animation: all ease 3s;
+            -ms-animation: all ease 3s;
+            -o-animation: all ease 3s;
             right: 0;
             button {
                 img {
@@ -205,7 +214,7 @@ button {
             }
         }
         span {
-            font-family: 'Be Vietnam';
+            font-family: 'BeVietnam';
             font-style: normal;
             font-weight: 400;
             font-size: 24px;

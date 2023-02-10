@@ -29,6 +29,13 @@
             }
         }
     }
+    .slider {
+        button {
+            min-width: 240px;
+            height: 60px;
+            font-size: 24px;
+        }
+    }
     .app {
         &-game {
             &__slide {
@@ -248,6 +255,7 @@
         &-heading {
             h2 {
                 margin-top: 12px;
+                font-size: 24px;
             }
         }
         &-news {

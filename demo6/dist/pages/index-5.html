@@ -15,28 +15,28 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-nav">
-          <h1 class="header-nav__logo">VTC <strong>FUN</strong></h1>
+        <div class="header-nav"><a class="header-nav__logo" href="./index.html">
+            <h1>VTC <strong>FUN</strong></h1></a>
           <ul class="header-nav__menu">
-            <li><a class="active js-toggleControl" href="#">Trang chủ</a></li>
+            <li><a class="active js-toggleControl" href="./index.html">Trang chủ</a></li>
             <li><a class="js-toggleControl" href="#">Trò chơi<img src="../assets/images/ChevronLeft.svg"></a>
               <ul class="header-nav__menu-subtt">
-                <li><a href="#">Trò chơi VTC Fun</a></li>
-                <li><a href="#">Trò chơi VTC Game</a></li>
+                <li><a href="./index-2.html">Trò chơi VTC Fun</a></li>
+                <li><a href="./index-5.html">Trò chơi VTC Game</a></li>
               </ul>
             </li>
-            <li> <a class="js-toggleControl" href="#">Tin tức</a></li>
+            <li> <a class="js-toggleControl" href="./index-3.html">Tin tức</a></li>
             <li> <a class="js-toggleControl" href="#">Nạp thẻ</a></li>
-          </ul><a class="header-nav__login" href="#">Đăng ký / Đăng nhập</a><a class="header-nav__info active" href="#">Tên tài khoản<span><img src="../assets/images/User.svg"></span></a>
+          </ul><a class="header-nav__login" href="./index-4.html">Đăng ký / Đăng nhập</a><a class="header-nav__info active" href="./index-4.html">Tên tài khoản<span><img src="../assets/images/User.svg"></span></a>
           <div class="header-nav__menumb">
             <button class="js-toggleMenu"><span> </span><span></span><span></span></button>
             <ul class="js-menuShow">
-              <li><a class="active js-toggleControl" href="#">Trò chơi VTC FUN</a></li>
-              <li><a class="js-toggleControl" href="#">Trò chơi VTC Game</a></li>
-              <li> <a class="js-toggleControl" href="#">Tin tức               </a></li>
+              <li><a class="active js-toggleControl" href="./index-2.html">Trò chơi VTC FUN</a></li>
+              <li><a class="js-toggleControl" href="./index-5.html">Trò chơi VTC Game</a></li>
+              <li> <a class="js-toggleControl" href="./index-3.html">Tin tức               </a></li>
               <li> <a class="js-toggleControl" href="#">Nạp thẻ</a></li>
-              <li> <a class="js-toggleControl" href="#">Đăng ký</a></li>
-              <li> <a class="js-toggleControl" href="#">Đăng nhập</a></li>
+              <li> <a class="js-toggleControl" href="./index-4.html">Đăng ký</a></li>
+              <li> <a class="js-toggleControl" href="./index-4.html">Đăng nhập</a></li>
             </ul>
             <div class="overlay js-overLay"></div>
           </div>
@@ -47,9 +47,9 @@
         </div>
       </div>
     </header>
-    <div class="slider">
+    <div class="slider js-slider">
       <button>Chơi ngay</button>
-      <div class="control">   <span class="active js-toggleControl"></span><span class="js-toggleControl"></span><span class="js-toggleControl"></span><span class="js-toggleControl"></span><span class="js-toggleControl"></span></div>
+      <div class="control"><span class="active js-toggleSlide js-toggleSlide1"></span><span class="js-toggleSlide js-toggleSlide2"></span><span class="js-toggleSlide js-toggleSlide3"></span><span class="js-toggleSlide js-toggleSlide4"></span><span class="js-toggleSlide js-toggleSlide5"></span></div>
     </div>
     <div class="app">
       <div class="container">
@@ -69,13 +69,14 @@
           <div class="app-infogame__body">
             <p>Là cổng game đa nền tảng nên eSports.vn đem đến hàng loạt các tựa game từ game Android, game IOS cho tới các game H5 chơi ngay trên trình duyệt không cần tải về. Sự đa dạng về các tựa game sẽ đem đến cho người chơi cảm giác thoải mái lựa chọn để trải nghiệm khi bước chân vào cổng game eSports.vn<br><br> Các tựa game hiện có trên cổng game eSports.vn đã được lựa chọn kỹ lưỡng với đủ thể loại từ khó tới dễ nhằm đem lại sự vui vẻ giải trí khi trải nghiệm, một số tựa game nổi bật mà chúng ta có thể kể đến như: Cờ Caro, Xạ thủ bắn lon, Đua xe, Siêu trí nhớ, Nghệ nhân cây cảnh,…</p>
             <div class="app-game__slide">
-              <button> <img src="../assets/images/45.svg"></button><img src="../assets/images/75.jpg">
-              <button> <img src="../assets/images/45.svg"></button>
+              <button class="js-btnPew"><img src="../assets/images/45.svg"></button><img class="js-img" src="../assets/images/75.jpg">
+              <button class="js-btnNext"><img src="../assets/images/45.svg"></button>
             </div>
           </div>
         </div>
       </div>
     </div>
     <script src="../js/index.js"></script>
+    <script src="../js/index-5.js"></script>
   </body>
 </html>

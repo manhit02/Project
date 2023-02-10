@@ -25,8 +25,8 @@ function sassTask() {
 /** JS Task */
 function jsTask() {
     return src(jsFiles)
-        .pipe(concat('index.js'))
-        .pipe(dest('dist/js'))
+
+    .pipe(dest('dist/js'))
         .pipe(browserSync.stream());
 
 

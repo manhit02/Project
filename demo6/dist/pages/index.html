@@ -14,28 +14,28 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-nav">
-          <h1 class="header-nav__logo">VTC <strong>FUN</strong></h1>
+        <div class="header-nav"><a class="header-nav__logo" href="./index.html">
+            <h1>VTC <strong>FUN</strong></h1></a>
           <ul class="header-nav__menu">
-            <li><a class="active js-toggleControl" href="#">Trang chủ</a></li>
+            <li><a class="active js-toggleControl" href="./index.html">Trang chủ</a></li>
             <li><a class="js-toggleControl" href="#">Trò chơi<img src="../assets/images/ChevronLeft.svg"></a>
               <ul class="header-nav__menu-subtt">
-                <li><a href="#">Trò chơi VTC Fun</a></li>
-                <li><a href="#">Trò chơi VTC Game</a></li>
+                <li><a href="./index-2.html">Trò chơi VTC Fun</a></li>
+                <li><a href="./index-5.html">Trò chơi VTC Game</a></li>
               </ul>
             </li>
-            <li> <a class="js-toggleControl" href="#">Tin tức</a></li>
+            <li> <a class="js-toggleControl" href="./index-3.html">Tin tức</a></li>
             <li> <a class="js-toggleControl" href="#">Nạp thẻ</a></li>
-          </ul><a class="header-nav__login" href="#">Đăng ký / Đăng nhập</a><a class="header-nav__info active" href="#">Tên tài khoản<span><img src="../assets/images/User.svg"></span></a>
+          </ul><a class="header-nav__login" href="./index-4.html">Đăng ký / Đăng nhập</a><a class="header-nav__info active" href="./index-4.html">Tên tài khoản<span><img src="../assets/images/User.svg"></span></a>
           <div class="header-nav__menumb">
             <button class="js-toggleMenu"><span> </span><span></span><span></span></button>
             <ul class="js-menuShow">
-              <li><a class="active js-toggleControl" href="#">Trò chơi VTC FUN</a></li>
-              <li><a class="js-toggleControl" href="#">Trò chơi VTC Game</a></li>
-              <li> <a class="js-toggleControl" href="#">Tin tức               </a></li>
+              <li><a class="active js-toggleControl" href="./index-2.html">Trò chơi VTC FUN</a></li>
+              <li><a class="js-toggleControl" href="./index-5.html">Trò chơi VTC Game</a></li>
+              <li> <a class="js-toggleControl" href="./index-3.html">Tin tức               </a></li>
               <li> <a class="js-toggleControl" href="#">Nạp thẻ</a></li>
-              <li> <a class="js-toggleControl" href="#">Đăng ký</a></li>
-              <li> <a class="js-toggleControl" href="#">Đăng nhập</a></li>
+              <li> <a class="js-toggleControl" href="./index-4.html">Đăng ký</a></li>
+              <li> <a class="js-toggleControl" href="./index-4.html">Đăng nhập</a></li>
             </ul>
             <div class="overlay js-overLay"></div>
           </div>
@@ -46,9 +46,9 @@
         </div>
       </div>
     </header>
-    <div class="slider">
+    <div class="slider js-slider">
       <button>Chơi ngay</button>
-      <div class="control">   <span class="active js-toggleControl"></span><span class="js-toggleControl"></span><span class="js-toggleControl"></span><span class="js-toggleControl"></span><span class="js-toggleControl"></span></div>
+      <div class="control"><span class="js-toggleSlide js-toggleSlide1"></span><span class="active js-toggleSlide js-toggleSlide2"></span><span class="js-toggleSlide js-toggleSlide3"></span><span class="js-toggleSlide js-toggleSlide4"></span><span class="js-toggleSlide js-toggleSlide5"></span></div>
     </div>
     <div class="app">   
       <div class="container"> 
@@ -56,7 +56,7 @@
           <div class="app-heading"> <span>VTCFUN </span>
             <h2>TRÒ CHƠI TRÊN DI ĐỘNG</h2>
           </div>
-          <div class="app-game__item app-game__item1"><img src="../assets/images/20.jpg">
+          <div class="app-game__item app-game__item1"><img class="js-game" src="../assets/images/20.jpg">
             <div class="app-game__item-body"><span class="span1">TÊN CỦA GAME</span><span class="span2">Thể loại: <span>Game dạng bảng</span></span><span class="span3">Nền tảng:<span>Mobile</span></span>
               <div class="app-game__item-body__btn">
                 <button class="btn1">Chơi ngay</button>
@@ -99,8 +99,8 @@
             </div>
           </div>
           <div class="app-game__slide">
-            <button> <img src="../assets/images/45.svg"></button><img src="../assets/images/Rectangle3.jpg"><img src="../assets/images/17.jpg"><img src="../assets/images/12.jpg"><img src="../assets/images/11.jpg"><img src="../assets/images/21.jpg">
-            <button> <img src="../assets/images/45.svg"></button>
+            <button><img src="../assets/images/45.svg"></button><img class="js-btnGame js-btnGame1" src="../assets/images/Rectangle3.jpg"><img class="js-btnGame js-btnGame2" src="../assets/images/17.jpg"><img class="js-btnGame js-btnGame3" src="../assets/images/12.jpg"><img class="js-btnGame js-btnGame4" src="../assets/images/11.jpg"><img class="js-btnGame js-btnGame5" src="../assets/images/21.jpg">
+            <button><img src="../assets/images/45.svg"></button>
           </div>
         </div>
         <div class="app-news"> 
@@ -108,16 +108,18 @@
             <h2>TRÒ CHƠI TRÊN DI ĐỘNG</h2>
           </div>
           <div class="app-news__left"> 
-            <div class="app-news__left-item app-news__left-item1"> <img src="../assets/images/18.jpg"><span>[HOT] Sự kiện Tết "LÁ SỐ MAY<br> MẮN" của VTC Pay chính thức <br>lên sóng!</span></div>
-            <div class="app-news__left-item app-news__left-item2"><img src="../assets/images/18.jpg"><span>[HOT] Sự kiện Tết "LÁ SỐ MAY<br> MẮN" của VTC Pay chính thức <br>lên sóng!</span></div>
-            <div class="app-news__left-item app-news__left-item3"> <img src="../assets/images/18.jpg"><span>[HOT] Sự kiện Tết "LÁ SỐ MAY<br> MẮN" của VTC Pay chính thức <br>lên sóng!</span></div>
-            <div class="app-news__left-item app-news__left-item4"><img src="../assets/images/18.jpg"><span>[HOT] Sự kiện Tết "LÁ SỐ MAY<br> MẮN" của VTC Pay chính thức <br>lên sóng! </span></div>
-            <div class="app-news__left-item app-news__left-item5"> <img src="../assets/images/21.jpg"><span>Đẳng cấp khác biệt của rich kid Dubai: Xây sở thú trong nhà, bọc xe bằng Louis Vuitton, </span></div>
-            <div class="app-news__left-item app-news__left-item6"><img src="../assets/images/12.jpg"><span>Đẳng cấp khác biệt của rich kid Dubai: Xây sở thú trong nhà, bọc xe bằng Louis Vuitton, </span></div>
-            <div class="app-news__left-item app-news__left-item7"><img src="../assets/images/61.jpg"><span>Đẳng cấp khác biệt của rich kid Dubai: Xây sở thú trong nhà, bọc xe bằng Louis Vuitton, </span></div>
+            <div class="app-news__left-item app-news__left-item1 js-toggleSlideNews js-toggleSlideNews1"><img src="../assets/images/18.jpg"><a>[HOT] Sự kiện Tết "LÁ SỐ MAY<br> MẮN" của VTC Pay chính thức <br>lên sóng!</a></div>
+            <div class="app-news__left-item app-news__left-item2 js-toggleSlideNews js-toggleSlideNews2"><img src="../assets/images/18.jpg"><a>[HOT] Sự kiện Tết "LÁ SỐ MAY<br> MẮN" của VTC Pay chính thức <br>lên sóng!</a></div>
+            <div class="app-news__left-item app-news__left-item3 js-toggleSlideNews js-toggleSlideNews3"><img src="../assets/images/18.jpg"><a>[HOT] Sự kiện Tết "LÁ SỐ MAY<br> MẮN" của VTC Pay chính thức <br>lên sóng!</a></div>
+            <div class="app-news__left-item app-news__left-item4 js-toggleSlideNews js-toggleSlideNews4"><img src="../assets/images/18.jpg"><a>[HOT] Sự kiện Tết "LÁ SỐ MAY<br> MẮN" của VTC Pay chính thức <br>lên sóng! </a></div>
+            <div class="app-news__left-item app-news__left-item5"> <img src="../assets/images/21.jpg"><a>Đẳng cấp khác biệt của rich kid Dubai: Xây sở thú trong nhà, bọc xe bằng Louis Vuitton, </a></div>
+            <div class="app-news__left-item app-news__left-item6"><img src="../assets/images/12.jpg"><a>Đẳng cấp khác biệt của rich kid Dubai: Xây sở thú trong nhà, bọc xe bằng Louis Vuitton, </a></div>
+            <div class="app-news__left-item app-news__left-item7"><img src="../assets/images/61.jpg"><a>Đẳng cấp khác biệt của rich kid Dubai: Xây sở thú trong nhà, bọc xe bằng Louis Vuitton, </a></div>
             <button>Xem thêm</button>
           </div>
-          <div class="app-news__right"></div>
+          <div class="app-news__right js-sliderNews">
+            <div class="control"><span class="js-toggleSlideNews js-toggleSlideNews1"></span><span class="active js-toggleSlideNews js-toggleSlideNews2"></span><span class="js-toggleSlideNews js-toggleSlideNews3"></span><span class="js-toggleSlideNews js-toggleSlideNews4"></span><span class="js-toggleSlideNews js-toggleSlideNews5"></span></div>
+          </div>
         </div>
       </div>
     </div>

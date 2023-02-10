@@ -2,7 +2,7 @@
     background: url("../assets/images/Rectangle3.jpg") top center/cover no-repeat;
     display: block;
     width: 100%;
-    max-height: 550px;
+    height: 550px;
 }
 
 .app {
@@ -23,13 +23,20 @@
                 -ms-border-radius: 10px;
                 -o-border-radius: 10px;
                 margin-right: 35px;
+                cursor: pointer;
+                &:hover {
+                    animation: imghover ease .5s;
+                    -webkit-animation: imghover ease .5s;
+                }
             }
             &-des {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: center;
-                span {
+                a {
+                    cursor: pointer;
+                    text-decoration: none;
                     font-family: 'BeVietnam';
                     font-style: normal;
                     color: #FFFFFF;
@@ -43,6 +50,9 @@
                         font-size: 24px;
                         line-height: 35px;
                         margin-bottom: 17px;
+                    }
+                    &:hover {
+                        color: #FF7A00;
                     }
                 }
                 button {
