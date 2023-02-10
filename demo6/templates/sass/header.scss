@@ -69,6 +69,7 @@ button {
                     }
                 }
                 a {
+                    text-decoration: none;
                     font-family: 'BeVietnam';
                     font-style: normal;
                     font-weight: 400;
@@ -113,12 +114,14 @@ button {
                         }
                     }
                     a {
+                        text-decoration: none;
                         font-size: 14px;
-                        font-family: 'JosefinSans';
+                        font-family: 'BeVietnam';
                         color: #fff;
                         padding: 10px 0px;
                         display: block;
                         border-right: unset;
+                        font-weight: 700;
                         &.active {
                             color: #FF7A00;
                         }
@@ -142,6 +145,7 @@ button {
             &:hover {
                 color: #FF7A00;
             }
+            text-decoration: none;
             font-family: 'BeVietnam';
             font-style: normal;
             font-weight: 400;
@@ -241,6 +245,7 @@ button {
             justify-content: space-between;
             width: 100%;
             a {
+                text-decoration: none;
                 display: flex;
                 color: #FFFFFF;
                 font-family: 'BeVietnam';

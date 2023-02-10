@@ -109,8 +109,6 @@
 @media (max-width: 739px) {
     .container {
         max-width: 355px;
-        padding-left: 20px;
-        padding-right: 20px;
     }
     .slider {
         height: 423px;
@@ -119,8 +117,10 @@
             line-height: 35px;
             min-width: 194px;
             height: 50px;
+            bottom: 49px;
         }
         .control {
+            bottom: 15px;
             span {
                 width: 17px;
                 height: 17px;
@@ -194,6 +194,7 @@
                                 }
                             }
                             a {
+                                text-decoration: none;
                                 position: relative;
                                 display: flex;
                                 align-items: center;
@@ -247,8 +248,6 @@
         &-heading {
             h2 {
                 margin-top: 12px;
-                margin-bottom: 29px;
-                font-size: 28px;
             }
         }
         &-news {

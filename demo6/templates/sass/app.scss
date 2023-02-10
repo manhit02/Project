@@ -71,13 +71,17 @@
         width: 100%;
         display: block;
         span {
+            max-width: 97px;
             font-family: "BeVietnam";
+            height: 31px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-style: normal;
             font-weight: 700;
             font-size: 14px;
             line-height: 20px;
             color: #ffffff;
-            padding: 5px 22px 6px 21px;
             background: #ff7a00;
             border-radius: 50px;
         }
@@ -107,11 +111,13 @@
                 display: flex;
                 flex-wrap: wrap;
                 flex-direction: column;
-                font-family: "BeVietnam";
-                font-style: normal;
-                font-weight: 700;
                 color: #fff;
                 width: 312px;
+                span {
+                    font-family: "BeVietnam";
+                    font-style: normal;
+                    font-weight: 700;
+                }
                 .span {
                     &1 {
                         font-size: 30px;
@@ -133,7 +139,7 @@
                     margin-top: 19px;
                     button {
                         margin-right: 12px;
-                        min-width: 140px;
+                        min-width: 150px;
                         height: 40px;
                         background: #ff7a00;
                         border-radius: 40px;

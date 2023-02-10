@@ -91,6 +91,15 @@
 /* mobile */
 
 @media (max-width: 739px) {
+    .header {
+        &-nav {
+            &__info {
+                &.active {
+                    display: none;
+                }
+            }
+        }
+    }
     .slider {
         background-image: url('../assets/images/11.jpg');
     }
@@ -99,6 +108,7 @@
             &__item {
                 width: 100%;
                 flex-direction: column;
+                margin-bottom: 0;
                 img {
                     margin-right: 0;
                     width: 100%;
@@ -108,11 +118,13 @@
                 }
                 &-des {
                     span {
-                        margin-bottom: 52px;
-                        font-size: 18px;
-                        line-height: 26px;
-                        width: 100%;
-                        display: block;
+                        &:nth-child(1) {
+                            margin-bottom: 52px;
+                            font-size: 18px;
+                            line-height: 26px;
+                            width: 100%;
+                            display: block;
+                        }
                     }
                 }
                 &1,
