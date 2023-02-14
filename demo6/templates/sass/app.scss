@@ -37,6 +37,24 @@
         }
     }
     
+    @keyframes showdownload {
+        from {
+            right: -333px;
+        }
+        to {
+            right: 0;
+        }
+    }
+    
+    @keyframes hidendownload {
+        from {
+            right: 0;
+        }
+        to {
+            right: -333;
+        }
+    }
+    
     @keyframes hoverbtn {
         from {
             opacity: 0.5;
@@ -75,6 +93,11 @@
         width: 100%;
         background: url("../assets/images/slide.jpg") top center / cover no-repeat;
         height: 863px;
+        transition: all 0.5s ease-in;
+        -webkit-transition: all 0.5s ease-in;
+        -moz-transition: all 0.5s ease-in;
+        -ms-transition: all 0.5s ease-in;
+        -o-transition: all 0.5s ease-in;
         & .control {
             bottom: 25px;
         }
@@ -132,18 +155,19 @@
         &-game {
             &__item {
                 position: relative;
-                &>img {
-                    animation: all ease 3s;
-                    height: 534px;
-                    object-fit: cover;
-                    width: 100%;
-                    border-radius: 10px;
-                    -webkit-border-radius: 10px;
-                    -moz-border-radius: 10px;
-                    -ms-border-radius: 10px;
-                    -o-border-radius: 10px;
-                    -webkit-animation: all ease 3s;
-                }
+                height: 534px;
+                background: url("../assets/images/20.jpg") top center/cover no-repeat;
+                width: 100%;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+                transition: all 0.5s ease-in;
+                -webkit-transition: all 0.5s ease-in;
+                -moz-transition: all 0.5s ease-in;
+                -ms-transition: all 0.5s ease-in;
+                -o-transition: all 0.5s ease-in;
                 &-body {
                     display: flex;
                     flex-wrap: wrap;
@@ -343,6 +367,11 @@
                 height: 680px;
                 border-radius: 10px;
                 margin-left: 32px;
+                transition: all 0.5s ease-in;
+                -webkit-transition: all 0.5s ease-in;
+                -moz-transition: all 0.5s ease-in;
+                -ms-transition: all 0.5s ease-in;
+                -o-transition: all 0.5s ease-in;
                 & .control {
                     bottom: 19px;
                 }

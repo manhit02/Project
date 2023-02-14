@@ -14,19 +14,27 @@
             &5 {
                 margin-bottom: 136px;
             }
-            img {
-                width: 481px;
-                height: 281px;
+            &-img {
+                overflow: hidden;
                 border-radius: 10px;
                 -webkit-border-radius: 10px;
                 -moz-border-radius: 10px;
                 -ms-border-radius: 10px;
                 -o-border-radius: 10px;
                 margin-right: 35px;
-                cursor: pointer;
-                &:hover {
-                    animation: imghover ease .5s;
-                    -webkit-animation: imghover ease .5s;
+                img {
+                    width: 481px;
+                    height: 281px;
+                    cursor: pointer;
+                    &:hover {
+                        animation: imghover ease .5s;
+                        -webkit-animation: imghover ease .5s;
+                        transform: scale(1.1);
+                        -webkit-transform: scale(1.1);
+                        -moz-transform: scale(1.1);
+                        -ms-transform: scale(1.1);
+                        -o-transform: scale(1.1);
+                    }
                 }
             }
             &-des {

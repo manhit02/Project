@@ -109,19 +109,24 @@ $$('.js-btnGame').forEach(control => {
     control.onclick = () => {
 
         if (control.classList.contains('js-btnGame1')) {
-            $('.js-game').src = "../assets/images/Rectangle3.jpg"
+            $('.js-game').style.background = "url(../assets/images/Rectangle3.jpg)center/cover no-repeat"
+
         }
         if (control.classList.contains('js-btnGame2')) {
-            $('.js-game').src = "../assets/images/17.jpg"
+            $('.js-game').style.background = "url(../assets/images/17.jpg)center/cover no-repeat"
+
         }
         if (control.classList.contains('js-btnGame3')) {
-            $('.js-game').src = "../assets/images/12.jpg"
+            $('.js-game').style.background = "url(../assets/images/12.jpg)center/cover no-repeat"
+
         }
         if (control.classList.contains('js-btnGame4')) {
-            $('.js-game').src = "../assets/images/11.jpg"
+            $('.js-game').style.background = "url(../assets/images/11.jpg)center/cover no-repeat"
+
         }
         if (control.classList.contains('js-btnGame5')) {
-            $('.js-game').src = "../assets/images/21.jpg"
+            $('.js-game').style.background = "url(../assets/images/21.jpg)center/cover no-repeat"
+
         }
 
 
@@ -140,5 +145,13 @@ $(".js-overLay").onclick = () => {
 }
 
 $(".js-btnShowDownload").onclick = () => {
-    $(".js-downLoad").classList.toggle("active")
+    if ($(".js-downLoad").classList.contains("active")) {
+        $(".js-downLoad").classList.remove("active")
+        $(".js-downLoad").classList.add("default")
+    } else {
+        $(".js-downLoad").classList.add("active")
+        $(".js-downLoad").classList.remove("default")
+
+    }
+
 }

@@ -116,10 +116,18 @@
     .app {
         &-game {
             &__item {
-                &>img {
-                    margin-bottom: 25px;
-                    height: 206px;
-                    object-fit: cover;
+                &2,
+                &3,
+                &4,
+                &5 {
+                    background: unset;
+                    &>img {
+                        border-radius: 10px;
+                        height: 206px;
+                        width: 100%;
+                        margin-bottom: 25px;
+                        object-fit: cover;
+                    }
                 }
                 &1 {
                     display: none;

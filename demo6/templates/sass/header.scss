@@ -197,11 +197,11 @@ button {
         -o-border-radius: 15px;
         z-index: 5;
         &.active {
-            animation: all ease 3s;
-            -webkit-animation: all ease 3s;
-            -moz-animation: all ease 3s;
-            -ms-animation: all ease 3s;
-            -o-animation: all ease 3s;
+            animation: showdownload 0.5s ease-in;
+            -webkit-animation: showdownload 0.5s ease-in;
+            -moz-animation: showdownload ease-in 0.5s;
+            -ms-animation: showdownload ease-in 0.5s;
+            -o-animation: showdownload ease-in 0.5s;
             right: 0;
             button {
                 img {
@@ -212,6 +212,13 @@ button {
                     -o-transform: rotate(-180deg);
                 }
             }
+        }
+        &.default {
+            animation: hidendownload 0.5s ease-in;
+            -webkit-animation: hidendownload 0.5s ease-in;
+            -moz-animation: hidendownload ease-in 0.5s;
+            -ms-animation: hidendownload ease-in 0.5s;
+            -o-animation: hidendownload ease-in 0.5s;
         }
         span {
             font-family: 'BeVietnam';
