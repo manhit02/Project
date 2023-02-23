@@ -29,15 +29,15 @@ header.header
             
         span.js-moveTop TOP
             span
-    .container
-        img.header-logo.defaut(src="../assets/images/15.png")
+    .container 
+        img.header-logo.active(src="../assets/images/15.png")
         .header-left
             img.header-left__img1(src="../assets/images/Logo-Aubeat(option3).png")
             img.header-left__img2(src="../assets/images/Hue_Saturation929.png")
         .header-right
             img.header-right__img1(src="../assets/images/Logo-Au-Ok2.png")
             img.header-right__img2(src="../assets/images/Hue_Saturation930.png")            
-        button.header-login.active
+        button.header-login.active.js-regiter
             span Đăng nhập
             span Austar123
                 span
@@ -46,7 +46,7 @@ header.header
                         a Thông tin tài khoản
                     li
                         a Giftode
-                    li
+                    li.js-switch
                         a Đăng xuất
             img(src="../assets/images/VectorSmartObject.png")
         .header-btn

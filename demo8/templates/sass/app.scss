@@ -1,9 +1,17 @@
-@keyframes showServer {
+@keyframes showw {
     from {
-        opacity: 0;
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
     }
     to {
-        opacity: 1;
+        transform: translateY(1);
+        -webkit-transform: translateY(1);
+        -moz-transform: translateY(1);
+        -ms-transform: translateY(1);
+        -o-transform: translateY(1);
     }
 }
 
@@ -55,6 +63,9 @@
             width: 841px;
             display: flex;
             overflow-x: scroll;
+            &::-webkit-scrollbar {
+                display: none;
+            }
         }
     }
     &-giftlove {
@@ -124,6 +135,8 @@
         margin-top: 160px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
         &__nav {
             width: 100%;
             display: flex;
@@ -171,8 +184,8 @@
                         z-index: 1;
                         &.active {
                             display: block;
-                            animation: showServer 1s linear;
-                            -webkit-animation: showServer 1s linear;
+                            animation: showw .5s ease;
+                            -webkit-animation: showw .5s ease;
                         }
                         li {
                             a {
@@ -255,7 +268,6 @@
             &-item {
                 overflow: hidden;
                 position: relative;
-                padding-left: 13px;
                 padding-top: 14px;
                 width: 274px;
                 height: 600px;
@@ -274,14 +286,40 @@
                 &8 {
                     margin-right: 0;
                 }
+                &2 {
+                    &>img {
+                        &:nth-child(2) {
+                            top: 24px;
+                            left: 21px;
+                        }
+                    }
+                }
                 &>img {
-                    width: 242px;
-                    margin-bottom: 17px;
+                    &:nth-child(1) {
+                        width: 90%;
+                        margin-bottom: 17px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        border-radius: 10px;
+                        -webkit-border-radius: 10px;
+                        -moz-border-radius: 10px;
+                        -ms-border-radius: 10px;
+                        -o-border-radius: 10px;
+                    }
+                    &:nth-child(2) {
+                        position: absolute;
+                        width: 109px;
+                        height: 71px;
+                        top: 10px;
+                        left: 10px;
+                        cursor: pointer;
+                    }
                 }
                 span {
                     color: #fff;
                     margin-bottom: 10px;
                     font-family: 'NunitoSemiBold';
+                    margin-left: 16px;
                     &:nth-child(3) {
                         margin-bottom: 16px;
                         font-size: 30px;
@@ -424,8 +462,18 @@
                 margin-right: 7px;
                 display: flex;
                 flex-direction: column;
+                position: relative;
                 img {
                     margin-bottom: 18px;
+                    width: 126px;
+                    height: 168px;
+                    &:nth-child(2) {
+                        position: absolute;
+                        width: 48px;
+                        height: 30px;
+                        top: 0;
+                        left: 0;
+                    }
                 }
                 span {
                     color: #fff;
@@ -441,8 +489,18 @@
             &-2 {
                 display: flex;
                 flex-direction: column;
+                position: relative;
                 img {
                     margin-bottom: 18px;
+                    width: 126px;
+                    height: 168px;
+                    &:nth-child(2) {
+                        position: absolute;
+                        width: 56px;
+                        height: 37px;
+                        top: 4px;
+                        left: 2px;
+                    }
                 }
                 span {
                     color: #fff;
@@ -631,32 +689,32 @@
                         left: 64px;
                     }
                 }
-                &7 {
-                    position: absolute;
-                    top: calc(172px + 30px + 19px);
-                    left: 22px;
-                }
-                &8 {
-                    position: absolute;
-                    top: calc(172px + 172px + 30px + 30px + 19px);
-                    left: 22px;
-                }
-                &9 {
-                    position: absolute;
-                    top: calc(172px + 172px + 172px + 30px + 30px + 30px + 19px);
-                    left: 22px;
-                }
                 &10 {
                     position: absolute;
                     top: calc(172px + 30px + 19px);
-                    right: 21px;
+                    left: 22px;
                 }
                 &11 {
                     position: absolute;
                     top: calc(172px + 172px + 30px + 30px + 19px);
-                    right: 21px;
+                    left: 22px;
                 }
                 &12 {
+                    position: absolute;
+                    top: calc(172px + 172px + 172px + 30px + 30px + 30px + 19px);
+                    left: 22px;
+                }
+                &7 {
+                    position: absolute;
+                    top: calc(172px + 30px + 19px);
+                    right: 21px;
+                }
+                &8 {
+                    position: absolute;
+                    top: calc(172px + 172px + 30px + 30px + 19px);
+                    right: 21px;
+                }
+                &9 {
                     position: absolute;
                     top: calc(172px + 172px + 172px + 30px + 30px + 30px + 19px);
                     right: 21px;
@@ -765,28 +823,68 @@
             flex-wrap: wrap;
             justify-content: center;
             & .app-giftstore__item {
+                display: flex;
+                justify-content: center;
                 margin-right: 15px;
                 position: relative;
                 width: 137px;
                 height: 181px;
-                background: url("../assets/images/aa.png") center/contain no-repeat;
+                background: linear-gradient(to bottom, #edd1ff, #cd95fd);
                 margin-bottom: 66px;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+                &>img {
+                    width: 67px;
+                    height: 104px;
+                    margin-top: 17px;
+                    &:nth-child(2) {
+                        position: absolute;
+                        margin-top: 0;
+                        top: 1px;
+                        left: -3px;
+                        width: 46px;
+                        height: 30px;
+                    }
+                }
                 span {
-                    position: absolute;
-                    width: 134px;
-                    height: 53px;
-                    background: #9078f3;
-                    bottom: 0;
-                    right: 0;
-                    border-bottom-left-radius: 8px;
-                    border-bottom-right-radius: 8px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    text-align: center;
-                    font-size: 22px;
                     color: #fff;
                     font-family: 'NunitoBold';
+                    &:nth-child(3) {
+                        position: absolute;
+                        top: 7px;
+                        right: -19px;
+                        font-size: 14px;
+                        width: 77px;
+                        height: 24px;
+                        background: linear-gradient(to bottom, #ca8cff, #927af3);
+                        clip-path: polygon(30% 0%, 70% 0%, 100% 100%, 0% 100%);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transform: rotate(10deg);
+                        -webkit-transform: rotate(45deg);
+                        -moz-transform: rotate(10deg);
+                        -ms-transform: rotate(10deg);
+                        -o-transform: rotate(10deg);
+                    }
+                    &:nth-child(4) {
+                        position: absolute;
+                        width: 100%;
+                        height: 53px;
+                        background: #9078f3;
+                        bottom: 0;
+                        right: 0;
+                        border-bottom-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        font-size: 22px;
+                    }
                 }
                 &6 {
                     margin-right: 16px;
@@ -861,6 +959,8 @@
                 z-index: 1;
                 &.active {
                     display: flex;
+                    animation: showw 0.5s linear;
+                    -webkit-animation: showw 0.5s linear;
                 }
                 li {
                     font-size: 26px;
@@ -978,7 +1078,7 @@
                         justify-content: center;
                         width: 408px;
                         height: 294px;
-                        padding-top: 10px;
+                        padding-top: 14px;
                         margin-bottom: 14px;
                         border: 4px solid #794dd2;
                         border-radius: 24px;
@@ -1027,12 +1127,25 @@
                     &-1 {
                         display: flex;
                         flex-direction: column;
+                        position: relative;
                         align-items: center;
                         img {
-                            width: 157px;
-                            height: 205px;
+                            border-radius: 10px;
+                            width: 152px;
+                            height: 202px;
                             margin-bottom: 8px;
-                            margin-left: -5px;
+                            -webkit-border-radius: 10px;
+                            -moz-border-radius: 10px;
+                            -ms-border-radius: 10px;
+                            -o-border-radius: 10px;
+                            margin-right: 10px;
+                            &:nth-child(2) {
+                                position: absolute;
+                                width: 67px;
+                                height: 44px;
+                                top: -4px;
+                                left: -6px;
+                            }
                         }
                         span {
                             font-size: 22px;
@@ -1044,12 +1157,23 @@
                         display: flex;
                         flex-direction: column;
                         align-items: center;
+                        position: relative;
                         img {
-                            width: 151px;
+                            border-radius: 10px;
+                            -webkit-border-radius: 10px;
+                            -moz-border-radius: 10px;
+                            -ms-border-radius: 10px;
+                            -o-border-radius: 10px;
+                            width: 152px;
                             height: 202px;
-                            margin-top: 3px;
                             margin-bottom: 8px;
-                            margin-left: 11px;
+                            &:nth-child(2) {
+                                position: absolute;
+                                width: 57px;
+                                height: 34px;
+                                top: 8px;
+                                left: 5px;
+                            }
                         }
                         span {
                             font-size: 22px;
@@ -1126,6 +1250,21 @@
                             width: 59px;
                             height: 78px;
                         }
+                        &>span {
+                            &:nth-child(4) {
+                                font-size: 18px;
+                                span {
+                                    font-size: 18px;
+                                }
+                            }
+                            &:nth-child(5) {
+                                font-size: 24px;
+                                margin-left: 44px;
+                                img {
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
                         &1 {
                             height: 351px;
                             padding-top: 18px;
@@ -1135,14 +1274,14 @@
                         }
                         &-1 {
                             img {
-                                width: 187px;
-                                height: 243px;
+                                width: 180px;
+                                height: 240px;
                                 margin-bottom: 11px;
                             }
                         }
                         &-2 {
                             img {
-                                width: 181px;
+                                width: 180px;
                                 height: 240px;
                                 margin-bottom: 11px;
                             }

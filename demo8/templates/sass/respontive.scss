@@ -190,7 +190,7 @@
     }
     .app {
         &-heading {
-            width: 60%;
+            width: 100%;
         }
         &-slider {
             width: 100%;
@@ -274,32 +274,32 @@
                 &-item {
                     width: 150px;
                     height: 150px;
-                    &7 {
+                    &12 {
                         position: absolute;
                         top: calc(150px + 30px);
                         left: 22px;
                     }
-                    &8 {
+                    &11 {
                         position: absolute;
                         top: calc(150px + 150px + 20px + 20px);
-                        left: 22px;
-                    }
-                    &9 {
-                        position: absolute;
-                        top: calc(150px + 150px + 150px + 20px + 20px + 20px);
                         left: 22px;
                     }
                     &10 {
                         position: absolute;
+                        top: calc(150px + 150px + 150px + 20px + 20px + 20px);
+                        left: 22px;
+                    }
+                    &7 {
+                        position: absolute;
                         top: calc(150px + 20px);
                         right: 21px;
                     }
-                    &11 {
+                    &8 {
                         position: absolute;
                         top: calc(150px + 150px + 20px + 20px);
                         right: 21px;
                     }
-                    &12 {
+                    &9 {
                         position: absolute;
                         top: calc(150px + 150px + 150px + 20px + 20px + 20px);
                         right: 21px;
@@ -398,6 +398,8 @@
                             &1 {
                                 width: 95%;
                                 position: relative;
+                                padding-left: 4px;
+                                padding-right: 4px;
                             }
                             &-1 {
                                 width: 100%;
@@ -410,8 +412,8 @@
                                 }
                                 img {
                                     position: absolute;
-                                    width: 49%;
-                                    left: 5px;
+                                    width: 100%;
+                                    margin-right: 2px;
                                 }
                             }
                             &-2 {
@@ -425,9 +427,8 @@
                                 }
                                 img {
                                     position: absolute;
-                                    width: 49%;
-                                    margin: 3px 0 0 0;
-                                    right: 5px;
+                                    width: 100%;
+                                    margin-left: 2px;
                                 }
                             }
                         }
@@ -503,15 +504,17 @@
                 top: 50px;
                 width: 150px;
                 margin-bottom: 0;
+                height: 450px;
                 &>img {
                     width: 130px;
                     height: unset;
-                    margin-top: 110px;
+                    margin-top: 50px;
                     margin-bottom: 15px;
                 }
                 button {
                     width: 170px;
                     font-size: 18px;
+                    padding-right: 43px;
                     span {
                         font-size: 12px;
                     }
@@ -554,16 +557,18 @@
             &__download {
                 top: 50px;
                 width: 150px;
+                height: 450px;
                 margin-bottom: 0;
                 &>img {
                     width: 130px;
                     height: unset;
-                    margin-top: 110px;
+                    margin-top: 50px;
                     margin-bottom: 15px;
                 }
                 button {
                     width: 170px;
                     font-size: 18px;
+                    padding-right: 43px;
                     span {
                         font-size: 12px;
                     }
@@ -620,7 +625,7 @@
     }
     .app {
         &-heading {
-            width: 60%;
+            width: 100%;
         }
         &-slider {
             width: 100%;
@@ -698,10 +703,13 @@
                     width: 200px;
                     height: 500px;
                     margin-right: 8px;
-                    padding-left: 8px;
                     &>img {
                         width: 180px;
                         margin-bottom: 8px;
+                        &:nth-child(2) {
+                            width: 70px;
+                            height: 60px;
+                        }
                     }
                     span {
                         &:nth-child(3) {
@@ -730,6 +738,16 @@
                             img {
                                 width: 24px;
                                 height: 24px;
+                            }
+                        }
+                    }
+                    &2 {
+                        &>img {
+                            &:nth-child(2) {
+                                width: 60px;
+                                height: 40px;
+                                top: 25px;
+                                left: 20px;
                             }
                         }
                     }
@@ -819,32 +837,32 @@
                             width: 25px;
                         }
                     }
-                    &7 {
+                    &12 {
                         position: absolute;
                         top: calc(100px + 30px);
                         left: 22px;
                     }
-                    &8 {
+                    &11 {
                         position: absolute;
                         top: calc(100px + 100px + 20px + 20px);
-                        left: 22px;
-                    }
-                    &9 {
-                        position: absolute;
-                        top: calc(100px + 100px + 100px + 20px + 20px + 20px);
                         left: 22px;
                     }
                     &10 {
                         position: absolute;
+                        top: calc(100px + 100px + 100px + 20px + 20px + 20px);
+                        left: 22px;
+                    }
+                    &7 {
+                        position: absolute;
                         top: calc(100px + 20px);
                         right: 21px;
                     }
-                    &11 {
+                    &8 {
                         position: absolute;
                         top: calc(100px + 100px + 20px + 20px);
                         right: 21px;
                     }
-                    &12 {
+                    &9 {
                         position: absolute;
                         top: calc(100px + 100px + 100px + 20px + 20px + 20px);
                         right: 21px;
@@ -964,22 +982,25 @@
         height: 186px;
         &-login {
             top: 0;
-            &.active {
-                &>span {
-                    font-size: 14px;
-                    &:nth-child(2) {
-                        ul {
-                            top: 24px;
-                            right: 0;
-                            li {
-                                a {
-                                    font-size: 12px;
-                                    color: #000;
-                                }
+            &>span {
+                font-size: 14px;
+                &:nth-child(2) {
+                    ul {
+                        top: 24px;
+                        right: 0;
+                        li {
+                            a {
+                                font-size: 12px;
+                                color: #000;
                             }
                         }
                     }
                 }
+            }
+            img {
+                width: 18px;
+                height: 18px;
+                margin-right: 12px;
             }
         }
         &-logo {
@@ -992,6 +1013,7 @@
                 height: 200px;
                 width: 70px;
                 margin-bottom: 0;
+                left: 20px;
                 &>img {
                     width: 80px;
                     height: unset;
@@ -1056,6 +1078,7 @@
                 height: 200px;
                 width: 70px;
                 margin-bottom: 0;
+                right: 20px;
                 &>img {
                     width: 80px;
                     height: unset;
@@ -1135,7 +1158,7 @@
     }
     .app {
         &-heading {
-            width: 60%;
+            width: 100%;
         }
         &-slider {
             width: 100%;
@@ -1232,6 +1255,7 @@
                 }
             }
             &__btn {
+                width: 100%;
                 margin-top: 20px;
                 margin-bottom: 40px;
             }
@@ -1325,32 +1349,32 @@
                             width: 10px;
                         }
                     }
-                    &7 {
+                    &12 {
                         position: absolute;
                         top: calc(50px + 15px + 5px);
                         left: 15px;
-                    }
-                    &8 {
-                        position: absolute;
-                        top: calc(50px + 50px + 15px + 10px);
-                        left: 15px;
-                    }
-                    &9 {
-                        position: absolute;
-                        top: calc(50px + 50px + 50px + 15px + 15px);
-                        left: 15px;
-                    }
-                    &10 {
-                        position: absolute;
-                        top: calc(50px + 15px + 5px);
-                        right: 15px;
                     }
                     &11 {
                         position: absolute;
                         top: calc(50px + 50px + 15px + 10px);
+                        left: 15px;
+                    }
+                    &10 {
+                        position: absolute;
+                        top: calc(50px + 50px + 50px + 15px + 15px);
+                        left: 15px;
+                    }
+                    &7 {
+                        position: absolute;
+                        top: calc(50px + 15px + 5px);
                         right: 15px;
                     }
-                    &12 {
+                    &8 {
+                        position: absolute;
+                        top: calc(50px + 50px + 15px + 10px);
+                        right: 15px;
+                    }
+                    &9 {
                         position: absolute;
                         top: calc(50px + 50px + 50px + 15px + 15px);
                         right: 15px;
@@ -1434,10 +1458,36 @@
                     height: 75px;
                     margin-bottom: 24px;
                     margin-right: 8px;
+                    &>img {
+                        width: 60%;
+                        object-fit: contain;
+                        height: unset;
+                        height: 50px;
+                        margin-top: 4px;
+                        &:nth-child(2) {
+                            width: 25px;
+                            height: 20px;
+                        }
+                    }
                     span {
-                        width: 100%;
-                        font-size: 8px;
-                        height: 20px;
+                        &:nth-child(3) {
+                            font-size: 6px;
+                            top: 4px;
+                            right: -9px;
+                            width: 31px;
+                            height: 8px;
+                            clip-path: polygon(28% 0%, 68% 0%, 100% 100%, 0% 136%);
+                            transform: rotate(52deg);
+                            -webkit-transform: rotate(52deg);
+                            -moz-transform: rotate(52deg);
+                            -ms-transform: rotate(52deg);
+                            -o-transform: rotate(52deg);
+                        }
+                        &:nth-child(4) {
+                            width: 100%;
+                            font-size: 8px;
+                            height: 20px;
+                        }
                     }
                     button {
                         bottom: -32px;
@@ -1529,16 +1579,16 @@
                             &1 {
                                 width: 95%;
                                 position: relative;
+                                padding-left: 4px;
+                                padding-right: 4px;
                             }
                             &-2 {
                                 width: 100%;
                                 img {
-                                    width: 50%;
-                                    position: absolute;
-                                    right: 3px;
+                                    width: 100%;
+                                    margin-left: 2px;
                                 }
                                 span {
-                                    margin-top: 250px;
                                     text-align: center;
                                     width: 100%;
                                     display: block;
@@ -1547,12 +1597,10 @@
                             &-1 {
                                 width: 100%;
                                 img {
-                                    width: 50%;
-                                    position: absolute;
-                                    left: 3px;
+                                    width: 100%;
+                                    margin-right: 2px;
                                 }
                                 span {
-                                    margin-top: 250px;
                                     text-align: center;
                                     width: 100%;
                                     display: block;

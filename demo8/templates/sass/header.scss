@@ -64,9 +64,13 @@
                 position: absolute;
                 top: 627px;
                 left: 502px;
+                z-index: 1;
                 &.defaut {
                     filter: grayscale(1);
                     -webkit-filter: grayscale(1);
+                }
+                &.active {
+                    cursor: pointer;
                 }
             }
             &-left {
@@ -335,6 +339,7 @@
                 background: transparent;
                 align-items: center;
                 cursor: pointer;
+                z-index: 9999;
                 &>span {
                     font-family: 'NunitoRegular';
                     font-size: 30px;
@@ -357,9 +362,6 @@
                     &>span {
                         &:nth-child(2) {
                             display: none;
-                            ul {
-                                display: none;
-                            }
                         }
                     }
                 }
