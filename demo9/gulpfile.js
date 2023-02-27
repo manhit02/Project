@@ -16,9 +16,8 @@ const { sassFiles, jsFiles, htmlFiles } = FilesPath;
 
 /** Sass Task */
 function sassTask() {
-    return src(["templates/sass/resetcss.scss", "templates/sass/header.scss", "templates/sass/app.scss", "templates/sass/respontive.scss"])
+    return src(["templates/sass/style.scss", "templates/sass/popup.scss"])
         .pipe(sass({ outputStyle: 'compressed' }))
-        .pipe(concat('style.css'))
         .pipe(dest('dist/css'))
         .pipe(browserSync.stream());
 }
@@ -35,7 +34,7 @@ function jsTask() {
 
 /** HTML Task */
 function htmlTask() {
-    return src("templates/pages/index.pug")
+    return src(["templates/pages/index.pug", "templates/pages/popup.pug"])
         .pipe(pug({ pretty: true }))
         .pipe(dest('dist/pages'))
         .pipe(browserSync.stream());
