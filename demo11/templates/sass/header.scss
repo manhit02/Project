@@ -1,28 +1,23 @@
-@font-face {
-    font-family: 'AmericanaBEx';
-    src: url('../assets/fonts/00016-UTM-AmericanaBEx.ttf');
-}
-
-@font-face {
-    font-family: 'UTMAvoBold';
-    src: url('../assets/fonts/UTMAvoBold.ttf');
-}
-
-@font-face {
-    font-family: 'NotoSerif-Regular';
-    src: url('../assets/fonts/NotoSerif-Regular.ttf');
-}
-
-@font-face {
-    font-family: 'Dancingscript';
-    src: url('../assets/fonts/SVN-Dancingscript.ttf');
-}
-
-@font-face {
-    font-family: 'NotoSerif-Bold';
-    src: url('../assets/fonts/NotoSerif-Bold.ttf');
-}
-
+// @font-face {
+//     font-family: 'AmericanaBEx';
+//     src: url('../assets/fonts/00016-UTM-AmericanaBEx.ttf');
+// }
+// @font-face {
+//     font-family: 'UTMAvoBold';
+//     src: url('../assets/fonts/UTMAvoBold.ttf');
+// }
+// @font-face {
+//     font-family: 'NotoSerif-Regular';
+//     src: url('../assets/fonts/NotoSerif-Regular.ttf');
+// }
+// @font-face {
+//     font-family: 'Dancingscript';
+//     src: url('../assets/fonts/SVN-Dancingscript.ttf');
+// }
+// @font-face {
+//     font-family: 'NotoSerif-Bold';
+//     src: url('../assets/fonts/NotoSerif-Bold.ttf');
+// }
 body {
     overflow-x: hidden;
     font-family: 'AmericanaBEx';
@@ -44,6 +39,7 @@ button {
 
 .header {
     background: center center/cover no-repeat url("../assets/images/bgt.jpg");
+    margin-top: 400px;
     & .container {
         position: relative;
         height: 963px;
