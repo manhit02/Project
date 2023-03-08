@@ -1,0 +1,40 @@
+// @font-face {
+//     font-family: 'AmericanaBEx';
+//     src: url('../assets/fonts/00016-UTM-AmericanaBEx.ttf');
+// }
+// @font-face {
+//     font-family: 'UTMAvoBold';
+//     src: url('../assets/fonts/UTMAvoBold.ttf');
+// }
+// @font-face {
+//     font-family: 'NotoSerif-Regular';
+//     src: url('../assets/fonts/NotoSerif-Regular.ttf');
+// }
+// @font-face {
+//     font-family: 'Dancingscript';
+//     src: url('../assets/fonts/SVN-Dancingscript.ttf');
+// }
+// @font-face {
+//     font-family: 'NotoSerif-Bold';
+//     src: url('../assets/fonts/NotoSerif-Bold.ttf');
+// }
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+.header {
+    & .container {
+        position: relative;
+        height: 963px;
+    }
+}

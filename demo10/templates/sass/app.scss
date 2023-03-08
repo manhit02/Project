@@ -2,6 +2,8 @@
     position: relative;
     background: url("../assets/images/Layer1082.jpg") top center/cover no-repeat;
     padding-top: 38px;
+    content-visibility: auto;
+    contain-intrinsic-size: 1000px;
     &>img {
         position: absolute;
         &:nth-child(1) {

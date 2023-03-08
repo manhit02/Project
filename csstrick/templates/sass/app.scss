@@ -1,0 +1,26 @@
+.app {
+    $color-bg: #ccc;
+    h1 {
+        width: 50px;
+        font-size: 40px;
+        a {
+            $width: 20px;
+            $color: rgba(255, 0, 0, 0.5);
+            $colo-hover: rgba(255, 0, 0, 1);
+            background-image: linear-gradient(90deg, $color-bg, $color-bg), linear-gradient(90deg, $color, $color);
+            background-size: $width 8px, 100% 8px;
+            background-repeat: no-repeat;
+            background-position-x: -$width, 0;
+            background-position-y: 100%;
+            transition: background-position-x 0.5s;
+            -webkit-transition: background-position-x 0.5s;
+            -moz-transition: background-position-x 0.5s;
+            -ms-transition: background-position-x 0.5s;
+            -o-transition: background-position-x 0.5s;
+            &:hover {
+                background-image: linear-gradient(90deg, $color-bg, $color-bg), linear-gradient(90deg, $colo-hover, $colo-hover);
+                background-position-x: calc(100% + $width), 0;
+            }
+        }
+    }
+}
