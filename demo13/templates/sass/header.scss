@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('../assets/fonts/OpenSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('../assets/fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'UTMAvoBold';
+    src: url('../assets/fonts/UTMAvoBold.ttf');
+}
+
+@font-face {
+    font-family: 'UVNBaiSau';
+    src: url('../assets/fonts/UVNBaiSau_B.TTF');
+}
+
+@font-face {
+    font-family: 'UTMAvo';
+    src: url('../assets/fonts/UTMAvo.ttf');
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+}
+
+.header {}

@@ -23,21 +23,35 @@
         max-width: 1000px;
     }
     .header {
-        background-size: 100% 100%;
         &-logo {
             width: 100%;
             margin-left: 0;
         }
+        &-download {
+            right: -274px;
+            button {
+                &:nth-last-child(2) {
+                    display: block;
+                }
+            }
+        }
     }
     .app {
-        background-size: 100% 100%;
         &-rules {
             &__code {
                 width: 100%;
-                flex-wrap: wrap;
                 li {
-                    width: 50%;
-                    margin-right: 0;
+                    padding-top: 50px;
+                    span {
+                        font-size: 26px;
+                        strong {
+                            font-size: 48px;
+                        }
+                    }
+                    button {
+                        bottom: -10px;
+                        font-size: 14px;
+                    }
                 }
             }
         }
@@ -53,6 +67,9 @@
                 }
             }
         }
+    }
+    .popup {
+        padding-top: 50px;
     }
 }
 
@@ -74,6 +91,14 @@
             li {
                 a {
                     font-size: 12px;
+                }
+            }
+        }
+        &-download {
+            right: -274px;
+            button {
+                &:nth-last-child(2) {
+                    display: block;
                 }
             }
         }
@@ -125,6 +150,9 @@
 /* mobile */
 
 @media (max-width: 739px) {
+    .bg-all {
+        object-position: center -40px;
+    }
     .container {
         max-width: 360px;
     }
@@ -152,6 +180,11 @@
                 a {
                     font-size: 18px;
                 }
+                &:last-child {
+                    a {
+                        margin-right: 0;
+                    }
+                }
             }
         }
         &-download {
@@ -164,10 +197,17 @@
         background-size: unset;
         &-introduce {
             &>span {
-                font-size: 18px;
-                width: 233px;
-                text-align: center;
-                margin-bottom: 36px;
+                span {
+                    font-size: 18px;
+                    width: 245px;
+                    text-align: center;
+                    margin-bottom: 36px;
+                    display: block;
+                    padding: 0;
+                    &:nth-child(1) {
+                        margin-bottom: 0;
+                    }
+                }
             }
             &__gift {
                 width: 100%;
@@ -242,8 +282,11 @@
                 li {
                     width: 150px;
                     height: 114px;
-                    margin-right: 0;
-                    padding-top: 20px;
+                    padding-top: 30px;
+                    margin-bottom: 10px;
+                    &:nth-child(2) {
+                        margin-right: 0;
+                    }
                     span {
                         font-size: 17px;
                         strong {
@@ -252,10 +295,10 @@
                         }
                     }
                     button {
-                        font-size: 10px;
+                        font-size: 8px;
                         width: 73px;
                         height: 23px;
-                        bottom: 10px;
+                        bottom: 0px;
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -287,19 +330,17 @@
                 li {
                     font-size: 16px;
                     text-align: center;
-                    button {
+                    &:nth-child(3) {
                         flex-direction: column;
-                        img {
-                            &:nth-child(2) {
-                                width: 195px;
-                                margin: 0 0 20px 0;
-                            }
+                        &>img {
                             &:nth-child(1) {
                                 display: none;
                             }
-                            &:nth-child(3) {
-                                width: 70px;
-                                height: 70px;
+                        }
+                        & .slide {
+                            width: 100%;
+                            img {
+                                width: 100%;
                             }
                         }
                     }
@@ -315,6 +356,39 @@
             &>button {
                 display: flex;
             }
+        }
+    }
+    .popup {
+        padding-top: 60px;
+        & .app-rules__detail {
+            width: 350px;
+            padding: 63px 23px 57px 24px;
+            li {
+                margin-bottom: 20px;
+                font-size: 16px;
+                &::after {
+                    display: none;
+                }
+            }
+            & .popup-close {
+                top: -8px;
+                right: -8px;
+            }
+        }
+    }
+    .footer {
+        height: unset;
+        & .container {
+            flex-direction: column;
+        }
+        &-info {
+            width: 100%;
+        }
+        &-address {
+            width: 100%;
+        }
+        &-logo {
+            width: 100%;
         }
     }
 }

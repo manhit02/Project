@@ -1,18 +1,20 @@
 .app
     .container
         .app-introduce
-            button.app-introduce__btn Giới thiệu
-            span LƯỚT TOONDER MÊ SAY! NHẬN GIFTCODE LIỀN TAY  
+            button(type="").app-introduce__btn.js-showpopup Giới thiệu
+            span 
+                span LƯỚT TOONDER MÊ SAY! 
+                span NHẬN GIFTCODE LIỀN TAY 
             .app-introduce__gift
-                button 
-                    img(src="../assets/images/2.png")
-                button 
-                    img(src="../assets/images/3.png")
-                button 
-                    img(src="../assets/images/Logo-Aubeat-(final).png")
+                button(type="").js-movAu 
+                    img(alt="",src="../assets/images/2.png")
+                button(type="").js-movAu2
+                    img(alt="",src="../assets/images/3.png")
+                button(type="").js-movAub
+                    img(alt="",src="../assets/images/Logo-Aubeat-(final).png")
             .app-introduce__directional
-                button.js-rules.app-introduce__btn Thể lệ
-                button.js-help.app-introduce__btn Hướng dẫn
+                button(type="").js-rules.app-introduce__btn Thể lệ
+                button(type="").js-help.app-introduce__btn Hướng dẫn
         .app-rules  
             ul.app-rules__detail
                 li.btn Thể lệ
@@ -21,59 +23,70 @@
                 li Truy cập và hoàn thành các nhiệm vụ để nhận điểm (P) trên app <strong>Toonder</strong> 
                 li Với mỗi mốc <strong>20 điểm, 50 điểm, 80 điểm </strong>sẽ nhận được các phần quà giftcode tương ứng. 
                 li Nhận Giftcode quà tại mục <strong>" ĐỔI COUPON"</strong> trên app Toonder   
-            button AUDITION 
+            button(type="").js-au AUDITION 
             ul.app-rules__code1.app-rules__code
                 li
                     span AUCODE<strong>30%</strong>
-                    button Tạo tài<br> khoản mới
+                    button(type="") Tạo tài<br> khoản mới
                 li
                     span AUCODE<strong>30%</strong>
-                    button Đạt mốc 20 điểm
+                    button(type="") Đạt mốc 20 điểm
                 li
                     span AUCODE<strong>30%</strong> 
-                    button Đạt mốc 50 điểm
+                    button(type="") Đạt mốc 50 điểm
                 li
                     span AUCODE<strong>30%</strong>
-                    button Đạt mốc 80 điểm
-            button Aubeat  
+                    button(type="") Đạt mốc 80 điểm
+            button(type="").js-aub Aubeat  
             ul.app-rules__code2.app-rules__code
                     li 
                         span GIFTCODE<strong>100K</strong>
-                        button Tạo tài<br> khoản mới
+                        button(type="") Tạo tài<br> khoản mới
                     li 
                         span GIFTCODE<strong>100K</strong>
-                        button Đạt mốc 20 điểm
+                        button(type="") Đạt mốc 20 điểm
                     li 
                         span GIFTCODE<strong>100K</strong>
-                        button Đạt mốc 50 điểm
+                        button(type="") Đạt mốc 50 điểm
                     li 
                         span GIFTCODE<strong>100K</strong>
-                        button Đạt mốc 80 điểm
-            button AU2 
+                        button(type="") Đạt mốc 80 điểm
+            button(type="").js-au2 AU2 
             ul.app-rules__code3.app-rules__code
                     li 
                         span GIFTCODE<strong>100K</strong>
-                        button Tạo tài khoản mới
+                        button(type="") Tạo tài<br> khoản mới
                     li 
                         span GIFTCODE<strong>100K</strong>
-                        button Đạt mốc 20 điểm
+                        button(type="") Đạt mốc 20 điểm
                     li 
                         span GIFTCODE<strong>100K</strong>
-                        button Đạt mốc 50 điểm
+                        button(type="") Đạt mốc 50 điểm
                     li 
                         span GIFTCODE<strong>100K</strong>
-                        button Đạt mốc 80 điểm
+                        button(type="") Đạt mốc 80 điểm
         .app-help   
             ul.app-rules__detail
                 li.btn Hướng dẫn
                 li Bước 1: Tải app Toonder và đăng nhập tài khoản VTC ID trên app 
                 li 
-                    button 
-                        img(src="../assets/images/6.png")
-                        img(src="../assets/images/8.jpg")
-                        img(src="../assets/images/6.png")
+                    img(alt="",src="../assets/images/6.png").js-pev
+                    .slide.js-slide
+                        img(alt="",src="../assets/images/a2.png")
+                        img(alt="",src="../assets/images/8.jpg")
+                        img(alt="",src="../assets/images/A1.jpg")
+                      
+                    img(alt="",src="../assets/images/6.png").js-next
                 li  
-                    img(src="../assets/images/4.png")
+                    img(alt="",src="../assets/images/4.png")
                 li
-                    img(src="../assets/images/5.png")
-            button Tải app toonder 
+                    img(alt="",src="../assets/images/5.png")
+            button(type="") Tải app toonder 
+.popup.js-popup
+    ul.app-rules__detail
+        li.btn Hướng dẫn
+        li Chào mừng bạn đến với thế giới truyện tranh đầy màu sắc của <strong> Toonder Comics! </strong>
+        li <strong>Toonder Comics </strong>là ứng dụng đọc truyện tranh bản quyền miễn phí mới nhất tại Việt Nam. 
+        li Tại đây các bạn có thể nhận được rất nhiều các phần quà từ game <strong>Audition, Aubeat, Au2.</strong>
+        li.popup-close.js-close
+            img(alt="",src="../assets/images/close.png")

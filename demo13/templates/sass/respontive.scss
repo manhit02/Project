@@ -1,0 +1,39 @@
+// pc high
+@media (min-width: 2001px) {
+    .header {}
+    .app {}
+}
+
+// pc
+@media (min-width: 1281px)and (max-width: 2000px) {
+    .header {}
+    .app {}
+}
+
+// pc low
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .container {
+        max-width: 1000px;
+    }
+    .header {}
+    .app {}
+}
+
+
+/* tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .container {
+        max-width: 700px;
+    }
+    .header {}
+    .app {}
+}
+
+
+/* mobile */
+
+@media (max-width: 739px) {
+    .header {}
+    .app {}
+}

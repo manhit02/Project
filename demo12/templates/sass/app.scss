@@ -1,294 +1,315 @@
-.btn {
-    font-size: 30px;
-    color: rgb(255, 255, 255);
-    font-family: 'BeVietnamProBold';
-    width: 195px;
-    height: 62px;
-    background: linear-gradient( to right, #e8496d, #a44aff, #95f2ff);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    border: 2px solid #fff;
-    box-shadow: 2px 2px #ea5b94, -2px 2px #ea5b94, 2px -2px #ea5b94, -2px -2px #ea5b94;
-}
-
 .app {
-    padding-top: 29px;
-    padding-bottom: 237px;
-    &-introduce {
+    &-heading {
+        font-size: 36px;
+        font-family: 'UTMAvoBold';
+        color: #f9e4a1;
+        text-shadow: 1px 1px 1.24px rgba(104, 41, 10, 0.64), -1px 1px 1.24px rgba(104, 41, 10, 0.64), 1px -1px 1.24px rgba(104, 41, 10, 0.64), -1px -1px 1.24px rgba(104, 41, 10, 0.64);
+        line-height: 1.2;
+        background: url("../assets/images/Layer20.png") center/ contain no-repeat;
         display: flex;
         align-items: center;
-        flex-direction: column;
-        &__btn {
-            background: linear-gradient(to right, #e53d75, #faa851);
-            width: 249px;
-            height: 68px;
-            border-radius: 10px;
-            -webkit-border-radius: 10px;
-            -moz-border-radius: 10px;
-            -ms-border-radius: 10px;
-            -o-border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'BeVietnamProBold';
-            color: #fff;
-            font-size: 30px;
-            margin-bottom: 33px;
-        }
-        &>span {
-            font-family: 'iCielPony';
-            font-size: 22px;
-            color: #fff;
-            // text-shadow: ;
-            margin-bottom: 29px;
-        }
-        &__gift {
-            display: flex;
-            justify-content: space-between;
-            width: 854px;
-            margin-bottom: 40px;
-            button {
-                width: 214px;
-                height: 247px;
-                background: url("../assets/images/1.png") center/contain no-repeat;
-                &:nth-child(1) {
-                    img {
-                        margin-top: 88px;
-                    }
-                }
-                &:nth-child(2) {
-                    img {
-                        margin-top: 109px;
-                    }
-                }
-                &:nth-child(3) {
-                    img {
-                        margin-top: 79px;
-                    }
-                }
-            }
-        }
-        &__directional {
-            display: flex;
-            & .app-introduce__btn {
-                width: 211px;
-                height: 57px;
-                margin-right: 19px;
-                margin-bottom: 92px;
-            }
-        }
+        justify-content: center;
+        width: 390px;
+        height: 116px;
+        margin: 0 auto;
+        cursor: default;
     }
-    &-rules {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        &__detail {
-            position: relative;
-            width: 100%;
-            border-radius: 10px;
-            -webkit-border-radius: 10px;
-            -moz-border-radius: 10px;
-            -ms-border-radius: 10px;
-            -o-border-radius: 10px;
-            border: 4px solid #fff;
-            padding: 97px 0px 72px 90px;
-            background: #3e1170;
-            margin-bottom: 111px;
-            box-shadow: 3px 3px #ea5b94, 3px -3px #ea5b94, -3px 3px #ea5b94, -3px -3px #ea5b94, inset 3px 3px #ea5b94, inset 3px -3px #ea5b94, inset -3px 3px #ea5b94, inset -3px -3px #ea5b94, 1px 1px 40px #b346b5, 1px -1px 40px #b346b5, -1px 1px 40px #b346b5, -1px -1px 40px #b346b5, inset 1px 1px 40px #b346b5, inset 1px -1px 40px #b346b5, inset -1px 1px 40px #b346b5, inset -1px -1px 40px #b346b5;
-            li {
-                position: relative;
-                list-style: none;
-                font-family: 'BeVietnamPro';
-                font-size: 24px;
-                color: #fff;
-                margin-bottom: 26px;
-                strong {
-                    font-family: 'BeVietnamProBold';
-                    color: #96eaff;
-                }
-                &::after {
-                    position: absolute;
-                    top: 50%;
-                    -webkit-transform: translateY(-50%);
-                    -moz-transform: translateY(-50%);
-                    -ms-transform: translateY(-50%);
-                    -o-transform: translateY(-50%);
-                    transform: translateY(-50%);
-                    left: -31px;
-                    content: "";
-                    width: 20px;
-                    height: 20px;
-                    background: linear-gradient(#e13c75, #a24cff, #94dffc);
+    &-news {
+        margin-top: 80px;
+        &__content {
+            margin-top: 23px;
+            width: 1166px;
+            height: 789px;
+            background: url("../assets/images/5.png") center /contain no-repeat;
+            &-item {
+                padding-top: 43px;
+                padding-left: 53px;
+                padding-right: 56px;
+                margin-bottom: 35px;
+                display: flex;
+                justify-content: space-between;
+                li {
                     display: flex;
-                    border-radius: 50%;
-                    -webkit-border-radius: 50%;
-                    -moz-border-radius: 50%;
-                    -ms-border-radius: 50%;
-                    -o-border-radius: 50%;
-                }
-                &:nth-child(1) {
-                    &::after {
-                        display: none;
-                    }
-                    position: absolute;
-                    top: -33px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    -webkit-transform: translateX(-50%);
-                    -moz-transform: translateX(-50%);
-                    -ms-transform: translateX(-50%);
-                    -o-transform: translateX(-50%);
-                }
-            }
-        }
-        &>button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'BeVietnamProBold';
-            font-size: 29px;
-            color: #fff;
-            width: 313px;
-            height: 110px;
-            background: url("../assets/images/10.png") center/contain no-repeat;
-            padding-right: 20px;
-            margin-bottom: 40px;
-            text-shadow: 0 0 4px #ce18ea, 0 0 4px #ce18ea, 0 0 4px #ce18ea, 0 0 4px #ce18ea, 0 0 4px #ce18ea, 0 0 4px #ce18ea, 0 0 4px #ce18ea, 0 0 4px #ce18ea;
-            &:nth-child(4) {
-                filter: hue-rotate(135deg);
-                -webkit-filter: hue-rotate(135deg);
-            }
-            &:nth-child(6) {
-                filter: hue-rotate(270deg);
-                -webkit-filter: hue-rotate(270deg);
-            }
-        }
-        &__code {
-            display: flex;
-            li {
-                position: relative;
-                background: url("../assets/images/7.png") center/contain no-repeat;
-                border-radius: 20px;
-                width: 315px;
-                height: 227px;
-                margin-right: 17px;
-                padding-top: 48px;
-                span {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
                     flex-direction: column;
-                    background: linear-gradient( #e24dc0, #d5b952);
-                    -webkit-background-clip: text;
-                    -webkit-text-stroke: 6px transparent;
-                    font-size: 35px;
-                    font-family: 'BeVietnamProBold';
-                    color: #fff;
-                    strong {
-                        font-size: 58px;
-                        margin-top: 12px;
+                    width: 517px;
+                    img {
+                        margin-bottom: 17px;
+                        cursor: pointer;
+                        &:hover {
+                            cursor: pointer;
+                            transform: scale(1.01);
+                            -webkit-transform: scale(1.01);
+                            -moz-transform: scale(1.01);
+                            -ms-transform: scale(1.01);
+                            -o-transform: scale(1.01);
+                            transition: transform 0.5s;
+                            -webkit-transition: transform 0.5s;
+                            -moz-transition: transform 0.5s;
+                            -ms-transition: transform 0.5s;
+                            -o-transition: transform 0.5s;
+                        }
+                    }
+                    h3 {
+                        font-size: 24px;
+                        font-family: 'OpenSansBold';
+                        color: #361601;
+                    }
+                    p {
+                        color: #361601;
+                        font-family: 'OpenSans-Regular';
+                        font-size: 18px;
+                        margin-top: 16px;
+                        margin-bottom: 13px;
+                        text-align: justify;
+                    }
+                    a {
+                        cursor: pointer;
+                        color: red;
+                        text-decoration: underline;
+                        font-family: 'OpenSans-Regular';
+                        font-size: 16px;
+                        width: 100%;
+                        text-align: right;
                     }
                 }
-                button {
-                    background: linear-gradient(to right, #e63d76, #ab42f8, #99e5fb);
-                    width: 160px;
-                    height: 49px;
-                    position: absolute;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    bottom: 15px;
-                    border-top: 3px solid #fb43cb;
-                    border-bottom: 3px solid #fb43cb;
-                    color: #f8e54d;
-                    font-family: 'BeVietnamProBold';
-                    font-size: 18px;
-                    padding: 0;
-                    text-shadow: 0px 0px 3px #78057d, -0px 0px 3px #78057d, 0px -0px 3px #78057d, -0px -0px 3px #78057d, 0px 0px 3px #78057d, -0px 0px 3px #78057d, 0px -0px 3px #78057d, -0px -0px 3px #78057d;
-                    -webkit-transform: translateX(-50%);
-                    -moz-transform: translateX(-50%);
-                    -ms-transform: translateX(-50%);
-                    -o-transform: translateX(-50%);
-                }
-            }
-            &2,
-            &1 {
-                margin-bottom: 65px;
-            }
-            &3 {
-                margin-bottom: 158px;
-            }
-        }
-    }
-    &-help {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        & .app-rules__detail {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            position: relative;
-            margin-bottom: 0;
-            padding: 88px 0 95px 0;
-            li {
-                margin-bottom: 0;
-                &::after {
-                    display: none;
-                }
-                button {
-                    background: transparent;
+                &2 {
+                    margin-bottom: 18px;
                     display: flex;
+                    background-color: #b27c45;
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                    height: 130px;
+                    margin: 0 55px;
+                    padding: 0px 21px;
                     align-items: center;
-                    img {
+                    ul {
+                        display: flex;
+                        overflow-x: scroll;
+                        &::-webkit-scrollbar {
+                            display: none;
+                        }
+                        li {
+                            display: flex;
+                            align-items: center;
+                            background-color: #fff4de;
+                            border-radius: 10px;
+                            -webkit-border-radius: 10px;
+                            -moz-border-radius: 10px;
+                            -ms-border-radius: 10px;
+                            -o-border-radius: 10px;
+                            height: 99px;
+                            min-width: 225px;
+                            padding-left: 15px;
+                            margin-right: 8px;
+                            font-size: 14px;
+                            color: #361601;
+                            font-family: 'UTMAvoBold';
+                            img {
+                                margin-right: 7px;
+                                &:hover {
+                                    cursor: pointer;
+                                    transform: scale(1.1);
+                                    -webkit-transform: scale(1.1);
+                                    -moz-transform: scale(1.1);
+                                    -ms-transform: scale(1.1);
+                                    -o-transform: scale(1.1);
+                                    transition: transform 0.5s;
+                                    -webkit-transition: transform 0.5s;
+                                    -moz-transition: transform 0.5s;
+                                    -ms-transition: transform 0.5s;
+                                    -o-transition: transform 0.5s;
+                                }
+                            }
+                        }
+                    }
+                    &>button {
+                        background-color: unset;
                         &:nth-child(1) {
+                            opacity: 0;
                             transform: rotate(180deg);
                             -webkit-transform: rotate(180deg);
                             -moz-transform: rotate(180deg);
                             -ms-transform: rotate(180deg);
                             -o-transform: rotate(180deg);
                         }
+                    }
+                }
+            }
+            &>span {
+                font-size: 24px;
+                font-family: 'UTMAvoBold';
+                color: #361601;
+                display: block;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    &-pkm {
+        &__content {
+            width: 1177px;
+            height: 731px;
+            background: url("../assets/images/pkmb.png") center /contain no-repeat;
+            &-item {
+                position: relative;
+                padding-top: 56px;
+                padding-left: 53px;
+                padding-right: 56px;
+                margin-bottom: 53px;
+                ul {
+                    display: flex;
+                    li {
+                        span {
+                            font-size: 36px;
+                            color: #361601;
+                            font-family: 'UTMAvoBold';
+                            margin-bottom: 30px;
+                            display: block;
+                        }
+                        p {
+                            font-size: 24px;
+                            color: #361601;
+                            font-family: 'UTMAvo';
+                            margin-bottom: 30px;
+                            line-height: 1.2;
+                        }
+                        &:nth-child(1) {
+                            img {
+                                margin-top: -50px;
+                            }
+                            width: 554px;
+                        }
                         &:nth-child(2) {
-                            margin: 0px 60px;
+                            margin-top: 23px;
+                            padding-left: 84px;
                         }
                     }
                 }
-                &:nth-child(2) {
-                    margin-bottom: 67px;
-                }
-                &:nth-child(4) {
-                    position: absolute;
-                    bottom: 83px;
-                    left: 126px;
-                }
-                &:nth-child(5) {
-                    position: absolute;
-                    bottom: 83px;
-                    right: 110px;
+                &2 {
+                    display: flex;
+                    background-color: #b27c45;
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                    height: 130px;
+                    margin: 0 55px;
+                    padding: 0px 21px;
+                    align-items: center;
+                    ul {
+                        display: flex;
+                        overflow-x: scroll;
+                        &::-webkit-scrollbar {
+                            display: none;
+                        }
+                        li {
+                            img {
+                                margin-right: 13px;
+                                cursor: pointer;
+                                transition: transform 0.5s;
+                                -webkit-transition: transform 0.5s;
+                                -moz-transition: transform 0.5s;
+                                -ms-transition: transform 0.5s;
+                                -o-transition: transform 0.5s;
+                                &:hover {
+                                    transform: scale(1.1);
+                                    -webkit-transform: scale(1.1);
+                                    -moz-transform: scale(1.1);
+                                    -ms-transform: scale(1.1);
+                                    -o-transform: scale(1.1);
+                                }
+                            }
+                        }
+                    }
+                    &>button {
+                        background-color: unset;
+                        &:nth-child(1) {
+                            opacity: 0;
+                            transform: rotate(180deg);
+                            -webkit-transform: rotate(180deg);
+                            -moz-transform: rotate(180deg);
+                            -ms-transform: rotate(180deg);
+                            -o-transform: rotate(180deg);
+                        }
+                    }
                 }
             }
         }
-        &>button {
-            display: none;
-            margin-top: 52px;
-            width: 210px;
-            height: 84px;
-            background: url("../assets/images/9.png") center/contain no-repeat;
-            font-family: 'MYRIADPRO';
-            font-size: 16px;
-            color: #fff;
-            font-style: italic;
-            text-transform: uppercase;
-            padding-top: 14px;
-            flex-direction: column;
-            justify-content: flex-start;
+    }
+    &-ds {
+        & .app-heading {
+            background: url("../assets/images/15.png") center/contain no-repeat;
+            width: 414px;
+            height: 197px;
+            margin-top: 80px;
+            margin-left: 386px;
+            margin-bottom: 32px;
+            padding-top: 50px;
+        }
+        &__slide {
+            width: 100%;
+            display: flex;
+            overflow-x: scroll;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+        &__control {
+            display: block;
+            margin-top: 22px;
+            text-align: center;
+            margin-bottom: 42px;
+            button {
+                width: 25px;
+                height: 25px;
+                border-radius: 10px;
+                background-color: #3b982a;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+                &.active {
+                    background: rgb(8, 40, 37);
+                    width: 68px;
+                }
+                &:hover {
+                    background: rgb(8, 40, 37);
+                    width: 68px;
+                }
+            }
+        }
+    }
+    &-popup {
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        width: 100%;
+        left: 0;
+        display: none;
+        span {
+            display: flex;
             align-items: center;
-            text-shadow: 1px 1px 1px #904203, 1px -1px 1px #904203, -1px 1px 1px #904203, -1px -1px 1px #904203, 0px 0px 3px #904203, 0px 0px 3px #904203, 0px 0px 3px #904203, 0px 0px 3px #904203;
+            justify-content: center;
+            width: 651px;
+            height: 472px;
+            background: url("../assets/images/popup.png") center/contain no-repeat;
+            font-family: "UTMAvoBold";
+            font-size: 60px;
+            color: #5d1d01;
+            margin: 100px auto 0;
+        }
+        & .overlay {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
         }
     }
 }
