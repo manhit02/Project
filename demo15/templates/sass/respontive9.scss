@@ -1,0 +1,261 @@
+    // pc high
+    @media (min-width: 2001px) {
+        .index-9-app {}
+    }
+    
+    // pc
+    @media (min-width: 1281px) and (max-width: 2000px) {}
+    
+    // pc low
+    @media (min-width: 1024px) and (max-width: 1280px) {
+        .index-9-banner {
+            &-sl {
+                &__list {
+                    &-item {
+                        &>img {}
+                        & .container {
+                            h3 {
+                                font-size: 20px;
+                                line-height: 1.4;
+                                p {
+                                    font-size: 16px;
+                                    line-height: 1.2;
+                                }
+                            }
+                            img {
+                                width: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (min-width: 1024px) {}
+    /* tablet */
+    
+    @media (min-width: 740px) and (max-width: 1023px) {
+        .index-9-banner {
+            &-sl {
+                &__list {
+                    &-item {
+                        height: 400px;
+                        & .container {
+                            margin-top: 30px;
+                            h3 {
+                                font-size: 18px;
+                                line-height: 1.2;
+                                p {
+                                    font-size: 12px;
+                                    line-height: 1;
+                                }
+                            }
+                            img {
+                                object-fit: contain;
+                                width: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .index-9-app {
+            &-heading {
+                font-size: 26px;
+                line-height: 1.2;
+                p {
+                    font-size: 18px;
+                }
+            }
+            &-vision,
+            &-mission {
+                ul {
+                    li {
+                        width: 50%;
+                        font-size: 18px;
+                        line-height: 1.2;
+                        p {
+                            font-size: 16px;
+                            line-height: 1;
+                        }
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            &-teams {
+                & .container {
+                    &>ul {
+                        &>li {
+                            ul {
+                                width: 600px;
+                            }
+                        }
+                    }
+                }
+                &-sl2 {
+                    &__list {
+                        &-item {
+                            ul {
+                                width: 100%;
+                                li {
+                                    &:nth-child(3) {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* mobile */
+    
+    @media (max-width: 739px) {
+        .index-9-banner {
+            &-sl {
+                &__list {
+                    &-item {
+                        height: 423px;
+                        &>img {
+                            height: 423px;
+                        }
+                        & .container {
+                            margin-top: 0;
+                            padding-top: 21px;
+                            flex-direction: column-reverse;
+                            align-items: center;
+                            h3 {
+                                margin-top: 0;
+                                font-size: 20px;
+                                line-height: 27px;
+                                text-align: center;
+                                p {
+                                    display: none;
+                                }
+                                br {
+                                    display: none;
+                                }
+                            }
+                            img {
+                                object-fit: contain;
+                                width: 269px;
+                                height: 257px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .index-9-app {
+            &-heading {
+                font-size: 20px;
+                line-height: 27px;
+                p {
+                    font-family: 'NotoSans';
+                    font-size: 16px;
+                    line-height: 22px;
+                    font-size: 14px;
+                }
+            }
+            &>p {
+                font-family: 'NotoSans';
+                padding-left: 30px;
+                padding-right: 20px;
+                display: flex;
+                font-size: 16px;
+                line-height: 22px;
+                color: #212C42;
+            }
+            &-vision,
+            &-mission {
+                ul {
+                    flex-direction: column;
+                    li {
+                        font-size: 16px;
+                        line-height: 22px;
+                        p {
+                            font-size: 14px;
+                            line-height: 19px;
+                        }
+                        img {
+                            width: 315px;
+                            height: 315px;
+                            object-fit: contain;
+                        }
+                        &:nth-child(1) {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            &-vision {
+                margin-top: 54px;
+            }
+            &-mission {
+                ul {
+                    flex-direction: column-reverse;
+                }
+            }
+            &-teams {
+                & .index-9-app-heading {
+                    p {
+                        text-align: left;
+                        text-indent: 16px;
+                        line-height: 19px;
+                        br {
+                            display: none;
+                        }
+                    }
+                }
+                & .container {
+                    &>ul {
+                        &>li {
+                            align-items: flex-start;
+                            &>img {
+                                margin-top: 16px;
+                                width: 22px;
+                                height: 35px;
+                            }
+                            ul {
+                                li {
+                                    min-width: calc(236px + 70px);
+                                    img {
+                                        width: 76px;
+                                        height: 76px;
+                                    }
+                                    p {
+                                        width: 236px;
+                                        font-size: 14px;
+                                        line-height: 19px;
+                                        &:last-child {
+                                            font-size: 14px;
+                                            line-height: 19px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &-sl2 {
+                    &__list {
+                        &-item {
+                            ul {
+                                width: 100%;
+                                li {
+                                    &:nth-child(2),
+                                    &:nth-child(3) {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

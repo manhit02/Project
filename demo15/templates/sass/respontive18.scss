@@ -1,0 +1,145 @@
+    // pc high
+    @media (min-width: 2001px) {
+        .index-18-app {}
+    }
+    
+    // pc
+    @media (min-width: 1281px) and (max-width: 2000px) {}
+    
+    // pc low
+    @media (min-width: 1024px) and (max-width: 1280px) {
+        .index-18-banner {
+            & .container {
+                margin: unset;
+                left: 10%;
+            }
+        }
+        .index-18-app {
+            &-law {
+                ul {
+                    li {
+                        width: 49%;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (min-width: 1024px) {}
+    /* tablet */
+    
+    @media (min-width: 740px) and (max-width: 1023px) {
+        .index-18-app {
+            &-law {
+                ul {
+                    li {
+                        width: 49%;
+                        em {
+                            padding: 20px;
+                            h2 {
+                                font-size: 18px;
+                                line-height: 1.2;
+                                p {
+                                    margin-top: 8px;
+                                    font-size: 14px;
+                                    line-height: 1;
+                                }
+                            }
+                            button {
+                                a {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &-common {
+                ul {
+                    li {
+                        width: 49%;
+                    }
+                }
+            }
+        }
+    }
+    /* mobile */
+    
+    @media (max-width: 739px) {
+        .index-18-banner {
+            height: 160px;
+            & .container {
+                h2 {
+                    width: max-content;
+                    font-size: 20px;
+                    line-height: 27px;
+                }
+            }
+        }
+        .index-18-app {
+            &-heading {
+                font-size: 16px;
+                line-height: 22px;
+            }
+            &-law {
+                ul {
+                    flex-wrap: wrap;
+                    li {
+                        width: 100%;
+                        margin-bottom: 20px;
+                        em {
+                            padding-right: 14px;
+                            padding-left: 12px;
+                            h2 {
+                                font-size: 16px;
+                                line-height: 22px;
+                                p {
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    strong {
+                                        display: none;
+                                    }
+                                }
+                            }
+                            button {
+                                width: 90px;
+                                height: 36px;
+                                a {
+                                    font-size: 14px;
+                                    line-height: 19px;
+                                }
+                            }
+                        }
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+            &-common {
+                ul {
+                    li {
+                        width: 164px;
+                        em {
+                            h2 {
+                                font-size: 16px;
+                                line-height: 22px;
+                            }
+                            p {
+                                font-size: 12px;
+                                line-height: 16px;
+                            }
+                            button {
+                                width: 90px;
+                                height: 36px;
+                                a {
+                                    font-size: 14px;
+                                    line-height: 19px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

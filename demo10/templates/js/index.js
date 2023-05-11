@@ -48,5 +48,10 @@ $$(".js-cart").forEach((control) => {
                 <span>   <img src="../assets/images/1.png"></span><span>Bụi Cường Hóa<br>Phòng Cụ<br>Thứ Cấp<br></span><span><span>AC22K1MB</span>
                   <button>Lưu code</button></span></li>`
         control.classList.toggle('active')
+        control.style.animation = "showcart 0.5s ease"
+        setTimeout(() => {
+            control.style.animation = "unset"
+
+        }, 1000);
     };
 });

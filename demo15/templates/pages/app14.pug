@@ -1,0 +1,243 @@
+
+.index-14-app
+    .container
+        .index-14-app-profile
+            .index-14-app-profile__left
+                .index-14-app-profile__left-avata
+                    img(src="../assets/images/8.png",alt="")
+                    img(src="../assets/images/app14-4.png")
+                span Tên đăng nhập: <strong>vanminh12</strong>
+                span Số tài khoản:  <strong>123456</strong>
+                span.index14-js-ac Loại tài khoản: <strong>Thành viên</strong>
+                ul.nav.nav-tab(role="tablist")#myTab
+                    li.nav-item
+                        a(data-bs-toggle="tab",data-bs-target="#home").nav-link.active                            
+                            img(src="../assets/images/avtaa.png",alt="")
+                            span Thông tin cá nhân  
+                    li
+                        a                           
+                            img(src="../assets/images/book.png",alt="")
+                            span Khóa học đã tham gia
+                            
+                    li.nav-item 
+                        a(data-bs-toggle="tab",data-bs-target="#menu2").nav-link.index14-js-hidemb               
+                            img(src="../assets/images/key.png",alt="")
+                            span Đổi mật khẩu
+                    li 
+                        a Đăng xuất    
+            .tab-content
+                .tab-pane.active#home.show  
+                    .index-14-app-profile__right
+                        span Thông tin cá nhân
+                        p.index14-js-hide Hãy chọn tài khoản phù hợp với bạn
+                        ul.nav.nav-tab(role="tablist")#myTab1
+                            li.nav-item
+                                a(data-bs-toggle="tab",data-bs-target="#home2").nav-link.active
+                                    span Thành viên
+                                    img(src="../assets/images/app14-3.png")
+                                
+                            li.nav-item 
+                                a(data-bs-toggle="tab",data-bs-target="#menu3").nav-link 
+                                    span Học sinh
+                                    img(src="../assets/images/app14-1.png")
+                            li.nav-item 
+                                a(data-bs-toggle="tab",data-bs-target="#menu4").nav-link 
+                                    span Nhà trường
+                                    img(src="../assets/images/app14-2.png")
+                        .tab-content.index-14-app-profile__right-ct
+                            .tab-pane.active#home2.show 
+                                ul.index14-js-info
+                                    li  
+                                        span Họ và tên<strong>*</strong>
+                                        input(placeholder="Họ và tên đầy đủ")
+                                    li  
+                                        span Số điện thoại<strong>*</strong>
+                                        input(placeholder="Số điện thoại")
+                                        button(tabindex="-1") Xác thực SĐT 
+                                    li  
+                                        span Email<strong>*</strong>
+                                        input(placeholder="Email")
+                                    li 
+                                        span Ngày sinh
+                                        em
+                                            select(name="day" id="day")
+                                                option(value="",selected) Ngày
+                                                - for (let i = 1; i <= 31; i++) {
+                                                option #{i}
+                                                - }
+                                        em
+                                            select(name="month" id="month")
+                                                option(value="",selected) Tháng
+                                                - for (let i = 1; i <= 12; i++) {
+                                                option #{i}
+                                                - }
+                                        em
+                                            select(name="year" id="year")
+                                                option(value="",selected) Năm
+                                                - for (let i =1900; i <= 2023; i++) {
+                                                option #{i}
+                                                - }
+                                    li 
+                                        span Giới tính
+                                        em
+                                            input(type="radio",value="nam",name="gt",id="gtnam") 
+                                            label(for="gtnam") Nam
+                                        em
+                                            input(type="radio",value="nu",name="gt",id="gtnu") 
+                                            label(for="gtnu") Nữ
+                                    li 
+                                        span Số CMND
+                                        input(placeholder="Số chứng minh nhân dân")
+                                    li 
+                                        span Vùng miền
+                                        em
+                                            select(id="city")
+                                                option(value="",selected) Tỉnh/Thành phố
+
+                                        em
+                                            select(id="district")
+                                                option(value="",selected) Huyện/Quận
+                                            
+                                        em
+                                            select(id="ward")
+                                                option(value="",selected) Xã/Phường
+                                            
+                                    li 
+                                        span Địa chỉ
+                                        input(placeholder="Địa chỉ chính xác")
+                                .index-14-app-profile__right-btn
+                                    button Hủy 
+                                    button.index14-js-up Cập nhật
+                            .tab-pane#menu3
+                                ul.index15-js-info
+                                    li  
+                                        span Họ và tên<strong>*</strong>
+                                        input(placeholder="Họ và tên đầy đủ")
+                                    li  
+                                        span Số điện thoại<strong>*</strong>
+                                        input(placeholder="Số điện thoại")
+                                        button(tabindex="-1") Xác thực SĐT 
+
+                                    li  
+                                        span Email<strong>*</strong>
+                                        input(placeholder="Email")
+                                    li
+                                        span Nơi học tập <strong>*</strong>
+                                        em
+                                            select(name="tinh" id="tinh" )
+                                                option(value="",selected) Tỉnh/Thành phố
+                                                - for (let i = 1; i <= 31; i++) {
+                                                option #{i}
+                                                - }
+                                        em
+                                            select(name="huyen" id="huyen" )
+                                                option(value="",selected) Huyện/Quận
+                                                - for (let i = 1; i <= 12; i++) {
+                                                option #{i}
+                                                - }
+                                        em
+                                            select(name="truong" id="truong" )
+                                                option(value="",selected) Trường học
+                                                - for (let i =1900; i <= 2023; i++) {
+                                                option #{i}
+                                                - }
+                                        em
+                                            select(name="lop" id="lop" )
+                                                option(value="",selected) Lớp
+                                                - for (let i =1900; i <= 2023; i++) {
+                                                option #{i}
+                                                - }
+                                    li 
+                                        span Ngày sinh
+                                        em
+                                            select(name="day" id="day")
+                                                option(value="",selected) Ngày
+                                                - for (let i = 1; i <= 31; i++) {
+                                                option #{i}
+                                                - }
+                                        em
+                                            select(name="month" id="month")
+                                                option(value="",selected) Tháng
+                                                - for (let i = 1; i <= 12; i++) {
+                                                option #{i}
+                                                - }
+                                        em
+                                            select(name="year" id="year")
+                                                option(value="",selected) Năm
+                                                - for (let i =1900; i <= 2023; i++) {
+                                                option #{i}
+                                                - }
+                                    li 
+                                        span Giới tính
+                                        em
+                                            input(type="radio",value="nam",name="gt") 
+                                            label(for="nam") Nam
+                                        em
+                                            input(type="radio",value="nu",name="gt") 
+                                            label(for="nu") Nữ
+                                    li 
+                                        span Số CMND
+                                        input(placeholder="Số chứng minh nhân dân")
+                                    li 
+                                        span Vùng miền
+                                        em
+                                            select(id="city2")
+                                                option(value="",selected) Tỉnh
+
+                                        em
+                                            select(id="district2")
+                                                option(value="",selected) Huyện/Quận
+                                            
+                                        em
+                                            select(id="ward2")
+                                                option(value="",selected) Xã/Phường
+                                    li 
+                                        span Địa chỉ
+                                        input(placeholder="Địa chỉ chính xác")
+                                .index-15-app-profile__right-btn
+                                    button Hủy 
+                                    button.index15-js-up Cập nhật
+                            .tab-pane#menu4
+                                p <a>Giao thông số</a> cung cấp:
+                                ul
+                                    li Đánh giá chính xác 95% điểm mạnh, điểm yếu của từng học sinh
+                                        img(src="../assets/images/app14-7.png")
+                                    li Ngân hàng câu hỏi phong phú và khả năng tạo câu hỏi đa dạng
+                                        img(src="../assets/images/app14-8.png")
+                                    li Giao bài tập luyện tập và kiểm tra phù hợp với từng học sinh
+                                        img(src="../assets/images/app14-5.png")
+                                    li Tiết kiệm đến 95% thời gian tạo bài kiểm tra, chấm bài và trả bài
+                                        img(src="../assets/images/app14-9.png")
+                                    li Tự động tạo báo cáo đầy đủ và thống kê chi tiết về từng học sinh
+                                        img(src="../assets/images/app14-6.png")
+                                p Nhà trường đăng ký sử dụng đồng bộ tài khoản học sinh, giáo viên & phụ huynh xin vui lòng liên hệ <strong>19001530</strong> để được hỗ trợ.
+                .tab-pane#menu2
+                    .index-17-app-profile__right
+                        span Đổi mật khẩu
+                        ul
+                            li.index-17-app-profile__right-otp 
+                                span Nhập mã OTP<strong>*</strong>
+                                em
+                                    span OTP SMS
+                                    input(placeholder='Soạn tin EB OTP gửi 8049')
+                                    button(tabindex="-1")
+
+                            li.index14-js-pw1
+                                span Mật khẩu cũ
+                                    strong *
+                                input(placeholder='Nhập mật khẩu cũ',type="password")
+                                button.index14-js-switchpw1(tabindex="-1") 
+                            li.index14-js-pw2
+                                span Mật khẩu mới
+                                    strong *
+                                input(placeholder='Nhập mật khẩu mới',type="password")
+                                button.index14-js-switchpw2(tabindex="-1")
+                            li.index14-js-pw3
+                                span Nhập lại mật khẩu mới
+                                    strong *
+                                input(placeholder='Nhập mật khẩu mới',type="password")
+                                button.index14-js-switchpw3(tabindex="-1")
+                            .index-17-app-profile__right-btn
+                                a(href='.#') Hủy
+                                a(href='#') Cập nhập
+

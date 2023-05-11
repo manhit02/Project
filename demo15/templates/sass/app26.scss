@@ -1,0 +1,347 @@
+.index-26-app {
+    padding-top: 107px;
+    padding-bottom: 40vh;
+    &-profile {
+        position: relative;
+        margin: auto;
+        width: 1055px;
+        padding: 140px 59px 56px;
+        background: #FFFFFF;
+        box-shadow: 5px 10px 22px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        &__head {
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 0;
+            span {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                width: 308px;
+                height: 73px;
+                padding-left: 28px;
+                background: url("../assets/images/app14-h.png");
+                background-size: 100% 100%;
+                color: #fff;
+                font-size: 20px;
+                line-height: 27px;
+                font-family: 'NotoSans-SemiBold';
+                color: #FFFFFF;
+                margin-right: 92px;
+            }
+            a {
+                font-family: 'Roboto-Bold';
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 16px;
+                color: #6C7072;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 286px;
+                height: 73px;
+                cursor: pointer !important;
+                &.active {
+                    border-bottom: 1px solid #1188FF;
+                    color: #1188FF !important;
+                }
+                &:hover {
+                    color: #1188FF !important;
+                    border-bottom: 1px solid #1188FF;
+                }
+            }
+        }
+        &__body {
+            &-item {
+                position: relative;
+                margin-bottom: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                label {
+                    width: 30%;
+                    font-family: 'NotoSans';
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 27px;
+                    color: #000000;
+                    strong {
+                        color: #FF0202;
+                    }
+                }
+                input {
+                    width: 70%;
+                    padding-left: 16px;
+                    height: 56px;
+                    outline: none;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: #000000;
+                    font-family: 'NotoSans-medium';
+                    border: 1px solid #C5C5C5;
+                    border-radius: 7px;
+                    -webkit-border-radius: 7px;
+                    -moz-border-radius: 7px;
+                    -ms-border-radius: 7px;
+                    -o-border-radius: 7px;
+                    background: #fff;
+                    &::placeholder {
+                        font-family: 'NotoSans-Light';
+                        font-size: 18px;
+                        line-height: 25px;
+                        color: rgba(139, 146, 150, 0.71);
+                    }
+                }
+                img {
+                    position: absolute;
+                    right: 26px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    -webkit-transform: translateY(-50%);
+                    -moz-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    -o-transform: translateY(-50%);
+                    display: none;
+                }
+                button {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    -webkit-transform: translateY(-50%);
+                    -moz-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    -o-transform: translateY(-50%);
+                    right: 16px;
+                    cursor: pointer;
+                    display: none;
+                    width: 24px;
+                    height: 24px;
+                }
+                &2,&3{
+                    &:focus-within {
+                        &>button {
+                            cursor: pointer;
+                            display: block;
+                            background: url("../assets/images/login-eye-off.png");
+                        }
+                    }
+                }
+                &4 {
+                    position: relative;
+                    z-index: 1;
+                    label {
+                        width: 30%;
+                    }
+                    input {
+                        width: 44%;
+                        margin-left: 1%;
+                        &:focus {
+                            background: #E9F2FF;
+                            border: 1px solid #009CFE;
+                            &::placeholder {
+                                color: transparent;
+                            }
+                        }
+                    }
+                    span {
+                        width: 25%;
+                        height: 56px;
+                        background: transparent;
+                        border: 1px solid #C5C5C5;
+                        border-radius: 7px;
+                        padding-left: 16px;
+                        font-family: 'NotoSans-Light';
+                        font-weight: 300;
+                        font-size: 20px;
+                        line-height: 27px;
+                        display: flex;
+                        align-items: center;
+                        color: rgba(139, 146, 150, 0.71);
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        text-indent: 1px;
+                        cursor: pointer;
+                        +img {
+                            background: url("../assets/images/material-symbols_arrow-drop-down-rounded.png");
+                            position: absolute;
+                            right: 45%;
+                            width: 53px;
+                            height: 56px;
+                            display: block;
+                            z-index: -1;
+                        }
+                    }
+                }
+            }
+        }
+        &__btn {
+            margin-left: 30%;
+            width: 240px;
+            height: 60px;
+            background: #0066BC;
+            border-radius: 10px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 27px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFFFFF;
+            font-family: 'NotoSans';
+        }
+    }
+}
+
+.index-27-app {
+    &-profile {
+        position: relative;
+        margin: auto;
+        width: 1055px;
+        padding: 140px 59px 56px;
+        background: #FFFFFF;
+        box-shadow: 5px 10px 22px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        &__body {
+            &-item {
+                position: relative;
+                margin-bottom: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                label {
+                    width: 30%;
+                    font-family: 'NotoSans';
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 27px;
+                    color: #000000;
+                    strong {
+                        color: #FF0202;
+                    }
+                }
+                input {
+                    width: 70%;
+                    padding-left: 16px;
+                    height: 56px;
+                    outline: none;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: #000000;
+                    font-family: 'NotoSans-medium';
+                    border: 1px solid #C5C5C5;
+                    border-radius: 7px;
+                    -webkit-border-radius: 7px;
+                    -moz-border-radius: 7px;
+                    -ms-border-radius: 7px;
+                    -o-border-radius: 7px;
+                    background: #fff;
+                    &::placeholder {
+                        font-family: 'NotoSans-Light';
+                        font-size: 18px;
+                        line-height: 25px;
+                        color: rgba(139, 146, 150, 0.71);
+                    }
+                }
+                img {
+                    position: absolute;
+                    right: 26px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    -webkit-transform: translateY(-50%);
+                    -moz-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    -o-transform: translateY(-50%);
+                    display: none;
+                }
+            }
+        }
+        &__btn {
+            margin-left: 30%;
+            width: 240px;
+            height: 60px;
+            background: #0066BC;
+            border-radius: 10px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 27px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFFFFF;
+            font-family: 'NotoSans';
+        }
+    }
+}
+
+.index-26-app{
+    &-profile{
+        &__body{
+&-item{
+    button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        right: 16px;
+        cursor: pointer;
+        display: none;
+        width: 24px;
+        height: 24px;
+    }
+    &2,&3{
+        &:focus-within {
+            &>button {
+                cursor: pointer;
+                display: block;
+                background: url("../assets/images/login-eye-off.png");
+            }
+        }
+    }
+    &4{
+        span {
+            width: 25%;
+            height: 56px;
+            background: transparent;
+            border: 1px solid #C5C5C5;
+            border-radius: 7px;
+            padding-left: 16px;
+            font-family: 'NotoSans-Light';
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 27px;
+            display: flex;
+            align-items: center;
+            color: rgba(139, 146, 150, 0.71);
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            text-indent: 1px;
+            cursor: pointer;
+            +img {
+                background: url("../assets/images/material-symbols_arrow-drop-down-rounded.png");
+                position: absolute;
+                right: 45%;
+                width: 53px;
+                height: 56px;
+                display: block;
+                z-index: -1;
+            }
+        }
+    }
+}
+        }
+    }
+}

@@ -44,6 +44,15 @@ $(".js-pev").onclick = () => {
             left: a,
             behavior: "smooth",
         });
+        if (a == 375 || a == 220) {
+            $(".txtStep").textContent = 'Bước 2: Nhấn " Nhiệm vụ nhận điểm" để bắt đầu làm nhiệm vụ.';
+        } else if (a == 750 || a == 440) {
+            $(".txtStep").textContent = 'Bước 3: Hoàn thành các nhiệm vụ để thu thập nhiều điểm (P) trên app nhất.';
+        } else if (a == 1125 || a == 660) {
+            $(".txtStep").textContent = 'Bước 4: Vào phần " Đổi Coupon" để nhận giftcode của game mình đã chọn.';
+        } else {
+            $(".txtStep").textContent = 'Bước 1: Tải app Toonder và đăng nhập tài khoản VTC ID trên app';
+        }
 
     }
 
@@ -53,6 +62,16 @@ $(".js-pev").onclick = () => {
 $(".js-next").onclick = () => {
     if (a < 2 * getWidthsc)
         a = a + getWidthsc;
+    if (a == 375 || a == 220) {
+        $(".txtStep").textContent = 'Bước 2: Nhấn " Nhiệm vụ nhận điểm" để bắt đầu làm nhiệm vụ.';
+    } else if (a == 750 || a == 440) {
+        $(".txtStep").textContent = 'Bước 3: Hoàn thành các nhiệm vụ để thu thập nhiều điểm (P) trên app nhất.';
+    } else if (a == 1125 || a == 660) {
+        $(".txtStep").textContent = 'Bước 4: Vào phần " Đổi Coupon" để nhận giftcode của game mình đã chọn.';
+    } else {
+        $(".txtStep").textContent = 'Bước 1: Tải app Toonder và đăng nhập tài khoản VTC ID trên app';
+    }
+
     $(".js-slide").scrollTo({
         top: 0,
         left: a,

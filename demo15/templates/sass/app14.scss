@@ -1,0 +1,1139 @@
+.index-14-app {
+    padding-top: 30px;
+    padding-bottom: 35vh;
+    &-profile {
+        display: flex;
+        align-items: flex-start;
+        &__left {
+            margin-right: 32px;
+            padding-top: 28px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 274px;
+            background: #ffffff;
+            box-shadow: 5px 10px 22px rgba(0, 0, 0, 0.15);
+            border-radius: 20px;
+            &-avata {
+                position: relative;
+                cursor: pointer;
+                img {
+                    margin-bottom: 22px;
+                    &:nth-child(1) {
+                        width: 140px;
+                        height: 140px;
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                    }
+                    &:nth-child(2) {
+                        display: none;
+                        position: absolute;
+                        top: 99px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        -webkit-transform: translateX(-50%);
+                        -moz-transform: translateX(-50%);
+                        -ms-transform: translateX(-50%);
+                        -o-transform: translateX(-50%);
+                    }
+                }
+                &:hover {
+                    img {
+                        &:nth-child(1) {
+                            filter: contrast(0.5);
+                            -webkit-filter: contrast(0.5);
+                        }
+                        &:nth-child(2) {
+                            display: block;
+                        }
+                    }
+                }
+            }
+            & > span {
+                font-family: "NotoSans";
+                margin-bottom: 8px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                color: #212c41;
+                strong {
+                    color: #0066bc;
+                    font-family: "NotoSans-medium";
+                }
+                &:nth-child(4) {
+                    margin-bottom: 64px;
+                    display: none;
+                }
+            }
+            ul {
+                display: flex;
+                flex-direction: column;
+                width: 274px;
+                padding: 28px 17px 24px;
+                li {
+                    a {
+                        display: flex;
+                        align-items: center;
+                        width: 240px;
+                        height: 60px;
+                        padding: 17px 0px 18px 8px;
+                        border-radius: 10px;
+                        -webkit-border-radius: 10px;
+                        -moz-border-radius: 10px;
+                        -ms-border-radius: 10px;
+                        -o-border-radius: 10px;
+                        margin-bottom: 10px;
+                        cursor: pointer;
+                        & > img {
+                            margin-right: 10px;
+                            width: 25px;
+                            height: 25px;
+                            object-fit: contain;
+                            filter: brightness(0) saturate(100%);
+                            -webkit-filter: brightness(0) saturate(100%);
+                        }
+                        span {
+                            font-family: "NotoSans-medium";
+                            display: flex;
+                            justify-content: center;
+                            min-width: 30px;
+                            align-items: center;
+                            color: #000;
+                            font-size: 18px;
+                            line-height: 25px;
+                        }
+                        &.active {
+                            border: 1px solid #0066bc;
+                            & > img {
+                                filter: brightness(0) saturate(100%) invert(25%) sepia(60%) saturate(3249%)
+                                    hue-rotate(193deg) brightness(88%) contrast(101%);
+                                -webkit-filter: brightness(0) saturate(100%) invert(25%) sepia(60%) saturate(3249%)
+                                    hue-rotate(193deg) brightness(88%) contrast(101%);
+                            }
+                            span {
+                                color: #0066bc;
+                            }
+                        }
+                        &:hover {
+                            border: 1px solid #0066bc;
+                            img {
+                                filter: brightness(0) saturate(100%) invert(25%) sepia(60%) saturate(3249%)
+                                    hue-rotate(193deg) brightness(88%) contrast(101%);
+                                -webkit-filter: brightness(0) saturate(100%) invert(25%) sepia(60%) saturate(3249%)
+                                    hue-rotate(193deg) brightness(88%) contrast(101%);
+                            }
+                            span {
+                                color: #0066bc;
+                            }
+                            &.active {
+                                cursor: default;
+                                span {
+                                    cursor: default;
+                                }
+                            }
+                        }
+                    }
+                    &:last-child {
+                        a {
+                            font-family: "NotoSans";
+                            background: #0066bc;
+                            margin-bottom: 0;
+                            color: #fff;
+                            justify-content: center;
+                        }
+                        &:hover {
+                            a {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__right {
+            width: 892px;
+            padding-bottom: 109px;
+            background: #ffffff;
+            box-shadow: 0px -4px 15px rgba(21, 0, 37, 0.25);
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+            & > span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 246px;
+                height: 65px;
+                background: url("../assets/images/app14-h.png");
+                background-size: 100% 100%;
+                color: #fff;
+                font-size: 20px;
+                line-height: 27px;
+                font-family: "NotoSans-SemiBold";
+                color: #ffffff;
+            }
+            & > p {
+                font-family: "NotoSans";
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 27px;
+                text-align: center;
+                color: #000000;
+                margin-bottom: 45px;
+            }
+            & > ul {
+                &:nth-child(3) {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 85px;
+                    li {
+                        a {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: row-reverse;
+                            width: 249px;
+                            height: 81px;
+                            border: 1px solid #212c41;
+                            border-radius: 10px;
+                            margin-right: 16px;
+                            cursor: pointer;
+                            img {
+                                margin-right: 12px;
+                            }
+                            span {
+                                font-size: 20px;
+                                line-height: 27px;
+                                font-family: "NotoSans-SemiBold";
+                                color: #212c41;
+                            }
+                            &.active {
+                                border-color: #0066bc;
+                                border-width: 2px;
+                                span {
+                                    color: #0066bc;
+                                }
+                                img {
+                                    filter: invert(23%) sepia(100%) saturate(1805%) hue-rotate(191deg) brightness(96%)
+                                        contrast(101%);
+                                }
+                            }
+                            &:hover {
+                                border-color: #0066bc;
+                                border-width: 2px;
+                                span {
+                                    color: #0066bc;
+                                }
+                                img {
+                                    filter: invert(23%) sepia(100%) saturate(1805%) hue-rotate(191deg) brightness(96%)
+                                        contrast(101%);
+                                }
+                            }
+                        }
+                        &:last-child {
+                            a {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            &-btn {
+                margin-left: calc(20% + 16px);
+                button {
+                    &:nth-child(1) {
+                        display: none;
+                    }
+                    width: 240px;
+                    height: 60px;
+                    background: #0066bc;
+                    border-radius: 10px;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 25px;
+                    font-family: "NotoSans";
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #ffffff;
+                }
+            }
+            & #home2 {
+                ul {
+                    padding-left: 28px;
+                    padding-right: 30px;
+                    li {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 32px;
+                        span {
+                            font-weight: 400;
+                            font-size: 20px;
+                            line-height: 27px;
+                            color: #000000;
+                            font-family: "NotoSans";
+                            min-width: 20%;
+                            strong {
+                                color: #ff0202;
+                            }
+                        }
+                        & > input {
+                            width: calc(100%);
+                            padding-left: 10px;
+                            height: 40px;
+                            background: #ffffff;
+                            border: 1px solid #c5c5c5;
+                            border-radius: 7px;
+                            -webkit-border-radius: 7px;
+                            -moz-border-radius: 7px;
+                            -ms-border-radius: 7px;
+                            -o-border-radius: 7px;
+                            font-weight: 400;
+                            font-size: 20px;
+                            line-height: 27px;
+                            font-family: "NotoSans";
+                            color: #212c42;
+                            &::placeholder {
+                                font-family: "NotoSans-Light";
+                                font-weight: 300;
+                                font-size: 16px;
+                                line-height: 22px;
+                                color: rgba(139, 146, 150, 0.71);
+                            }
+                        }
+                        &:nth-child(4) {
+                            justify-content: left;
+                            em {
+                                margin-right: 10px;
+                                select {
+                                    font-family: "NotoSans";
+                                    padding-left: 9px;
+                                    width: 180px;
+                                    height: 40px;
+                                    background: #ffffff;
+                                    border: 1px solid #afbaca;
+                                    border-radius: 7px;
+                                    font-size: 16px;
+                                    line-height: 27px;
+                                    color: #212c41;
+                                }
+                                &:last-child {
+                                    margin-right: 0;
+                                }
+                            }
+                        }
+                        &:nth-child(5) {
+                            justify-content: left;
+                            em {
+                                display: flex;
+                                align-items: center;
+                                margin-right: 28px;
+                                input {
+                                    width: 24px;
+                                    height: 24px;
+                                    margin: 0 10px 0 0;
+                                }
+                                label {
+                                    font-family: "NotoSans";
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    line-height: 27px;
+                                    color: #000000;
+                                }
+                                &:last-child {
+                                    margin-right: 0;
+                                }
+                            }
+                        }
+                        &:nth-child(7) {
+                            justify-content: left;
+                            em {
+                                margin-right: 10px;
+                                select {
+                                    font-family: "NotoSans";
+                                    padding-left: 9px;
+                                    width: 180px;
+                                    height: 40px;
+                                    background: #ffffff;
+                                    border: 1px solid #afbaca;
+                                    border-radius: 7px;
+                                    font-family: "NotoSans";
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    line-height: 22px;
+                                    color: #212c42;
+                                }
+                                &:last-child {
+                                    margin-right: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & #menu3 {
+                & .index-15-app-profile__right-btn {
+                    margin-left: calc(20% + 16px);
+                    button {
+                        &:nth-child(1) {
+                            display: none;
+                        }
+                        width: 240px;
+                        height: 60px;
+                        background: #0066bc;
+                        border-radius: 10px;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 25px;
+                        font-family: "NotoSans";
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #ffffff;
+                    }
+                }
+                ul {
+                    padding-left: 28px;
+                    padding-right: 30px;
+                    li {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 32px;
+                        span {
+                            font-weight: 400;
+                            font-size: 20px;
+                            line-height: 27px;
+                            color: #000000;
+                            font-family: "NotoSans";
+                            min-width: 20%;
+                            strong {
+                                color: #ff0202;
+                            }
+                        }
+                        & > input {
+                            width: calc(100%);
+                            padding: 0 0 0 10px;
+                            height: 40px;
+                            background: #ffffff;
+                            border: 1px solid #c5c5c5;
+                            border-radius: 7px;
+                            -webkit-border-radius: 7px;
+                            -moz-border-radius: 7px;
+                            -ms-border-radius: 7px;
+                            -o-border-radius: 7px;
+                            font-weight: 400;
+                            font-size: 20px;
+                            line-height: 27px;
+                            font-family: "NotoSans";
+                            color: #212c42;
+                            &::placeholder {
+                                font-family: "NotoSans-Light";
+                                font-weight: 300;
+                                font-size: 16px;
+                                line-height: 22px;
+                                color: rgba(139, 146, 150, 0.71);
+                            }
+                        }
+                        &:nth-child(4) {
+                            justify-content: left;
+                            flex-wrap: wrap;
+                            margin-bottom: 0;
+                            height: 112px;
+                            em {
+                                margin-bottom: 16px;
+                                width: 39%;
+                                select {
+                                    width: 100%;
+                                    padding-left: 10px;
+                                    min-height: 40px;
+                                    background: #ffffff;
+                                    border: 1px solid #afbaca;
+                                    border-radius: 7px;
+                                    font-size: 16px;
+                                    line-height: 27px;
+                                    color: #212c41;
+                                    font-family: "NotoSans";
+                                }
+                                &:nth-child(4) {
+                                    margin-left: 20%;
+                                }
+                                &:nth-child(2n + 1) {
+                                    margin-left: 2%;
+                                }
+                            }
+                        }
+                        &:nth-child(5) {
+                            justify-content: left;
+                            em {
+                                width: 24%;
+                                margin-right: 1%;
+                                select {
+                                    width: 100%;
+                                    padding-left: 9px;
+                                    height: 40px;
+                                    background: #ffffff;
+                                    border: 1px solid #afbaca;
+                                    border-radius: 7px;
+                                    font-size: 16px;
+                                    font-family: "NotoSans";
+                                    line-height: 27px;
+                                    color: #212c41;
+                                }
+                            }
+                        }
+                        &:nth-child(6) {
+                            justify-content: left;
+                            em {
+                                display: flex;
+                                align-items: center;
+                                margin-right: 28px;
+                                input {
+                                    width: 24px;
+                                    height: 24px;
+                                    margin: 0 10px 0 0;
+                                }
+                                label {
+                                    font-family: "NotoSans";
+                                    font-size: 16px;
+                                    line-height: 27px;
+                                }
+                                &:last-child {
+                                    margin-right: 0;
+                                }
+                            }
+                        }
+                        &:nth-child(8) {
+                            justify-content: left;
+                            em {
+                                width: 24%;
+                                margin-right: 1%;
+                                select {
+                                    width: 100%;
+                                    padding-left: 9px;
+                                    height: 40px;
+                                    background: #ffffff;
+                                    border: 1px solid #afbaca;
+                                    border-radius: 7px;
+                                    font-family: "NotoSans";
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    line-height: 22px;
+                                    color: #212c42;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & #menu4 {
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    margin-bottom: 148px;
+                    li {
+                        width: 218px;
+                        display: flex;
+                        flex-direction: column-reverse;
+                        align-items: center;
+                        margin-right: 63px;
+                        text-align: center;
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: #000000;
+                        font-family: "NotoSans";
+                        img {
+                            margin-bottom: 20px;
+                        }
+                        &:nth-child(3),
+                        &:nth-child(5) {
+                            margin-right: 0;
+                        }
+                        &:nth-child(5),
+                        &:nth-child(4) {
+                            margin-top: 50px;
+                        }
+                    }
+                }
+                &-btn {
+                    margin-left: calc(20% + 16px);
+                    button {
+                        &:nth-child(1) {
+                            display: none;
+                        }
+                        width: 240px;
+                        height: 60px;
+                        background: #0066bc;
+                        border-radius: 10px;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 25px;
+                        font-family: "NotoSans";
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #ffffff;
+                    }
+                }
+                & > p {
+                    font-family: "NotoSans";
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 27px;
+                    text-align: center;
+                    color: #000000;
+                    margin-bottom: 45px;
+                    &:nth-child(1) {
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 27px;
+                        text-align: center;
+                        color: #212c41;
+                        font-family: "NotoSans";
+                        a {
+                            color: #0066bc;
+                            font-family: "NotoSans-SemiBold";
+                        }
+                    }
+                    &:nth-child(3) {
+                        margin-bottom: 0;
+                        font-size: 20px;
+                        line-height: 27px;
+                        text-align: center;
+                        color: #000000;
+                        font-family: "NotoSans";
+                        padding: 0 50px;
+                        strong {
+                            font-family: "NotoSans-SemiBold";
+                            color: #0066bc;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.index-17-app {
+    &-profile {
+        display: flex;
+        align-items: flex-start;
+        &__right {
+            width: 892px;
+            padding-bottom: 40px;
+            background: #ffffff;
+            box-shadow: 0px -4px 15px rgba(21, 0, 37, 0.25);
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+            & > span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 246px;
+                height: 65px;
+                background: url("../assets/images/app14-h.png");
+                background-size: 100% 100%;
+                color: #fff;
+                font-size: 20px;
+                line-height: 27px;
+                font-family: "NotoSans-SemiBold";
+                color: #ffffff;
+            }
+            ul {
+                margin-top: 54px;
+                padding-left: 28px;
+                padding-right: 30px;
+                li {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 32px;
+                    span {
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 27px;
+                        color: #000000;
+                        font-family: "NotoSans";
+                        min-width: 30%;
+                        strong {
+                            color: #ff0202;
+                            font-family: "NotoSans-SemiBold";
+                        }
+                    }
+                    input {
+                        width: calc(100%);
+                        padding: 0 0 0 10px;
+                        height: 40px;
+                        background: #ffffff;
+                        border: 1px solid #c5c5c5;
+                        border-radius: 7px;
+                        -webkit-border-radius: 7px;
+                        -moz-border-radius: 7px;
+                        -ms-border-radius: 7px;
+                        -o-border-radius: 7px;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 27px;
+                        font-family: "NotoSans";
+                        color: #212c42;
+                        &::placeholder {
+                            font-family: "NotoSans-Light";
+                            font-weight: 300;
+                            font-size: 16px;
+                            line-height: 22px;
+                            color: rgba(139, 146, 150, 0.71);
+                        }
+                    }
+                    & > button {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        -webkit-transform: translateY(-50%);
+                        -moz-transform: translateY(-50%);
+                        -ms-transform: translateY(-50%);
+                        -o-transform: translateY(-50%);
+                        right: 16px;
+                        cursor: pointer;
+                        display: none;
+                        width: 24px;
+                        height: 24px;
+                    }
+                    &:focus-within {
+                        & > button {
+                            cursor: pointer;
+                            display: block;
+                            background: url("../assets/images/login-eye-off.png");
+                        }
+                    }
+                    em {
+                        position: relative;
+                        z-index: 1;
+
+                        display: flex;
+                        width: 70%;
+
+                
+                        button {
+                            position: absolute;
+                            display: block;
+                            width: 53px;
+                            height: 40px;
+                            background: url("../assets/images/material-symbols_arrow-drop-down-rounded.png")
+                                center/contain no-repeat;
+                            top: 0;
+                            left: 120px;
+                            z-index: -1;
+                        }
+                    }
+                }
+            }
+            &-btn {
+                display: flex;
+                justify-content: left;
+                margin-left: 30%;
+                a {
+                    width: 240px;
+                    height: 60px;
+                    border-radius: 10px;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 27px;
+                    font-family: "NotoSans";
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid #0066bc;
+                    color: #0066bc;
+                    background: #fff;
+                    &:nth-child(1) {
+                        margin-right: 15px;
+                        display: none;
+                    }
+                    &:hover {
+                        background: #0066bc;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
+.index-17-app {
+    &-profile{
+
+        &__right {
+            ul {
+                li {
+                    em {
+                        span {
+                            display: flex;
+                            align-items: center;
+                            position: relative;
+                            cursor: pointer;
+                            margin-right: 16px;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            min-width: 175px;
+                            height: 40px;
+                            background: transparent;
+                            border: 1px solid #c5c5c5;
+                            border-radius: 7px;
+                            -webkit-border-radius: 7px;
+                            -moz-border-radius: 7px;
+                            -ms-border-radius: 7px;
+                            -o-border-radius: 7px;
+                            padding-left: 14px;
+                            font-family: "NotoSans";
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                        }
+                    }
+                   
+                }
+            }
+           
+        }
+    }
+}
+.index-14-app{&-profile{
+    &__right{
+        & #home2{
+            ul{li{
+                &:nth-child(2){
+
+                  
+                  button{
+                      margin-left: 26px;
+                      min-width: 20%;
+                      height: 42px;
+                      background: #98D0FF;
+                      border: 1px solid #0066BC;
+                      border-radius: 10px;
+                      font-family: 'NotoSans';
+                      font-size: 16px;
+                      line-height: 22px;
+                      text-align: center;
+                      color: #0066BC;
+                      -webkit-border-radius: 10px;
+                      -moz-border-radius: 10px;
+                      -ms-border-radius: 10px;
+                      -o-border-radius: 10px;
+    }
+                }
+            }}      
+      }
+      & #menu3{
+        ul{li{
+            &:nth-child(2){
+
+              button{
+                  margin-left: 26px;
+                  min-width: 20%;
+                  height: 42px;
+                  background: #98D0FF;
+                  border: 1px solid #0066BC;
+                  border-radius: 10px;
+                  font-family: 'NotoSans';
+                  font-size: 16px;
+                  line-height: 22px;
+                  text-align: center;
+                  color: #0066BC;
+                  -webkit-border-radius: 10px;
+                  -moz-border-radius: 10px;
+                  -ms-border-radius: 10px;
+                  -o-border-radius: 10px;
+    }
+            }
+        }}      
+  }
+    }
+}}
+.popup-index14 {
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    &__body {
+        padding-bottom: 31px;
+        padding-top: 30px;
+        position: relative;
+        width: 648px;
+        background: #ffffff;
+        box-shadow: 5px 10px 22px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 38px;
+            text-align: center;
+            color: #0066bc;
+            font-family: "NotoSans-bold";
+            margin-bottom: 30px;
+            br {
+                display: none;
+            }
+        }
+        p {
+            display: none;
+            text-align: center;
+            margin-top: 7px;
+            margin-bottom: 18px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 27px;
+            font-family: "NotoSans";
+            color: #3c3c3c;
+            &:nth-child(2) {
+                strong {
+                    color: #000;
+                    font-family: "NotoSans-bold";
+                }
+            }
+            &:nth-child(3) {
+                strong {
+                    color: #0066bc;
+                }
+            }
+            &.active {
+                display: block;
+            }
+        }
+        input {
+            width: 538px;
+            height: 60px;
+            background: #ffffff;
+            border: 1px solid #c5c5c5;
+            border-radius: 7px;
+            text-align: center;
+            font-size: 20px;
+            line-height: 27px;
+            align-items: center;
+            font-family: "NotoSans-Light";
+            color: #000;
+            &::placeholder {
+                text-align: center;
+                font-size: 20px;
+                line-height: 27px;
+                display: flex;
+                align-items: center;
+                font-family: "NotoSans-Light";
+                color: rgba(139, 146, 150, 0.71);
+            }
+        }
+        span {
+            display: none;
+            margin-top: 7px;
+            margin-bottom: 41px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            font-family: "NotoSans";
+            text-align: center;
+            color: #3c3c3c;
+            br {
+                display: none;
+            }
+            &:nth-child(5) {
+                strong {
+                    font-family: "NotoSans-SemiBold";
+                    margin-left: 3px;
+                }
+            }
+            &:nth-child(6) {
+                a {
+                    color: #0066bc;
+                    cursor: pointer;
+                }
+            }
+            &:last-child {
+                position: absolute;
+                top: 15px;
+                right: 16px;
+                cursor: pointer;
+                display: block;
+            }
+            &.active {
+                display: block;
+            }
+        }
+        &-btn {
+            display: flex;
+            button {
+                margin-right: 22px;
+                width: 120px;
+                height: 42px;
+                border: 2px solid #0066bc;
+                border-radius: 6px;
+                font-size: 20px;
+                line-height: 27px;
+                font-family: "NotoSans";
+                color: #0066bc;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #fff;
+                &:last-child {
+                    margin-right: 0;
+                }
+                &:hover {
+                    background: #0066bc;
+                    border: none;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+.popup2-index14{
+  display: flex;
+   
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    &__body{
+        padding-bottom: 31px;
+        padding-top: 30px;
+        position: relative;
+        width: 648px;
+        background: #ffffff;
+        box-shadow: 5px 10px 22px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 38px;
+            text-align: center;
+            color: #0066bc;
+            font-family: "NotoSans-bold";
+            margin-bottom: 30px;
+            br {
+                display: none;
+            }
+        } 
+        p {
+            font-family: 'NotoSans';
+          
+            font-size: 20px;
+            line-height: 27px;
+           
+            text-align: center;
+            color: #212C42;
+            margin-bottom: 16px;
+        }
+        span {
+            display: none;
+            margin-top: 7px;
+            margin-bottom: 41px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            font-family: "NotoSans";
+            text-align: center;
+            color: #3c3c3c;
+            br {
+                display: none;
+            }
+            &:nth-child(5) {
+                strong {
+                    font-family: "NotoSans-SemiBold";
+                    margin-left: 3px;
+                }
+            }
+            &:nth-child(6) {
+                a {
+                    color: #0066bc;
+                    cursor: pointer;
+                }
+            }
+            &:last-child {
+                position: absolute;
+                top: 15px;
+                right: 16px;
+                cursor: pointer;
+                display: block;
+            }
+            &.active {
+                display: block;
+            }
+        }
+        input {
+            width: 538px;
+            height: 60px;
+            background: #ffffff;
+            border: 1px solid #c5c5c5;
+            border-radius: 7px;
+            text-align: center;
+            font-size: 20px;
+            line-height: 27px;
+            align-items: center;
+            font-family: "NotoSans-Light";
+            color: #000;
+            &::placeholder {
+                text-align: center;
+                font-size: 20px;
+                line-height: 27px;
+                display: flex;
+                align-items: center;
+                font-family: "NotoSans-Light";
+                color: rgba(139, 146, 150, 0.71);
+            }
+        }
+        &-btn {
+            margin-top: 36px;
+            display: flex;
+            button {
+                margin-right: 22px;
+                width: 120px;
+                height: 42px;
+                border: 2px solid #0066bc;
+                border-radius: 6px;
+                font-size: 20px;
+                line-height: 27px;
+                font-family: "NotoSans";
+                color: #0066bc;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #fff;
+                &:last-child {
+                    margin-right: 0;
+                }
+                &:hover {
+                    background: #0066bc;
+                    border: none;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

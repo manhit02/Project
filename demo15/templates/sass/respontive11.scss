@@ -1,0 +1,317 @@
+    // pc high
+    @media (min-width: 2001px) {
+        .index-11-app {}
+    }
+    
+    // pc
+    @media (min-width: 1281px) and (max-width: 2000px) {}
+    
+    // pc low
+    @media (min-width: 1024px) and (max-width: 1280px) {
+        .index-11-app {
+            &-news {
+                &__left {
+                    padding: 0 16px;
+                    width: 68%;
+                    &>h2 {
+                        font-size: 26px;
+                    }
+                    &>p {
+                        font-size: 18px;
+                    }
+                    &>ul {
+                        li {
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                &__right {
+                    margin-left: 0;
+                    width: 30%;
+                    ul {
+                        li {
+                            em {
+                                a {
+                                    font-size: 12px;
+                                    line-height: 1.2;
+                                }
+                                p {
+                                    font-size: 10px;
+                                    line-height: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (min-width: 1024px) {}
+    /* tablet */
+    
+    @media (min-width: 740px) and (max-width: 1023px) {
+        .index-11-app {
+            &-news {
+                justify-content: space-between;
+                &__left {
+                    padding: 0 16px;
+                    width: 68%;
+                    &>h2 {
+                        font-size: 26px;
+                        line-height: 1.2;
+                    }
+                    &>p {
+                        font-size: 18px;
+                    }
+                    &>ul {
+                        li {
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                &__right {
+                    margin-left: 0;
+                    width: 30%;
+                    ul {
+                        li {
+                            flex-direction: column;
+                            img {
+                                margin-right: 0;
+                                margin-bottom: 12px;
+                            }
+                        }
+                    }
+                    &>img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    /* mobile */
+    
+    @media (max-width: 739px) {
+        .index-11-banner {
+            display: none;
+        }
+        .index-11-app {
+            &-news {
+                flex-direction: column;
+                &__left {
+                    width: 100%;
+                    &>img {
+                        display: flex;
+                        width: 100%;
+                        margin-bottom: 12px;
+                    }
+                    &>h2 {
+                        font-size: 24px;
+                        line-height: 33px;
+                    }
+                    &>p {
+                        font-size: 16px;
+                        line-height: 22px;
+                        margin-bottom: 12px;
+                    }
+                    &>span {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 22px;
+                        font-family: 'NotoSans';
+                        color: #000000;
+                        display: block;
+                        margin-bottom: 32px;
+                    }
+                    &>ul {
+                        li {
+                            img {
+                                width: 100%;
+                            }
+                            em {
+                                p {
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                }
+                            }
+                            p {
+                                font-size: 16px;
+                                line-height: 22px;
+                            }
+                        }
+                    }
+                    &-share {
+                        span {
+                            font-size: 14px;
+                            line-height: 19px;
+                            margin-right: 6px;
+                        }
+                        ul {
+                            li {
+                                img {
+                                    width: 21px;
+                                    height: 21px;
+                                    object-fit: contain;
+                                }
+                            }
+                        }
+                    }
+                    &-ads {
+                        width: 340px;
+                        height: 163px;
+                        margin-top: 23px;
+                        margin-bottom: 19px;
+                    }
+                    &-comment {
+                        &>span {
+                            font-size: 14px;
+                            line-height: 19px;
+                        }
+                        &__cm {
+                            input {
+                                width: calc(100% - 9px);
+                                height: 33px;
+                                font-size: 12px;
+                                line-height: 16px;
+                                padding: 0 0 0 7px;
+                            }
+                            img {
+                                width: 24px;
+                                height: 24px;
+                                right: 9px;
+                            }
+                        }
+                        &>ul {
+                            &>li {
+                                span {
+                                    margin-right: 5px;
+                                    min-width: 32px;
+                                    height: 32px;
+                                    font-size: 16px;
+                                    line-height: 22px;
+                                }
+                                em {
+                                    h3 {
+                                        font-size: 14px;
+                                        line-height: 19px;
+                                    }
+                                    p {
+                                        font-size: 14px;
+                                        line-height: 19px;
+                                    }
+                                    ul {
+                                        justify-content: space-between;
+                                        li {
+                                            margin: 0 !important;
+                                            font-size: 12px;
+                                            line-height: 16px;
+                                            img {
+                                                width: 18px;
+                                                height: 18px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &>button {
+                            height: 33px;
+                            font-size: 14px;
+                            line-height: 19px;
+                        }
+                    }
+                }
+                &__right {
+                    display: none;
+                    &mb {
+                        margin-top: 22px;
+                        display: block;
+                        a {
+                            margin-bottom: 27px;
+                            font-size: 16px;
+                            line-height: 32px;
+                            display: flex;
+                            align-items: center;
+                            color: #000000;
+                            font-family: 'NotoSans-medium';
+                            width: max-content;
+                        }
+                        ul {
+                            li {
+                                display: flex;
+                                align-items: center;
+                                margin-bottom: 17px;
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+                                img {
+                                    margin-right: 10px;
+                                    min-width: 172px;
+                                    height: 89px;
+                                    object-fit: cover;
+                                    border-radius: 9px;
+                                    -webkit-border-radius: 9px;
+                                    -moz-border-radius: 9px;
+                                    -ms-border-radius: 9px;
+                                    -o-border-radius: 9px;
+                                }
+                                h3 {
+                                    font-size: 14px;
+                                    line-height: 19px;
+                                    font-family: 'NotoSans-SemiBold';
+                                    color: #212C42;
+                                }
+                            }
+                        }
+                        &-control {
+                            margin-top: 29px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            span {
+                                font-family: 'NotoSans';
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 31px;
+                                height: 31px;
+                                background: #FFFFFF;
+                                font-size: 14px;
+                                line-height: 19px;
+                                color: #212C42;
+                                img {
+                                    width: 9px;
+                                    height: 13px;
+                                    object-fit: contain;
+                                    filter: brightness(0) saturate(100%);
+                                    -webkit-filter: brightness(0) saturate(100%);
+                                }
+                                &:nth-child(1) {
+                                    img {
+                                        transform: rotate(180deg);
+                                        -webkit-transform: rotate(180deg);
+                                        -moz-transform: rotate(180deg);
+                                        -ms-transform: rotate(180deg);
+                                        -o-transform: rotate(180deg);
+                                    }
+                                }
+                                &.active {
+                                    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+                                    border-radius: 9px;
+                                    background: #0066BC;
+                                    color: #FFFFFF;
+                                }
+                            }
+                            .btn {
+                                display: flex;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

@@ -1,0 +1,132 @@
+.index-19-app {
+    padding-top: 30px;
+    padding-bottom: 79px;
+    &-body {
+        padding-bottom: 43px;
+        width: 100%;
+        background: #FFFFFF;
+        box-shadow: 5px 10px 22px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        padding-left: 24px;
+        padding-right: 30px;
+        span {
+            display: flex;
+            align-items: center;
+            padding-left: 18px;
+            margin-left: -24px;
+            margin-bottom: 29px;
+            width: 528.46px;
+            height: 65px;
+            background: url("../assets/images/h.png") top center/contain no-repeat;
+            font-size: 20px;
+            line-height: 27px;
+            font-family: 'NotoSans-SemiBold';
+            color: #FFFFFF;
+        }
+        table {
+            margin-bottom: 29px;
+            width: 100%;
+            border-radius: 10px;
+            thead {
+                height: 83px;
+                background: #0066BC;
+                tr {
+                    th {
+                        text-align: center;
+                        vertical-align: middle;
+                        font-size: 16px;
+                        line-height: 22px;
+                        font-family: 'NotoSans-SemiBold';
+                        color: #FFFFFF;
+                    }
+                    &:nth-child(1) {
+                        th {
+                            &:nth-child(1) {
+                                border-top-left-radius: 10px;
+                                width: 30%;
+                                border-right: 1px solid #FFFFFF;
+                            }
+                            &:nth-child(2) {
+                                width: 40%;
+                                border-bottom: 1px solid #FFFFFF;
+                            }
+                            &:nth-child(3) {
+                                width: 30%;
+                                border-top-right-radius: 10px;
+                                border-left: 1px solid #FFFFFF;
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        th {
+                            &:nth-child(1) {
+                                border-right: 1px solid #FFFFFF;
+                            }
+                        }
+                    }
+                }
+            }
+            tbody {
+                border: 1px solid #97A6B7;
+                border-top: none;
+                tr {
+                    td {
+                        padding: 32px 0px 17px 10px;
+                        border: 1px solid #97A6B7;
+                        vertical-align: middle;
+                        font-size: 16px;
+                        line-height: 22px;
+                        font-family: 'NotoSans';
+                        color: #212C42;
+                    }
+                }
+            }
+        }
+        &__btn {
+            display: flex;
+            justify-content: center;
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 36px;
+                height: 36px;
+                border: 1px solid #336FE4;
+                border-radius: 10px;
+                background-color: #fff;
+                img {
+                    width: 13px;
+                    height: 22px;
+                    object-fit: contain;
+                    filter: brightness(0) saturate(100%) invert(34%) sepia(79%) saturate(1898%) hue-rotate(208deg) brightness(93%) contrast(92%);
+                    -webkit-filter: brightness(0) saturate(100%) invert(34%) sepia(79%) saturate(1898%) hue-rotate(208deg) brightness(93%) contrast(92%);
+                }
+                &:first-child {
+                    img {
+                        transform: rotate(180deg);
+                        -webkit-transform: rotate(180deg);
+                        -moz-transform: rotate(180deg);
+                        -ms-transform: rotate(180deg);
+                        -o-transform: rotate(180deg);
+                    }
+                }
+            }
+            ul {
+                margin-left: 53px;
+                margin-right: 53px;
+                display: flex;
+                align-items: center;
+                li {
+                    font-family: 'NotoSans-medium';
+                    font-size: 20px;
+                    line-height: 27px;
+                    color: #000000;
+                }
+            }
+        }
+    }
+}

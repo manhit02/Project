@@ -1,0 +1,241 @@
+.index-23-app {
+    padding-top: 49px;
+    padding-bottom: 130px;
+    & .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &-header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 39px;
+        h2 {
+            font-size: 20px;
+            line-height: 27px;
+            font-family: 'NotoSans-SemiBold';
+            color: #0066BC;
+        }
+        &__btn {
+            display: flex;
+            a {
+                font-family: 'NotoSans';
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row-reverse;
+                width: 168px;
+                height: 42px;
+                left: 1216px;
+                top: 172px;
+                background: #0066BC;
+                border-radius: 7px;
+                color: #fff;
+                img {
+                    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(34deg) brightness(105%) contrast(101%);
+                    -webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(34deg) brightness(105%) contrast(101%);
+                    margin-right: 6px;
+                }
+                &:nth-child(2) {
+                    background: #D2E6FF;
+                    color: #0066BC;
+                    margin-left: 8px;
+                    img {
+                        filter: invert(15%) sepia(85%) saturate(6064%) hue-rotate(197deg) brightness(100%) contrast(101%);
+                        -webkit-filter: invert(15%) sepia(85%) saturate(6064%) hue-rotate(197deg) brightness(100%) contrast(101%);
+                    }
+                }
+            }
+        }
+    }
+    &-left {
+        width: 789px;
+        &__videos {
+            margin-bottom: 23px;
+            iframe {
+                width: 100%;
+                height: 444px;
+            }
+        }
+        h2 {
+            font-size: 24px;
+            line-height: 33px;
+            font-family: 'NotoSans-bold';
+            color: #0066BC;
+            margin-bottom: 16px;
+        }
+        &>ul {
+            li {
+                margin-bottom: 16px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &:nth-child(1) {
+                    padding: 21px 27px 0 29px;
+                    height: 237px;
+                    width: 100%;
+                    background: #EBF4FF;
+                    border-radius: 10px;
+                    h3 {
+                        font-size: 20px;
+                        line-height: 27px;
+                        font-family: 'NotoSans-SemiBold';
+                        color: #212C42;
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 22px;
+                        font-family: 'NotoSans';
+                        color: #000000;
+                        margin-bottom: 10px;
+                    }
+                    button {
+                        font-family: 'NotoSans-SemiBold';
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: #212C42;
+                        background: transparent;
+                    }
+                }
+                &:nth-child(2),
+                &:nth-child(3) {
+                    height: 54px;
+                    padding: 0 29px 0 12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    background: #EBF4FF;
+                    border-radius: 10px;
+                    font-size: 20px;
+                    line-height: 27px;
+                    font-family: 'NotoSans-SemiBold';
+                    color: #000000;
+                    button {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 146px;
+                        height: 39px;
+                        background: #0066BC;
+                        border-radius: 10px;
+                        font-size: 16px;
+                        line-height: 22px;
+                        font-family: 'NotoSans';
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+    &-right {
+        width: 379px;
+        height: 753px;
+        background: #FFFFFF;
+        border: 1px solid #97A6B7;
+        border-radius: 20px;
+        ul {
+            height: 95%;
+            margin: 17px 6px 20px 13px;
+            padding-right: 8px;
+            overflow-y: scroll;
+            &::-webkit-scrollbar-thumb {
+                background: #0066BC;
+                border-radius: 10px;
+                width: 4px;
+            }
+            &::-webkit-scrollbar {
+                border-radius: 10px;
+                width: 4px;
+                background: #fff;
+            }
+            li {
+                display: flex;
+                padding: 12px 5px 10px 8px;
+                img {
+                    width: 158px;
+                    height: 89px;
+                    margin-right: 13px;
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                }
+                &>em {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    h3 {
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: #212C42;
+                        font-family: 'NotoSans-medium';
+                        margin-bottom: 13px;
+                    }
+                    em {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        span {
+                            display: flex;
+                            flex-direction: row-reverse;
+                            font-family: 'NotoSans';
+                            align-items: center;
+                            font-size: 12px;
+                            line-height: 16px;
+                            color: #212C42;
+                            img {
+                                margin-right: 4.57px;
+                                width: 13.73px;
+                                height: 13.73px;
+                                object-fit: contain;
+                            }
+                            &:nth-child(3) {
+                                img {
+                                    width: 11.96px;
+                                    height: 9.98px;
+                                }
+                            }
+                            &:nth-child(2) {
+                                width: max-content;
+                            }
+                        }
+                    }
+                    button {
+                        width: 83.5px;
+                        height: 22.31px;
+                        background: #0175D7;
+                        border-radius: 5.71929px;
+                        a {
+                            font-size: 12px;
+                            line-height: 16px;
+                            font-family: 'NotoSans';
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+                &.active {
+                    background: #EBF4FF;
+                    border-radius: 10px;
+                    &>em {
+                        em {
+                            span {
+                                &:nth-child(2) {
+                                    color: #0066BC;
+                                    img {
+                                        filter: invert(26%) sepia(83%) saturate(1638%) hue-rotate(189deg) brightness(95%) contrast(103%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

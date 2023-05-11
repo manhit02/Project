@@ -129,6 +129,7 @@
                         background-color: unset;
                         &:nth-child(1) {
                             opacity: 0;
+                            cursor: default;
                             transform: rotate(180deg);
                             -webkit-transform: rotate(180deg);
                             -moz-transform: rotate(180deg);

@@ -1,0 +1,85 @@
+
+.index-5-banner
+.index-5-app
+    .container
+        .index-5-app-left
+            span Luyện thi Giấy phép lái xe hạng B2 <strong>/</strong><br><a> Luyện thi theo Bộ đề</a>
+            span <strong>Lưu ý:</strong> Phải trả lời đúng 32 câu và không sai câu điểm liệt
+            ul.index5-js-bd
+                li.true 
+                    span 
+                        span <strong>Bộ</strong> đề 01
+                        span 20:08
+                            img(src="../assets/images/WallClock.png")
+                        img(src="../assets/images/CheckedRadioButton.png")
+                    em
+                        span 
+                            img(src="../assets/images/Ok.png")
+                            |<strong>Số câu</strong> đúng: <strong>0</strong>
+                        span 
+                            img(src="../assets/images/Cancel.png")
+                            |<strong>Số câu</strong> sai:<strong> 0</strong>
+                        span 
+                            img(src="../assets/images/Unavailable(1).png")
+                            |<strong>Số câu</strong> điểm liệt:<strong> 0</strong>
+                li.false 
+                    span 
+                        span <strong>Bộ</strong>đề 02
+                        span 20:08
+                            img(src="../assets/images/WallClock.png")
+                        img(src="../assets/images/union.png")
+                    em
+                        span 
+                            img(src="../assets/images/Ok.png")
+                            |<strong>Số câu</strong> đúng: <strong>0</strong>
+                        span 
+                            img(src="../assets/images/Cancel.png")
+                            |<strong>Số câu</strong> sai:<strong> 0</strong>
+                        span 
+                            img(src="../assets/images/Unavailable(1).png")
+                            |<strong>Số câu</strong> điểm liệt:<strong> 0</strong>
+                - for (let index = 3; index <= 20; index++) {
+                    -if(index<10){
+                        li
+                            span 
+                                span <strong>Bộ</strong>đề 0#{index}
+                                span 00:00
+                                    img(src="../assets/images/WallClock.png")
+                               
+                            em
+                                span 
+                                    img(src="../assets/images/Ok.png")
+                                    |<strong>Số câu</strong> đúng: <strong>0</strong>
+                                span 
+                                    img(src="../assets/images/Cancel.png")
+                                    |<strong>Số câu</strong> sai:<strong> 0</strong>
+                                span 
+                                    img(src="../assets/images/Unavailable(1).png")
+                                    |<strong>Số câu</strong> điểm liệt:<strong> 0</strong>
+                    -}
+                    -else{
+                        li
+                            span 
+                                span <strong>Bộ</strong> đề #{index}
+                                span 00:00
+                                    img(src="../assets/images/WallClock.png")
+                               
+                            em
+                                
+                                span 
+                                    img(src="../assets/images/Ok.png")
+                                    |<strong>Số câu</strong> đúng: <strong>0</strong>
+                                span 
+                                    img(src="../assets/images/Cancel.png")
+                                    |<strong>Số câu</strong> sai:<strong> 0</strong>
+                                span 
+                                    img(src="../assets/images/Unavailable(1).png")
+                                    |<strong>Số câu</strong> điểm liệt:<strong> 0</strong>
+                    -}      
+                -}
+       
+
+                   
+                        
+                    
+            

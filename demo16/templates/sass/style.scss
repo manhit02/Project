@@ -1,0 +1,20 @@
+$color:aqua;
+.header {
+    background-color: $color;
+}
+
+.app {
+    &-news {
+        background-color: $color;
+    }
+}
+
+.app2 {
+    &-news {
+        background-color: $color;
+    }
+}
+
+.footer {
+    background-color: $color;
+}

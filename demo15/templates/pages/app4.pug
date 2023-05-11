@@ -1,0 +1,74 @@
+
+.index-4-banner
+.index-4-app
+    .container
+        .index-4-app-left
+            span Luyện thi Giấy phép lái xe hạng B2 <strong>/</strong><br><a> Đề thi ngẫu nhiên</a>
+            .index-4-app-right__headmb
+                span 5/35<strong>08:20</strong>
+                button.js-index4-send Nộp bài
+            h3 Câu hỏi 31:
+            p Biển nào không cho phép ô tô con vượt?
+            span 
+                img(src="../assets/images/ch.png")
+            ul.js-index4-resulf
+                li  
+                    label(for="31-1") 1. Biển 1 và 2
+                li
+
+                    label(for="31-2") 2. Biển 2
+
+                li 
+                    label(for="31-3") 3. Biển 1 và 3
+
+                li 
+                    label(for="31-4") 4. Biển 2 và 3
+
+            .index-4-app-left__resulf
+                h3 Giải thích đáp án:
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum cursus ullamcorper. Sed sed massa at enim molestie iaculis. Aliquam sed ante quis odio varius ullamcorper id vitae risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum cursus ullamcorper. Sed sed massa at enim molestie iaculis. Aliquam sed ante quis odio varius ullamcorper id vitae risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum cursus ullamcorper. Sed sed massa at enim molestie iaculis. Aliquam sed ante quis odio varius ullamcorper id vitae risus.
+            .index-4-app-left__btn
+                span 
+                    img(src="../assets/images/row2.png",alt="")
+                span 
+                    img(src="../assets/images/row2.png",alt="")
+            .index-4-app-left__btnmb
+                span 
+                    img(src="../assets/images/row2.png",alt="")
+                span.js-index4-showquestion
+                    img(src="../assets/images/Apps.png",alt="")
+                    ul
+                        - for (let i = 1; i <= 35; i++) {
+                            li.js-index4-question #{i}
+
+                        - }
+                    .index-4-app-left__btnmb-overlay.js-index4-overlay2
+                span 
+                    img(src="../assets/images/row2.png",alt="")
+                
+
+        .index-4-app-right
+            .index-4-app-right__head
+                span Thời gian còn lại:<strong class="index4-js-countdown"></strong>
+                button.js-index4-send Nộp bài
+          
+            ul
+                - for (let i = 1; i <= 35; i++) {
+                    li.js-index4-checked #{i}
+                        em
+                            label(for=`${i}-1`) 1
+                                input(type="checkbox",id=`${i}-1`,class=`c${i}`)
+                            label(for=`${i}-2`) 2
+                                input(type="checkbox",id=`${i}-2`,class=`c${i}`)
+                            label(for=`${i}-3`) 3
+                                input(type="checkbox",id=`${i}-3`,class=`c${i}`)
+                            label(for=`${i}-4`) 4
+                                input(type="checkbox",id=`${i}-4`,class=`c${i}`)
+
+                - }
+                
+
+                   
+                        
+                    
+            

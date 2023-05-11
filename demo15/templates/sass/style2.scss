@@ -1,0 +1,870 @@
+.index-12-app {
+    & .container {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        ul {
+            padding-top: 0;
+            width: 100%;
+            li {
+                width: 50%;
+                &:nth-child(2) {
+                    input{width: 100%;}
+                    em {
+                        &:nth-child(4) {
+                            cursor: pointer;
+                        }
+                    }
+                }
+                &:nth-child(3) {
+                    display: none;
+                    h2 {
+                        font-weight: 800;
+                        font-size: 24px;
+                        font-family: "NotoSans-ExtraBold";
+                        color: #0066bc;
+                        margin-bottom: 21px;
+                        text-align: center;
+                        margin-bottom: 20px;
+                    }
+                    input {
+                        margin-bottom: 20px;
+                        width: 100%;
+                        height: 56px;
+                        background: #ffffff;
+                        border: 1px solid #c6c6c6;
+                        border-radius: 7px;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 27px;
+                        color: #000000;
+                        padding: 0 0 0 14px;
+                        font-family: "NotoSans-medium";
+                        &::placeholder {
+                            font-family: "NotoSans-Light";
+                            color: rgba(139, 146, 150, 0.71);
+                        }
+                        outline-color: #000000;
+
+                        &:focus::-webkit-input-placeholder {
+                            color: transparent;
+                        }
+
+                        &:focus:-moz-placeholder {
+                            color: transparent;
+                        }
+
+                        &:focus::-moz-placeholder {
+                            color: transparent;
+                        }
+
+                        &:focus:-ms-input-placeholder {
+                            color: transparent;
+                        }
+                    }
+                    p {
+                        display: none;
+                        margin-bottom: 20px;
+                        font-family: "Roboto-Regular";
+
+                        font-size: 16px;
+                        line-height: 19px;
+
+                        color: #fd1f1f;
+                    }
+                    a {
+                        cursor: pointer;
+                        width: 100%;
+                        height: 48px;
+                        background: #0066bc;
+                        border-radius: 7px;
+                        -webkit-border-radius: 7px;
+                        -moz-border-radius: 7px;
+                        -ms-border-radius: 7px;
+                        -o-border-radius: 7px;
+                        font-family: "NotoSans";
+
+                        font-size: 20px;
+                        line-height: 27px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #fff;
+                    }
+                }
+                &:nth-child(4) {
+                    display: none;
+                    h2 {
+                        font-weight: 800;
+                        font-size: 24px;
+                        font-family: "NotoSans-ExtraBold";
+                        color: #0066bc;
+                        margin-bottom: 21px;
+                        text-align: center;
+                        margin-bottom: 20px;
+                    }
+
+                    input {
+                        margin-bottom: 22px;
+                        width: 100%;
+                        padding: 0 0 0 10px;
+                        height: 56px;
+                        background: #ffffff;
+                        border: 1px solid #c5c5c5;
+                        border-radius: 7px;
+                        -webkit-border-radius: 7px;
+                        -moz-border-radius: 7px;
+                        -ms-border-radius: 7px;
+                        -o-border-radius: 7px;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 27px;
+                        font-family: "NotoSans";
+                        color: #212c42;
+                        &::placeholder {
+                            font-family: "NotoSans-Light";
+                            font-weight: 300;
+                            font-size: 16px;
+                            line-height: 22px;
+                            color: rgba(139, 146, 150, 0.71);
+                        }
+                    }
+                    em {
+                        position: relative;
+                        display: flex;
+                        &:focus-within {
+                            & > button {
+                                cursor: pointer;
+                                display: block;
+                                background: url("../assets/images/login-eye-off.png");
+                            }
+                        }
+                        & > button {
+                            position: absolute;
+                            top: 40%;
+                            transform: translateY(-50%);
+                            -webkit-transform: translateY(-50%);
+                            -moz-transform: translateY(-50%);
+                            -ms-transform: translateY(-50%);
+                            -o-transform: translateY(-50%);
+                            right: 16px;
+                            cursor: pointer;
+                            display: none;
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+                    p {
+                        margin-bottom: 18px;
+                        font-family: "Roboto";
+
+                        font-size: 16px;
+                        line-height: 24px;
+
+                        color: #0066cc;
+                    }
+                    button {
+                        width: 100%;
+                        height: 48px;
+                        background: #0066bc;
+                        border-radius: 7px;
+                        -webkit-border-radius: 7px;
+                        -moz-border-radius: 7px;
+                        -ms-border-radius: 7px;
+                        -o-border-radius: 7px;
+
+                        font-family: "NotoSans-SemiBold";
+
+                        font-size: 20px;
+                        line-height: 27px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 739px) {
+    .index-12-app {
+        & .container {
+            ul {
+                li {width: 100%;
+                    &:nth-child(4) {
+                        input {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.index-13-app {
+    & .container {
+        & > ul {
+            & > li {
+                &:nth-child(2) {
+                    & #home1 {
+                        em {
+                            &:nth-child(1) {
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+                                button {
+                                    position: relative;
+                                    width: 122px;
+                                    height: 48px;
+                                    background: #ffffff;
+                                    border: 1px solid #c5c5c5;
+                                    border-radius: 7px;
+                                    -webkit-border-radius: 7px;
+                                    -moz-border-radius: 7px;
+                                    -ms-border-radius: 7px;
+                                    -o-border-radius: 7px;
+                                    display: flex;
+                                    flex-direction: row-reverse;
+                                    align-items: center;
+                                    justify-content: left;
+                                    padding-left: 8px;
+                                    font-family: "NotoSans";
+
+                                    font-size: 16px;
+                                    line-height: 22px;
+
+                                    color: #000000;
+                                    img {
+                                        margin-right: 8px;
+                                    }
+                                    &::after {
+                                        position: absolute;
+                                        right: 8px;
+                                    }
+                                }
+                                ul {
+                                    li {
+                                        a {
+                                            font-family: "NotoSans";
+                                            font-size: 16px;
+                                            line-height: 22px;
+
+                                            display: flex;
+                                            flex-direction: row-reverse;
+                                            align-items: center;
+                                            justify-content: left;
+                                            padding-left: 8px;
+                                            img {
+                                                margin-right: 5px;
+                                            }
+                                        }
+                                    }
+                                }
+                                input {
+                                    width: 277px;
+                                    height: 48px;
+                                }
+                            }
+                            &:nth-child(2) {
+                                display: block;
+                                margin-top: 11px;
+                                margin-bottom: 11px;
+                                position: relative;
+                                input {
+                                    color: #000;
+                                }
+
+                                button {
+                                    position: absolute;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    -webkit-transform: translateY(-50%);
+                                    -moz-transform: translateY(-50%);
+                                    -ms-transform: translateY(-50%);
+                                    -o-transform: translateY(-50%);
+                                    right: 15px;
+                                    cursor: pointer;
+                                    width: 24px;
+                                    height: 24px;
+                                    display: none;
+                                }
+
+                                &:focus-within {
+                                    button {
+                                        cursor: pointer;
+                                        display: block;
+                                        background: url("../assets/images/login-eye-off.png");
+                                    }
+                                }
+                            }
+                            &:nth-child(3) {
+                                display: block;
+                                margin-bottom: 11px;
+                                position: relative;
+                                input {
+                                    color: #000;
+                                }
+                                span {
+                                    display: none;
+                                    font-weight: 300;
+                                    font-size: 14px;
+                                    line-height: 19px;
+                                    font-family: "NotoSans-LightItalic";
+                                    color: #e63454;
+                                    span {
+                                        margin-left: 22px;
+                                        display: block;
+                                    }
+                                }
+                                button {
+                                    position: absolute;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    -webkit-transform: translateY(-50%);
+                                    -moz-transform: translateY(-50%);
+                                    -ms-transform: translateY(-50%);
+                                    -o-transform: translateY(-50%);
+                                    right: 15px;
+                                    cursor: pointer;
+                                    width: 24px;
+                                    height: 24px;
+                                    display: none;
+                                }
+                                &:focus-within {
+                                    button {
+                                        cursor: pointer;
+                                        display: block;
+                                        background: url("../assets/images/login-eye-off.png");
+                                    }
+                                }
+                            }
+                            &:nth-child(4) {
+                                border: none;
+                                margin-bottom: 15px;
+                                position: relative;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                input {
+                                    width: 207px;
+                                }
+                                span {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    font-weight: 500;
+                                    font-size: 20px;
+                                    line-height: 27px;
+                                    font-family: "NotoSans-medium";
+                                    color: #5a4444;
+                                    width: 77px;
+                                    height: 30px;
+                                    background: #d9d9d9;
+                                }
+                            }
+                            &:last-child {
+                                display: flex;
+                                justify-content: center;
+                                span,
+                                a {
+                                    font-family: "NotoSans-medium";
+                                    font-weight: 500;
+                                    font-size: 16px;
+                                    line-height: 22px;
+                                    color: rgba(139, 146, 150, 0.71);
+                                }
+                                a {
+                                    color: #255fcf;
+                                    margin-left: 3px;
+                                }
+                            }
+                        }
+                        & > button {
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            height: 40px;
+                            background: #0066bc;
+                            border-radius: 7px;
+                            font-weight: 600;
+                            font-size: 20px;
+                            line-height: 27px;
+                            font-family: "NotoSans-SemiBold";
+                            color: #ffffff;
+                            margin-bottom: 16px;
+                        }
+                        & > p {
+                            margin-bottom: 14px;
+                            font-weight: 500;
+                            font-size: 12px;
+                            line-height: 16px;
+                            font-family: "NotoSans-medium";
+                            color: rgba(139, 146, 150, 0.71);
+                            a {
+                                color: #3574e6;
+                                strong {
+                                    color: rgba(139, 146, 150, 0.71);
+                                }
+                            }
+                        }
+                    }
+                    & #home2 {
+                        & .index13-js-home2-1{
+
+                            & > button {
+                                margin-top: 10px;
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                height: 40px;
+                                background: #0066bc;
+                                border-radius: 7px;
+                                font-weight: 600;
+                                font-size: 20px;
+                                line-height: 27px;
+                                font-family: "NotoSans-SemiBold";
+                                color: #ffffff;
+                                margin-bottom: 16px;
+                            }
+                        }
+                        em {
+                            &:nth-child(1){
+
+                                flex-direction: column;
+                                input {
+                                    width: 100%;
+                                   
+                                }
+                                p {
+                                    display: none;
+                                    font-family: "NotoSans-Italic";
+                                    font-size: 14px;
+                                    line-height: 19px;
+                                    color: #e63454;
+                                    margin-bottom: 10px;
+                                }
+                            }
+                            &:nth-child(3) {
+                                display: flex;
+                                justify-content: center;
+                                span {
+                                    margin-bottom: 14px;
+                                    font-weight: 500;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    font-family: "NotoSans-medium";
+                                    color: rgba(139, 146, 150, 0.71);
+                                    margin-right: 3px;
+                                }
+                                a {
+                                    color: #3574e6;
+                                    strong {
+                                        color: rgba(139, 146, 150, 0.71);
+                                    }
+                                }
+                        }
+                        }
+                        
+                        & .index13-js-home2-2{
+                            width: 100%;
+                            display: none;
+                            & > span {
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 19px;
+                                font-family: "NotoSans-medium";
+                                color: #212c42;
+                                text-align: center;
+                                margin-bottom: 11px;
+                            }
+                            input {
+                                width: calc(100%);
+                                height: 56px;
+                                background: #ffffff;
+                                border: 1px solid #c6c6c6;
+                                border-radius: 7px;
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 22px;
+                                color: #000000;
+                                padding: 0 0 0 14px;
+                                font-family: "NotoSans-medium";
+                                outline-color: #000000;
+                                &::placeholder {
+                                    font-family: "NotoSans-Light";
+                                    color: rgba(139, 146, 150, 0.71);
+                                }
+                            }
+                            em {
+                              
+                                &:nth-child(1) {
+                                    display: block;
+                                    margin-top: 11px;
+                                    margin-bottom: 11px;
+                                    position: relative;
+                                    input {
+                                        color: #000;
+                                    }
+        
+                                    button {
+                                        position: absolute;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                        -webkit-transform: translateY(-50%);
+                                        -moz-transform: translateY(-50%);
+                                        -ms-transform: translateY(-50%);
+                                        -o-transform: translateY(-50%);
+                                        right: 15px;
+                                        cursor: pointer;
+                                        width: 24px;
+                                        height: 24px;
+                                        display: none;
+                                    }
+        
+                                    &:focus-within {
+                                        button {
+                                            cursor: pointer;
+                                            display: block;
+                                            background: url("../assets/images/login-eye-off.png");
+                                        }
+                                    }
+                                }
+                                &:nth-child(2) {
+                                    display: block;
+                                    margin-bottom: 11px;
+                                    position: relative;
+                                    input {
+                                        color: #000;
+                                    }
+                                    span {
+                                        display: none;
+                                        font-weight: 300;
+                                        font-size: 14px;
+                                        line-height: 19px;
+                                        font-family: "NotoSans-LightItalic";
+                                        color: #e63454;
+                                        span {
+                                            margin-left: 22px;
+                                            display: block;
+                                        }
+                                    }
+                                    button {
+                                        position: absolute;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                        -webkit-transform: translateY(-50%);
+                                        -moz-transform: translateY(-50%);
+                                        -ms-transform: translateY(-50%);
+                                        -o-transform: translateY(-50%);
+                                        right: 15px;
+                                        cursor: pointer;
+                                        width: 24px;
+                                        height: 24px;
+                                        display: none;
+                                    }
+                                    &:focus-within {
+                                        button {
+                                            cursor: pointer;
+                                            display: block;
+                                            background: url("../assets/images/login-eye-off.png");
+                                        }
+                                    }
+                                }
+                              
+                                &:last-child {
+                                    display: flex;
+                                    justify-content: center;
+                                    span,
+                                    a {
+                                        font-family: "NotoSans-medium";
+                                        font-weight: 500;
+                                        font-size: 16px;
+                                        line-height: 22px;
+                                        color: rgba(139, 146, 150, 0.71);
+                                    }
+                                    a {
+                                        color: #255fcf;
+                                        margin-left: 3px;
+                                    }
+                                }
+                            }
+                          
+
+                                & > button {
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    height: 40px;
+                                    background: #0066bc;
+                                    border-radius: 7px;
+                                    font-weight: 600;
+                                    font-size: 20px;
+                                    line-height: 27px;
+                                    font-family: "NotoSans-SemiBold";
+                                    color: #ffffff;
+                                    margin-bottom: 16px;
+                                }
+                                & > p {
+                                    margin-bottom: 14px;
+                                    font-weight: 500;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    font-family: "NotoSans-medium";
+                                    color: rgba(139, 146, 150, 0.71);
+                                    a {
+                                        color: #3574e6;
+                                        strong {
+                                            color: rgba(139, 146, 150, 0.71);
+                                        }
+                                    }
+                                
+                            }
+                        }
+                    }
+                }
+               
+            }
+        }
+    }
+}
+.index-17-app {
+    &-profile{
+
+        &__right {
+            ul {
+                li {
+                    em {
+                        span {
+                            display: flex;
+                            align-items: center;
+                            position: relative;
+                            cursor: pointer;
+                            margin-right: 16px;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            min-width: 175px;
+                            height: 40px;
+                            background: transparent;
+                            border: 1px solid #c5c5c5;
+                            border-radius: 7px;
+                            -webkit-border-radius: 7px;
+                            -moz-border-radius: 7px;
+                            -ms-border-radius: 7px;
+                            -o-border-radius: 7px;
+                            padding-left: 14px;
+                            font-family: "NotoSans";
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                        }
+                    }
+                   
+                }
+            }
+           
+        }
+    }
+}
+.index-14-app{&-profile{
+    &__right{
+        & #home2{
+            ul{li{
+                &:nth-child(2){
+
+                  
+                  button{
+                      margin-left: 26px;
+                      min-width: 20%;
+                      height: 42px;
+                      background: #98D0FF;
+                      border: 1px solid #0066BC;
+                      border-radius: 10px;
+                      font-family: 'NotoSans';
+                      font-size: 16px;
+                      line-height: 22px;
+                      text-align: center;
+                      color: #0066BC;
+                      -webkit-border-radius: 10px;
+                      -moz-border-radius: 10px;
+                      -ms-border-radius: 10px;
+                      -o-border-radius: 10px;
+    }
+                }
+            }}      
+      }
+      & #menu3{
+        ul{li{
+            &:nth-child(2){
+
+              button{
+                  margin-left: 26px;
+                  min-width: 20%;
+                  height: 42px;
+                  background: #98D0FF;
+                  border: 1px solid #0066BC;
+                  border-radius: 10px;
+                  font-family: 'NotoSans';
+                  font-size: 16px;
+                  line-height: 22px;
+                  text-align: center;
+                  color: #0066BC;
+                  -webkit-border-radius: 10px;
+                  -moz-border-radius: 10px;
+                  -ms-border-radius: 10px;
+                  -o-border-radius: 10px;
+    }
+            }
+        }}      
+  }
+    }
+}}
+
+.index-26-app{
+    &-profile{
+        &__body{
+&-item{
+    button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        right: 16px;
+        cursor: pointer;
+        display: none;
+        width: 24px;
+        height: 24px;
+    }
+    &2,&3{
+        &:focus-within {
+            &>button {
+                cursor: pointer;
+                display: block;
+                background: url("../assets/images/login-eye-off.png");
+            }
+        }
+    }
+    &4{
+        span {
+            width: 25%;
+            height: 56px;
+            background: transparent;
+            border: 1px solid #C5C5C5;
+            border-radius: 7px;
+            padding-left: 16px;
+            font-family: 'NotoSans-Light';
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 27px;
+            display: flex;
+            align-items: center;
+            color: rgba(139, 146, 150, 0.71);
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            text-indent: 1px;
+            cursor: pointer;
+            +img {
+                background: url("../assets/images/material-symbols_arrow-drop-down-rounded.png");
+                position: absolute;
+                right: 45%;
+                width: 53px;
+                height: 56px;
+                display: block;
+                z-index: -1;
+            }
+        }
+    }
+}
+        }
+    }
+}
+@media (max-width: 739px) {
+
+.index-14-app {
+    &-profile {
+        &__right {
+            & #home2 {
+                ul {
+                    li {
+                        &:nth-child(2) {
+                            position: relative;
+
+                            button {
+                                position: absolute;
+                                width: 67px;
+                                font-size: 10.6667px;
+                                line-height: 15px;
+                                height: 28px;
+                                margin-left: 0;
+                                right: 10px;
+                                top: 47px;
+                            }
+                        }
+                    }
+                }
+            }
+            & #menu3 {
+                ul {
+                    li {
+                        &:nth-child(2) {
+                            button {
+                                position: absolute;
+                                width: 67px;
+                                font-size: 10.6667px;
+                                line-height: 15px;
+                                height: 28px;
+                                margin-left: 0;
+                                right: 10px;
+                                top: 47px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.popup-index14,.popup2-index14 {
+    
+    &__body {
+       padding: 47px 16px 36px 16px;
+
+        width: 343px;
+        h2 {
+            font-size: 24px;
+            line-height: 33px;
+           
+           
+        }
+        p {
+            font-size: 20px;
+            line-height: 27px;
+        }
+        input {
+           width: 100%;
+            &::placeholder {
+                
+            }
+        }
+        span {
+            font-size: 18px;
+            line-height: 25px;
+        }
+        &-btn {
+            
+            button {
+                width: 150px;
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+    }
+}}

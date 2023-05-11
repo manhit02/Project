@@ -1,0 +1,92 @@
+        // pc high
+        @media (min-width: 2001px) {
+            .index-19-app {}
+        }
+        
+        // pc
+        @media (min-width: 1281px) and (max-width: 2000px) {}
+        
+        // pc low
+        @media (min-width: 1024px) and (max-width: 1280px) {}
+        
+        @media (min-width: 1024px) {}
+        /* tablet */
+        
+        @media (min-width: 740px) and (max-width: 1023px) {}
+        /* mobile */
+        
+        @media (max-width: 739px) {
+            .index-19-app {
+                padding-top: 48px;
+                padding-bottom: 0;
+                box-shadow: inset 0px 8px 10px rgba(21, 0, 37, 0.2);
+                & .container {
+                    padding: 0;
+                }
+                &-body {
+                    padding: 0 16px 40px 16px;
+                    border-radius: 0px;
+                    -webkit-border-radius: 0px;
+                    -moz-border-radius: 0px;
+                    -ms-border-radius: 0px;
+                    -o-border-radius: 0px;
+                    span {
+                        display: none;
+                    }
+                    table {
+                        thead {
+                            height: 61px;
+                            tr {
+                                th {
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                }
+                                &:nth-child(1) {
+                                    th {
+                                        &:nth-child(1) {
+                                            width: 25%;
+                                        }
+                                        &:nth-child(2) {
+                                            width: 50%;
+                                        }
+                                        &:nth-child(3) {
+                                            width: 25%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        tbody {
+                            tr {
+                                td {
+                                    vertical-align: unset;
+                                    padding: 8px 0 13px 7px;
+                                    font-size: 10px;
+                                    line-height: 14px;
+                                }
+                            }
+                        }
+                    }
+                    &__btn {
+                        justify-content: space-between;
+                        button {
+                            width: 24px;
+                            height: 24px;
+                            font-size: 14px;
+                            line-height: 19px;
+                            img {
+                                width: 9px;
+                                height: 25px;
+                            }
+                        }
+                        ul {
+                            margin: 0;
+                            li {
+                                font-size: 14px;
+                                line-height: 19px;
+                            }
+                        }
+                    }
+                }
+            }
+        }

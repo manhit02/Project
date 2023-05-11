@@ -1,0 +1,74 @@
+
+.index-5-banner
+.index-6-app
+    .container
+        .index-6-app-left
+            span Luyện thi Giấy phép lái xe hạng B2 <strong>/</strong><br><a> Bộ 200 câu hỏi</a>
+            
+            .index-6-app-right__headmb
+                span 5/35<strong>08:20</strong>
+            h3 Câu hỏi 31:
+            p Biển nào không cho phép ô tô con vượt?
+            span 
+                img(src="../assets/images/ch.png")
+            ul.js-resulf
+                li
+                    em 1. Biển 1 và 2
+                li
+                    em 2. Biển 2
+                li
+                    em 3. Biển 1 và 3
+                li
+                    em 4. Biển 2 và 3
+            .index-6-app-left__resulf
+                h3 Giải thích đáp án:
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum cursus ullamcorper. Sed sed massa at enim molestie iaculis. Aliquam sed ante quis odio varius ullamcorper id vitae risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum cursus ullamcorper. Sed sed massa at enim molestie iaculis. Aliquam sed ante quis odio varius ullamcorper id vitae risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum cursus ullamcorper. Sed sed massa at enim molestie iaculis. Aliquam sed ante quis odio varius ullamcorper id vitae risus.
+            .index-6-app-left__btn
+                span 
+                    img(src="../assets/images/row2.png",alt="")
+                span 
+                    img(src="../assets/images/row2.png",alt="")
+            .index-6-app-left__btnmb
+                
+                span 
+                    img(src="../assets/images/row2.png",alt="")
+                span.index6-js-showmenu
+                    img(src="../assets/images/Apps.png",alt="")
+                    ul.index6-js-menu
+                        li
+                            .index-6-app-right__head
+                                span Câu đúng:
+                                    strong 3
+                                    img(src="../assets/images/Ok.png")
+                                    
+                                span Câu sai:
+                                    strong 2
+                                    img(src="../assets/images/Cancel.png")
+                                span Câu chưa làm:
+                                    strong 585
+                                    img(src="../assets/images/Ellipse0.png")
+                        - for (let i = 1; i <= 200; i++) {
+                            li #{i}
+
+                        - }
+                    .index-6-app-left__btnmb-overlay.js-overlay2
+                span 
+                    img(src="../assets/images/row2.png",alt="")
+        .index-6-app-right
+            .index-6-app-right__head
+                span Câu đúng:
+                    strong 3
+                    img(src="../assets/images/Ok.png")
+                    
+                span Câu sai:
+                    strong 2
+                    img(src="../assets/images/Cancel.png")
+                span Câu chưa làm:
+                    strong 585
+                    img(src="../assets/images/Ellipse0.png")
+            ul
+                - for (let i = 1; i <= 200; i++) {
+                    li.js-checked #{i}
+                - }
+                    
+            

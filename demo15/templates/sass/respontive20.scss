@@ -1,0 +1,117 @@
+        // pc high
+        @media (min-width: 2001px) {
+            .index-20-app {}
+        }
+        
+        // pc
+        @media (min-width: 1281px) and (max-width: 2000px) {}
+        
+        // pc low
+        @media (min-width: 1024px) and (max-width: 1280px) {}
+        
+        @media (min-width: 1024px) {}
+        /* tablet */
+        
+        @media (min-width: 740px) and (max-width: 1023px) {}
+        /* mobile */
+        
+        @media (max-width: 739px) {
+            .index-20-app {
+                padding-top: 0;
+                padding-bottom: 0;
+                & .container {
+                    padding: 0;
+                }
+                &-body {
+                    box-shadow: inset 0px 8px 10px rgba(21, 0, 37, 0.2);
+                    padding: 35px 16px 40px 16px;
+                    border-radius: 0px;
+                    -webkit-border-radius: 0px;
+                    -moz-border-radius: 0px;
+                    -ms-border-radius: 0px;
+                    -o-border-radius: 0px;
+                    span {
+                        &:nth-child(1) {
+                            display: none;
+                        }
+                        &:nth-child(2) {
+                            font-size: 16px;
+                            line-height: 22px;
+                            select {
+                                width: 223px;
+                                height: 42px;
+                                font-size: 16px;
+                                line-height: 22px;
+                                padding-left: 22px;
+                            }
+                            span {
+                                left: 310px;
+                            }
+                        }
+                    }
+                    table {
+                        thead {
+                            height: 61px;
+                            tr {
+                                th {
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                }
+                                &:nth-child(1) {
+                                    th {
+                                        &:nth-child(1) {
+                                            width: 20%;
+                                        }
+                                        &:nth-child(2) {
+                                            width: 25%;
+                                        }
+                                        &:nth-child(3) {
+                                            width: 55%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        tbody {
+                            tr {
+                                td {
+                                    padding: 8px 0 0 0;
+                                    vertical-align: top;
+                                    font-size: 10px;
+                                    line-height: 14px;
+                                    &:nth-child(1) {
+                                        img {
+                                            width: 56px;
+                                            height: 56px;
+                                        }
+                                    }
+                                    &:nth-child(3) {
+                                        padding: 8px 9px 0 6px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &__btn {
+                        justify-content: space-between;
+                        button {
+                            width: 24px;
+                            height: 24px;
+                            font-size: 14px;
+                            line-height: 19px;
+                            img {
+                                width: 9px;
+                                height: 25px;
+                            }
+                        }
+                        ul {
+                            margin: 0;
+                            li {
+                                font-size: 14px;
+                                line-height: 19px;
+                            }
+                        }
+                    }
+                }
+            }
+        }

@@ -1,0 +1,138 @@
+.index-18-banner {
+    background: url("../assets/images/app18-banner.jpeg") top center/cover no-repeat;
+    height: 292px;
+    position: relative;
+    & .container {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        h2 {
+            font-family: 'NotoSans-bold';
+            font-weight: 700;
+            font-size: 46px;
+            line-height: 63px;
+            color: #FFFFFF;
+        }
+    }
+}
+
+.index-18-app {
+    padding-top: 35px;
+    &-heading {
+        font-family: 'NotoSans-bold';
+        font-size: 32px;
+        line-height: 44px;
+        color: #0066BC;
+    }
+    &-law {
+        ul {
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-between;
+            li {
+                border-radius: 20px;
+                width: 584px;
+                background: radial-gradient(46.49% 85.11% at 59.08% 32.83%, #A5E9FF 0%, #E0FFFE 100%);
+                img {
+                    border-top-right-radius: 20px;
+                    border-top-left-radius: 20px;
+                    width: 100%;
+                }
+                em {
+                    padding: 37px 28px 23px 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    h2 {
+                        font-size: 24px;
+                        line-height: 33px;
+                        font-family: 'NotoSans-bold';
+                        color: #0066BC;
+                        p {
+                            font-size: 15.8175px;
+                            line-height: 22px;
+                            font-family: 'NotoSans-medium';
+                            color: #516690;
+                        }
+                    }
+                    button {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 120px;
+                        height: 42px;
+                        background: #0066BC;
+                        border-radius: 6px;
+                        -webkit-border-radius: 6px;
+                        -moz-border-radius: 6px;
+                        -ms-border-radius: 6px;
+                        -o-border-radius: 6px;
+                        a {
+                            font-size: 20px;
+                            line-height: 27px;
+                            font-family: 'NotoSans';
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-common {
+        margin-top: 52px;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 25px;
+            li {
+                padding-bottom: 13px;
+                background: radial-gradient(220.43% 177.75% at 67.03% 197.21%, #A5E9FF 0%, #E0FFFE 100%);
+                border-radius: 20px;
+                margin-bottom: 41px;
+                width: 276px;
+                img {
+                    border-top-right-radius: 20px;
+                    border-top-left-radius: 20px;
+                    width: 100%;
+                }
+                em {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    h2 {
+                        font-size: 24px;
+                        line-height: 33px;
+                        font-family: 'NotoSans-bold';
+                        color: #0066BC;
+                    }
+                    p {
+                        font-size: 15.8175px;
+                        line-height: 22px;
+                        font-family: 'NotoSans-medium';
+                        color: #516690;
+                    }
+                    button {
+                        margin-top: 17px;
+                        width: 120px;
+                        height: 42px;
+                        background: #0066BC;
+                        border-radius: 6px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        a {
+                            font-size: 20px;
+                            line-height: 27px;
+                            font-family: 'NotoSans';
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

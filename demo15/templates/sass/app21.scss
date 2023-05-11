@@ -1,0 +1,333 @@
+.index-21-app {
+    padding-top: 30px;
+    padding-bottom: 79px;
+}
+
+.index-21-app {
+    padding-top: 30px;
+    padding-bottom: 79px;
+    &-body {
+        padding: 0 71px 13px 71px;
+        width: 100%;
+        background: #FFFFFF;
+        box-shadow: 5px 10px 22px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        &>span {
+            display: flex;
+            align-items: center;
+            padding-left: 18px;
+            margin-left: -71px;
+            width: 528.46px;
+            height: 65px;
+            background: url("../assets/images/h.png") top center/contain no-repeat;
+            font-size: 20px;
+            line-height: 27px;
+            font-family: 'NotoSans-SemiBold';
+            color: #FFFFFF;
+            margin-bottom: 30px;
+        }
+        ul {
+            &:nth-child(2) {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                height: 180px;
+                background: #D2EAFF;
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+                margin-bottom: 56px;
+                li {
+                    &:nth-child(1) {
+                        margin-bottom: 20px;
+                        width: 100%;
+                        height: 75px;
+                        display: flex;
+                        flex-direction: row-reverse;
+                        align-items: center;
+                        justify-content: flex-end;
+                        font-size: 20px;
+                        line-height: 27px;
+                        font-family: 'NotoSans-SemiBold';
+                        color: #FFFFFF;
+                        background: #309DFD;
+                        border-radius: 20px 20px 0px 0px;
+                        em {
+                            padding-left: 32px;
+                            display: flex;
+                            align-items: center;
+                            width: 218.5px;
+                            height: 75px;
+                            background: linear-gradient(180deg, #336FE4 0%, #30A0FF 100%);
+                            border-top-left-radius: 20px;
+                            clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+                            span {
+                                font-size: 32px;
+                                line-height: 44px;
+                                font-family: 'NotoSans-SemiBold';
+                                color: #FFFFFF;
+                            }
+                            img {
+                                margin-right: 13px;
+                                object-fit: contain;
+                                filter: invert(100%) sepia(0%) saturate(7491%) hue-rotate(190deg) brightness(114%) contrast(99%);
+                            }
+                        }
+                    }
+                    &:nth-child(2),
+                    &:nth-child(4) {
+                        display: flex;
+                        flex-direction: column;
+                        font-size: 20px;
+                        line-height: 27px;
+                        color: #212C42;
+                        font-family: 'NotoSans-SemiBold';
+                        strong {
+                            font-size: 24px;
+                            line-height: 29px;
+                            font-family: 'NotoSans-Bold';
+                            color: #0066BC;
+                        }
+                    }
+                    &:nth-child(3),
+                    &:nth-child(5) {
+                        em {
+                            &:nth-child(1) {
+                                display: flex;
+                                width: 379px;
+                                height: 24px;
+                                background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+                                border-radius: 40px;
+                                margin-bottom: 25px;
+                                span {
+                                    width: 152px;
+                                    height: 24px;
+                                    background: linear-gradient(0deg, #0066BC, #0066BC), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+                                    border-radius: 20px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    font-size: 14px;
+                                    line-height: 19px;
+                                    font-family: 'NotoSans-SemiBold';
+                                    color: #FCFCFC;
+                                }
+                            }
+                            &:nth-child(2) {
+                                display: flex;
+                                justify-content: end;
+                                &>span {
+                                    display: flex;
+                                    align-items: center;
+                                    flex-direction: row-reverse;
+                                    font-size: 16px;
+                                    line-height: 22px;
+                                    font-family: 'NotoSans-SemiBold';
+                                    color: #212C42;
+                                    span {
+                                        display: flex;
+                                        width: 20px;
+                                        height: 20px;
+                                        border-radius: 50%;
+                                        background: #FFFFFF;
+                                        -webkit-border-radius: 50%;
+                                        -moz-border-radius: 50%;
+                                        -ms-border-radius: 50%;
+                                        -o-border-radius: 50%;
+                                        margin-right: 7px;
+                                    }
+                                    &:nth-child(2) {
+                                        margin-left: 42px;
+                                        span {
+                                            background: #0066BC;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        padding-left: 32px;
+                    }
+                    &:nth-child(5) {
+                        padding-right: 34px;
+                        em {
+                            &:nth-child(2) {
+                                &>span {
+                                    span {
+                                        background: url("../assets/images/app21-2.png") top center/contain no-repeat;
+                                        filter: invert(96%) sepia(100%) saturate(0%) hue-rotate(124deg) brightness(105%) contrast(104%);
+                                    }
+                                    &:nth-child(2) {
+                                        span {
+                                            background: url("../assets/images/app21-2.png") top center/contain no-repeat;
+                                            filter: invert(15%) sepia(85%) saturate(6064%) hue-rotate(197deg) brightness(100%) contrast(101%);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &:nth-child(3) {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                li {
+                    margin-bottom: 42px;
+                    width: 341px;
+                    border: 1px solid #97A6B7;
+                    background-color: #fff;
+                    border-radius: 20px;
+                    -webkit-border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    -ms-border-radius: 20px;
+                    -o-border-radius: 20px;
+                    position: relative;
+                    &.active {
+                        background: #D2EAFF;
+                        em {
+                            &:nth-child(4) {
+                                &>span {
+                                    &:nth-child(2) {
+                                        span {
+                                            color: #0066BC;
+                                            background: url("../assets/images/app21-4.png") top center/contain no-repeat;
+                                            filter: invert(27%) sepia(99%) saturate(1580%) hue-rotate(190deg) brightness(87%) contrast(101%);
+                                            -webkit-filter: invert(27%) sepia(99%) saturate(1580%) hue-rotate(190deg) brightness(87%) contrast(101%);
+                                            &::after {
+                                                content: "Đã học";
+                                                left: 110%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &>img {
+                        width: 100%;
+                        border-top-right-radius: 20px;
+                        border-top-left-radius: 20px;
+                    }
+                    h2 {
+                        padding-top: 8px;
+                        padding-left: 15px;
+                        padding-right: 18px;
+                        font-size: 16px;
+                        line-height: 22px;
+                        font-family: 'NotoSans-SemiBold';
+                        color: #212C42;
+                    }
+                    p {
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        -webkit-transform: translateX(-50%);
+                        -moz-transform: translateX(-50%);
+                        -ms-transform: translateX(-50%);
+                        -o-transform: translateX(-50%);
+                        top: 60px;
+                        font-size: 23.3846px;
+                        line-height: 32px;
+                        text-align: center;
+                        color: #003279;
+                        font-family: 'NotoSans-Black';
+                    }
+                    em {
+                        &:nth-child(4) {
+                            margin-top: 17px;
+                            margin-bottom: 8px;
+                            display: flex;
+                            justify-content: space-between;
+                            padding-left: 23px;
+                            padding-right: 38px;
+                            &>span {
+                                position: relative;
+                                font-size: 14px;
+                                line-height: 19px;
+                                font-family: 'NotoSans-medium';
+                                color: #212C42;
+                                display: flex;
+                                flex-direction: row-reverse;
+                                align-items: center;
+                                span {
+                                    width: 24px;
+                                    height: 24px;
+                                    display: block;
+                                    margin-right: 8px;
+                                }
+                                &:nth-child(1) {
+                                    span {
+                                        background: url("../assets/images/app21-3.png") top center/contain no-repeat;
+                                    }
+                                }
+                                &:nth-child(2) {
+                                    width: 100px;
+                                    justify-content: flex-end;
+                                    span {
+                                        &::after {
+                                            content: "Chưa học";
+                                            position: absolute;
+                                            top: 50%;
+                                            right: 0;
+                                            transform: translateY(-50%);
+                                            -webkit-transform: translateY(-50%);
+                                            -moz-transform: translateY(-50%);
+                                            -ms-transform: translateY(-50%);
+                                            -o-transform: translateY(-50%);
+                                            width: max-content;
+                                            display: flex;
+                                        }
+                                        background: url("../assets/images/app21-5.png") top center/contain no-repeat;
+                                    }
+                                }
+                                &:nth-child(3) {
+                                    span {
+                                        background: url("../assets/images/app21-2.png") top center/contain no-repeat;
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(5) {
+                            display: flex;
+                            justify-content: center;
+                            margin-bottom: 17px;
+                            button {
+                                width: 146px;
+                                height: 39px;
+                                border: 1px solid #0066BC;
+                                border-radius: 10px;
+                                background-color: transparent;
+                                a {
+                                    font-size: 16px;
+                                    line-height: 22px;
+                                    font-family: 'NotoSans';
+                                    color: #0066BC;
+                                }
+                                &:nth-child(1) {
+                                    margin-right: 11px;
+                                }
+                                &:nth-child(2) {
+                                    background: #0066BC;
+                                    a {
+                                        color: #fff;
+                                        border: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

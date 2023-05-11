@@ -88,3 +88,166 @@ $$(".js-control").forEach((control) => {
 
     };
 });
+
+function callb() {
+    for (let index = 0; index < $(".js-slider").children.length; index++) {
+        setTimeout(() => {
+
+            var getWidthsc = $(".js-slider").offsetWidth;
+            $(".js-slider").scrollTo({
+                top: 0,
+                left: getWidthsc * index,
+                behavior: "smooth",
+            });
+
+
+            if (index == 3) {
+                setTimeout(() => {
+                    callb()
+                }, 5000);
+            }
+        }, 5000 * index);
+    }
+
+
+
+}
+callb()
+var count = 0
+var child = $$(".js-sliderNews li").length;
+var getWidth = $(".js-sliderNews li").offsetWidth
+$(".js-nextNews").onclick = () => {
+
+    if (count < child - 4) {
+
+        count++
+
+        $(".js-sliderNews").scrollTo({
+            top: 0,
+            left: getWidth * count + 8,
+            behavior: "smooth"
+        })
+        $(".js-nextNews").style.opacity = "1"
+        $(".js-nextNews").style.cursor = "pointer"
+    }
+    if (count > 0) {
+        $(".js-pevNews").style.opacity = "1"
+        $(".js-pevNews").style.cursor = "pointer"
+
+    }
+
+    if (count == child - 4) {
+        $(".js-nextNews").style.opacity = "0"
+        $(".js-nextNews").style.cursor = "default"
+    }
+}
+$(".js-pevNews").onclick = () => {
+    if (count > 0) {
+        count--
+
+        $(".js-sliderNews").scrollTo({
+            top: 0,
+            left: count * getWidth - 8,
+            behavior: "smooth"
+
+        })
+        $(".js-nextNews").style.opacity = "1"
+        $(".js-nextNews").style.cursor = "pointer"
+    }
+    if (count == 0) {
+        $(".js-pevNews").style.opacity = "0"
+        $(".js-pevNews").style.cursor = "default"
+
+    }
+
+
+}
+var countt = 0
+var childd = $$(".js-sliderPkm li").length;
+var getWidthh = $(".js-sliderPkm li").offsetWidth
+$(".js-nextPkm").onclick = () => {
+
+    if (countt < childd - 7) {
+
+        countt++
+
+        $(".js-sliderPkm").scrollTo({
+            top: 0,
+            left: getWidthh * countt + 13,
+            behavior: "smooth"
+        })
+        $(".js-nextPkm").style.opacity = "1"
+        $(".js-nextPkm").style.cursor = "pointer"
+    }
+    if (countt > 0) {
+        $(".js-pevPkm").style.opacity = "1"
+        $(".js-pevPkm").style.cursor = "pointer"
+
+    }
+
+    if (countt == childd - 7) {
+        $(".js-nextPkm").style.opacity = "0"
+        $(".js-nextPkm").style.cursor = "default"
+    }
+}
+$(".js-pevPkm").onclick = () => {
+    if (countt > 0) {
+        countt--
+
+        $(".js-sliderPkm").scrollTo({
+            top: 0,
+            left: countt * getWidthh - 13,
+            behavior: "smooth"
+
+        })
+        $(".js-nextPkm").style.opacity = "1"
+        $(".js-nextPkm").style.cursor = "pointer"
+    }
+    if (countt == 0) {
+        $(".js-pevPkm").style.opacity = "0"
+        $(".js-pevPkm").style.cursor = "default"
+
+    }
+
+
+}
+
+function scrollEven1() {
+    if ($(".js-sliderPkm").scrollLeft == 0) {
+        $(".js-pevPkm").style.opacity = "0"
+        $(".js-pevPkm").style.cursor = "default"
+
+    } else {
+        $(".js-pevPkm").style.opacity = "1"
+        $(".js-pevPkm").style.cursor = "pointer"
+    }
+    if ($(".js-sliderPkm").scrollLeft == $(".js-sliderPkm").scrollWidth - $(".js-sliderPkm").clientWidth) {
+        $(".js-nextPkm").style.opacity = "0"
+        $(".js-nextPkm").style.cursor = "default"
+    } else {
+        $(".js-nextPkm").style.opacity = "1"
+        $(".js-nextPkm").style.cursor = "pointer"
+    }
+
+}
+
+function scrollEven2() {
+    if ($(".js-sliderNews").scrollLeft == 0) {
+        $(".js-pevNews").style.opacity = "0"
+        $(".js-pevNews").style.cursor = "default"
+
+    } else {
+        $(".js-pevNews").style.opacity = "1"
+        $(".js-pevNews").style.cursor = "pointer"
+    }
+    if ($(".js-sliderNews").scrollLeft == $(".js-sliderNews").scrollWidth - $(".js-sliderNews").clientWidth) {
+        $(".js-nextNews").style.opacity = "0"
+        $(".js-nextNews").style.cursor = "default"
+    } else {
+        $(".js-nextNews").style.opacity = "1"
+        $(".js-nextNews").style.cursor = "pointer"
+    }
+
+}
+$(".js-sliderPkm").addEventListener("scroll", scrollEven1);
+$(".js-sliderNews").addEventListener("scroll", scrollEven2);

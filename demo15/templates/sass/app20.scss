@@ -1,0 +1,180 @@
+.index-20-app {
+    padding-top: 30px;
+    padding-bottom: 79px;
+    &-body {
+        padding-bottom: 43px;
+        width: 100%;
+        background: #FFFFFF;
+        box-shadow: 5px 10px 22px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        padding-left: 24px;
+        padding-right: 30px;
+        &>span {
+            &:nth-child(1) {
+                display: flex;
+                align-items: center;
+                padding-left: 18px;
+                margin-left: -24px;
+                width: 528.46px;
+                height: 65px;
+                background: url("../assets/images/h.png") top center/contain no-repeat;
+                font-size: 20px;
+                line-height: 27px;
+                font-family: 'NotoSans-SemiBold';
+                color: #FFFFFF;
+            }
+            &:nth-child(2) {
+                font-size: 20px;
+                line-height: 27px;
+                font-family: 'NotoSans-medium';
+                color: #212C42;
+                display: flex;
+                align-items: center;
+                margin-top: 27px;
+                margin-bottom: 29px;
+                position: relative;
+                z-index: 1;
+                select {
+                    cursor: pointer;
+                    padding-left: 31px;
+                    margin-left: 18px;
+                    width: 280px;
+                    height: 42px;
+                    background: transparent;
+                    border: 1px solid #AFBACA;
+                    font-size: 20px;
+                    line-height: 27px;
+                    font-family: 'NotoSans-SemiBold';
+                    color: #0066BC;
+                    border-radius: 20px;
+                    -webkit-border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    -ms-border-radius: 20px;
+                    -o-border-radius: 20px;
+                    -moz-appearance: none;
+                    -webkit-appearance: none;
+                }
+                span {
+                    z-index: -1;
+                    display: block;
+                    position: absolute;
+                    left: calc(257px + 134px);
+                    background: url("../assets/images/Vector.png") center/contain no-repeat;
+                    width: 28px;
+                    height: 15px;
+                    transform: rotate(90deg);
+                    -webkit-transform: rotate(90deg);
+                    -moz-transform: rotate(90deg);
+                    -ms-transform: rotate(90deg);
+                    -o-transform: rotate(90deg);
+                    filter: brightness(0) saturate(100%) invert(35%) sepia(17%) saturate(321%) hue-rotate(184deg) brightness(95%) contrast(89%);
+                    -webkit-filter: brightness(0) saturate(100%) invert(35%) sepia(17%) saturate(321%) hue-rotate(184deg) brightness(95%) contrast(89%);
+                }
+            }
+        }
+        table {
+            margin-bottom: 29px;
+            width: 100%;
+            border-radius: 10px;
+            thead {
+                height: 83px;
+                background: #0066BC;
+                tr {
+                    th {
+                        text-align: center;
+                        vertical-align: middle;
+                        border-right: 1px solid #FFFFFF;
+                        font-size: 20px;
+                        line-height: 27px;
+                        font-family: 'NotoSans-SemiBold';
+                        color: #FFFFFF;
+                        &:nth-child(1) {
+                            width: 20%;
+                        }
+                        &:nth-child(2) {
+                            width: 20%;
+                        }
+                        &:nth-child(3) {
+                            width: 60%;
+                            border-right: unset;
+                        }
+                    }
+                }
+            }
+            tbody {
+                border: 1px solid #97A6B7;
+                border-top: none;
+                tr {
+                    td {
+                        border: 1px solid #97A6B7;
+                        vertical-align: middle;
+                        font-size: 16px;
+                        line-height: 22px;
+                        font-family: 'NotoSans';
+                        color: #212C42;
+                        &:nth-child(1) {
+                            padding-top: 10px;
+                            padding-bottom: 25px;
+                            img {
+                                display: block;
+                                margin: auto;
+                            }
+                        }
+                        &:nth-child(2) {
+                            text-align: center;
+                        }
+                        &:nth-child(3) {
+                            padding: 10px 28px 17px 18px;
+                        }
+                    }
+                }
+            }
+        }
+        &__btn {
+            display: flex;
+            justify-content: center;
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 36px;
+                height: 36px;
+                border: 1px solid #336FE4;
+                border-radius: 10px;
+                background-color: #fff;
+                img {
+                    width: 13px;
+                    height: 22px;
+                    object-fit: contain;
+                    filter: brightness(0) saturate(100%) invert(34%) sepia(79%) saturate(1898%) hue-rotate(208deg) brightness(93%) contrast(92%);
+                    -webkit-filter: brightness(0) saturate(100%) invert(34%) sepia(79%) saturate(1898%) hue-rotate(208deg) brightness(93%) contrast(92%);
+                }
+                &:first-child {
+                    img {
+                        transform: rotate(180deg);
+                        -webkit-transform: rotate(180deg);
+                        -moz-transform: rotate(180deg);
+                        -ms-transform: rotate(180deg);
+                        -o-transform: rotate(180deg);
+                    }
+                }
+            }
+            ul {
+                margin-left: 53px;
+                margin-right: 53px;
+                display: flex;
+                align-items: center;
+                li {
+                    font-family: 'NotoSans-medium';
+                    font-size: 20px;
+                    line-height: 27px;
+                    color: #000000;
+                }
+            }
+        }
+    }
+}

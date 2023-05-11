@@ -1,0 +1,168 @@
+// pc high
+@media (min-width: 2001px) {
+    .index-3-app {}
+}
+
+// pc
+@media (min-width: 1281px) and (max-width: 2000px) {}
+
+// pc low
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .index-3-app {
+        & .container {
+            ul {
+                li {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {}
+
+
+/* tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .index-3-app {
+        & .container {
+            ul {
+                li {
+                    width: 30%;
+                    height: 250px;
+                    a {
+                        font-size: 22px;
+                        line-height: 1.2;
+                        height: unset;
+                        margin-bottom: 31px !important;
+                        min-height: unset;
+                        img {
+                            width: 50% !important;
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* mobile */
+
+@media (max-width: 739px) {
+    .index-3-banner {
+        padding-top: 0;
+        height: 160px;
+        background: url("../assets/images/banner2.jpeg") center/cover no-repeat;
+        & .container {
+            left: unset;
+            h2 {
+                text-align: left;
+                font-size: 21px;
+                line-height: 29px;
+                padding-left: 20px;
+            }
+        }
+    }
+    .index-3-app {
+        padding-top: 26px;
+        & .container {
+            &>span {
+                &:nth-child(1) {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+            &>ul {
+                li {
+                    width: 164.04px;
+                    height: 130.54px;
+                    margin-right: 16px;
+                    a {
+                        justify-content: unset;
+                        font-size: 14px;
+                        line-height: 19px;
+                        padding-bottom: 19px;
+                        img {
+                            width: 87.03px;
+                            height: 87.03px;
+                            object-fit: contain;
+                            margin-bottom: 12px;
+                        }
+                    }
+                    &:nth-child(1) {
+                        a {
+                            img {
+                                margin-bottom: 0;
+                            }
+                        }
+                        margin-bottom: 0;
+                    }
+                    &:nth-child(2) {
+                        a {
+                            img {
+                                width: 64px;
+                                height: 64px;
+                                margin-bottom: 0;
+                            }
+                        }
+                        margin-right: 0;
+                    }
+                    &:nth-child(3) {
+                        a {
+                            img {
+                                width: 68.75px;
+                                height: 68.75px;
+                            }
+                        }
+                        margin-right: 17px;
+                    }
+                    &:nth-child(4) {
+                        a {
+                            img {
+                                width: 67.88px;
+                                height: 67.88px;
+                            }
+                        }
+                        margin-bottom: 17px;
+                        margin-right: 0;
+                    }
+                    &:nth-child(5) {
+                        a {
+                            img {
+                                width: 60.92px;
+                                height: 60.92px;
+                            }
+                        }
+                        margin-bottom: 74px;
+                    }
+                    &:nth-child(6) {
+                        a {
+                            img {
+                                width: 60.92px;
+                                height: 60.92px;
+                            }
+                        }
+                        margin-bottom: 74;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        &-menu {
+            width: 100%;
+            span {
+                font-size: 16px;
+                line-height: 22px;
+            }
+            ul {
+                li {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}

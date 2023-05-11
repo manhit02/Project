@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+    <script src="../js/city.min.js"> </script>
+  </head>
+  <body>
+    <header class="header">  
+      <div class="container">
+        <div class="header-top">
+          <div class="header-top__menumb js-menumb"><img class="js-showmenu" src="../assets/images/menumb.png">
+            <ul>
+              <li> <a href="./home.html"><img src="../assets/images/logo.png" alt=""></a><img class="js-closemenu" src="../assets/images/exit.png" alt=""></li>
+              <li class="active"><em><a href="./dangnhap.html">Đăng nhập / Đăng ký</a><img src="../assets/images/avata2.png" alt=""></em><em> <a href="./thongtincanhan-thanhvien.html">Nguyễn Ngọc Hoàn <br><strong>Thành viên</strong></a><img src="../assets/images/avata3.png" alt=""></em></li>
+              <li>
+                <input placeholder="Tra cứu nhanh"><img src="../assets/images/search.png" alt="">
+              </li>
+              <li><a href="./home.html">Trang chủ</a></li>
+              <li><a href="./gioithieu.html">Giới thiệu    </a></li>
+              <li><a href="./thi.html">Thi </a></li>
+              <li><a href="./hoctap.html">Học tập  </a></li>
+              <li><a href="#">Liên hệ</a></li>
+            </ul>
+            <div class="header-top__menumb-overlay"></div>
+          </div>
+          <div class="header-top__logo"><a href="./home.html"><img src="../assets/images/logo.svg" alt=""></a></div>
+          <div class="header-top__loginmb js-showprofile active"></div>
+          <ul class="header-top__contact">
+            <li><img src="../assets/images/gm.png" alt=""><a href="mailto:support@vtc.vn">support@vtc.vn</a></li>
+            <li><img src="../assets/images/fa.png"><a href="support@vtc.vn">support@vtc.vn</a></li>
+            <li><img src="../assets/images/pn.png" alt=""><a href="tel:19001234">19001234</a></li>
+          </ul>
+          <div class="header-top__login js-login active">
+            <ul>
+              <li> <a href="./dangnhap.html">Đăng nhập</a></li>
+              <li> <a href="./dangki.html">Đăng ký</a></li>
+            </ul>
+            <ul> 
+              <li> <em><a href="./thongtincanhan-thanhvien.html"><span><img src="../assets/images/avtaa.png" alt=""></span><span>vanminh12</span></a></em><img src="../assets/images/row.png" alt="">
+                <ul>
+                  <li> <img src="../assets/images/avtaa.png" alt=""><a href="./thongtincanhan-thanhvien.html">Thông tin cá nhân</a></li>
+                  <li>  <img src="../assets/images/book.png" alt=""><a href="#">Khóa học đã tham gia</a></li>
+                  <li> <img src="../assets/images/key.png" alt=""><a href="./thongtincanhan-thanhvien.html">Đổi mật khẩu</a></li>
+                  <li class="js-logout">Đăng xuất</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header-nav js-nav"><a class="header-nav__homemb" href="./home.html"></a>
+        <ul>
+          <li><a href="./home.html">Trang chủ</a></li>
+          <li><a href="./gioithieu.html">Giới thiệu    </a></li>
+          <li><a href="./tintuc.html">Tin tức   </a></li>
+          <li><a href="./thi.html">Thi </a></li>
+          <li><a href="./hoctap.html">Học tập  </a></li>
+          <li> <a href="#">Tra cứu </a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div class="header-profile js-profile"><img src="../assets/images/8.png" alt=""><span>Tên đăng nhập: <strong>vanminh12</strong></span><span>Số tài khoản:  <strong>123456</strong></span>
+        <ul>
+          <li>     <a href="./thongtincanhan-thanhvien.html">Thông tin cá nhân<img src="../assets/images/avtaa.png" alt=""><img src="../assets/images/Vector.png" alt=""></a></li>
+          <li>     <a href="">Khóa học đã tham gia<img src="../assets/images/book.png" alt=""><img src="../assets/images/Vector.png" alt=""></a></li>
+          <li>     <a class="js-dmk" href="./thongtincanhan-thanhvien.html">Đổi mật khẩu<img src="../assets/images/key.png" alt=""><img src="../assets/images/Vector.png" alt=""></a></li>
+          <li>Đăng xuất               </li>
+        </ul>
+      </div>
+    </header>
+    <div class="index-14-app">
+      <div class="container">
+        <div class="index-14-app-profile">
+          <div class="index-14-app-profile__left">
+            <div class="index-14-app-profile__left-avata"><img src="../assets/images/8.png" alt=""><img src="../assets/images/app14-4.png"></div><span>Tên đăng nhập: <strong>vanminh12</strong></span><span>Số tài khoản:  <strong>123456</strong></span><span class="index14-js-ac">Loại tài khoản: <strong>Thành viên</strong></span>
+            <ul class="nav nav-tab" role="tablist" id="myTab">
+              <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" data-bs-target="#home">                           <img src="../assets/images/avtaa.png" alt=""><span>Thông tin cá nhân  </span></a></li>
+              <li><a>                          <img src="../assets/images/book.png" alt=""><span>Khóa học đã tham gia</span></a></li>
+              <li class="nav-item"> <a class="nav-link index14-js-hidemb" data-bs-toggle="tab" data-bs-target="#menu2">              <img src="../assets/images/key.png" alt=""><span>Đổi mật khẩu</span></a></li>
+              <li> <a>Đăng xuất    </a></li>
+            </ul>
+          </div>
+          <div class="tab-content">
+            <div class="tab-pane active show" id="home"> 
+              <div class="index-14-app-profile__right"><span>Thông tin cá nhân</span>
+                <p class="index14-js-hide">Hãy chọn tài khoản phù hợp với bạn</p>
+                <ul class="nav nav-tab" role="tablist" id="myTab1">
+                  <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" data-bs-target="#home2"><span>Thành viên</span><img src="../assets/images/app14-3.png"></a></li>
+                  <li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu3"> <span>Học sinh</span><img src="../assets/images/app14-1.png"></a></li>
+                  <li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu4"> <span>Nhà trường</span><img src="../assets/images/app14-2.png"></a></li>
+                </ul>
+                <div class="tab-content index-14-app-profile__right-ct">
+                  <div class="tab-pane active show" id="home2"> 
+                    <ul class="index14-js-info">
+                      <li> <span>Họ và tên<strong>*</strong></span>
+                        <input placeholder="Họ và tên đầy đủ">
+                      </li>
+                      <li> <span>Số điện thoại<strong>*</strong></span>
+                        <input placeholder="Số điện thoại">
+                        <button tabindex="-1">Xác thực SĐT </button>
+                      </li>
+                      <li> <span>Email<strong>*</strong></span>
+                        <input placeholder="Email">
+                      </li>
+                      <li> <span>Ngày sinh</span><em>
+                          <select name="day" id="day">
+                            <option value="" selected>Ngày</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                          </select></em><em>
+                          <select name="month" id="month">
+                            <option value="" selected>Tháng</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                          </select></em><em>
+                          <select name="year" id="year">
+                            <option value="" selected>Năm</option>
+                            <option>1900</option>
+                            <option>1901</option>
+                            <option>1902</option>
+                            <option>1903</option>
+                            <option>1904</option>
+                            <option>1905</option>
+                            <option>1906</option>
+                            <option>1907</option>
+                            <option>1908</option>
+                            <option>1909</option>
+                            <option>1910</option>
+                            <option>1911</option>
+                            <option>1912</option>
+                            <option>1913</option>
+                            <option>1914</option>
+                            <option>1915</option>
+                            <option>1916</option>
+                            <option>1917</option>
+                            <option>1918</option>
+                            <option>1919</option>
+                            <option>1920</option>
+                            <option>1921</option>
+                            <option>1922</option>
+                            <option>1923</option>
+                            <option>1924</option>
+                            <option>1925</option>
+                            <option>1926</option>
+                            <option>1927</option>
+                            <option>1928</option>
+                            <option>1929</option>
+                            <option>1930</option>
+                            <option>1931</option>
+                            <option>1932</option>
+                            <option>1933</option>
+                            <option>1934</option>
+                            <option>1935</option>
+                            <option>1936</option>
+                            <option>1937</option>
+                            <option>1938</option>
+                            <option>1939</option>
+                            <option>1940</option>
+                            <option>1941</option>
+                            <option>1942</option>
+                            <option>1943</option>
+                            <option>1944</option>
+                            <option>1945</option>
+                            <option>1946</option>
+                            <option>1947</option>
+                            <option>1948</option>
+                            <option>1949</option>
+                            <option>1950</option>
+                            <option>1951</option>
+                            <option>1952</option>
+                            <option>1953</option>
+                            <option>1954</option>
+                            <option>1955</option>
+                            <option>1956</option>
+                            <option>1957</option>
+                            <option>1958</option>
+                            <option>1959</option>
+                            <option>1960</option>
+                            <option>1961</option>
+                            <option>1962</option>
+                            <option>1963</option>
+                            <option>1964</option>
+                            <option>1965</option>
+                            <option>1966</option>
+                            <option>1967</option>
+                            <option>1968</option>
+                            <option>1969</option>
+                            <option>1970</option>
+                            <option>1971</option>
+                            <option>1972</option>
+                            <option>1973</option>
+                            <option>1974</option>
+                            <option>1975</option>
+                            <option>1976</option>
+                            <option>1977</option>
+                            <option>1978</option>
+                            <option>1979</option>
+                            <option>1980</option>
+                            <option>1981</option>
+                            <option>1982</option>
+                            <option>1983</option>
+                            <option>1984</option>
+                            <option>1985</option>
+                            <option>1986</option>
+                            <option>1987</option>
+                            <option>1988</option>
+                            <option>1989</option>
+                            <option>1990</option>
+                            <option>1991</option>
+                            <option>1992</option>
+                            <option>1993</option>
+                            <option>1994</option>
+                            <option>1995</option>
+                            <option>1996</option>
+                            <option>1997</option>
+                            <option>1998</option>
+                            <option>1999</option>
+                            <option>2000</option>
+                            <option>2001</option>
+                            <option>2002</option>
+                            <option>2003</option>
+                            <option>2004</option>
+                            <option>2005</option>
+                            <option>2006</option>
+                            <option>2007</option>
+                            <option>2008</option>
+                            <option>2009</option>
+                            <option>2010</option>
+                            <option>2011</option>
+                            <option>2012</option>
+                            <option>2013</option>
+                            <option>2014</option>
+                            <option>2015</option>
+                            <option>2016</option>
+                            <option>2017</option>
+                            <option>2018</option>
+                            <option>2019</option>
+                            <option>2020</option>
+                            <option>2021</option>
+                            <option>2022</option>
+                            <option>2023</option>
+                          </select></em></li>
+                      <li> <span>Giới tính</span><em>
+                          <input type="radio" value="nam" name="gt" id="gtnam">
+                          <label for="gtnam">Nam</label></em><em>
+                          <input type="radio" value="nu" name="gt" id="gtnu">
+                          <label for="gtnu">Nữ</label></em></li>
+                      <li> <span>Số CMND</span>
+                        <input placeholder="Số chứng minh nhân dân">
+                      </li>
+                      <li> <span>Vùng miền</span><em>
+                          <select id="city">
+                            <option value="" selected>Tỉnh/Thành phố</option>
+                          </select></em><em>
+                          <select id="district">
+                            <option value="" selected>Huyện/Quận</option>
+                          </select></em><em>
+                          <select id="ward">
+                            <option value="" selected>Xã/Phường</option>
+                          </select></em></li>
+                      <li> <span>Địa chỉ</span>
+                        <input placeholder="Địa chỉ chính xác">
+                      </li>
+                    </ul>
+                    <div class="index-14-app-profile__right-btn">
+                      <button>Hủy </button>
+                      <button class="index14-js-up">Cập nhật</button>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="menu3">
+                    <ul class="index15-js-info">
+                      <li> <span>Họ và tên<strong>*</strong></span>
+                        <input placeholder="Họ và tên đầy đủ">
+                      </li>
+                      <li> <span>Số điện thoại<strong>*</strong></span>
+                        <input placeholder="Số điện thoại">
+                        <button tabindex="-1">Xác thực SĐT </button>
+                      </li>
+                      <li> <span>Email<strong>*</strong></span>
+                        <input placeholder="Email">
+                      </li>
+                      <li><span>Nơi học tập <strong>*</strong></span><em>
+                          <select name="tinh" id="tinh">
+                            <option value="" selected>Tỉnh/Thành phố</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                          </select></em><em>
+                          <select name="huyen" id="huyen">
+                            <option value="" selected>Huyện/Quận</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                          </select></em><em>
+                          <select name="truong" id="truong">
+                            <option value="" selected>Trường học</option>
+                            <option>1900</option>
+                            <option>1901</option>
+                            <option>1902</option>
+                            <option>1903</option>
+                            <option>1904</option>
+                            <option>1905</option>
+                            <option>1906</option>
+                            <option>1907</option>
+                            <option>1908</option>
+                            <option>1909</option>
+                            <option>1910</option>
+                            <option>1911</option>
+                            <option>1912</option>
+                            <option>1913</option>
+                            <option>1914</option>
+                            <option>1915</option>
+                            <option>1916</option>
+                            <option>1917</option>
+                            <option>1918</option>
+                            <option>1919</option>
+                            <option>1920</option>
+                            <option>1921</option>
+                            <option>1922</option>
+                            <option>1923</option>
+                            <option>1924</option>
+                            <option>1925</option>
+                            <option>1926</option>
+                            <option>1927</option>
+                            <option>1928</option>
+                            <option>1929</option>
+                            <option>1930</option>
+                            <option>1931</option>
+                            <option>1932</option>
+                            <option>1933</option>
+                            <option>1934</option>
+                            <option>1935</option>
+                            <option>1936</option>
+                            <option>1937</option>
+                            <option>1938</option>
+                            <option>1939</option>
+                            <option>1940</option>
+                            <option>1941</option>
+                            <option>1942</option>
+                            <option>1943</option>
+                            <option>1944</option>
+                            <option>1945</option>
+                            <option>1946</option>
+                            <option>1947</option>
+                            <option>1948</option>
+                            <option>1949</option>
+                            <option>1950</option>
+                            <option>1951</option>
+                            <option>1952</option>
+                            <option>1953</option>
+                            <option>1954</option>
+                            <option>1955</option>
+                            <option>1956</option>
+                            <option>1957</option>
+                            <option>1958</option>
+                            <option>1959</option>
+                            <option>1960</option>
+                            <option>1961</option>
+                            <option>1962</option>
+                            <option>1963</option>
+                            <option>1964</option>
+                            <option>1965</option>
+                            <option>1966</option>
+                            <option>1967</option>
+                            <option>1968</option>
+                            <option>1969</option>
+                            <option>1970</option>
+                            <option>1971</option>
+                            <option>1972</option>
+                            <option>1973</option>
+                            <option>1974</option>
+                            <option>1975</option>
+                            <option>1976</option>
+                            <option>1977</option>
+                            <option>1978</option>
+                            <option>1979</option>
+                            <option>1980</option>
+                            <option>1981</option>
+                            <option>1982</option>
+                            <option>1983</option>
+                            <option>1984</option>
+                            <option>1985</option>
+                            <option>1986</option>
+                            <option>1987</option>
+                            <option>1988</option>
+                            <option>1989</option>
+                            <option>1990</option>
+                            <option>1991</option>
+                            <option>1992</option>
+                            <option>1993</option>
+                            <option>1994</option>
+                            <option>1995</option>
+                            <option>1996</option>
+                            <option>1997</option>
+                            <option>1998</option>
+                            <option>1999</option>
+                            <option>2000</option>
+                            <option>2001</option>
+                            <option>2002</option>
+                            <option>2003</option>
+                            <option>2004</option>
+                            <option>2005</option>
+                            <option>2006</option>
+                            <option>2007</option>
+                            <option>2008</option>
+                            <option>2009</option>
+                            <option>2010</option>
+                            <option>2011</option>
+                            <option>2012</option>
+                            <option>2013</option>
+                            <option>2014</option>
+                            <option>2015</option>
+                            <option>2016</option>
+                            <option>2017</option>
+                            <option>2018</option>
+                            <option>2019</option>
+                            <option>2020</option>
+                            <option>2021</option>
+                            <option>2022</option>
+                            <option>2023</option>
+                          </select></em><em>
+                          <select name="lop" id="lop">
+                            <option value="" selected>Lớp</option>
+                            <option>1900</option>
+                            <option>1901</option>
+                            <option>1902</option>
+                            <option>1903</option>
+                            <option>1904</option>
+                            <option>1905</option>
+                            <option>1906</option>
+                            <option>1907</option>
+                            <option>1908</option>
+                            <option>1909</option>
+                            <option>1910</option>
+                            <option>1911</option>
+                            <option>1912</option>
+                            <option>1913</option>
+                            <option>1914</option>
+                            <option>1915</option>
+                            <option>1916</option>
+                            <option>1917</option>
+                            <option>1918</option>
+                            <option>1919</option>
+                            <option>1920</option>
+                            <option>1921</option>
+                            <option>1922</option>
+                            <option>1923</option>
+                            <option>1924</option>
+                            <option>1925</option>
+                            <option>1926</option>
+                            <option>1927</option>
+                            <option>1928</option>
+                            <option>1929</option>
+                            <option>1930</option>
+                            <option>1931</option>
+                            <option>1932</option>
+                            <option>1933</option>
+                            <option>1934</option>
+                            <option>1935</option>
+                            <option>1936</option>
+                            <option>1937</option>
+                            <option>1938</option>
+                            <option>1939</option>
+                            <option>1940</option>
+                            <option>1941</option>
+                            <option>1942</option>
+                            <option>1943</option>
+                            <option>1944</option>
+                            <option>1945</option>
+                            <option>1946</option>
+                            <option>1947</option>
+                            <option>1948</option>
+                            <option>1949</option>
+                            <option>1950</option>
+                            <option>1951</option>
+                            <option>1952</option>
+                            <option>1953</option>
+                            <option>1954</option>
+                            <option>1955</option>
+                            <option>1956</option>
+                            <option>1957</option>
+                            <option>1958</option>
+                            <option>1959</option>
+                            <option>1960</option>
+                            <option>1961</option>
+                            <option>1962</option>
+                            <option>1963</option>
+                            <option>1964</option>
+                            <option>1965</option>
+                            <option>1966</option>
+                            <option>1967</option>
+                            <option>1968</option>
+                            <option>1969</option>
+                            <option>1970</option>
+                            <option>1971</option>
+                            <option>1972</option>
+                            <option>1973</option>
+                            <option>1974</option>
+                            <option>1975</option>
+                            <option>1976</option>
+                            <option>1977</option>
+                            <option>1978</option>
+                            <option>1979</option>
+                            <option>1980</option>
+                            <option>1981</option>
+                            <option>1982</option>
+                            <option>1983</option>
+                            <option>1984</option>
+                            <option>1985</option>
+                            <option>1986</option>
+                            <option>1987</option>
+                            <option>1988</option>
+                            <option>1989</option>
+                            <option>1990</option>
+                            <option>1991</option>
+                            <option>1992</option>
+                            <option>1993</option>
+                            <option>1994</option>
+                            <option>1995</option>
+                            <option>1996</option>
+                            <option>1997</option>
+                            <option>1998</option>
+                            <option>1999</option>
+                            <option>2000</option>
+                            <option>2001</option>
+                            <option>2002</option>
+                            <option>2003</option>
+                            <option>2004</option>
+                            <option>2005</option>
+                            <option>2006</option>
+                            <option>2007</option>
+                            <option>2008</option>
+                            <option>2009</option>
+                            <option>2010</option>
+                            <option>2011</option>
+                            <option>2012</option>
+                            <option>2013</option>
+                            <option>2014</option>
+                            <option>2015</option>
+                            <option>2016</option>
+                            <option>2017</option>
+                            <option>2018</option>
+                            <option>2019</option>
+                            <option>2020</option>
+                            <option>2021</option>
+                            <option>2022</option>
+                            <option>2023</option>
+                          </select></em></li>
+                      <li> <span>Ngày sinh</span><em>
+                          <select name="day" id="day">
+                            <option value="" selected>Ngày</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                          </select></em><em>
+                          <select name="month" id="month">
+                            <option value="" selected>Tháng</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                          </select></em><em>
+                          <select name="year" id="year">
+                            <option value="" selected>Năm</option>
+                            <option>1900</option>
+                            <option>1901</option>
+                            <option>1902</option>
+                            <option>1903</option>
+                            <option>1904</option>
+                            <option>1905</option>
+                            <option>1906</option>
+                            <option>1907</option>
+                            <option>1908</option>
+                            <option>1909</option>
+                            <option>1910</option>
+                            <option>1911</option>
+                            <option>1912</option>
+                            <option>1913</option>
+                            <option>1914</option>
+                            <option>1915</option>
+                            <option>1916</option>
+                            <option>1917</option>
+                            <option>1918</option>
+                            <option>1919</option>
+                            <option>1920</option>
+                            <option>1921</option>
+                            <option>1922</option>
+                            <option>1923</option>
+                            <option>1924</option>
+                            <option>1925</option>
+                            <option>1926</option>
+                            <option>1927</option>
+                            <option>1928</option>
+                            <option>1929</option>
+                            <option>1930</option>
+                            <option>1931</option>
+                            <option>1932</option>
+                            <option>1933</option>
+                            <option>1934</option>
+                            <option>1935</option>
+                            <option>1936</option>
+                            <option>1937</option>
+                            <option>1938</option>
+                            <option>1939</option>
+                            <option>1940</option>
+                            <option>1941</option>
+                            <option>1942</option>
+                            <option>1943</option>
+                            <option>1944</option>
+                            <option>1945</option>
+                            <option>1946</option>
+                            <option>1947</option>
+                            <option>1948</option>
+                            <option>1949</option>
+                            <option>1950</option>
+                            <option>1951</option>
+                            <option>1952</option>
+                            <option>1953</option>
+                            <option>1954</option>
+                            <option>1955</option>
+                            <option>1956</option>
+                            <option>1957</option>
+                            <option>1958</option>
+                            <option>1959</option>
+                            <option>1960</option>
+                            <option>1961</option>
+                            <option>1962</option>
+                            <option>1963</option>
+                            <option>1964</option>
+                            <option>1965</option>
+                            <option>1966</option>
+                            <option>1967</option>
+                            <option>1968</option>
+                            <option>1969</option>
+                            <option>1970</option>
+                            <option>1971</option>
+                            <option>1972</option>
+                            <option>1973</option>
+                            <option>1974</option>
+                            <option>1975</option>
+                            <option>1976</option>
+                            <option>1977</option>
+                            <option>1978</option>
+                            <option>1979</option>
+                            <option>1980</option>
+                            <option>1981</option>
+                            <option>1982</option>
+                            <option>1983</option>
+                            <option>1984</option>
+                            <option>1985</option>
+                            <option>1986</option>
+                            <option>1987</option>
+                            <option>1988</option>
+                            <option>1989</option>
+                            <option>1990</option>
+                            <option>1991</option>
+                            <option>1992</option>
+                            <option>1993</option>
+                            <option>1994</option>
+                            <option>1995</option>
+                            <option>1996</option>
+                            <option>1997</option>
+                            <option>1998</option>
+                            <option>1999</option>
+                            <option>2000</option>
+                            <option>2001</option>
+                            <option>2002</option>
+                            <option>2003</option>
+                            <option>2004</option>
+                            <option>2005</option>
+                            <option>2006</option>
+                            <option>2007</option>
+                            <option>2008</option>
+                            <option>2009</option>
+                            <option>2010</option>
+                            <option>2011</option>
+                            <option>2012</option>
+                            <option>2013</option>
+                            <option>2014</option>
+                            <option>2015</option>
+                            <option>2016</option>
+                            <option>2017</option>
+                            <option>2018</option>
+                            <option>2019</option>
+                            <option>2020</option>
+                            <option>2021</option>
+                            <option>2022</option>
+                            <option>2023</option>
+                          </select></em></li>
+                      <li> <span>Giới tính</span><em>
+                          <input type="radio" value="nam" name="gt">
+                          <label for="nam">Nam</label></em><em>
+                          <input type="radio" value="nu" name="gt">
+                          <label for="nu">Nữ</label></em></li>
+                      <li> <span>Số CMND</span>
+                        <input placeholder="Số chứng minh nhân dân">
+                      </li>
+                      <li> <span>Vùng miền</span><em>
+                          <select id="city2">
+                            <option value="" selected>Tỉnh</option>
+                          </select></em><em>
+                          <select id="district2">
+                            <option value="" selected>Huyện/Quận</option>
+                          </select></em><em>
+                          <select id="ward2">
+                            <option value="" selected>Xã/Phường</option>
+                          </select></em></li>
+                      <li> <span>Địa chỉ</span>
+                        <input placeholder="Địa chỉ chính xác">
+                      </li>
+                    </ul>
+                    <div class="index-15-app-profile__right-btn">
+                      <button>Hủy </button>
+                      <button class="index15-js-up">Cập nhật</button>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="menu4">
+                    <p><a>Giao thông số</a> cung cấp:</p>
+                    <ul>
+                      <li>Đánh giá chính xác 95% điểm mạnh, điểm yếu của từng học sinh<img src="../assets/images/app14-7.png"></li>
+                      <li>Ngân hàng câu hỏi phong phú và khả năng tạo câu hỏi đa dạng<img src="../assets/images/app14-8.png"></li>
+                      <li>Giao bài tập luyện tập và kiểm tra phù hợp với từng học sinh<img src="../assets/images/app14-5.png"></li>
+                      <li>Tiết kiệm đến 95% thời gian tạo bài kiểm tra, chấm bài và trả bài<img src="../assets/images/app14-9.png"></li>
+                      <li>Tự động tạo báo cáo đầy đủ và thống kê chi tiết về từng học sinh<img src="../assets/images/app14-6.png"></li>
+                    </ul>
+                    <p>Nhà trường đăng ký sử dụng đồng bộ tài khoản học sinh, giáo viên & phụ huynh xin vui lòng liên hệ <strong>19001530</strong> để được hỗ trợ.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="menu2">
+              <div class="index-17-app-profile__right"><span>Đổi mật khẩu</span>
+                <ul>
+                  <li class="index-17-app-profile__right-otp"> <span>Nhập mã OTP<strong>*</strong></span><em><span>OTP SMS</span>
+                      <input placeholder="Soạn tin EB OTP gửi 8049">
+                      <button tabindex="-1"></button></em></li>
+                  <li class="index14-js-pw1"><span>Mật khẩu cũ<strong>*</strong></span>
+                    <input placeholder="Nhập mật khẩu cũ" type="password">
+                    <button class="index14-js-switchpw1" tabindex="-1"> </button>
+                  </li>
+                  <li class="index14-js-pw2"><span>Mật khẩu mới<strong>*</strong></span>
+                    <input placeholder="Nhập mật khẩu mới" type="password">
+                    <button class="index14-js-switchpw2" tabindex="-1"></button>
+                  </li>
+                  <li class="index14-js-pw3"><span>Nhập lại mật khẩu mới<strong>*</strong></span>
+                    <input placeholder="Nhập mật khẩu mới" type="password">
+                    <button class="index14-js-switchpw3" tabindex="-1"></button>
+                  </li>
+                  <div class="index-17-app-profile__right-btn"><a href=".#">Hủy</a><a href="#">Cập nhập</a></div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <ul>
+          <li>
+            <h3>TỔNG CÔNG TY TRUYỀN THÔNG ĐA PHƯƠNG TIỆN (VTC)</h3>
+            <h3>CÔNG TY VTC CÔNG NGHỆ VÀ NỘI DUNG SỐ (VTC INTECOM)</h3>
+            <p>Tầng 13-14, Tòa nhà VTC 23 Lạc Trung, Quận Hai Bà Trưng, Hà Nội</p><span>Đăng ký nhận thông tin qua e-mail:</span>
+            <div class="footer-register">
+              <input placeholder="Nhập địa chỉ e-mail">
+              <button>Đăng kí</button>
+            </div>
+          </li>
+          <li>
+            <h3>Nền tảng số<br> an toàn giao thông<br> Việt Nam</h3><a href="./index.html">Trang chủ</a><a href="./index10.html">Tin tức</a><a href="/index3.html">Thi</a><a href="./index18.html">Học tập</a>
+          </li>
+          <li>
+            <h3>Sản phẩm của<br>chúng tôi</h3><a href="#">Truyền hình</a><a href="#">Giải trí trực tuyến</a><a href="#">Thanh toán và thương mại điện tử</a><a href="#">Truyền thông trực tuyến</a>
+          </li>
+          <li>
+            <h3>Liên hệ</h3><a href="tel:+842444551530">(+84)24 4455 1530<img src="../assets/images/phone.png" alt=""></a><a href="mailto:atgtqg@vtc.vn">atgtqg@vtc.vn<img src="../assets/images/gmail.png" alt=""></a>
+            <div class="footer-social"><img src="../assets/images/FAA.png" alt=""><img src="../assets/images/tw.png" alt=""><img src="../assets/images/inta.png" alt=""><img src="../assets/images/gg.png" alt=""></div>
+          </li>
+        </ul><span>Đăng ký nhận thông tin qua e-mail:</span>
+        <div class="footer-registermb"> 
+          <input placeholder="Nhập địa chỉ e-mail">
+          <button>Đăng kí</button>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/bootstrap.min.js"> </script>
+    <script src="../js/index.js"> </script>
+  </body>
+</html>
