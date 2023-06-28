@@ -1,0 +1,31 @@
+head
+  meta(charset="UTF-8")
+  meta(http-equiv="X-UA-Compatible", content="IE=edge")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  link(rel="stylesheet" href="../css/style.css")
+  title Document
+body
+  .popup.popup7
+    .container
+      .popup7-body.popup-body  
+        h1.popup-body__title Xác nhận thông tin
+        button.popup-body__exit
+          img(src="../assets/images/1828774copy.png") 
+        label(for="input1") 
+          p Họ và tên:
+          input(placeholder="Thông tin bắt buộc")#input1
+        label(for="input2") 
+          p Số điện thoại:
+          input(placeholder="Thông tin bắt buộc")#input2
+        label(for="input3") 
+          p Số CCCD/CMND:
+          input(placeholder="Thông tin bắt buộc")#input3
+        label(for="#nput4 ").popup7-body__item4
+          p  Địa chỉ cụ thể <br>(ghi rõ số nhà,<br>tên đường, phường,quận, thành phố):
+          input(placeholder="Nhập số nhà, đường phố...")#input4 
+        span.popup7-body__notify *Lưu ý: Bạn cần điền đầy đủ thông tin, nếu thiếu sẽ không thể gửi xác nhận đi
+        span.popup7-body__error Lỗi: Chưa điền thông tin!
+        button.popup7-body__btn Xác nhận
+
+script(src="../js/bootstrap.min.js")
+script(src="../js/index.js")

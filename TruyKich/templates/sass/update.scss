@@ -1,0 +1,45 @@
+
+.header{
+    padding: 16px 0;
+    &-nav{
+     
+      &__btn{
+        &5{
+          border: 1px solid #b7352d;
+          width: 34px;
+          height: 34px;
+          background: #aa2628;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+          img{width: 50%;}
+        }
+        &4 {
+          margin-right: 12px;
+          margin-left: 12px;
+  
+          padding-top: 4px;
+         
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: "SVNJusticeLeague";
+          color: #fff;
+          font-size: 24px;
+  
+          width: 125px;
+          height: 34px;
+          clip-path: polygon(5% 0, 100% 0, 100% 80%, 95% 100%, 0 100%, 0 20%);
+          background-color: #ab5a2a;
+          border-bottom: 1px solid #df9264;
+
+        }
+       
+        &.active{
+
+        &__btn3,&__btn2{
+  display: none;
+}
+        }
+
+      }}}

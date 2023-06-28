@@ -1,0 +1,951 @@
+head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="../css/style.css")
+    title Document
+body
+    header.header
+        .container
+            ul.header-nav.nav.nav-tabs
+                li.nav-item.dropdown.header-nav__item1
+                    a.nav-link(href="#")
+                        img(src="../assets/images/header-home.png",alt="")
+                li.nav-item.dropdown
+                    a.nav-link Tin tức 
+                li.nav-item.dropdown
+                    a.nav-link.dropdown-toggle(data-bs-toggle="dropdown") Hướng dẫn 
+                        span
+                    ul.dropdown-menu 
+                        li
+                            a.dropdown-item Đăng ký tài khoản
+                        li 
+                            a.dropdown-item Tải và cài đặt
+                        li 
+                            a.dropdown-item Cách thức nạp
+                li
+                    a(href="#")
+                        img(src="../assets/images/header-logo.png",alt="")
+                li.nav-item.dropdown
+                    a.nav-link Giới thiệu
+                li.nav-item.dropdown
+                    a.nav-link Hỗ trợ 
+            ul.header-navmb
+                li.header-navmb__item1
+                    img(src="../assets/images/searchmb.png",alt="")
+                li.header-navmb__item2
+                    a(href="#")
+                        img(src="../assets/images/header-logo.png",alt="")
+                li.header-navmb__item3
+                    img(src="../assets/images/menuicon.png",alt="")
+                    em
+                        ul.app1-left__info.header-navmb__item3-submenu.active
+                            li.app1-left__info-item1.app1-left__info-item 
+                                p Czar123
+                                span RankLevel
+                            li.app1-left__info-item.app1-left__info-item2 
+                                span Silk:
+                                em 
+                                    img(src="../assets/images/gold.png",alt="")
+                                    span 2000
+                            li.app1-left__info-item.app1-left__info-item3
+                                span Tiêu trong<br>1 tháng:
+                                em 
+                                    img(src="../assets/images/gold.png",alt="")
+                                    span 420
+                            li.app1-left__info-item.app1-left__info-item4
+                                span Tiêu trong<br>3 tháng:
+                                em 
+                                    img(src="../assets/images/gold.png",alt="")
+                                    span 1.890
+                        button
+                            p Đăng nhập ngay
+                        ul.header-navmb__item3-submenu2
+                            li Giới thiệu
+                            li Hướng dẫn
+                            li Tin tức
+                            li Dịch vụ
+                            li Giftcode
+                            li Web Mall
+                            li Thông tin server
+                            li Cộng đồng
+                                
+            .header-download.js-dl
+                a(href="")
+                    video(autoplay loop muted id="myVideo")
+                        source(src="../assets/images/taigame_btn.webm" type="video/mp4")
+                button.header-download__btn.js-showDlBtn
+                    img(src="../assets/images/b2.png",alt="")
+            button.header-nap.js-dl1 Nạp Silk
+    
+    .searchmb
+        .searchmb-body
+            input(placeholder="Nhập từ khóa tìm kiếm...")
+            img(src="../assets/images/search.png")
+    .banner                        
+        .container
+            .banner-body
+              
+        ul.banner-body__navmb    
+            li.banner-body__navmb-item1
+                img(src="../assets/images/ytmb.png" alt='')
+                a.banner-body__navmb-item4(href="")
+                    img(src="../assets/images/discord.png" alt='')
+            li.banner-body__navmb-item2 NẠP SILK
+            li.banner-body__navmb-item3
+                img(src="../assets/images/gmnb.png" alt='')
+                img(src="../assets/images/famb.png" alt='')
+                    
+
+    .app
+        .app1
+            .container
+                
+                .app1-left.app1-left__home
+                    .app1-left__new
+                        .app1-left__done.active
+                            .app1-left__btn
+                                button.app1-left__btn-login Đăng nhập/Đăng ký
+
+                            ul.app1-left__social
+                                li.app1-left__social-item Cộng đồng
+                                li.app1-left__social-item1 
+                                    em
+                                        img(src="../assets/images/item3.png",alt="")
+                                        img(src="../assets/images/item4.png",alt="")
+                                    em
+                                        img(src="../assets/images/item6.png",alt="")
+                                        img(src="../assets/images/item5.png",alt="")
+                        ul.app1-left__info
+                            li.app1-left__info-item1.app1-left__info-item 
+                                p Czar123
+                                span RankLevel
+                            li.app1-left__info-item.app1-left__info-item2 
+                                span Silk:
+                                em 
+                                    img(src="../assets/images/gold.png",alt="")
+                                    span 2000
+                            li.app1-left__info-item.app1-left__info-item3
+                                span Tiêu trong<br>1 tháng:
+                                em 
+                                    img(src="../assets/images/gold.png",alt="")
+                                    span 420
+                            li.app1-left__info-item.app1-left__info-item4
+                                span Tiêu trong<br>3 tháng:
+                                em 
+                                    img(src="../assets/images/gold.png",alt="")
+                                    span 1.890
+                            li.app1-left__info-item.app1-left__info-item5
+                                a(href="#") Nạp Silk
+                                a(href="#") Quản lý tài khoản
+                        ul.app1-left__sidebar
+                            li
+                                button.app1-left__sidebar-item.app1-left__sidebar-item1 Dịch vụ
+                                    img(src="../assets/images/khung3.png",alt="")
+                                button.app1-left__sidebar-item.app1-left__sidebar-item2 Web Mall
+                                    img(src="../assets/images/khung3.png",alt="")
+                                button.app1-left__sidebar-item.app1-left__sidebar-item3 Hướng dẫn
+                                    img(src="../assets/images/khung3.png",alt="")
+                                button.app1-left__download(href="") 
+                                    img(src="../assets/images/bn2.png" alt="")
+                                button.app1-left__sidebar-item.app1-left__sidebar-item4 Sự kiện
+                                    img(src="../assets/images/khung3.png",alt="")
+                                button.app1-left__sidebar-item.app1-left__sidebar-item5 Giftcode
+                                    img(src="../assets/images/khung3.png",alt="")
+                        
+                    .app2-left
+                        .app2-left__info
+                            h1.app-title Thông tin server
+                            ul    
+                                li SilkyFabric<strong>110</strong>
+                                li RichTraders<strong>Default</strong>
+                                li PoorPeasants<strong>Europe</strong>
+                                li SilkyFabric<strong>1200</strong>
+                                li RichTraders<strong>220</strong>
+                    
+                .app1-btnmb
+                    button.app1-btnmb1
+                        span Dịch vụ
+                        img(src="../assets/images/btnmb1.png",alt="")
+                        img(src="../assets/images/khung3.png",alt="").app1-btnmb__back
+                    button.app1-btnmb3.active
+                        span Đăng nhập<br>ngay
+                        img(src="../assets/images/btnmb3.png",alt="")
+                        img(src="../assets/images/khung3.png",alt="").app1-btnmb__back
+                    button.app1-btnmb2
+                        span Nạp Silk
+                        img(src="../assets/images/btnmb2.png",alt="")
+                        img(src="../assets/images/khung3.png",alt="").app1-btnmb__back
+
+                .app1-right.app1-right__home
+                    .app1-right__banner
+                        #demo.carousel.slide(data-bs-ride="carousel")
+                            .carousel-indicators
+                                button.app1-right__banner-btn.app1-right__banner-btn1.active(data-bs-target="#demo" data-bs-slide-to="0")
+                                button.app1-right__banner-btn.app1-right__banner-btn2(data-bs-target="#demo" data-bs-slide-to="1")
+                                button.app1-right__banner-btn.app1-right__banner-btn3(data-bs-target="#demo" data-bs-slide-to="2")
+                            .carousel-inner
+                                .carousel-item.active.app1-right__banner-item
+                                    img(src="../assets/images/bn1.jpg" alt="")
+                                .carousel-item.app1-right__banner-item
+                                    img(src="../assets/images/bn1.jpg" alt="")
+                                .carousel-item.app1-right__banner-item
+                                    img(src="../assets/images/bn1.jpg" alt="")
+                    .app1-right__tabs
+                        h1.app-title.app-titlemb Tin tức
+                        ul.nav.nav-tabs.app1-right__tabs-btns
+                            li.nav-item.app1-right__tabs-btn.hidepc
+                                a(data-bs-toggle="tab" href="#home").app-title.active.nav-link  Tất cả
+                            li.nav-item.app1-right__tabs-btn
+                                a(data-bs-toggle="tab" href="#menu1").app-title.nav-link  Tin tức
+                            li.nav-item.app1-right__tabs-btn
+                                a(data-bs-toggle="tab" href="#menu2").app-title.nav-link Sự kiện
+                            li.nav-item.app1-right__tabs-btn.hidemb
+                                a(data-bs-toggle="tab" href="#menu2").app-title.nav-link Hướng dẫn
+                            li.nav-item.app1-right__tabs-btn 
+                                a(data-bs-toggle="tab" href="#menu3").app-title.nav-link Cập nhật
+                        .tab-content
+                            #home.tab-pane.active.app1-right__tabs-body
+                                ul
+                                    li 
+                                        img(src="../assets/images/main-item2.jpg",alt="")
+                                        em
+                                            h2 1[Hot] Tiêu dùng tháng 5 - Flash Sale tháng 5 - Kết quả top Vàng tháng 3
+                                            p 22/07/2021
+                                    li 
+                                        img(src="../assets/images/main-item2.jpg",alt="")
+                                        em
+                                            h2 [Hot] Tiêu dùng tháng 5 - Flash Sale tháng 5 - Kết quả top Vàng tháng 3
+                                            p 22/07/2021
+                                    li 
+                                        img(src="../assets/images/main-item2.jpg",alt="")
+                                        em
+                                            h2 [Hot] Tiêu dùng tháng 5 - Flash Sale tháng 5 - Kết quả top Vàng tháng 3
+                                            p 22/07/2021
+                                a(hred="#").app2-right__body-content2-more Xem thêm
+
+                            #menu1.tab-pane.app1-right__tabs-body
+                                ul
+                                    li 
+                                        img(src="../assets/images/main-item2.jpg",alt="")
+                                        em
+                                            h2 2[Hot] Tiêu dùng tháng 5 - Flash Sale tháng 5 - Kết quả top Vàng tháng 3
+                                            p 22/07/2021
+                                    li 
+                                        img(src="../assets/images/main-item2.jpg",alt="")
+                                        em
+                                            h2 [Hot] Tiêu dùng tháng 5 - Flash Sale tháng 5 - Kết quả top Vàng tháng 3
+                                            p 22/07/2021
+                                    li 
+                                        img(src="../assets/images/main-item2.jpg",alt="")
+                                        em
+                                            h2 [Hot] Tiêu dùng tháng 5 - Flash Sale tháng 5 - Kết quả top Vàng tháng 3
+                                            p 22/07/2021
+                                a(hred="#").app2-right__body-content2-more Xem thêm
+                                
+                            #menu2.tab-pane.app1-right__tabs-body
+                                ul
+                                    li 
+                                        img(src="../assets/images/main-item2.jpg",alt="")
+                                        em
+                                            h2 3[Hot] Tiêu dùng tháng 5 - Flash Sale tháng 5 - Kết quả top Vàng tháng 3
+                                            p 22/07/2021
+                                    li 
+                                        img(src="../assets/images/main-item2.jpg",alt="")
+                                        em
+                                            h2 [Hot] Tiêu dùng tháng 5 - Flash Sale tháng 5 - Kết quả top Vàng tháng 3
+                                            p 22/07/2021
+                                    li 
+                                        img(src="../assets/images/main-item2.jpg",alt="")
+                                        em
+                                            h2 [Hot] Tiêu dùng tháng 5 - Flash Sale tháng 5 - Kết quả top Vàng tháng 3
+                                            p 22/07/2021
+                                a(hred="#").app2-right__body-content2-more Xem thêm
+                                
+                            #menu3.tab-pane.app1-right__tabs-body
+                                ul
+                                    li 
+                                        img(src="../assets/images/main-item2.jpg",alt="")
+                                        em
+                                            h2 4[Hot] Tiêu dùng tháng 5 - Flash Sale tháng 5 - Kết quả top Vàng tháng 3
+                                            p 22/07/2021
+                                    li 
+                                        img(src="../assets/images/main-item2.jpg",alt="")
+                                        em
+                                            h2 [Hot] Tiêu dùng tháng 5 - Flash Sale tháng 5 - Kết quả top Vàng tháng 3
+                                            p 22/07/2021
+                                    li 
+                                        img(src="../assets/images/main-item2.jpg",alt="")
+                                        em
+                                            h2 [Hot] Tiêu dùng tháng 5 - Flash Sale tháng 5 - Kết quả top Vàng tháng 3
+                                            p 22/07/2021
+                                a(hred="#").app2-right__body-content2-more Xem thêm
+                    
+                    .app1-right__webmaill
+                        .app1-right__webmaill-header
+                            h1.app-title Web Mall
+                            .app1-right__webmaill-header__btn
+                                button.app1-right__webmaill-header__btn1 Mua thêm
+                                button.app1-right__webmaill-header__btn2 Nạp Silk
+                        .app1-right__webmaill-body
+                            .app1-right__webmaill-body__left
+                                h2 New Items
+                                ul
+                                    li 
+                                        img(src="../assets/images/main-item3.png",alt="")
+                                        p Item 1
+                                        span 2.000 Silk
+                                        button Mua
+                                    li 
+                                        img(src="../assets/images/main-item3.png",alt="")
+                                        p Item 1
+                                        span 2.000 Silk
+                                        button Mua
+                                    li 
+                                        img(src="../assets/images/main-item3.png",alt="")
+                                        p Item 1
+                                        span 2.000 Silk
+                                        button Mua
+                            .app1-right__webmaill-body__right
+                                h2 Best Items
+                                ul
+                                    li 
+                                        img(src="../assets/images/main-item3.png",alt="")
+                                        p Item 1
+                                        span 2.000 Silk
+                                        button Mua
+                                    li 
+                                        img(src="../assets/images/main-item3.png",alt="")
+                                        p Item 1
+                                        span 2.000 Silk
+                                        button Mua
+                                    li 
+                                        img(src="../assets/images/main-item3.png",alt="")
+                                        p Item 1
+                                        span 2.000 Silk
+                                        button Mua
+            
+                img(src="../assets/images/trangtri1.png",alt="").trangtri
+        .app2.app2-home
+            .container
+                
+                .app2-right
+                    .app2-right__header
+                        h1.app-title Bảng xếp hạng
+                        span Chọn máy chủ:
+                            select.app2-right__header-menu
+                                option Máy chủ 1
+                                option Máy chủ 2
+                                option Máy chủ 3
+                                
+                    .app2-right__body
+                        ul.nav.nav-tabs.app2-right__body-btn
+                            li.nav-item.nav-item1
+                                label(for="home1a")
+                                    a(href="#home1" data-bs-toggle="tab").nav-link.active#home1a
+                                        <select class="app-title">
+                                            <option selected>BXH Tháng 12</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                            li.nav-item.nav-item2
+                                a(data-bs-toggle="tab" href="#home2").nav-link.app-title BXH Năm
+                        .tab-content
+                            #home1.tab-pane.active.app2-right__body-content
+                                ul.nav.nav-tabs.app2-right__body-btn2
+                                    li.nav-item.app2-right__body-btn2-item1
+                                        a(data-bs-toggle="tab" href="#home5").nav-link.app-title.active Level
+                                    li.nav-item.app2-right__body-btn2-item2
+                                        a(data-bs-toggle="tab" href="#home6").nav-link.app-title Guild
+                                    li.nav-item.app2-right__body-btn2-item3
+                                        a(data-bs-toggle="tab" href="#home7").nav-link.app-title Job
+                                .tab-content
+                                    #home5.tab-pane.active.app2-right__body-content2
+                                        .app2-right__body-table
+                                            table
+                                                thead
+                                                    tr
+                                                        th Hạng
+                                                        th Tên nhân vật
+                                                        th Level
+                                                        th EXP
+                                                tbody
+                                                    tr
+                                                        td 1
+                                                        td SandMaster123
+                                                        td 400
+                                                        td 1.000
+
+                                                    tr   
+                                                        td 2
+                                                        td Nino879
+                                                        td 309
+                                                        td 780
+
+                                                    tr   
+                                                        td 3
+                                                        td Czar445
+                                                        td 200
+                                                        td 270
+
+                                                    tr   
+                                                        td 4
+                                                        td SandMaster123
+                                                        td 200
+                                                        td 1.000
+
+                                                    tr   
+                                                        td 5
+                                                        td Nino879
+                                                        td 120
+                                                        td 780
+
+                                                    tr   
+                                                        td 6
+                                                        td Czar445
+                                                        td 109
+                                                        td 270
+
+                                                    tr   
+                                                        td 7
+                                                        td SandMaster123
+                                                        td 60
+                                                        td 1.000
+
+                                                    tr   
+                                                        td 8
+                                                        td Nino879
+                                                        td 42
+                                                        td 780
+
+                                                    tr   
+                                                        td 9
+                                                        td Czar445
+                                                        td 30
+                                                        td 270
+
+                                                    tr   
+                                                        td 10 
+                                                        td Czar445
+                                                        td 30
+                                                        td 1.000
+                                        .control
+                                            img(src="../assets/images/btnm.png").control-img1.control-img4
+                                            img(src="../assets/images/row.png").control-img1
+                                            ul
+                                                li.active 1
+                                                li 2
+                                                li 3
+                                                li 4                        
+                                            img(src="../assets/images/row.png").control-img2 
+                                            img(src="../assets/images/btnm.png").control-img3
+  
+                                        a(hred="#").app2-right__body-content2-more Xem thêm                                        
+                                        a(hred="#").app2-right__body-content2-moremb Xem tất cả BXH
+                                    #home6.tab-pane.app2-right__body-content2
+                                        .app2-right__body-table
+                                            table
+                                                thead
+                                                    tr
+                                                        th Hạng
+                                                        th Guild
+                                                        th Cấp
+                                                        th Chủ Guild
+                                                tbody
+                                                    tr
+                                                        td 1
+                                                        td SandMaster123
+                                                        td Pacheon
+                                                        td 400
+                                                        
+
+                                                    tr   
+                                                        td 2
+                                                        td Nino879
+                                                        td Pacheon
+                                                        td 309
+                                                        
+
+                                                    tr   
+                                                        td 3
+                                                        td Czar445
+                                                        td Pacheon
+                                                        td 200
+                                                        
+
+                                                    tr   
+                                                        td 4
+                                                        td SandMaster123
+                                                        td Pacheon
+                                                        td 200
+                                                        
+
+                                                    tr   
+                                                        td 5
+                                                        td Nino879
+                                                        td Pacheon
+                                                        td 120
+                                                        
+
+                                                    tr   
+                                                        td 6
+                                                        td Czar445
+                                                        td Pacheon
+                                                        td 109
+                                                        
+
+                                                    tr   
+                                                        td 7
+                                                        td SandMaster123
+                                                        td Pacheon
+                                                        td 60
+                                                        
+
+                                                    tr   
+                                                        td 8
+                                                        td Nino879
+                                                        td Pacheon
+                                                        td 42
+                                                        
+
+                                                    tr   
+                                                        td 9
+                                                        td Czar445
+                                                        td Pacheon
+                                                        td 30
+                                                        
+
+                                                    tr   
+                                                        td 10 
+                                                        td Czar445
+                                                        td Pacheon
+                                                        td 30
+                                                        
+                                        .control
+                                            img(src="../assets/images/btnm.png").control-img1.control-img4
+                                            img(src="../assets/images/row.png").control-img1
+                                            ul
+                                                li.active 1
+                                                li 2
+                                                li 3
+                                                li 4                        
+                                            img(src="../assets/images/row.png").control-img2 
+                                            img(src="../assets/images/btnm.png").control-img3
+
+                                        a(hred="#").app2-right__body-content2-more Xem thêm                                        
+                                        a(hred="#").app2-right__body-content2-moremb Xem tất cả BXH
+                                    #home7.tab-pane.app2-right__body-content2
+                                        .app2-right__body-table
+                                            table
+                                                thead
+                                                    tr
+                                                        th Hạng
+                                                        th Tên nhân vật
+                                                        th Tên Job
+                                                        th Level
+                                                        th EXP
+                                                tbody
+                                                    tr
+                                                        td 1
+                                                        td SandMaster123
+                                                        td Pacheon
+                                                        td 400
+                                                        td 1.000
+
+                                                    tr   
+                                                        td 2
+                                                        td Nino879
+                                                        td Pacheon
+                                                        td 309
+                                                        td 780
+
+                                                    tr   
+                                                        td 3
+                                                        td Czar445
+                                                        td Pacheon
+                                                        td 200
+                                                        td 270
+
+                                                    tr   
+                                                        td 4
+                                                        td SandMaster123
+                                                        td Pacheon
+                                                        td 200
+                                                        td 1.000
+
+                                                    tr   
+                                                        td 5
+                                                        td Nino879
+                                                        td Pacheon
+                                                        td 120
+                                                        td 780
+
+                                                    tr   
+                                                        td 6
+                                                        td Czar445
+                                                        td Pacheon
+                                                        td 109
+                                                        td 270
+
+                                                    tr   
+                                                        td 7
+                                                        td SandMaster123
+                                                        td Pacheon
+                                                        td 60
+                                                        td 1.000
+
+                                                    tr   
+                                                        td 8
+                                                        td Nino879
+                                                        td Pacheon
+                                                        td 42
+                                                        td 780
+
+                                                    tr   
+                                                        td 9
+                                                        td Czar445
+                                                        td Pacheon
+                                                        td 30
+                                                        td 270
+
+                                                    tr   
+                                                        td 10 
+                                                        td Czar445
+                                                        td Pacheon
+                                                        td 30
+                                                        td 1.000
+                                        
+                                        .control
+                                            img(src="../assets/images/btnm.png").control-img1.control-img4
+                                            img(src="../assets/images/row.png").control-img1
+                                            ul
+                                                li.active 1
+                                                li 2
+                                                li 3
+                                                li 4                        
+                                            img(src="../assets/images/row.png").control-img2 
+                                            img(src="../assets/images/btnm.png").control-img3
+ 
+                                        a(hred="#").app2-right__body-content2-more Xem thêm                                        
+                                        a(hred="#").app2-right__body-content2-moremb Xem tất cả BXH
+                            #home2.tab-pane.app2-right__body-content
+                                ul.nav.nav-tabs.app2-right__body-btn2
+                                    li.nav-item.app2-right__body-btn2-item1
+                                        a(data-bs-toggle="tab" href="#home8").nav-link.app-title.active Level
+                                    li.nav-item.app2-right__body-btn2-item2
+                                        a(data-bs-toggle="tab" href="#home9").nav-link.app-title Guild
+                                    li.nav-item.app2-right__body-btn2-item3
+                                        a(data-bs-toggle="tab" href="#home10").nav-link.app-title Job
+                                .tab-content
+                                    #home8.tab-pane.active.app2-right__body-content2
+                                        .app2-right__body-table
+                                            table
+                                                thead
+                                                    tr
+                                                        th Hạng
+                                                        th Tên nhân vật
+                                                        th Level
+                                                        th EXP
+                                                tbody
+                                                    tr
+                                                        td 1
+                                                        td SandMaster123
+                                                        td 400
+                                                        td 1.000
+
+                                                    tr   
+                                                        td 2
+                                                        td Nino879
+                                                        td 309
+                                                        td 780
+
+                                                    tr   
+                                                        td 3
+                                                        td Czar445
+                                                        td 200
+                                                        td 270
+
+                                                    tr   
+                                                        td 4
+                                                        td SandMaster123
+                                                        td 200
+                                                        td 1.000
+
+                                                    tr   
+                                                        td 5
+                                                        td Nino879
+                                                        td 120
+                                                        td 780
+
+                                                    tr   
+                                                        td 6
+                                                        td Czar445
+                                                        td 109
+                                                        td 270
+
+                                                    tr   
+                                                        td 7
+                                                        td SandMaster123
+                                                        td 60
+                                                        td 1.000
+
+                                                    tr   
+                                                        td 8
+                                                        td Nino879
+                                                        td 42
+                                                        td 780
+
+                                                    tr   
+                                                        td 9
+                                                        td Czar445
+                                                        td 30
+                                                        td 270
+
+                                                    tr   
+                                                        td 10 
+                                                        td Czar445
+                                                        td 30
+                                                        td 1.000
+                                        
+                                        .control
+                                            img(src="../assets/images/btnm.png").control-img1.control-img4
+                                            img(src="../assets/images/row.png").control-img1
+                                            ul
+                                                li.active 1
+                                                li 2
+                                                li 3
+                                                li 4                        
+                                            img(src="../assets/images/row.png").control-img2 
+                                            img(src="../assets/images/btnm.png").control-img3
+
+                                        a(hred="#").app2-right__body-content2-more Xem thêm
+                                    #home9.tab-pane.app2-right__body-content2
+                                        .app2-right__body-table
+                                            table
+                                                thead
+                                                    tr
+                                                        th Hạng
+                                                        th Guild
+                                                        th Cấp
+                                                        th Chủ Guild
+                                                tbody
+                                                    tr
+                                                        td 1
+                                                        td SandMaster123
+                                                        td Pacheon
+                                                        td 400
+                                                        
+
+                                                    tr   
+                                                        td 2
+                                                        td Nino879
+                                                        td Pacheon
+                                                        td 309
+                                                        
+
+                                                    tr   
+                                                        td 3
+                                                        td Czar445
+                                                        td Pacheon
+                                                        td 200
+                                                        
+
+                                                    tr   
+                                                        td 4
+                                                        td SandMaster123
+                                                        td Pacheon
+                                                        td 200
+                                                        
+
+                                                    tr   
+                                                        td 5
+                                                        td Nino879
+                                                        td Pacheon
+                                                        td 120
+                                                        
+
+                                                    tr   
+                                                        td 6
+                                                        td Czar445
+                                                        td Pacheon
+                                                        td 109
+                                                        
+
+                                                    tr   
+                                                        td 7
+                                                        td SandMaster123
+                                                        td Pacheon
+                                                        td 60
+                                                        
+
+                                                    tr   
+                                                        td 8
+                                                        td Nino879
+                                                        td Pacheon
+                                                        td 42
+                                                        
+
+                                                    tr   
+                                                        td 9
+                                                        td Czar445
+                                                        td Pacheon
+                                                        td 30
+                                                        
+
+                                                    tr   
+                                                        td 10 
+                                                        td Czar445
+                                                        td Pacheon
+                                                        td 30
+                                             
+                                        .control
+                                            img(src="../assets/images/btnm.png").control-img1.control-img4
+                                            img(src="../assets/images/row.png").control-img1
+                                            ul
+                                                li.active 1
+                                                li 2
+                                                li 3
+                                                li 4                        
+                                            img(src="../assets/images/row.png").control-img2 
+                                            img(src="../assets/images/btnm.png").control-img3
+  
+                                        a(hred="#").app2-right__body-content2-more Xem thêm
+                                    #home10.tab-pane.app2-right__body-content2 
+                                        .app2-right__body-table
+                                            table
+                                                thead
+                                                    tr
+                                                        th Hạng
+                                                        th Tên nhân vật
+                                                        th Tên Job
+                                                        th Level
+                                                        th EXP
+                                                tbody
+                                                    tr
+                                                        td 1
+                                                        td SandMaster123
+                                                        td Pacheon
+                                                        td 400
+                                                        td 1.000
+
+                                                    tr   
+                                                        td 2
+                                                        td Nino879
+                                                        td Pacheon
+                                                        td 309
+                                                        td 780
+
+                                                    tr   
+                                                        td 3
+                                                        td Czar445
+                                                        td Pacheon
+                                                        td 200
+                                                        td 270
+
+                                                    tr   
+                                                        td 4
+                                                        td SandMaster123
+                                                        td Pacheon
+                                                        td 200
+                                                        td 1.000
+
+                                                    tr   
+                                                        td 5
+                                                        td Nino879
+                                                        td Pacheon
+                                                        td 120
+                                                        td 780
+
+                                                    tr   
+                                                        td 6
+                                                        td Czar445
+                                                        td Pacheon
+                                                        td 109
+                                                        td 270
+
+                                                    tr   
+                                                        td 7
+                                                        td SandMaster123
+                                                        td Pacheon
+                                                        td 60
+                                                        td 1.000
+
+                                                    tr   
+                                                        td 8
+                                                        td Nino879
+                                                        td Pacheon
+                                                        td 42
+                                                        td 780
+
+                                                    tr   
+                                                        td 9
+                                                        td Czar445
+                                                        td Pacheon
+                                                        td 30
+                                                        td 270
+
+                                                    tr   
+                                                        td 10 
+                                                        td Czar445
+                                                        td Pacheon
+                                                        td 30
+                                                        td 1.000
+                                        
+                                        .control
+                                            img(src="../assets/images/btnm.png").control-img1.control-img4
+                                            img(src="../assets/images/row.png").control-img1
+                                            ul
+                                                li.active 1
+                                                li 2
+                                                li 3
+                                                li 4                        
+                                            img(src="../assets/images/row.png").control-img2 
+                                            img(src="../assets/images/btnm.png").control-img3  
+                                        a(hred="#").app2-right__body-content2-more Xem thêm
+                
+                .app2-btn
+                    button.app2-btn1.js-movtop
+                        img(src="../assets/images/movtop.png")  
+                    button.app2-btn2
+                        img(src="../assets/images/messengericon.png")  
+                img(src="../assets/images/trangtri2.png",alt="").trangtri2
+
+    footer.footer
+        .container
+            .footer-logo
+                .footer-logo__img
+                    img(src='../assets/images/logo_vtc.png' alt='')
+                    img(src='../assets/images/logo_sro.png' alt='')
+                span TỔNG CÔNG TY TRUYỀN THÔNG ĐA PHƯƠNG TIỆN (VTC) <strong>CÔNG TY VTC CÔNG NGHỆ VÀ NỘI DUNG SỐ (VTC INTECOM)</strong>
+            .footer-info
+                span CHỊU TRÁCH NHIỆM QUẢN LÝ NỘI DUNG:
+                a(href='') Ông Trần Phương Huy    
+                table
+                    tr
+                        td(colspan="2")
+                            .footer-info__td-body  
+                                h2 THÔNG TIN LIÊN HỆ
+                    tr
+                        td
+                            .footer-info__td-body
+                                img(alt="",src="../assets/images/icon_cskh.png")
+                                a(href='tel:19001530') 1900 1530
+                        td
+                            .footer-info__td-body 
+                                img(alt="",src="../assets/images/icon_web.png")
+                                a(href='hotro.vtc.vn') hotro.vtc.vn
+                 
+
+            .footer-address
+                .footer-address__item
+
+                    h5 TRỤ SỞ HÀ NỘI
+                    p Tòa nhà VTC 23 Lạc Trung, Quận Hai Bà Trưng, Hà Nội
+                .footer-address__item
+            
+                    h5 CHI NHÁNH THÀNH PHỐ HỒ CHÍ MINH
+                    p 259 Đồng Đen, Phường 10, Quận Tân Bình, TP. Hồ Chí Minh
+            .footer-gp(href="") Giấy phép phát hành độc quyền "Con Đường Tơ Lụa" bản PC tại Việt Nam: Số 1088/QĐ-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 22/06/2023
+script(src="../js/bootstrap.min.js")
+script(src="../js/index.js")

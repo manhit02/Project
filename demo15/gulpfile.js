@@ -16,7 +16,7 @@ const { sassFiles, jsFiles, htmlFiles } = FilesPath;
 
 /** Sass Task */
 function sassTask() {
-    return src(["templates/sass/header.scss", "templates/sass/footer.scss", "templates/sass/sass/*.scss"])
+    return src(["templates/sass/header.scss", "templates/sass/footer.scss", "templates/sass/sass/*.scss","templates/sass/update.scss"])
         .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(concat("style.css"))
         .pipe(dest('dist/css'))

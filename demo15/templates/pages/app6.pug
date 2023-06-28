@@ -7,19 +7,37 @@
             
             .index-6-app-right__headmb
                 span 5/35<strong>08:20</strong>
-            h3 Câu hỏi 31:
-            p Biển nào không cho phép ô tô con vượt?
-            span 
-                img(src="../assets/images/ch.png")
-            ul.js-resulf
-                li
-                    em 1. Biển 1 và 2
-                li
-                    em 2. Biển 2
-                li
-                    em 3. Biển 1 và 3
-                li
-                    em 4. Biển 2 và 3
+            .tab-content
+                .tab-pane.active(id=`c0`).index-6-app-left__pane
+                    h3 Câu hỏi 0:
+                    p Biển nào không cho phép ô tô con vượt?
+                    span 
+                        img(src="../assets/images/ch.png")
+                    ul.js-resulf
+                        li
+                            em 1. Biển 1 và 2
+                        li
+                            em 2. Biển 2
+                        li
+                            em 3. Biển 1 và 3
+                        li
+                            em 4. Biển 2 và 3
+                - for (let i = 1; i <= 200; i++) {
+                .tab-pane(id=`c${i}`).index-6-app-left__pane
+                    h3 Câu hỏi #{i}:
+                    p Biển nào không cho phép ô tô con vượt?
+                    span 
+                        img(src="../assets/images/ch.png")
+                    ul.js-resulf
+                        li
+                            em #{i}
+                        li
+                            em 2. Biển 2
+                        li
+                            em 3. Biển 1 và 3
+                        li
+                            em 4. Biển 2 và 3
+                - }
             .index-6-app-left__resulf
                 h3 Giải thích đáp án:
                 p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum cursus ullamcorper. Sed sed massa at enim molestie iaculis. Aliquam sed ante quis odio varius ullamcorper id vitae risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum cursus ullamcorper. Sed sed massa at enim molestie iaculis. Aliquam sed ante quis odio varius ullamcorper id vitae risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum cursus ullamcorper. Sed sed massa at enim molestie iaculis. Aliquam sed ante quis odio varius ullamcorper id vitae risus.
@@ -29,12 +47,11 @@
                 span 
                     img(src="../assets/images/row2.png",alt="")
             .index-6-app-left__btnmb
-                
                 span 
                     img(src="../assets/images/row2.png",alt="")
                 span.index6-js-showmenu
                     img(src="../assets/images/Apps.png",alt="")
-                    ul.index6-js-menu
+                    ul.index6-js-menu.nav.nav-tabs
                         li
                             .index-6-app-right__head
                                 span Câu đúng:
@@ -47,8 +64,11 @@
                                 span Câu chưa làm:
                                     strong 585
                                     img(src="../assets/images/Ellipse0.png")
+                        li.nav-item 
+                            a(data-bs-toggle="tab" href=`#c0`).nav-link.active 0
                         - for (let i = 1; i <= 200; i++) {
-                            li #{i}
+                            li.nav-item 
+                                a(data-bs-toggle="tab" href=`#c${i}`).nav-link #{i}
 
                         - }
                     .index-6-app-left__btnmb-overlay.js-overlay2
@@ -66,9 +86,12 @@
                 span Câu chưa làm:
                     strong 585
                     img(src="../assets/images/Ellipse0.png")
-            ul
+            ul.index6-js-menu.nav.nav-tabs
+                li.nav-item 
+                    a(data-bs-toggle="tab" href=`#c0`).nav-link.active 0
                 - for (let i = 1; i <= 200; i++) {
-                    li.js-checked #{i}
+                    li.nav-item 
+                        a(data-bs-toggle="tab" href=`#c${i}`).nav-link #{i}
                 - }
-                    
+            
             

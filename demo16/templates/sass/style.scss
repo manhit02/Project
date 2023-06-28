@@ -1,20 +1,18 @@
-$color:aqua;
-.header {
-    background-color: $color;
+.loading {
+    display: block;
+    text-align: center;
+    width: 453px;
+    height: 283px;
+    -webkit-animation: logo_anima 3s forwards steps(73) infinite;
+    animation: logo_anima 3s forwards steps(73) infinite;
+    background-image: url("../assets/images/img_loanima.png");
+    margin: 0 auto;
 }
-
-.app {
-    &-news {
-        background-color: $color;
+@keyframes logo_anima{
+    from {
+        background-position-x: 0;
     }
-}
-
-.app2 {
-    &-news {
-        background-color: $color;
+    to {
+        background-position-x: 33069px;
     }
-}
-
-.footer {
-    background-color: $color;
 }

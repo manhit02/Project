@@ -1,0 +1,46 @@
+@media(min-width: 740px)and (max-width: 1023px) {
+    .app-giftrank__aub, .app-giftrank__au2 {
+  
+        transform: scale(0.6);
+        margin: -80px;
+        width: 376px;
+    }
+    .app-giftrank__top1 {
+      width: 376px;
+        transform: scale(0.6);
+        margin: -110px;
+    }
+
+        .app-giftrank__top1 ul li em {
+           justify-content: space-between;
+        }
+        .app-group2__btn {
+           
+            margin: -70px auto 0;
+        }
+        .app-rank{
+
+        }
+        .app-group-poolshop__header {
+          
+            transform: scale(0.8);
+        }
+
+        .app-rank__table {
+            
+            transform: scale(0.8);
+        }
+        .app-rank__myrank {
+            transform: scale(0.8);
+
+        }
+        .app-group-poolshop__header {
+            transform: scale(0.8);
+
+        }
+        .app-checkin__body {
+          
+            transform: scale(0.8);
+        }
+    
+}

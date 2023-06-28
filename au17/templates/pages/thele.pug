@@ -1,0 +1,160 @@
+head
+  meta(charset="UTF-8")
+  meta(http-equiv="X-UA-Compatible", content="IE=edge")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  link(rel="stylesheet" href="../css/style.css")
+  title Document
+body 
+  header.header
+    .container
+      .header-nav
+        a.header-nav__logo(href="")
+          img(src='../assets/images/logo1.png')
+        .header-nav__menu
+            a(href="").header-nav__menu-item giới thiệu
+            a(href="").header-nav__menu-item thể lệ
+            a(href="").header-nav__menu-item voting
+            a(href="").header-nav__menu-item tin tức
+            a(href="").header-nav__menu-item social
+        .header-nav__login.active
+          a(href="").header-nav__login-name
+            img(src="../assets/images/item1.png" alt="").header-nav__login-name__img
+            p.header-nav__login-name__des blingstar123@gmail.com
+          a(href="").header-nav__login-btn Thoát
+          a.header-nav__login-btn1(href="") đăng nhập
+        ul.nav.nav-tabs.header-nav__menumb.hidepc
+          li.nav-item.dropdown.active
+            a.nav-link.dropdown-toggle(data-bs-toggle="dropdown" href="#")
+            ul.dropdown-menu
+              li
+                a.dropdown-item(href="#").header-nav__menu-item giới thiệu
+              li
+                a.dropdown-item(href="#").header-nav__menu-item thể lệ
+              li
+                a.dropdown-item(href="#").header-nav__menu-item voting
+              li
+                a.dropdown-item(href="#").header-nav__menu-item tin tức
+              li
+                a.dropdown-item(href="#").header-nav__menu-item social
+    
+  .app
+    .container.app-container
+      ul.nav.nav-tab(role="tablist")#myTab.mytab
+        li.mytab-item1.hidemb Mục lục
+        li.nav-item.hidemb
+            a(data-bs-toggle="tab",data-bs-target="#home").nav-link.active.mytab-item   
+              h2.mytab-item__h2 1
+              p.mytab-item__p Giới thiệu                 
+        li.nav-item.hidemb
+            a(data-bs-toggle="tab",data-bs-target="#home1").nav-link.mytab-item   
+              h2.mytab-item__h2 2
+              p.mytab-item__p Đối tượng dự thi
+        li.nav-item.hidemb
+            a(data-bs-toggle="tab",data-bs-target="#home2").nav-link.mytab-item   
+              h2.mytab-item__h2 3
+              p.mytab-item__p Số lượng bài thi  
+        li.nav-item.hidemb
+            a(data-bs-toggle="tab",data-bs-target="#home3").nav-link.mytab-item   
+              h2.mytab-item__h2 4
+              p.mytab-item__p Quy định về nội dung bài thi
+        li.nav-item.hidemb
+            a(data-bs-toggle="tab",data-bs-target="#home4").nav-link.mytab-item   
+              h2.mytab-item__h2 5
+              p.mytab-item__p Hệ thống giải thưởng 
+        li.nav-item.hidemb
+            a(data-bs-toggle="tab",data-bs-target="#home5").nav-link.mytab-item   
+              h2.mytab-item__h2 6
+              p.mytab-item__p Thời gian và địa điểm   
+        li.nav-item.dropdown.hidepc
+          span.app-rules__span Chọn thông tin bạn muốn tìm hiểu: 
+          a.nav-link.dropdown-toggle.js-value(data-bs-toggle="dropdown" href="#") Giới thiệu 
+          ul.dropdown-menu.app-rules__menu
+            li.nav-item
+              a.dropdown-item.nav-link(data-bs-target="#home" data-bs-toggle="tab") Giới thiệu  
+            li.nav-item
+              a.dropdown-item.nav-link(data-bs-target="#home1" data-bs-toggle="tab") Đối tượng dự thi
+            li.nav-item
+              a.dropdown-item.nav-link(data-bs-target="#home2" data-bs-toggle="tab") Số lượng bài thi  
+            li.nav-item
+              a.dropdown-item.nav-link(data-bs-target="#home3" data-bs-toggle="tab") Quy định về nội dung bài thi
+            li.nav-item
+              a.dropdown-item.nav-link(data-bs-target="#home4" data-bs-toggle="tab") Hệ thống giải thưởng 
+            li.nav-item
+              a.dropdown-item.nav-link(data-bs-target="#home5" data-bs-toggle="tab") Thời gian và địa điểm  
+      .tab-content.mytab-content
+          .tab-pane.active#home.show  
+            h1.app-news__title TÌNH YÊU SIÊU KHỦNG LONG chiếm trọn trái tim Auer với trang phục đôi cực xinh yêu
+            .app-news__time
+              span.app-news__time-span Hướng dẫn
+              p.app-news__time-p 16/08/2023 | 08:02
+            h2.app-rules__title 1. Giới thiệu
+            p.app-news__des Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis est, venenatis feugiat consequat a, laoreet ut mauris. Mauris ornare mauris sapien, eu luctus odio placerat et. Vivamus luctus rhoncus lectus ac ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc id tincidunt lectus. Nam at gravida odio. Fusce a lectus nec tellus congue feugiat et et ex. Nunc porta in felis vel tristique. Sed in cursus dolor. Maecenas a arcu in ipsum pellentesque blandit. Nam sit amet dolor vestibulum, sodales felis quis, malesuada orci. Aenean maximus, erat sed lacinia suscipit, nisi odio maximus mauris, ac eleifend libero est vitae risus. Sed viverra laoreet velit, at iaculis dui viverra vel.
+            img.app-news__img(src="../assets/images/item5.jpg" alt="")
+          .tab-pane#home1  
+            h1.app-news__title TÌNH YÊU SIÊU KHỦNG LONG chiếm trọn trái tim Auer với trang phục đôi cực xinh yêu
+            .app-news__time
+              span.app-news__time-span Hướng dẫn
+              p.app-news__time-p 16/08/2023 | 08:02
+            h2.app-rules__title 2. Đối tượng dự thi
+            p.app-news__des Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis est, venenatis feugiat consequat a, laoreet ut mauris. Mauris ornare mauris sapien, eu luctus odio placerat et. Vivamus luctus rhoncus lectus ac ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc id tincidunt lectus. Nam at gravida odio. Fusce a lectus nec tellus congue feugiat et et ex. Nunc porta in felis vel tristique. Sed in cursus dolor. Maecenas a arcu in ipsum pellentesque blandit. Nam sit amet dolor vestibulum, sodales felis quis, malesuada orci. Aenean maximus, erat sed lacinia suscipit, nisi odio maximus mauris, ac eleifend libero est vitae risus. Sed viverra laoreet velit, at iaculis dui viverra vel.
+            img.app-news__img(src="../assets/images/item5.jpg" alt="")
+          .tab-pane#home2
+            h1.app-news__title comming soon 1...
+          .tab-pane#home3
+            h1.app-news__title comming soon 2...
+          .tab-pane#home4
+            h1.app-news__title comming soon 3...
+          .tab-pane#home5
+            h1.app-news__title comming soon 4...
+         
+      
+      img(src="../assets/images/item18.png" alt="").app-trangtri1
+      img(src="../assets/images/item19.png" alt="").app-trangtri2
+    .banner2
+      .container
+        a(href="").banner2-item.banner2-item1
+          img(src="../assets/images/item14.jpg" alt="").banner2-item__img
+        a(href="").banner2-item.banner2-item2
+          img(src="../assets/images/item15.jpg" alt="").banner2-item__img
+  a(href="javascript:void(0)").js-movtop.movtop
+    img(src="../assets/images/item13.png" alt="").movtop-img
+  footer.footer
+    .container
+      .footer-logo
+        .footer-logo__img
+          img(src='../assets/images/logo1.svg' alt='')
+        span TỔNG CÔNG TY TRUYỀN THÔNG ĐA PHƯƠNG TIỆN (VTC) <strong>CÔNG TY VTC CÔNG NGHỆ VÀ NỘI DUNG SỐ (VTC INTECOM)</strong>
+      .footer-info
+        span CHỊU TRÁCH NHIỆM QUẢN LÝ NỘI DUNG:
+        a(href='') Ông Trần Phương Huy    
+        table
+          tr 
+            td THÔNG TIN LIÊN HỆ
+          tr
+            td
+
+              img(alt="",src="../assets/images/icon_web.png")
+              a(href='hotro.vtc.vn') info.vtcgame@vtc.vn
+          tr
+            td
+              img(alt="",src="../assets/images/icon_fax.png")
+              a(href='mailto:cskh.au@vtc.vn') 024.3636.7728
+          tr
+            td
+              img(alt="",src="../assets/images/icon_face.png")
+              a(href='fb.com/auditionvtc') fb.com/congvtcgame
+          tr
+            td
+              img(alt="",src="../assets/images/icon_cskh.png")
+              a(href='fb.com/auditionvtc') 1900 1530
+      .footer-address
+        .footer-address__item
+
+          h5 TRỤ SỞ HÀ NỘI
+          p Tầng 14, Tòa nhà VTC 23 Lạc Trung, Quận Hai Bà Trưng, Hà Nội
+        .footer-address__item
+          h5 VĂN PHÒNG ĐẠI DIỆN TP. HỒ CHÍ MINH
+          p 259 Đồng Đen, Phường 10, Quận Tân Bình, TP. Hồ Chí Minh
+script(src="../js/swiper.js")
+script(src="../js/bootstrap.min.js")
+script(src="../js/index.js")

@@ -1,0 +1,2014 @@
+.index-1-banner-sl__list-item p {
+    font-size: 18px
+}
+
+.index-1-banner-sl__list-item h2 {
+    line-height: 49px
+}
+
+.index-1-app-communication ul p {
+    font-size: 18px
+}
+
+.index-1-app-communication {
+    margin-top: 0
+}
+
+.index-1-app-heading p {
+    font-size: 18px
+}
+
+.index-1-app-active__sl-list__item h3 {
+    text-align: center
+}
+
+.index-1-app-active__sl-list__item button {
+    font-size: 18px
+}
+
+.index-1-app-convenient .container ul:nth-child(4) li em p {
+    font-size: 18px;
+    text-align: justify
+}
+
+.index-1-app-convenient .container ul:nth-child(5) li em p {
+    font-size: 18px
+}
+
+.index-1-app-convenient .container ul:nth-child(5) {
+    justify-content: space-between
+}
+
+.index-1-app-comment__sl-list__item-ct p {
+    font-size: 18px
+}
+
+.index-1-app-comment__sl-list__item-ct span {
+    font-size: 24px
+}
+
+.index-1-app-comment {
+    padding-top: 52px
+}
+
+.footer {
+    padding-top: 32px
+}
+
+.footer ul li:nth-child(2), .footer ul li:nth-child(3) {
+    width: 20%
+}
+
+.footer ul li:nth-child(2), .footer ul li:nth-child(4) {
+    width: 15%
+}
+
+.index-1-app-unit1 .index-1-app-heading {
+    color: #0066bc;
+    font-family: "NotoSans-bold";
+    font-size: 32px
+}
+
+.index-1-app-unit1 ul {
+    margin-top: 52px
+}
+
+.index-1-app-unit1 {
+    padding-bottom: 34px
+}
+
+.index-1-app-convenient .container ul:nth-child(3) li em p {
+    font-size: 18px
+}
+
+.index-1-app-convenient .container ul:nth-child(4) {
+    justify-content: space-between
+}
+
+.index-1-app-comment__sl-list__item-ct span {
+    font-family: "NotoSans"
+}
+
+.header-nav ul {
+    min-width: unset
+}
+
+.index-9-app-teams-sl2__control button.active span {
+    background: #0066bc
+}
+
+.index-9-app {
+    padding-top: 52px
+}
+
+.index-9-app-mission {
+    padding-top: 52px;
+    padding-bottom: 52px
+}
+
+.index-9-app-heading p {
+    font-size: 18px
+}
+
+.index-9-app-vision ul li p, .index-9-app-mission ul li p {
+    font-size: 18px
+}
+
+.index-9-app-teams {
+    padding-top: 52px
+}
+
+.index-9-app-teams-sl2__list-item ul li h3 {
+    font-size: 18px
+}
+
+.index-9-app-teams-sl2__list-item ul li p {
+    font-size: 16px
+}
+
+.index-9-app-teams-sl2__list-item ul li p:last-child {
+    font-size: 16px
+}
+
+.footer ul li h3 {
+    font-family: "NotoSans-medium"
+}
+
+.footer .container ul li:nth-child(1) p {
+    font-size: 14px;
+    margin-bottom: 24px
+}
+
+.footer .container ul li:nth-child(2) a, .footer .container ul li:nth-child(3) a {
+    font-size: 14px
+}
+
+.footer .container ul li:nth-child(4) a {
+    font-size: 14px
+}
+
+.footer .container ul li:nth-child(4) {
+    margin-top: 24px
+}
+
+.footer .container>span {
+    font-size: 14px
+}
+
+.index-10-banner h2 {
+    font-size: 40px
+}
+
+.index-10-app-heading {
+    font-size: 28px
+}
+
+.index-10-app {
+    padding-top: 42px
+}
+
+.index-10-app-news__left>ul>li:nth-child(1) ul:nth-child(1) li>a p, .index-10-app-news__left>ul>li:nth-child(1) ul:nth-child(2) li>a p {
+    font-size: 18px
+}
+
+.index-10-app-news__right {
+    padding-top: 0
+}
+
+.index-10-app-news__left {
+    margin-right: 30px
+}
+
+.index-10-app-news__left>ul>li:nth-child(2) {
+    width: 136%
+}
+
+.index-10-app-news__left>ul>li:nth-child(2) ul li>a img {
+    -o-object-fit: none !important;
+    object-fit: none !important
+}
+
+.index-10-app-news__left>ul>li:nth-child(2) ul li>a h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.index-10-app-news__left>ul>li:nth-child(2) ul li {
+    max-width: 40%
+}
+
+.index-10-app-news__left>ul>li:nth-child(2) ul li>a img {
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px
+}
+
+.index-10-app-news__left>ul>li:nth-child(2) button {
+    top: 75px;
+    background: rgba(0, 102, 188, .6);
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px
+}
+
+.index-10-app-news__left>ul>li:nth-child(2) button span {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1755%) hue-rotate(352deg) brightness(108%) contrast(100%);
+    -webkit-filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1755%) hue-rotate(352deg) brightness(108%) contrast(100%)
+}
+
+.index-10-app-newss__left ul li a p {
+    font-size: 18px
+}
+
+.index-10-app-news__left>ul>li:nth-child(1) ul:nth-child(1) li>a img, .index-10-app-news__left>ul>li:nth-child(1) ul:nth-child(2) li>a img {
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px
+}
+
+.index-10-app-newss__left ul li a img {
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px
+}
+
+.index-10-banner {
+    display: none
+}
+
+.index-11-app {
+    padding-top: 52px
+}
+
+.index-11-app-news__right {
+    padding-top: 132px
+}
+
+.index-11-app-news__right ul li em a {
+    font-size: 18px;
+    line-height: 1.375
+}
+
+.index-11-app-news__right ul li em p {
+    font-size: 16px;
+    line-height: 1.375
+}
+
+.index-11-app-news__left>p {
+    font-size: 18px
+}
+
+.index-11-app-news__left>ul li>p {
+    font-size: 18px
+}
+
+.index-11-app-news__left-share {
+    justify-content: flex-start
+}
+
+.index-11-app-news__left-share span {
+    font-size: 24px;
+    color: #0066bc
+}
+
+.index-2-banner .container h2 {
+    font-size: 40px
+}
+
+.index-3-banner .container h2 {
+    font-size: 40px
+}
+
+.index-3-app {
+    padding-top: 52px
+}
+
+.index-3-app .container>span {
+    font-family: "NotoSans-medium"
+}
+
+.index-3-app-menu span {
+    height: 62px
+}
+
+.send-body__btn button {
+    font-family: "NotoSans";
+    width: 160px;
+    color: #fff;
+    background: #0066bc
+}
+
+.send-body span {
+    color: #0066bc !important
+}
+
+.index-3-app .container>ul {
+    margin-bottom: 0
+}
+
+.index-3-app .container>ul li {
+    width: 400px;
+    height: 300px;
+    margin-bottom: 52px
+}
+
+.footer .container ul li:nth-child(4) {
+    margin-top: 0
+}
+
+.index-4-app-right {
+    padding-left: 16px;
+    padding-right: 16px
+}
+
+.index-4-app-right ul li {
+    background: #0066bc !important
+}
+
+.numberQuestion {
+    font-family: "NotoSans-medium"
+}
+
+.index-4-app-right ul {
+    margin: 0 -16px
+}
+
+.index-4-app-right ul li {
+    margin: 11px 8px;
+    width: calc(33.3333333333% - 16px)
+}
+
+.btnSend {
+    font-family: "NotoSans"
+}
+
+.index-4-app-right__head button {
+    background: #0066bc;
+    color: #fff
+}
+
+.send-body__btn button {
+    font-family: "NotoSans"
+}
+
+.verify-body__btn button {
+    font-family: "NotoSans"
+}
+
+.index-4-app {
+    padding-bottom: 52px
+}
+
+.index-18-banner .container h2 {
+    font-size: 40px
+}
+
+.index-18-app-heading {
+    font-size: 28px
+}
+
+.index-18-app-law ul {
+    margin: 25px -25px 0
+}
+
+.index-18-app-law ul li {
+    margin: 0 25px;
+    width: calc(50% - 50px)
+}
+
+.index-18-app-law ul li em button {
+    width: 160px;
+    height: 58px;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px
+}
+
+.index-18-app-common ul li em {
+    padding-top: 10px
+}
+
+.index-18-app-common ul li em button {
+    width: 90%;
+    border-radius: 10px
+}
+
+.index-18-app-common ul li em button a {
+    font-size: 18px
+}
+
+.card-lesson {
+    height: 454px
+}
+
+.index-22-app-right {
+    height: -moz-max-content;
+    height: max-content
+}
+
+.index-22-app {
+    padding-top: 52px
+}
+
+.btn-outline-primary {
+    font-family: "NotoSans"
+}
+
+.index-22-app-left h2 {
+    font-size: 20px
+}
+
+.index-14-app-profile__right>ul:nth-child(3) {
+    margin-bottom: 34px
+}
+
+.index-14-app {
+    padding-top: 52px
+}
+
+.index-14-app-profile__right #home2 ul li:nth-child(4) em select {
+    height: 48px
+}
+
+.index-14-app-profile__right #home2 ul li>input {
+    height: 48px
+}
+
+.index-14-app-profile__right #home2 ul li:nth-child(7) em select {
+    height: 48px
+}
+
+.index-14-app-profile__right {
+    padding-bottom: 52px
+}
+
+.index-14-app-profile__right #home2 ul li>input {
+    font-size: 18px
+}
+
+.index-14-app-profile__right #home2 ul li:nth-child(7) em select {
+    border-color: #c5c5c5
+}
+
+.index-14-app-profile__right #home2 ul li:nth-child(4) em select {
+    border-color: #c5c5c5
+}
+
+.index-14-app-profile__right #menu3 ul li>input {
+    height: 48px
+}
+
+.index-14-app-profile__right #menu3 ul li:nth-child(4) em select {
+    height: 48px
+}
+
+.index-14-app-profile__right #menu3 ul li:nth-child(5) em select {
+    height: 48px
+}
+
+.index15-js-info__update {
+    height: 200px !important
+}
+
+.index-14-app-profile__right #menu3 ul li:nth-child(8) em select {
+    height: 48px
+}
+
+.index-14-app-profile__right #menu3 ul li:nth-child(2) button {
+    height: 48px
+}
+
+.index-14-app-profile__right #home2 ul li:nth-child(2) button {
+    height: 48px
+}
+
+.index-17-app-profile__right ul li input {
+    height: 48px
+}
+
+.index-17-app-profile__right ul li em span {
+    height: 48px
+}
+
+.index-17-app-profile__right ul li input {
+    font-size: 18px
+}
+
+.index-17-app-profile__right ul li em button {
+    height: 48px
+}
+
+.popup2-index14__body p {
+    font-size: 18px;
+    padding: 0 36px
+}
+
+.popup2-index14__body input {
+    height: 48px
+}
+
+.popup2-index14__body-btn button {
+    height: 48px;
+    width: 160px
+}
+
+.popup2-index14__body h2 {
+    font-size: 20px
+}
+
+.popup2-index14__body-btn button:nth-child(2):hover {
+    background: #0066bc;
+    color: #fff
+}
+
+.header-top__login.active>ul:nth-child(2)>li em a span:nth-child(1) img {
+    -o-object-fit: none !important;
+    object-fit: none !important
+}
+
+.index-14-app-profile__right>p {
+    margin-top: 24px
+}
+
+.index-14-app-profile__right #home2 ul li {
+    margin-bottom: 24px
+}
+
+.index-14-app-profile #home2 ul li:nth-child(4) em select {
+    width: 150px
+}
+
+.index-14-app-profile #home2 ul li:nth-child(7) em select {
+    width: 150px
+}
+
+.index-14-app {
+    padding-bottom: 52px
+}
+
+.index-14-app-profile__right-btn button {
+    height: 48px
+}
+
+.index-14-app-profile__left ul li a {
+    height: 48px
+}
+
+.index-17-app-profile__right-btn a {
+    height: 48px;
+    background-color: #0066bc;
+    color: #fff
+}
+
+.popup-index14__body {
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7)
+}
+
+.popup-index14__body-btn button {
+    background-color: #0066bc;
+    color: #fff
+}
+
+.popup-index14__body h2 {
+    font-size: 18px;
+    margin-bottom: 0
+}
+
+.popup-index14__body p {
+    font-size: 16px
+}
+
+.popup-index14__body span {
+    font-size: 16px;
+    margin-bottom: 24px
+}
+
+.popup-index14__body input {
+    height: 48px
+}
+
+.popup-index14__body {
+    width: 600px
+}
+
+.popup-index14__body-btn button {
+    height: 48px;
+    width: 200px
+}
+
+.index-12-app .container ul li:nth-child(2) input {
+    font-size: 18px
+}
+
+.index-12-app .container ul li:nth-child(2)>button {
+    height: 48px;
+    font-size: 18px
+}
+
+.index-13-app .container>ul>li:nth-child(2) input {
+    font-size: 18px;
+    height: 48px
+}
+
+.index-13-app .container>ul>li:nth-child(2) #home1>button {
+    font-size: 18px;
+    height: 48px
+}
+
+.index-13-app .container>ul>li:nth-child(2) #home2 em:nth-child(3) a {
+    font-family: "NotoSans"
+}
+
+.index-13-app .container>ul>li:nth-child(2) #home2 em:nth-child(3) span {
+    font-size: 16px
+}
+
+.index-13-app .container>ul>li:nth-child(2)>em:nth-child(3) a {
+    height: 48px
+}
+
+.index-13-app .container>ul>li:nth-child(2) #home2 .index13-js-home2-1>button {
+    height: 48px;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+
+.index-13-app .container>ul>li:nth-child(2)>em:nth-child(3) {
+    margin-bottom: 30px
+}
+
+.index-13-app .container>ul>li:nth-child(3) input {
+    height: 48px
+}
+
+.index-13-app .container>ul>li:nth-child(3) button {
+    height: 48px;
+    font-size: 18px
+}
+
+.index-13-app .container>ul>li:nth-child(3) h2 {
+    font-size: 18px
+}
+
+.index-13-app .container>ul>li:nth-child(3) span {
+    font-size: 16px
+}
+
+.index-13-app .container>ul>li:nth-child(3) h3 {
+    font-size: 16px
+}
+
+.index-13-app .container>ul>li:nth-child(3) p {
+    font-size: 16px
+}
+
+.index-13-app .container>ul>li:nth-child(2) #home2 .index13-js-home2-2 em:nth-child(1) {
+    margin-top: -10px
+}
+
+.index-13-app .container>ul>li:nth-child(2)>em:nth-child(3) a {
+    width: 180px;
+    font-size: 13px
+}
+
+.index-13-app .container>ul>li:nth-child(2) #home2 .index13-js-home2-2 em:nth-child(1) input {
+    height: 48px
+}
+
+.index-13-app .container>ul>li:nth-child(2) #home2 .index13-js-home2-2 em:nth-child(2) input {
+    height: 48px
+}
+
+.index-13-app .container>ul>li:nth-child(2) #home2 .index13-js-home2-2>button {
+    height: 48px;
+    font-size: 18px
+}
+
+.index-13-app .container>ul>li:nth-child(2) #home2 .index13-js-home2-2 em:nth-child(1) {
+    margin-top: 11px
+}
+
+.index-12-app .container ul li:nth-child(3) h2 {
+    font-size: 18px
+}
+
+.index-12-app .container ul li:nth-child(3) input {
+    height: 48px
+}
+
+.index-12-app .container ul li:nth-child(3) a {
+    height: 48px;
+    font-size: 18px
+}
+
+.index-12-app .container ul li:nth-child(3) input {
+    font-size: 18px
+}
+
+.index-12-app .container ul li:nth-child(3) input::-moz-placeholder {
+    font-size: 18px
+}
+
+.index-12-app .container ul li:nth-child(3) input::placeholder {
+    font-size: 18px
+}
+
+.index-12-app .container {
+    align-items: flex-start
+}
+
+.index-12-app .container ul {
+    padding-top: 59px
+}
+
+.index-12-app .container ul li:nth-child(2) input {
+    height: 48px
+}
+
+.index-12-app .container ul li:nth-child(4) h2 {
+    font-size: 18px
+}
+
+.index-12-app .container ul li:nth-child(4) input {
+    height: 48px
+}
+
+.index-12-app .container ul li:nth-child(4) p {
+    font-size: 18px
+}
+
+.index-14-app-profile__right #menu3 ul li span {
+    display: flex;
+    align-items: center
+}
+
+.index-14-app-profile__right #menu3 .index-15-app-profile__right-btn button {
+    height: 48px;
+    font-size: 18px
+}
+
+.index-14-app-profile__right #menu3 ul li {
+    margin-bottom: 24px
+}
+
+.index15-js-info__update em:nth-child(6) input {
+    height: 48px;
+    color: #212c41
+}
+
+.index15-js-info__update em:nth-child(6) input::-moz-placeholder {
+    font-family: "NotoSans-Light"
+}
+
+.index15-js-info__update em:nth-child(6) input::placeholder {
+    font-family: "NotoSans-Light"
+}
+
+@media(min-width: 1281px)and (max-width: 2000px) {
+    .index-14-app-profile #home2 ul li:nth-child(7) em select {
+        width: 216px
+    }
+
+    .index-14-app-profile #home2 ul li:nth-child(4) em select {
+        width: 216px
+    }
+
+    .index-14-app-profile__right #menu3 ul li:nth-child(5) em, .index-14-app-profile__right #menu3 ul li:nth-child(8) em {
+        width: 216px
+    }
+
+    .index-14-app-profile__right #menu3 ul li:nth-child(5) em:last-child, .index-14-app-profile__right #menu3 ul li:nth-child(8) em:last-child {
+        margin-right: 0
+    }
+}
+
+@media(min-width: 1024px)and (max-width: 1280px) {
+    .index-12-app .container {
+        align-items: center
+    }
+
+    .index-12-app .container ul {
+        padding-top: 0
+    }
+    .index-10-app-newss__control {
+        width: 40%
+    }
+}
+@media(min-width: 740px)and (max-width: 1023px) {
+    .container {
+        padding: 0 16px
+    }
+
+    .index-1-banner {
+        height: unset
+    }
+
+    .index-1-banner-sl__list-item {
+        height: 511px
+    }
+
+    .index-1-banner-sl__list-item .container {
+        margin-top: 295px;
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+
+    .index-1-banner-sl__list-item h2 {
+        font-size: 21px;
+        line-height: 29px;
+        text-align: center
+    }
+
+    .index-1-banner-sl__list-item p {
+        font-size: 14px;
+        line-height: 19px
+    }
+
+    .index-1-banner-sl__list-item__img {
+        display: none
+    }
+
+    .index-1-banner-sl__list-item__mb {
+        display: block;
+        -o-object-fit: unset !important;
+        object-fit: unset !important
+    }
+
+    .index-1-banner-sl__btn-prev, .index-1-banner-sl__btn-next {
+        top: 123px;
+        display: block;
+        width: 21.61px;
+        height: 35px;
+        background: url("../assets/images/Vector.png") center/contain
+    }
+
+    .index-1-banner-sl__btn-prev span, .index-1-banner-sl__btn-next span {
+        display: none
+    }
+
+    .index-1-banner-sl__btn-prev {
+        left: 16px;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg)
+    }
+
+    .index-1-banner-sl__btn-next {
+        right: 16px
+    }
+
+    .index-1-banner-btn button {
+        width: 100px;
+        height: 35.99px;
+        font-size: 16px;
+        line-height: 22px
+    }
+
+    .index-1-banner-control {
+        display: none
+    }
+
+    .index-1-app-heading {
+        font-size: 20px;
+        line-height: 27px
+    }
+
+    .index-1-app-heading br {
+        display: block
+    }
+
+    .index-1-app-heading p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 21px
+    }
+
+    .index-1-app-heading p br {
+        display: block
+    }
+
+    .index-1-app-unit1 {
+        margin-top: 39px
+    }
+
+    .index-1-app-unit1 .index-1-app-1--heading {
+        font-size: 14px;
+        line-height: 19px;
+        color: #212c42
+    }
+
+    .index-1-app-unit1 ul {
+        flex-wrap: wrap
+    }
+
+    .index-1-app-unit1 ul li {
+        margin-right: unset
+    }
+
+    .index-1-app-unit1 ul li:nth-child(1) {
+        order: 2;
+        margin-right: 42px
+    }
+
+    .index-1-app-unit1 ul li:nth-child(1) img {
+        height: 77px;
+        width: 84px
+    }
+
+    .index-1-app-unit1 ul li:nth-child(2) {
+        order: 1;
+        margin-right: 38px
+    }
+
+    .index-1-app-unit1 ul li:nth-child(2) img {
+        width: 80px;
+        height: 70px
+    }
+
+    .index-1-app-unit1 ul li:nth-child(3) {
+        order: 3
+    }
+
+    .index-1-app-unit1 ul li:nth-child(3) img {
+        width: 80px;
+        height: 74px
+    }
+
+    .index-1-app-unit1 ul li:nth-child(4) {
+        order: 4;
+        margin-right: 50px;
+        margin-top: 22px
+    }
+
+    .index-1-app-unit1 ul li:nth-child(4) img {
+        width: 124px;
+        height: 43px
+    }
+
+    .index-1-app-unit1 ul li:nth-child(5) {
+        order: 5;
+        margin-top: 22px
+    }
+
+    .index-1-app-unit1 ul li:nth-child(5) img {
+        width: 89px;
+        height: 44px
+    }
+
+    .index-1-app-communication {
+        height: unset;
+        background: #dfe7f5
+    }
+
+    .index-1-app-communication ul {
+        flex-wrap: wrap
+    }
+
+    .index-1-app-communication ul li {
+        width: 100%
+    }
+
+    .index-1-app-communication ul li h3 {
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 31px
+    }
+
+    .index-1-app-communication ul li p {
+        font-size: 13px;
+        line-height: 18px;
+        text-align: left
+    }
+
+    .index-1-app-communication ul li p br {
+        display: block
+    }
+
+    .index-1-app-communication ul li img {
+        width: 100%;
+        margin-right: 0
+    }
+
+    .index-1-app-convenient .container {
+        position: relative
+    }
+
+    .index-1-app-convenient .container h2 p {
+        margin-top: 32px;
+        margin-bottom: 25px
+    }
+
+    .index-1-app-convenient .container ul:nth-child(3) {
+        display: flex;
+        overflow-x: scroll
+    }
+
+    .index-1-app-convenient .container ul:nth-child(3)::-webkit-scrollbar {
+        display: none
+    }
+
+    .index-1-app-convenient .container ul:nth-child(3) li {
+        min-width: 100%;
+        flex-direction: column
+    }
+
+    .index-1-app-convenient .container ul:nth-child(3) li img {
+        margin-right: 0;
+        width: 281px;
+        margin-bottom: 13px
+    }
+
+    .index-1-app-convenient .container ul:nth-child(3) li em {
+        padding: 0px 12px
+    }
+
+    .index-1-app-convenient .container ul:nth-child(3) li em h3 {
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center
+    }
+
+    .index-1-app-convenient .container ul:nth-child(3) li em p {
+        font-size: 13px;
+        line-height: 18px
+    }
+
+    .index-1-app-convenient .container ul:nth-child(3) li em p br {
+        display: block
+    }
+
+    .index-1-app-convenient .container ul:nth-child(3) li:nth-child(2) {
+        flex-direction: column-reverse
+    }
+
+    .index-1-app-convenient .container ul:nth-child(3) li:nth-child(2) img {
+        margin-left: 0
+    }
+
+    .index-1-app-convenient .container ul:nth-child(3) li:nth-child(3) {
+        position: absolute;
+        display: none
+    }
+
+    .index-1-app-convenient .container ul:nth-child(4) {
+        flex-direction: column
+    }
+
+    .index-1-app-convenient .container ul:nth-child(4) li {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 26px
+    }
+
+    .index-1-app-convenient .container ul:nth-child(4) li img {
+        width: 63px;
+        height: 63px
+    }
+
+    .index-1-app-convenient .container ul:nth-child(4) li em h3 {
+        font-size: 16px;
+        line-height: 22px
+    }
+
+    .index-1-app-convenient .container ul:nth-child(4) li em p {
+        font-size: 13px;
+        line-height: 18px
+    }
+
+    .index-1-app-convenient .container ul:nth-child(4) li:nth-child(1), .index-1-app-convenient .container ul:nth-child(4) li:nth-child(3) {
+        margin-right: 0
+    }
+
+    .index-1-app-convenient .container ul:nth-child(4) li:nth-child(3) {
+        margin-bottom: 26px
+    }
+
+    .index-1-app-convenient__control {
+        display: flex
+    }
+
+    .index-1-app-convenient__control button {
+        top: 205px;
+        position: absolute;
+        width: 21.61px;
+        height: 35px;
+        background: url("../assets/images/Vector.png") center/contain
+    }
+
+    .index-1-app-convenient__control button:nth-child(1) {
+        left: 16px;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg)
+    }
+
+    .index-1-app-convenient__control button:nth-child(2) {
+        right: 16px
+    }
+
+    .index-1-app-active__sl {
+        margin: auto;
+        width: 276px
+    }
+
+    .index-1-app-active__sl-list {
+        justify-content: unset
+    }
+
+    .index-1-app-active__sl-btn__prev, .index-1-app-active__sl-btn__next {
+        top: 50%;
+        display: block;
+        width: 21.61px;
+        height: 35px;
+        background: url("../assets/images/Vector.png") center/contain
+    }
+
+    .index-1-app-active__sl-btn__prev span, .index-1-app-active__sl-btn__next span {
+        display: none
+    }
+
+    .index-1-app-active__sl-btn__prev {
+        left: -40px;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg)
+    }
+
+    .index-1-app-active__sl-btn__next {
+        right: -40px
+    }
+
+    .index-1-app-comment {
+        padding-top: 35px
+    }
+
+    .index-1-app-comment__sl-list__item-ct h3 {
+        font-size: 16px;
+        line-height: 21px
+    }
+
+    .index-1-app-comment__sl-list__item-ct p {
+        font-size: 13px;
+        line-height: 21px
+    }
+
+    .index-1-app-comment__sl-list__item-ct span {
+        font-size: 18px;
+        line-height: 24px
+    }
+
+    .index-1-app-comment__sl-list__item-ct span br {
+        display: none
+    }
+
+    .index-1-app-comment__sl-btn__prev, .index-1-app-comment__sl-btn__next {
+        top: 50%;
+        display: block;
+        width: 21.61px;
+        height: 35px;
+        background: url("../assets/images/Vector.png") center/contain
+    }
+
+    .index-1-app-comment__sl-btn__prev span, .index-1-app-comment__sl-btn__next span {
+        display: none
+    }
+
+    .index-1-app-comment__sl-btn__prev {
+        left: 0;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg)
+    }
+
+    .index-1-app-comment__sl-btn__next {
+        right: 0
+    }
+
+    .index-1-app-unit2 {
+        margin-top: 39px
+    }
+
+    .index-1-app-unit2 ul {
+        padding: 40px 0px;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 224px
+    }
+
+    .index-1-app-unit2 ul li {
+        margin-right: unset
+    }
+
+    .index-1-app-unit2 ul li:nth-child(1) {
+        order: 1;
+        margin-right: 65px
+    }
+
+    .index-1-app-unit2 ul li:nth-child(1) img {
+        height: 58px;
+        width: 45px
+    }
+
+    .index-1-app-unit2 ul li:nth-child(2) {
+        order: 3
+    }
+
+    .index-1-app-unit2 ul li:nth-child(2) img {
+        width: 72px;
+        height: 52px
+    }
+
+    .index-1-app-unit2 ul li:nth-child(3) {
+        order: 2;
+        margin-right: 37px
+    }
+
+    .index-1-app-unit2 ul li:nth-child(3) img {
+        width: 126px;
+        height: 28px
+    }
+
+    .index-1-app-unit2 ul li:nth-child(4) {
+        order: 4;
+        margin-right: 41px;
+        margin-top: 22px
+    }
+
+    .index-1-app-unit2 ul li:nth-child(4) img {
+        width: 136px;
+        height: 34px
+    }
+
+    .index-1-app-unit2 ul li:nth-child(5) {
+        order: 5;
+        margin-top: 22px
+    }
+
+    .index-1-app-unit2 ul li:nth-child(5) img {
+        width: 57px;
+        height: 63px
+    }
+
+    .index-10-app-news__left>ul>li:nth-child(2) {
+        width: 100%
+    }
+
+    .index-4-app-right ul li {
+        width: calc(50% - 16px)
+    }
+
+    .index-4-app-left__pane>span:nth-child(3) {
+        height: 200px
+    }
+
+    .index-3-app .container ul li {
+        width: 30%;
+        height: 250px
+    }
+
+    .index-18-app-law ul li em button {
+        width: 120px;
+        height: 42px
+    }
+
+    .index-18-app-law ul li em button a {
+        font-size: 12px;
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px
+    }
+
+    .index-22-app-right {
+        width: 100%
+    }
+
+    .index-22-app-right ul li img {
+        width: 230px;
+        height: 200px
+    }
+
+    .index-22-app-right ul li>em h3 {
+        font-size: 24px;
+        width: 100%;
+        line-height: 1.375
+    }
+
+    .index-22-app-right ul li>em em {
+        justify-content: space-between
+    }
+
+    .index-22-app-right ul li>em em span:nth-child(3) img {
+        width: 30px;
+        height: 30px
+    }
+
+    .index-22-app-right ul li.active>em em span:nth-child(2) img {
+        width: 30px;
+        height: 30px
+    }
+
+    .index-22-app-right ul li>em {
+        justify-content: space-between;
+        padding-top: 20px
+    }
+
+    .index-22-app-right ul li>em em span {
+        font-size: 24px
+    }
+
+    .index-22-app-right ul li>em button {
+        width: 200px;
+        height: 50px;
+        font-size: 18px
+    }
+
+    .index-22-app-right ul li>em button a {
+        font-size: 18px
+    }
+
+    .index-12-app .container ul li:nth-child(2) em:nth-child(4) a {
+        text-align: right;
+        margin-top: 8px
+    }
+
+    .index-12-app .container {
+        align-items: center
+    }
+
+    .index-12-app .container ul {
+        padding-top: 0
+    }
+
+    .index-12-app .container ul li:nth-child(4) p {
+        font-size: 15px
+    }
+
+    .index-12-app .container ul li:nth-child(4) button {
+        font-size: 18px
+    }
+
+    .index-13-app .container ul li:nth-child(1) {
+        transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -o-transform: scale(0.9)
+    }
+}
+
+@media(max-width: 739px) {
+    .header-nav {
+        display: none
+    }
+
+    .header-top__menumb.active .header-top__menumb-overlay {
+        inset: 0
+    }
+
+    .header-top__menumb.active {
+        inset: 0 105px 0 0
+    }
+
+    .header-top__menumb.active>ul>li:nth-child(2) em img {
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%
+    }
+
+    .header-top__menumb.active>ul>li:nth-child(3) input {
+        font-family: "NotoSans-medium"
+    }
+
+    .index-1-banner-sl__list-item h2 {
+        margin-bottom: 12px
+    }
+
+    .index-1-app-unit1 {
+        margin-top: 0
+    }
+
+    .index-1-app-unit1 ul {
+        margin-top: 22px
+    }
+
+    .index-1-app-communication {
+        padding-top: 34px;
+        padding-bottom: 34px
+    }
+
+    .index-1-app-convenient {
+        padding-top: 34px
+    }
+
+    .index-1-app-convenient .container h2 p {
+        margin-top: 12px
+    }
+
+    .index-1-app-convenient__control button:nth-child(2), .index-1-app-convenient__control button:nth-child(1) {
+        display: none
+    }
+
+    .index-1-app-active__sl-list__item h3 {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 12px
+    }
+
+    .index-1-app-active__sl-list__item p {
+        padding-left: 0;
+        padding-right: 0
+    }
+
+    .index-1-banner-sl__list-item h2 {
+        line-height: 1.375
+    }
+
+    .index-1-banner-sl__list-item p {
+        font-size: 14px
+    }
+
+    .index-1-app-unit1 .index-1-app-heading {
+        font-size: 20px
+    }
+
+    .index-1-app-convenient .container ul:nth-child(3) li em p {
+        font-size: 14px
+    }
+
+    .index-1-app-convenient .container h2 p {
+        font-size: 14px
+    }
+
+    .index-1-app-convenient .container ul:nth-child(4) li em p {
+        font-size: 14px
+    }
+
+    .index-1-app-convenient .container ul:nth-child(4) {
+        margin-bottom: 34px
+    }
+
+    .index-1-app-active {
+        padding-top: 34px
+    }
+
+    .index-1-app-active__sl-list__item h3 {
+        font-size: 16px;
+        padding: 0 16px;
+        text-align: left
+    }
+
+    .index-1-app-active__sl-list__item p {
+        padding: 0 16px;
+        font-size: 13px
+    }
+
+    .index-1-app-active__sl-list__item {
+        height: 460px
+    }
+
+    .index-1-app-active .container>span {
+        font-size: 18px
+    }
+
+    .index-1-app-comment {
+        padding-top: 34px
+    }
+
+    .index-1-app-comment__sl-list__item-ct span {
+        font-size: 16px
+    }
+
+    .index-1-app-unit2 ul {
+        padding-top: 34px
+    }
+
+    .index-1-app-comment__sl-list__item-ct p {
+        font-size: 13px
+    }
+
+    .footer-registermb button {
+        font-family: "NotoSans"
+    }
+
+    .footer .container>span {
+        font-family: "NotoSans"
+    }
+
+    .footer .container ul li:nth-child(4) {
+        width: 100%
+    }
+
+    .index-9-app {
+        padding-top: 34px;
+        padding-bottom: 34px
+    }
+
+    .index-9-app>p {
+        padding: 0 16px;
+        text-align: justify
+    }
+
+    .index-9-app-vision ul li img, .index-9-app-mission ul li img {
+        width: 100%;
+        height: unset
+    }
+
+    .index-9-app-vision {
+        margin-top: 34px
+    }
+
+    .index-9-app-vision ul li, .index-9-app-mission ul li {
+        text-align: center
+    }
+
+    .index-9-app-vision ul li p, .index-9-app-mission ul li p {
+        line-height: 1.375;
+        text-align: justify
+    }
+
+    .index-9-app-mission {
+        padding-top: 34px;
+        padding-bottom: 34px
+    }
+
+    .index-9-app-teams {
+        padding-top: 34px
+    }
+
+    .index-9-app-teams .index-9-app-heading p {
+        text-align: center;
+        text-indent: 0;
+        line-height: 1.375
+    }
+
+    .index-9-app-teams-sl2__btn-next, .index-9-app-teams-sl2__btn-prev {
+        display: none
+    }
+
+    .index-9-app-teams-sl2 {
+        margin-top: 34px
+    }
+
+    .index-9-app-teams-sl2__control {
+        bottom: -60px
+    }
+
+    .carousel-indicators [data-bs-target] {
+        width: 18px
+    }
+
+    .index-10-banner h2 {
+        font-size: 24px
+    }
+
+    .index-10-app-heading {
+        font-size: 16px
+    }
+
+    .index-10-app-news__left>ul>li:nth-child(1) ul:nth-child(2) li a h3 {
+        font-size: 14px
+    }
+
+    .index-10-app-news__left>ul>li:nth-child(1) ul:nth-child(2) li a h3 {
+        width: 90%;
+        font-family: "NotoSans-medium"
+    }
+
+    .index-10-app-heading {
+        padding-left: 0
+    }
+
+    .index-10-app-newss__left ul li a h3 {
+        font-family: "NotoSans-medium";
+        margin-left: 14px;
+        padding-top: 14px
+    }
+
+    .index-10-app-newss__left ul li a {
+        margin-left: 0
+    }
+
+    .index-10-app-newss__left ul li a img {
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px
+    }
+
+    .index-10-app-newss .container>ul {
+        overflow: hidden;
+        overflow-x: auto;
+        width: 100%;
+        white-space: nowrap
+    }
+
+    .index-10-app-newss .container>ul::-webkit-scrollbar {
+        display: none
+    }
+
+    .index-10-app-newss .container>ul>li {
+        font-size: 14px;
+        width: 100%;
+        margin-right: 12px;
+        font-family: "NotoSans-medium"
+    }
+
+    .index-10-app {
+        overflow-x: hidden
+    }
+
+    .index-10-app-newss__control {
+        width: 70%
+    }
+
+    .index-25-app-body__head h2 {
+        padding-left: 16px;
+        padding-right: 16px
+    }
+
+    .index-4-app-right__headmb {
+        padding: 0 16px
+    }
+
+    .index-4-app-left {
+        padding-bottom: 34px
+    }
+
+    .index-25-app-body__slider {
+        margin: 0 16px
+    }
+
+    .index-4-app-left__pane>span:nth-child(3) {
+        height: 200px
+    }
+
+    .index-3-banner .container h2 {
+        font-size: 21px
+    }
+
+    .index-3-app {
+        padding-top: 34px
+    }
+
+    .index-3-app-menu span {
+        height: 42px
+    }
+
+    .index-3-app .container>ul li {
+        width: 164.04px;
+        height: 130.54px;
+        margin-bottom: 24px
+    }
+
+    .index-3-app .container>ul {
+        margin-top: 34px
+    }
+
+    .index-3-app .container>ul li:nth-child(5) {
+        margin-bottom: 0
+    }
+
+    .index-18-app-law ul {
+        margin: 0
+    }
+
+    .index-18-app-law ul li em button {
+        width: 90px;
+        height: 36px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px
+    }
+
+    .index-18-app-law ul li {
+        margin: 0 0 24px;
+        width: 100%
+    }
+
+    .index-18-app-law ul li em {
+        padding-top: 12px
+    }
+
+    .index-18-app-heading {
+        font-size: 16px
+    }
+
+    .index-18-banner .container h2 {
+        font-size: 20px
+    }
+
+    .index-18-app-common ul li {
+        margin-bottom: 24px
+    }
+
+    .index-18-app-common {
+        margin-top: 34px
+    }
+
+    .index-18-app-law ul li img {
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0
+    }
+
+    .index-18-app-law ul li, .index-18-app-common ul li {
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px;
+        overflow: hidden
+    }
+
+    .index-18-app-common ul li img {
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0
+    }
+
+    .index-18-app-common ul li em button a {
+        font-size: 15px
+    }
+
+    .index-21-app-body {
+        padding-top: 34px
+    }
+
+    .index-21-app-body ul:nth-child(2) li:nth-child(2), .index-21-app-body ul:nth-child(2) li:nth-child(4) {
+        padding-left: 16px
+    }
+
+    .index-22-app {
+        padding-bottom: 34px
+    }
+
+    .header-profile ul li a {
+        padding-left: 0
+    }
+
+    .header-profile ul {
+        padding-top: 16px;
+        top: 285px
+    }
+
+    .header-profile {
+        padding-top: 34px;
+        padding-bottom: 34px
+    }
+
+    .header-profile>span {
+        font-family: "NotoSans"
+    }
+
+    .index-14-app-profile__right>ul:nth-child(3) li a span {
+        font-family: "NotoSans-medium"
+    }
+
+    .index-14-app-profile__right #home2 ul {
+        padding-top: 34px
+    }
+
+    .index-14-app-profile__right #home2 ul li input {
+        height: 48px
+    }
+
+    .index-14-app-profile__right #home2 ul li:nth-child(2) button {
+        height: 28px;
+        width: 87px;
+        top: 45px
+    }
+
+    .index-14-app-profile__right #home2 ul li:nth-child(4) em select {
+        height: 48px
+    }
+
+    .index-14-app-profile__right #home2 ul li:nth-child(7) em select {
+        height: 48px
+    }
+
+    .index-14-app-profile__right-btn button {
+        height: 48px
+    }
+
+    .index-14-app-profile #home2 ul li:nth-child(4) em select {
+        width: 100%
+    }
+
+    .index-14-app-profile #home2 ul li:nth-child(4) em {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 12px
+    }
+
+    .index-14-app-profile__right #home2 ul li:nth-child(7) em {
+        width: 100%
+    }
+
+    .index-14-app-profile__right #home2 ul li:nth-child(7) em select {
+        width: 100%
+    }
+
+    .index-12-app .container ul li:nth-child(2) input {
+        height: 48px
+    }
+
+    .index-12-app .container {
+        top: 120px
+    }
+
+    .index-12-app .container ul {
+        padding-top: 0
+    }
+
+    .index-12-app .container ul li:nth-child(2) {
+        margin-top: -40px
+    }
+
+    .index-12-app .container ul li:nth-child(2) em:nth-child(4) a {
+        font-size: 16px;
+        width: 100%;
+        text-align: right
+    }
+
+    .index-12-app .container ul li:nth-child(2) em:nth-child(6) p {
+        font-size: 16px
+    }
+
+    .index-12-app .container ul li:nth-child(2) em:nth-child(8) a {
+        margin-left: 8px
+    }
+
+    .index-12-app .container ul li:nth-child(2) em:nth-child(7) img:nth-child(2) {
+        width: 70px;
+        height: 70px
+    }
+
+    .index-12-app .container ul li:nth-child(2) em:nth-child(7) img:nth-child(1) {
+        width: 70px;
+        height: 70px
+    }
+
+    .index-12-app .container ul {
+        padding-left: 16px;
+        padding-right: 16px
+    }
+
+    .index-12-app .container ul li:nth-child(2) em:nth-child(6) {
+        margin-top: 50px
+    }
+
+    .index-12-app .container ul {
+        position: static
+    }
+
+    .index-12-app .container ul li:nth-child(1) {
+        display: block
+    }
+
+    .index-12-app .container ul li:nth-child(2) {
+        margin-top: 0
+    }
+
+    .index-12-app .container ul li:nth-child(2) h2 {
+        font-size: 18px
+    }
+
+    .index-12-app .container ul li:nth-child(2) em:nth-child(8) span {
+        font-size: 16px
+    }
+
+    .index-12-app .container ul li:nth-child(2) em:nth-child(8) a {
+        font-size: 16px
+    }
+
+    .index-12-app .container ul li:nth-child(2) em:nth-child(8) {
+        margin-top: 12px
+    }
+
+    .index-13-app .container>ul>li:nth-child(2) h2 {
+        font-size: 18px
+    }
+
+    .index-13-app .container>ul>li:nth-child(2)>span {
+        font-size: 16px
+    }
+
+    .index-13-app .container>ul>li:nth-child(2) em:nth-child(3) a {
+        width: 173px
+    }
+
+    .index-13-app .container>ul {
+        padding-left: 16px;
+        padding-right: 16px
+    }
+
+    .index-13-app .container>ul>li:nth-child(2) #home1 em:nth-child(2) {
+        margin: 14px 0
+    }
+
+    .index-13-app .container>ul>li:nth-child(2) em:nth-child(3) {
+        margin-bottom: 14px
+    }
+
+    .index-13-app .container>ul>li:nth-child(2)>span {
+        font-family: "NotoSans"
+    }
+
+    .index-13-app .container>ul>li:nth-child(2) #home1>p {
+        margin-bottom: 44px
+    }
+
+    body {
+        overflow-x: hidden
+    }
+
+    .index-13-app .container>ul>li:nth-child(2) .tab-pane em:nth-child(1) input {
+        height: 48px
+    }
+
+    .index-13-app .container>ul>li:nth-child(2) #home2 .index13-js-home2-1>button {
+        height: 48px;
+        font-size: 18px
+    }
+
+    .index-13-app .container>ul>li:nth-child(2) #home2 em:nth-child(3) a {
+        font-size: 16px
+    }
+
+    .index-13-app .container>ul>li:nth-child(2) #home2 em:nth-child(3) {
+        margin-left: 40px
+    }
+
+    .index-13-app .container>ul>li:nth-child(2) .tab-pane em:nth-child(1) input {
+        padding-left: 13px
+    }
+
+    .index-13-app .container>ul>li:nth-child(3) span {
+        width: 100%;
+        font-size: 14px
+    }
+
+    .index-13-app .container>ul>li:nth-child(3) {
+        width: 100%
+    }
+
+    .index-13-app .container>ul {
+        padding-top: 40px
+    }
+
+    .index-12-app .container {
+        padding-top: 40px
+    }
+
+    .index-12-app .container ul li:nth-child(4) h2 {
+        font-size: 18px
+    }
+
+    .index-12-app .container ul li:nth-child(4) input {
+        height: 48px
+    }
+
+    .index-12-app .container ul li:nth-child(4) button {
+        font-size: 18px
+    }
+}

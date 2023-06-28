@@ -1,0 +1,42 @@
+head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="../css/style.css")
+    title Document
+body
+    .popup.popup4
+        .container
+            .popup-body.popup4-body
+                h1.popup-body__title Đăng ký thông tin
+                button.popup-body__exit
+                    img(src="../assets/images/1828774copy.png")
+                .popup4-body__info
+                    img(src="",alt="")
+                    ul
+                        li
+                            span Game:
+                            select
+                                option(selected) Chọn game
+
+                        li
+                            span Server: 
+                            select
+                                option(selected) Chọn server
+                        li
+                            span Giới tính:
+                            input 
+                        li
+                            span ID:
+                            input 
+                        li.popup4-body__info-item
+                            span Ảnh đại diện
+                            label(for="insetimg") Tải lên
+                                input(type="file")#insetimg         
+                        
+                    .popup4-body__info-register 
+                        span.popup4-body__info-false Đăng kí thất bại
+                        button Đăng ký
+
+script(src="../js/bootstrap.min.js")
+script(src="../js/index.js")

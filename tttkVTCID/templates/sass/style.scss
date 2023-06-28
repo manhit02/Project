@@ -1,0 +1,416 @@
+@font-face {
+  font-family: "BeVietnam-ExtraBold";
+  src: url("../assets/fonts/BeVietnam-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "BeVietnam-Medium";
+  src: url("../assets/fonts/BeVietnam-Medium.ttf");
+}
+@font-face {
+  font-family: "BeVietnam-LightItalic";
+  src: url("../assets/fonts/BeVietnam-LightItalic.ttf");
+}
+@font-face {
+  font-family: "BeVietnam-Light";
+  src: url("../assets/fonts/BeVietnam-Light.ttf");
+}
+@font-face {
+  font-family: "NotoSans-Regular";
+  src: url("../assets/fonts/NotoSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "NotoSans-SemiBold";
+  src: url("../assets/fonts/NotoSans-SemiBold.ttf");
+}
+@font-face {
+  font-family: "BeVietnam-Bold";
+  src: url("../assets/fonts/BeVietnam-Bold.ttf");
+}
+@font-face {
+  font-family: "BeVietnamPro-Regular";
+  src: url("../assets/fonts/BeVietnamPro-Regular.ttf");
+}
+@font-face {
+  font-family: "NotoSans-SemiBold";
+  src: url("../assets/fonts/NotoSans-SemiBold.ttf");
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, menu, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+menu,
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+a {
+ 
+  text-decoration: none;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin btn($url) {
+  background: url($url) center/contain no-repeat;
+}
+
+@mixin backg($url) {
+  background: url($url) center no-repeat;
+  background-size: 100% 100%;
+}
+
+@mixin boxsd($color, $color1, $color2) {
+  box-shadow: inset 1px 1px 5px $color, inset -1px 1px 5px $color, inset -1px -1px 5px $color, inset 1px -1px 5px $color;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  background: linear-gradient($color1, $color2);
+}
+.nav-tabs {
+  border: none;
+}
+.nav-tabs .nav-link {
+  border: none;
+}
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  border: none;
+}
+.dropdown-toggle::after {
+  width: 24px;
+  height: 21px;
+  border: none;
+  background: url("../assets/images/btn.png") center / contain no-repeat;
+}
+body {
+  overflow-x: hidden;
+}
+
+
+.footer {
+  background: #f2f2f2;
+  display: flex;
+  padding: 36px 0;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+
+  & .container {
+    display: flex;
+  }
+
+  span {
+    font-size: 16px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+  }
+
+  &-logo {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+    span {
+      display: flex;
+      flex-direction: column;
+      font-size: 16px;
+      font-family: "NotoSans-SemiBold";
+      color: #0060af;
+
+      strong {
+        margin-top: 3px;
+      }
+    }
+
+    &__img {
+      display: flex;
+      position: relative;
+      align-items: center;
+
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 10px;
+        height: 10px;
+        // @include btn("../assets/images/x.png");
+        top: 13px;
+        left: 88px;
+      }
+
+      img {
+        margin-bottom: 24px;
+        object-fit: contain;
+
+        &:nth-child(1) {
+          margin-right: 10px;
+        }
+
+        &:nth-child(2) {
+          margin-left: 10px;
+          width: 176px;
+          height: 30px;
+        }
+      }
+    }
+  }
+
+  &-info {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+
+    span {
+      color: #0060af;
+      font-size: 16px;
+      font-family: "NotoSans-SemiBold";
+    }
+
+    & > a {
+      font-size: 16px;
+      font-family: "NotoSans-Regular";
+
+      margin-top: 5px;
+      margin-bottom: 26px;
+    }
+
+    table {
+      tr {
+        height: 30px;
+        td {
+          a {
+            font-size: 16px;
+            font-family: "NotoSans-Regular";
+          }
+
+          img {
+            margin-right: 10px;
+          }
+        }
+
+        &:nth-child(1) {
+          td {
+            font-family: "NotoSans-SemiBold";
+
+            color: #0060af;
+            padding-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  &-address {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+      margin-bottom: 26px;
+
+      h5 {
+        font-family: "NotoSans-SemiBold";
+
+        font-size: 16px;
+        color: #0060af;
+      }
+
+      p {
+        margin-top: 5px;
+        font-size: 16px;
+        font-family: "NotoSans-Regular";
+      }
+    }
+  }
+}
+
+// pc hight
+@media (min-width: 2001px) {
+  .hidepc {
+    display: none;
+  }
+  
+
+}
+// tablet
+@media (min-width: 1280px) and (max-width: 2000px) {
+  .hidepc {
+    display: none;
+  }
+
+  
+}
+// tablet vs pc low
+@media (min-width: 740px) and (max-width: 1280px) {
+
+  .footer {
+    &-logo {
+      span {
+        font-size: 14px;
+      }
+    }
+    &-info {
+      span {
+        font-size: 14px;
+      }
+      & > a {
+        font-size: 12px;
+      }
+    }
+  }
+  .footer-info table tr:nth-child(1) td {
+    font-size: 13px;
+  }
+  .footer-address__item h5 {
+    font-size: 14px;
+  }
+  .footer-address__item p {
+    font-size: 12px;
+  }
+  
+}
+// pc low
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .hidepc {
+    display: none;
+  }
+  
+}
+
+//
+/* tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .hidepc {
+    display: none;
+  }
+ 
+  .footer {
+    height: unset;
+
+    & .container {
+      flex-direction: column;
+    }
+
+    &-info {
+      width: 100%;
+      & > a {
+        margin-top: 14px;
+      }
+    }
+
+    &-address {
+      width: 100%;
+    }
+
+    &-logo {
+      width: 100%;
+      line-height: 1.6;
+    }
+  }
+}
+
+/* mobile */
+
+@media (max-width: 739px) {
+  .hidemb {
+    display: none !important;
+  }
+  .footer {
+    height: unset;
+
+    & .container {
+      flex-direction: column;
+    }
+
+    &-info {
+      width: 100%;
+      & > a {
+        margin-top: 12px;
+      }
+    }
+
+    &-address {
+      width: 100%;
+    }
+
+    &-logo {
+      width: 100%;
+      line-height: 1.6;
+    }
+  }
+}
+

@@ -1,0 +1,128 @@
+head
+  meta(charset="UTF-8")
+  meta(http-equiv="X-UA-Compatible", content="IE=edge")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css")
+  link(rel="stylesheet" href="../css/style.css")
+  title Document
+body
+  .app
+    .container
+      .ttcn
+        ul.nav.nav-tab(role="tablist")#myTab.mytab
+          li.nav-item
+            a.nav-link.active(data-bs-toggle="tab" href="#home")
+              .mytab-item
+                img(src='../assets/images/item1.svg').mytab-item__img
+                .mytab-item__des
+                  h2.mytab-item__des-h2 Thông tin chung
+                  p.mytab-item__des-p Xem và cập nhật thông tin cá nhân
+
+          li.nav-item
+            a.nav-link.active(data-bs-toggle="tab" href="#home")
+              .mytab-item
+                img(src='../assets/images/item2.svg').mytab-item__img
+                .mytab-item__des
+                  h2.mytab-item__des-h2 Bảo mật tài khoản 
+                  p.mytab-item__des-p Các tiện ích bảo mật tài khoản VTC
+                
+          li.nav-item
+            a.nav-link.active(data-bs-toggle="tab" href="#home")
+              .mytab-item
+                img(src='../assets/images/item3.svg').mytab-item__img
+                .mytab-item__des
+                  h2.mytab-item__des-h2 Lịch sử giao dịch 
+                  p.mytab-item__des-p Lịch sử giao dịch
+        .tab-content.mytab-content
+          .tab-pane.active
+            h1.ttcn-heading Thông tin tài khoản:
+            ul.ttcn-ul
+              .ttcn-ul__li 
+                span.ttcn-ul__li-span Số tài khoản:
+                p.ttcn-ul__li-p 1255612290
+              .ttcn-ul__li 
+                span.ttcn-ul__li-span Tổng Vcoin:
+                p.ttcn-ul__li-p 2000 Vcoin
+              .ttcn-ul__li 
+                span.ttcn-ul__li-span Số Vcoin khả dụng:
+                p.ttcn-ul__li-p 1000 Vcoin
+              .ttcn-ul__li 
+                span.ttcn-ul__li-span Ngày đăng ký:
+                p.ttcn-ul__li-p 07/03/2023
+              .ttcn-ul__li 
+                span.ttcn-ul__li-span Email:
+                p.ttcn-ul__li-p abc****@*****
+                a.ttcn-ul__li-a(href="")
+                  img(src="../assets/images/item4.png")
+
+              .ttcn-ul__li 
+                span.ttcn-ul__li-span Số điện thoại:
+                p.ttcn-ul__li-p 0337520***
+                a.ttcn-ul__li-a(href="")
+                  img(src="../assets/images/item4.png").ttcn-ul__li-a__img1
+                  img(src="../assets/images/item5.png").ttcn-ul__li-a__img2
+          
+            h1.ttcn-heading Thông tin cá nhân:
+            ul.ttcn-ul
+              .ttcn-ul__li 
+                span.ttcn-ul__li-span Họ và tên:
+                input.ttcn-ul__li-input(placeholder="HỌ VÀ TÊN")
+              .ttcn-ul__li 
+                span.ttcn-ul__li-span Danh sách tài khoản dùng số điện thoại:
+                p.ttcn-ul__li-p 2000 Vcoin
+              .ttcn-ul__li 
+                span.ttcn-ul__li-span Giới tính: 
+                select
+                  option NAM
+                  option NỮ
+              .ttcn-ul__li 
+                span.ttcn-ul__li-span Ngày sinh:
+                input(type="date")
+
+              .ttcn-ul__li 
+                span.ttcn-ul__li-span Tỉnh/Thành phố:
+                input.ttcn-ul__li-input(placeholder="HỌ VÀ TÊN")
+
+                a.ttcn-ul__li-a(href="")
+                  img(src="../assets/images/item4.png")
+            a(href="").ttcn-btn Cập Nhật
+  footer.footer
+    .container
+      .footer-logo
+        .footer-logo__img
+          img(src='../assets/images/logo1.svg' alt='')
+        span TỔNG CÔNG TY TRUYỀN THÔNG ĐA PHƯƠNG TIỆN (VTC) <strong>CÔNG TY VTC CÔNG NGHỆ VÀ NỘI DUNG SỐ (VTC INTECOM)</strong>
+      .footer-info
+        span CHỊU TRÁCH NHIỆM QUẢN LÝ NỘI DUNG:
+        a(href='') Ông Trần Phương Huy    
+        table
+          tr 
+            td THÔNG TIN LIÊN HỆ
+          tr
+            td
+
+              img(alt="",src="../assets/images/icon_web.png")
+              a(href='hotro.vtc.vn') info.vtcgame@vtc.vn
+          tr
+            td
+              img(alt="",src="../assets/images/icon_fax.png")
+              a(href='mailto:cskh.au@vtc.vn') 024.3636.7728
+          tr
+            td
+              img(alt="",src="../assets/images/icon_face.png")
+              a(href='fb.com/auditionvtc') fb.com/congvtcgame
+          tr
+            td
+              img(alt="",src="../assets/images/icon_cskh.png")
+              a(href='fb.com/auditionvtc') 1900 1530
+      .footer-address
+        .footer-address__item
+
+          h5 TRỤ SỞ HÀ NỘI
+          p Tầng 14, Tòa nhà VTC 23 Lạc Trung, Quận Hai Bà Trưng, Hà Nội
+        .footer-address__item
+          h5 VĂN PHÒNG ĐẠI DIỆN TP. HỒ CHÍ MINH
+          p 259 Đồng Đen, Phường 10, Quận Tân Bình, TP. Hồ Chí Minh
+script(src="../js/swiper.js")
+script(src="../js/bootstrap.min.js")
+script(src="../js/index.js")

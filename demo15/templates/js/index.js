@@ -39,6 +39,13 @@ try {
 }
 // header
 try {
+    $one(".header-top__menumb-overlay").onclick=()=>{
+        console.log(1)
+        $one(".js-menumb").classList.remove('active');
+        $one(".js-showmenu").style.display = "none"
+        $one(".js-showmenu").style.display = "block"
+
+    }
     $one(".js-showmenu").onclick = () => {
         $one(".js-menumb").classList.add('active');
         $one(".js-showmenu").style.display = "none"
@@ -79,6 +86,8 @@ try {
         $one(".popup-thanhcong").style.display="none"
 
     }
+   
+    
 
 
 } catch (e) {
@@ -178,12 +187,7 @@ try {
         value.onclick = () => {
             value.classList.toggle('active')
             $$all('.js-index4-resulf li').forEach((value) => {
-
-
                 value.classList.remove('active')
-
-
-
             })
 
         }
@@ -673,7 +677,7 @@ try {
         $one('.index14-js-2').style.display = "none"
         $one('.index14-js-6').style.marginBottom = "0"
 
-        fiveMinutes = 1,
+        fiveMinutes = 60*5,
             display = document.querySelector('.index14-js-countdown');
         startTimer(fiveMinutes, display);
 

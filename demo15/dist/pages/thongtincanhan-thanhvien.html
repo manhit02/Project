@@ -53,16 +53,18 @@
           </div>
         </div>
       </div>
-      <div class="header-nav js-nav"><a class="header-nav__homemb" href="./home.html"></a>
-        <ul>
-          <li><a href="./home.html">Trang chủ</a></li>
-          <li><a href="./gioithieu.html">Giới thiệu    </a></li>
-          <li><a href="./tintuc.html">Tin tức   </a></li>
-          <li><a href="./thi.html">Thi </a></li>
-          <li><a href="./hoctap.html">Học tập  </a></li>
-          <li> <a href="#">Tra cứu </a></li>
-          <li><a href="#">Liên hệ</a></li>
-        </ul>
+      <div class="header-nav js-nav">
+        <div class="container"><a class="header-nav__homemb" href="./home.html"></a>
+          <ul>
+            <li><a href="./home.html">Trang chủ</a></li>
+            <li><a href="./gioithieu.html">Giới thiệu    </a></li>
+            <li><a href="./tintuc.html">Tin tức   </a></li>
+            <li><a href="./thi.html">Thi </a></li>
+            <li><a href="./hoctap.html">Học tập  </a></li>
+            <li> <a href="#">Tra cứu </a></li>
+            <li><a href="#">Liên hệ</a></li>
+          </ul>
+        </div>
       </div>
       <div class="header-profile js-profile"><img src="../assets/images/8.png" alt=""><span>Tên đăng nhập: <strong>vanminh12</strong></span><span>Số tài khoản:  <strong>123456</strong></span>
         <ul>
@@ -323,7 +325,7 @@
                       <li> <span>Email<strong>*</strong></span>
                         <input placeholder="Email">
                       </li>
-                      <li><span>Nơi học tập <strong>*</strong></span><em>
+                      <li class="index15-js-info__update"><span>Nơi học tập <strong>*</strong></span><em>
                           <select name="tinh" id="tinh">
                             <option value="" selected>Tỉnh/Thành phố</option>
                             <option>1</option>
@@ -501,7 +503,7 @@
                             <option>2023</option>
                           </select></em><em>
                           <select name="lop" id="lop">
-                            <option value="" selected>Lớp</option>
+                            <option value="" selected>Khối lớp</option>
                             <option>1900</option>
                             <option>1901</option>
                             <option>1902</option>
@@ -626,7 +628,8 @@
                             <option>2021</option>
                             <option>2022</option>
                             <option>2023</option>
-                          </select></em></li>
+                          </select></em><em>
+                          <input placeholder="Lớp"></em></li>
                       <li> <span>Ngày sinh</span><em>
                           <select name="day" id="day">
                             <option value="" selected>Ngày</option>
@@ -869,6 +872,18 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="popup-index14">
+      <div class="popup-index14__body">
+        <h2>Nhập mã OTP<br> để xác nhận tài khoản</h2>
+        <p class="index14-js-5 active">Mã OTP đã được gửi về số điện thoại <strong>0797208888.</strong><br>Vui lòng nhập mã để xác nhận</p>
+        <p class="index14-js-4">Để nhận lại mã OTP, vui lòng soạn tin:<br><strong>EB DK</strong> gửi đến số <strong>8030</strong></p>
+        <input class="index14-js-6" placeholder="Nhập mã OTP"><span class="index14-js-1 active">Mã OTP có hiệu lực trong vòng<strong class="index14-js-countdown"></strong></span><span class="index14-js-2">Mã OTP đã hết hạn.<br> Nhấn <a class="index14-js-3">Gửi lại</a> để nhận lại mã.</span>
+        <div class="popup-index14__body-btn">
+          <button>Đổi sđt </button>
+          <button class="index14-js-xn">Xác nhận</button>
+        </div><span class="index14-js-closepopup"> <img src="../assets/images/app14-close.png"></span>
       </div>
     </div>
     <footer class="footer">

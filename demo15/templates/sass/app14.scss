@@ -722,7 +722,6 @@
                         display: flex;
                         width: 70%;
 
-                
                         button {
                             position: absolute;
                             display: block;
@@ -769,8 +768,7 @@
     }
 }
 .index-17-app {
-    &-profile{
-
+    &-profile {
         &__right {
             ul {
                 li {
@@ -799,68 +797,68 @@
                             font-size: 16px;
                         }
                     }
-                   
                 }
             }
-           
         }
     }
 }
-.index-14-app{&-profile{
-    &__right{
-        & #home2{
-            ul{li{
-                &:nth-child(2){
-
-                  
-                  button{
-                      margin-left: 26px;
-                      min-width: 20%;
-                      height: 42px;
-                      background: #98D0FF;
-                      border: 1px solid #0066BC;
-                      border-radius: 10px;
-                      font-family: 'NotoSans';
-                      font-size: 16px;
-                      line-height: 22px;
-                      text-align: center;
-                      color: #0066BC;
-                      -webkit-border-radius: 10px;
-                      -moz-border-radius: 10px;
-                      -ms-border-radius: 10px;
-                      -o-border-radius: 10px;
-    }
+.index-14-app {
+    &-profile {
+        &__right {
+            & #home2 {
+                ul {
+                    li {
+                        &:nth-child(2) {
+                            button {
+                                margin-left: 26px;
+                                min-width: 20%;
+                                height: 42px;
+                                background: #98d0ff;
+                                border: 1px solid #0066bc;
+                                border-radius: 10px;
+                                font-family: "NotoSans";
+                                font-size: 16px;
+                                line-height: 22px;
+                                text-align: center;
+                                color: #0066bc;
+                                -webkit-border-radius: 10px;
+                                -moz-border-radius: 10px;
+                                -ms-border-radius: 10px;
+                                -o-border-radius: 10px;
+                            }
+                        }
+                    }
                 }
-            }}      
-      }
-      & #menu3{
-        ul{li{
-            &:nth-child(2){
-
-              button{
-                  margin-left: 26px;
-                  min-width: 20%;
-                  height: 42px;
-                  background: #98D0FF;
-                  border: 1px solid #0066BC;
-                  border-radius: 10px;
-                  font-family: 'NotoSans';
-                  font-size: 16px;
-                  line-height: 22px;
-                  text-align: center;
-                  color: #0066BC;
-                  -webkit-border-radius: 10px;
-                  -moz-border-radius: 10px;
-                  -ms-border-radius: 10px;
-                  -o-border-radius: 10px;
-    }
             }
-        }}      
-  }
+            & #menu3 {
+                ul {
+                    li {
+                        &:nth-child(2) {
+                            button {
+                                margin-left: 26px;
+                                min-width: 20%;
+                                height: 42px;
+                                background: #98d0ff;
+                                border: 1px solid #0066bc;
+                                border-radius: 10px;
+                                font-family: "NotoSans";
+                                font-size: 16px;
+                                line-height: 22px;
+                                text-align: center;
+                                color: #0066bc;
+                                -webkit-border-radius: 10px;
+                                -moz-border-radius: 10px;
+                                -ms-border-radius: 10px;
+                                -o-border-radius: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-}}
+}
 .popup-index14 {
- 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1005,9 +1003,9 @@
         }
     }
 }
-.popup2-index14{
-  display: flex;
-   
+.popup2-index14 {
+    display: flex;
+
     align-items: center;
     justify-content: center;
     position: fixed;
@@ -1016,7 +1014,7 @@
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
-    &__body{
+    &__body {
         padding-bottom: 31px;
         padding-top: 30px;
         position: relative;
@@ -1039,15 +1037,15 @@
             br {
                 display: none;
             }
-        } 
+        }
         p {
-            font-family: 'NotoSans';
-          
+            font-family: "NotoSans";
+
             font-size: 20px;
             line-height: 27px;
-           
+
             text-align: center;
-            color: #212C42;
+            color: #212c42;
             margin-bottom: 16px;
         }
         span {
@@ -1136,4 +1134,59 @@
             }
         }
     }
+}
+.index15-js-info__update {
+    height: 178px !important;
+    em {
+        &:nth-child(4) {
+            width: 100% !important;
+        }
+        &:nth-child(5) {
+            margin-left: 20% !important;
+        }
+        &:nth-child(6) {
+            margin-left: 2%;
+            input {
+                width: calc(100%);
+                padding: 0 0 0 10px;
+                height: 40px;
+                background: #ffffff;
+                border: 1px solid #c5c5c5;
+                border-radius: 7px;
+                -webkit-border-radius: 7px;
+                -moz-border-radius: 7px;
+                -ms-border-radius: 7px;
+                -o-border-radius: 7px;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 27px;
+                font-family: "NotoSans";
+                color: #212c42;
+                &::placeholder {
+                    font-family: "NotoSans-Light";
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: rgba(139, 146, 150, 0.71);
+                }
+            }
+        }
+    }
+}
+@media (max-width: 739px){
+    .index15-js-info__update {
+        height: unset !important;
+        
+    }  
+}
+@media (min-width: 740px) and (max-width: 1023px){
+    .index15-js-info__update {
+        height: unset !important;
+        em{
+            &:nth-child(5) {
+                margin-left: 30% !important;
+            }
+        }
+    } 
+
 }

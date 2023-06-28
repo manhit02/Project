@@ -1,0 +1,83 @@
+head
+  meta(charset="UTF-8")
+  meta(http-equiv="X-UA-Compatible", content="IE=edge")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  link(rel="stylesheet" href="../css/style.css")
+  title Document
+body
+  header.header
+    .container
+      .header-nav
+        a(href="#").header-nav__logo
+          img(src="../assets/images/logo1.svg" alt="")
+        ul.header-nav__menu
+          li 
+            a(href="") Trang chủ
+          li
+            a(href="") Bạn cần trợ giúp? 
+        .header-nav__login.active
+          a(href="").header-nav__login1 Đăng nhập
+
+          .header-nav__login2
+            .header-nav__login2-info
+              img(src="../assets/images/avata.svg" alt="").header-nav__login2-info__img
+              p.header-nav__login2-info__p esportvn2104
+              img(src="../assets/images/row.png" alt="").header-nav__login2-info__img2     
+            .header-nav__login2-vcoin 
+              span.header-nav__login2-vcoin__span 285 
+              p.header-nav__login2-vcoin__p  Vcoin
+            ul.header-nav__login2-ul
+              li.header-nav__login2-ul__li.header-nav__login2-ul__li1
+                a(href="#").header-nav__login2-ul__li-a 
+                  p.header-nav__login2-ul__li-p Thông tin tài khoản
+                  img(alt="" src="../assets/images/avata.svg").header-nav__login2-ul__li-img
+              li.header-nav__login2-ul__li
+                a(href="#").header-nav__login2-ul__li-a 
+                  p.header-nav__login2-ul__li-p Đăng xuất
+                  img(alt="" src="../assets/images/Vector.svg").header-nav__login2-ul__li-img
+
+
+
+
+        ul.header-nav__menumb.hidepc.nav.nav-tabs
+          li.nav-item.dropdown
+            a.nav-link.dropdown-toggle(data-bs-toggle="dropdown" href="#")
+            ul.dropdown-menu
+              li
+                a.dropdown-item(href="#") Trang chủ
+              li
+                a.dropdown-item(href="#") Trợ giúp
+
+  footer.footer
+    .container
+      .footer-logo
+        .footer-logo__img
+          img(src='../assets/images/logo1.svg' alt='')
+        span TỔNG CÔNG TY TRUYỀN THÔNG ĐA PHƯƠNG TIỆN (VTC) <strong>CÔNG TY VTC CÔNG NGHỆ VÀ NỘI DUNG SỐ (VTC INTECOM)</strong>
+      .footer-info
+        span CHỊU TRÁCH NHIỆM QUẢN LÝ NỘI DUNG:
+        a(href='') Ông Trần Phương Huy    
+        table
+          tr 
+            td THÔNG TIN LIÊN HỆ
+          tr
+            td
+              img(alt="",src="../assets/images/icon_face.svg")
+              a(href='fb.com/auditionvtc') fb.com/congvtcgame
+          tr
+            td 
+              img(alt="",src="../assets/images/icon_web.svg")
+              a(href='hotro.vtc.vn') hotro.vtc.vn
+
+      .footer-address
+        .footer-address__item
+
+          h5 TRỤ SỞ HÀ NỘI
+          p Tầng 14, Tòa nhà VTC 23 Lạc Trung, Quận Hai Bà Trưng, Hà Nội
+        .footer-address__item
+          h5 VĂN PHÒNG ĐẠI DIỆN TP. HỒ CHÍ MINH
+          p 259 Đồng Đen, Phường 10, Quận Tân Bình, TP. Hồ Chí Minh
+
+script(src="../js/swiper.js")
+script(src="../js/bootstrap.min.js")
+script(src="../js/index.js")

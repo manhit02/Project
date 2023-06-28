@@ -1,0 +1,1081 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../assets/font/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "SVNJusticeLeague";
+  src: url("../assets/font/SVNJusticeLeague.otf");
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+menu,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+menu,
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+
+  &:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin backg($url) {
+  background: url($url) center no-repeat;
+  background-size: 100% 100%;
+}
+
+.header {
+  position: relative;
+  z-index: 2;
+  padding: 25px 0 20px;
+  background: #050d18;
+  border-bottom: 2px solid #a82527;
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__btn {
+      display: flex;
+      align-items: center;
+      &1 {
+        border: 1px solid #b7352d;
+        width: 34px;
+        height: 34px;
+        background: #aa2628;
+        @include flex();
+      }
+
+      &2,
+      &3 {
+        margin-left: 12px;
+
+        padding-top: 4px;
+        @include flex();
+        font-family: "SVNJusticeLeague";
+        color: #fff;
+        font-size: 24px;
+
+        width: 125px;
+        height: 34px;
+        clip-path: polygon(5% 0, 100% 0, 100% 80%, 95% 100%, 0 100%, 0 20%);
+      }
+      &2 {
+        margin-right: 5px;
+        background-color: #ab2a2b;
+        border-bottom: 1px solid #ed6767;
+      }
+      &3 {
+        background-color: #ab5a2a;
+        border-bottom: 1px solid #df9264;
+
+      }
+    }
+  }
+}
+.app {
+  position: relative;
+  z-index: 1;
+  background: url("../assets/images/bg.jpg") center / cover no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 55px;
+  &-logo {
+    height: 870px;
+    position: relative;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &1 {
+      position: absolute;
+      top: 0;
+      width: 832px;
+      margin-top: -75px;
+    }
+    &2,
+    &3 {
+      position: absolute;
+    }
+    &2 {
+      top: 493px;
+      width: 241px;
+      height: 77px;
+    }
+    &3 {
+      top: 527px;
+    }
+  }
+  &-rule {
+    margin-bottom: 40px;
+    color: #fff;
+    font-family: "Roboto-Regular";
+    font-size: 24px;
+    text-decoration: underline;
+    text-align: center;
+  }
+  &-item {
+    position: relative;
+    padding: 48px 61px 88px 51px;
+    margin: auto;
+    width: 1255px;
+    height: 698px;
+    @include backg("../assets/images/khung1.png");
+    &1,
+    &2,
+    &3,
+    &4,
+    &5,
+    &6 {
+      position: absolute;
+    }
+    &__head {
+      position: absolute;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      h1 {
+        font-size: 77px;
+        color: #fff;
+        font-family: "SVNJusticeLeague";
+        text-shadow: 0px 0px 5px #ff2517, 0px 0px 5px #ff2517, 0px 0px 5px #ff2517, 0px 0px 5px #ff2517;
+      }
+      p {
+        line-height: 77px;
+        text-align: end;
+        font-size: 38px;
+        color: #fff;
+        font-family: "SVNJusticeLeague";
+        text-shadow: 0px 0px 5px #ff2517, 0px 0px 5px #ff2517, 0px 0px 5px #ff2517, 0px 0px 5px #ff2517;
+      }
+      span {
+        margin-left: 15px;
+        margin-right: 24px;
+        display: block;
+        width: 3px;
+        height: 56px;
+        background-color: #fff;
+      }
+    }
+    &__body {
+      ul {
+        display: flex;
+        align-items: flex-end;
+
+        li {
+          img{
+          &:hover{
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+}
+          }
+          p {
+            font-size: 25px;
+            color: #fff;
+            font-family: "SVNJusticeLeague";
+            margin-top: 12px;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    &1 {
+      top: 132px;
+      right: 197px;
+    }
+    &9 {
+      margin-right: 190px;
+    }
+    &2 {
+      top: 120px;
+      left: 484px;
+    }
+    &3 {
+      top: 50px;
+      right: 48px;
+    }
+    &4 {
+      right: 0;
+      top: 50px;
+    }
+    &5 {
+      top: 96px;
+      left: 380px;
+      img {
+        width: 236px;
+        height: 332px;
+      }
+    }
+    &6 {
+      bottom: -40px;
+      left: 434px;
+      &__img {
+        &1 {
+          width: 137px;
+          height: 73px;
+        }
+      }
+    }
+    &7 {
+      margin-right: 37px;
+    }
+    &8 {
+      margin-right: 69px;
+    }
+    &10 {
+      margin-right: 470px;
+      height: 556px;
+      p {
+        position: absolute;
+        bottom: 0;
+        left: 128px;
+      }
+    }
+    &11 {
+      img {
+        height: 130px;
+      }
+    }
+  }
+  &-vip {
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+    }
+  }
+  &-svip {
+  }
+  &-btn {
+    margin-top: 18px;
+    margin-bottom: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding-top: 4px;
+      font-size: 61px;
+      font-family: "SVNJusticeLeague";
+      color: #fff;
+      min-width: 385px;
+      height: 107px;
+      background: url("../assets/images/btn1.png") center no-repeat;
+      background-size: 100% 100%;
+      &.active {
+        display: flex;
+      }
+    }
+    &1 {
+      &:hover {
+        cursor: default;
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+      }
+      filter: grayscale(1);
+      -webkit-filter: grayscale(1);
+    }
+    &3 {
+      margin-bottom: 0;
+    }
+  }
+  &-vip,
+  &-svip,
+  &-legendary {
+    &__body {
+      ul {
+        position: relative;
+        display: flex;
+      }
+    }
+  }
+}
+
+.footer {
+  background: #222529;
+  padding: 20px 0;
+  & .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &-img {
+    margin-bottom: 20px;
+    &1{margin-right: 12px;}
+  }
+  &-info {
+    line-height: 1.5;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Roboto-Regular";
+    color: #fff;
+  }
+}
+
+@media (min-width: 2001px) {
+  .hidepc {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 2000px) {
+  .hidepc {
+    display: none;
+  }
+}
+
+// pc low
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .hidepc {
+    display: none;
+  }
+}
+
+//
+/* tablet ,MB,pc low */
+
+@media (max-width: 1280px) {
+  .hidepc {
+    display: none;
+  }
+  .app {
+    &-item {
+      width: 100%;
+      &__head {
+        h1 {
+          font-size: 50px;
+        }
+        p {
+          font-size: 30px;
+        }
+      }
+      &__body {
+        ul {
+          transform: scale(0.9);
+          -webkit-transform: scale(0.9);
+          -moz-transform: scale(0.9);
+          -ms-transform: scale(0.9);
+          -o-transform: scale(0.9);
+          li {
+            p {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+      &1 {
+        right: -40px;
+        top: 40px;
+      }
+      &2 {
+        left: 344px;
+      }
+      &3 {
+        right: -80px;
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+      }
+      &4 {
+        right: -140px;
+        transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+        -moz-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+        -o-transform: scale(0.7);
+      }
+      &6 {
+        left: 334px;
+        bottom: -60px;
+      }
+      &5 {
+        left: 320px;
+      }
+      &7,
+      &8 {
+        margin-right: 30px;
+      }
+      &10 {
+        margin-right: 340px;
+        margin-left: -50px;
+        p {
+          left: 88px;
+        }
+      }
+    }
+
+    &-btn {
+      button {
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+      }
+      &1 {
+        &:hover {
+          transform: scale(0.8);
+          -webkit-transform: scale(0.8);
+          -moz-transform: scale(0.8);
+          -ms-transform: scale(0.8);
+          -o-transform: scale(0.8);
+        }
+      }
+      &2 {
+        &:hover {
+          transform: scale(0.9);
+          -webkit-transform: scale(0.9);
+          -moz-transform: scale(0.9);
+          -ms-transform: scale(0.9);
+          -o-transform: scale(0.9);
+        }
+      }
+    }
+  }
+}
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .hidepc {
+    display: none;
+  }
+  .app {
+    &-logo{
+      width: 100%;
+      &1{width: 100%;}
+    }
+    &-item {
+      height: 590px;
+      padding-left: 16px;
+      padding-right: 16px;
+      
+      &__body {
+        ul {
+          transform: scale(0.7);
+          -webkit-transform: scale(0.7);
+          -moz-transform: scale(0.7);
+          -ms-transform: scale(0.7);
+          -o-transform: scale(0.7);
+        }
+      }
+      &2{left: 264px;}
+      &3{right: -150px;}
+      &4{right: -200px;}
+      &5{left: 210px;}
+
+      &6{left: 250px;}
+      &7,
+      &9,&10{
+        margin-right: 30px;
+        margin-left: -100px;
+      }
+      &9{
+        margin-right: 200px;
+      }
+     
+      &10 {
+        margin-right: 350px;
+        margin-left: -140px;
+        transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -o-transform: scale(0.9);
+        p
+{
+          left: 128px;
+        }
+      }
+    }
+    &-legendary{
+      & .app-item__head{
+        h1{
+          font-size: 46px;
+        }
+      }
+    }
+    &-btn {
+      button {
+        transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+        -moz-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+        -o-transform: scale(0.7);
+}
+      &1 {
+        &:hover {
+          transform: scale(0.7);
+          -webkit-transform: scale(0.7);
+          -moz-transform: scale(0.7);
+          -ms-transform: scale(0.7);
+          -o-transform: scale(0.7);
+}
+      }
+      &2 {
+        &:hover {
+          transform: scale(0.8);
+          -webkit-transform: scale(0.8);
+          -moz-transform: scale(0.8);
+          -ms-transform: scale(0.8);
+          -o-transform: scale(0.8);
+}
+      }
+    }
+  }
+}
+/* mobile */
+
+@media (max-width: 739px) {
+  .hidemb {
+    display: none !important;
+  }
+  .header{
+    padding: 16px 0;
+    &-nav{
+      &>a{
+        img{
+          width: 76px;
+          height: 27px;
+        }
+      }
+      &__btn{
+        &1{width: 18px;height: 18px;
+        img{width: 13px;height: 13px;}}
+        &2,&3{width: 66px;height: 18px;
+        font-size: 13px;}
+      }
+    }
+  }
+  .app{
+    &-logo{
+      height: 600px;
+      &1{
+
+        width: 100%;
+        margin-top: 0;
+      }
+      &2{
+        top: 400px;
+        
+        width: 125px;height: 40px;}
+      &3{
+        top: 420px;
+        width: 100%;}
+    }
+    &-rule{margin-top: 30px;margin-bottom: 20px;}
+    &-item{ height: 200px;
+      padding: 16px;
+     &__head{
+      h1{font-size: 22px;}
+      p{font-size: 11px;
+      line-height: 22px;
+      }
+      span{height: 16px;
+        width: 1px;
+      
+      margin-left: 4px;margin-right: 6px;}
+     }
+     &__body{
+      ul{li{p{
+        margin-top: 4px;
+        font-size: 10px;}}}
+     }
+     &1{
+      right: 0;top: 0;
+      img{
+
+        width: 139px;height: 60px;
+      }
+     }
+     &2{left: 134px;top: 30px;}
+     &3{
+      right: -20px;
+      top: -10px;
+      img{
+
+        width: 127px;height: 85px;
+      }
+    }
+    &4{
+      top: 10px;right: -40px;
+      img{width: 163px;height: 89px;}
+    }
+    &5{
+      left: 100px;top: 16px;
+      img{
+
+        width: 69px;height: 96px;
+      }
+    }
+    &6{
+      display: flex;
+     
+      align-items: center;
+      flex-direction: column;
+     
+      
+      left: 110px;
+      bottom: -20px;
+      &__img{
+        &1{
+          width: 39px;height: 29px;
+        }
+        &2{
+          height: 51px;height: 29px;
+        }
+      }
+    }
+     &7{
+      margin-right: 50px;
+      img{
+
+        width: 100px;height: 140px;
+      }
+    }
+    &8,&2{
+      img{
+
+        width: 35px;height: 46px;
+      }
+    }
+    &9{
+      margin-right: 100px;
+      img{
+
+        width: 100px;height: 140px;
+      }
+    }
+    &10{
+      margin-left: -10px;
+      margin-right: 170px;
+   height: 160px;
+   img{height: 187px;}
+    }
+    p{
+      left: 18px;
+    }
+    &11{
+      img{
+
+        width: 25px;
+        height: 38px;
+      }
+    }
+    &14,&12{
+      img{
+
+        width: 75px;height: 40px;
+      }
+    }
+
+}
+&-btn {
+  margin-top: 0;margin-bottom: 10px;
+  button {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+}
+  &1 {
+    &:hover {
+      transform: scale(0.5);
+      -webkit-transform: scale(0.5);
+      -moz-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+      -o-transform: scale(0.5);
+}
+  }
+  &2 {
+    &:hover {
+      transform: scale(0.6);
+      -webkit-transform: scale(0.6);
+      -moz-transform: scale(0.6);
+      -ms-transform: scale(0.6);
+      -o-transform: scale(0.6);
+}
+  }
+}
+  }
+  .footer{
+    &-info{font-size: 14px;}
+  }
+}
+
+// 16/3
+ .header{
+    padding: 16px 0;
+    &-nav{
+     
+      &__btn{
+        &5{
+         
+          border: 1px solid #b7352d;
+          width: 34px;
+          height: 34px;
+          background: #aa2628;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+          img{width: 50%;}
+        }
+        &4 {
+        
+          margin-right: 12px;
+          margin-left: 12px;
+  
+          padding-top: 4px;
+         
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: "SVNJusticeLeague";
+          color: #fff;
+          font-size: 24px;
+  
+          width: 125px;
+          height: 34px;
+          clip-path: polygon(5% 0, 100% 0, 100% 80%, 95% 100%, 0 100%, 0 20%);
+          background-color: #ab5a2a;
+          border-bottom: 1px solid #df9264;
+
+        }
+       
+        &.active{
+
+        & .header-nav__btn3,& .header-nav__btn2{
+  display: none;
+}
+        }
+
+      }}}
+// 21/6
+.header{
+  
+  &-nav{
+   
+    &__btn{
+&5{display: none;}
+&4{display: none;}
+      &.active{
+        & .header-nav__btn3,& .header-nav__btn2{
+          display: none;
+        }
+        & .header-nav__btn4,& .header-nav__btn5{
+          display: flex;
+        }
+      
+      }
+    }}}
+.popup{
+  padding: 24px 0;
+
+  position: fixed;top: 0;left: 0;right: 0;bottom: 0;
+
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  & .container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  &-body{
+   
+    padding: 78px 84px 190px 97px;
+    position: relative;
+    max-width: 1255px;
+    max-height: calc(100vh - 48px);
+background: url(../assets/images/kn.png) center no-repeat;
+background-size: 100% 100%;
+
+  }
+  &-heading{
+    text-align: center;
+    font-size: 77px;
+  font-family: "SVNJusticeLeague";
+color: #fff;
+text-shadow: 0px 0px 5px #ff2517, 0px 0px 5px #ff2517, 0px 0px 5px #ff2517, 0px 0px 5px #ff2517;
+margin-bottom: 61px;
+  }
+  &-close{
+    width: 53px;height: 39px;
+    position: absolute;
+top: 0;right: 0;
+img{
+  width: 100%;
+  object-fit: contain;
+}
+  }
+  &-des{
+    color: #ff9191;
+    font-size: 28px;
+  font-family: "Roboto-Regular";
+line-height: 1.375;
+overflow: hidden;
+overflow-y: auto;
+max-height: 75vh;
+&::-webkit-scrollbar{display: none;}
+  }
+}
+.app{&-logo{
+  margin-bottom: 24px;
+}}
+@media (min-width: 1280px) and (max-width: 2000px){
+  .popup{
+    &-body{
+
+      width: 80%;
+      padding: 54px 74px 74px;
+}
+    &-heading{
+      font-size: 50px;
+      margin-bottom: 24px;
+    }
+    
+    &-des{font-size: 20px;
+    max-height: 70vh;
+    }
+    &-close{
+      width: 24px;
+    }
+  }
+}
+@media (min-width: 1024px) and (max-width: 1280px){
+  .popup{
+    &-body{
+     
+      width: 80%;
+      padding: 34px 54px;
+}
+    &-heading{
+      font-size: 50px;
+      margin-bottom: 24px;
+    }
+    
+    &-des{font-size: 20px;
+    max-height: 65vh;
+    }
+    &-close{
+      width: 24px;
+    }
+  }
+}
+@media (min-width: 740px) and (max-width: 1023px){
+  .popup{
+    &-body{ 
+      width: 100%;
+      padding: 34px 44px;
+      
+    }
+    &-heading{
+      font-size: 50px;
+      margin-bottom: 24px;
+    }
+    
+    &-des{font-size: 20px;}
+    &-close{
+      width: 24px;
+    }
+  }
+}
+@media (max-width: 739px) {
+  .popup{
+    &-body{ 
+      width: 100%;
+      padding: 34px 24px;
+      
+    }
+    &-heading{
+      font-size: 40px;
+      margin-bottom: 24px;
+    }
+    
+    &-des{font-size: 16px;}
+    &-close{
+      width: 16px;
+    }
+  }
+}
+// 21/6
+
+
+.app2-left__info ul li{flex-direction: column;
+justify-content: center;
+text-align: center;}
+.app2-left__info ul li strong{margin-top: 10px;}

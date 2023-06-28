@@ -1,0 +1,249 @@
+head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="../css/style.css")
+    title Document
+body
+    header.header
+        .header-nav
+            .container
+                .header-nav__body
+                    img(src="../assets/images/LogoPD.png" alt="")
+                    ul.js-menu
+                        li
+                            a(href="#") Trang chủ 
+                        li
+                            a(href="#") Fanpage  
+                        li
+                            a(href="#") Group
+                    button Đăng nhập   
+                    span.header-nav__body-menumb.js-showmenu
+                        img(src="../assets/images/menu.png")
+                         
+        .container
+            img.header-logo(src="../assets/images/LogoPD2.png" alt="")
+            .header-move
+                button.header-move__item1.js-mov1 Chech in <br>thiên hà
+                button.header-move__item2.js-mov2 Vòng quay<br>phi đội 17
+                button.header-move__item3.js-mov3 Lời chúc <br>Sinh nhật
+                button.header-move__item4.js-mov4 Sinh nhật<br>phi đội 17
+   
+    .app
+        .app-checkin
+            img(src="../assets/images/cachtragn.png").cachtrang
+            .container
+                img(src="../assets/images/title1.png",alt="").app-title
+                h2.app-des Cùng checkin để nhận quà từ Thiên hà Phi Đội nhé! 
+                .app-checkin__search
+                    .app-checkin__search-rule
+                        button thể lệ 
+                    ul
+                        li.app-checkin__search-name Nhập tên tài khoản của bạn
+                        li.app-checkin__search-nhap
+                            input(placeholder="Nhập tên tài khoản của bạn")
+                button.app-checkin__btn Kiểm tra               
+        .app-turn
+            img(src="../assets/images/cachtragn.png").cachtrang
+
+            .container
+                .container1
+                    img(src="../assets/images/title2.png",alt="").app-title
+                    h2.app-des Chịu khó quay quay! Vận may sẽ đến! 
+                     .app-turn__right
+                            .app-turn__right-dd Điểm danh
+                            ul.app-turn__right-list
+                                li.false.app-turn__right-list__item.app-turn__right-list__item1 Ngày 1
+                                    img(alt="" src="../assets/images/x.png").app-turn__right-list__item-check.active
+                                    span.app-turn__right-list__item-check.active Vắng mặt
+                                    img(alt="" src="../assets/images/v.png").app-turn__right-list__item-check
+                                    button.app-turn__right-list__item-check Điểm danh
+                                    span.app-turn__right-list__item-check Đã điểm danh
+
+                                li.true.app-turn__right-list__item.app-turn__right-list__item2 Ngày 2
+                                    img(alt="" src="../assets/images/x.png").app-turn__right-list__item-check
+                                    span.app-turn__right-list__item-check Vắng mặt
+                                    img(alt="" src="../assets/images/v.png").active.app-turn__right-list__item-check
+                                    span.app-turn__right-list__item-check.active Đã điểm danh
+                                    button.app-turn__right-list__item-check Điểm danh
+                                - for (let i = 3; i <= 14; i++) {
+                                li.false.app-turn__right-list__item Ngày #{i}
+                                    img(alt="" src="../assets/images/x.png").app-turn__right-list__item-check
+                                    span.app-turn__right-list__item-check Vắng mặt
+                                    img(alt="" src="../assets/images/v.png").app-turn__right-list__item-check
+                                    span.app-turn__right-list__item-check Đã điểm danh
+                                    button.app-turn__right-list__item-check.active Điểm danh
+                                - }
+                        
+                    .app-turn__left
+                        .app-turn__left-rule
+                            button thể lệ
+                        ul.app-turn__left-list
+                            li.app-turn__left-list__item.app-turn__left-list__item1
+                                img(alt="" src="../assets/images/item2.png")
+                            li(class="app-turn__left-list__item app-turn__left-list__item2").active
+                                img(src="../assets/images/item1.png")
+                            - for (let i = 3; i <= 21; i++) {
+                            li(class=`app-turn__left-list__item app-turn__left-list__item${i}`)
+                                img(src="../assets/images/lcl-ghe.png")
+                            - }
+                        span.app-turn__left-count Số lượt quay hiện có : <strong>45789</strong>
+                        button.app-turn__left-btn Quay
+                       
+                        
+        
+        .app-loichuc
+            img(src="../assets/images/cachtragn.png").cachtrang
+            .container
+                img(src="../assets/images/title3.png",alt="").app-title
+                h2.app-des Cùng làm thiệp chúc mừng sinh nhật gửi đến Phi Đội nhé! 	
+                button.app-loichuc__btn Thiết kế
+                #demo.carousel.slide.app-loichuc__sl(data-bs-ride="carousel",data-bs-interval="5000")
+                    .app-loichuc__control.carousel-indicators
+                        button.active(data-bs-slide-to="0",data-bs-target="#demo")
+                            svg
+                                circle(r="10" cx="13" cy="13")
+                        button(data-bs-slide-to="1",data-bs-target="#demo")
+                            svg
+                                circle(r="10" cx="13" cy="13")
+                        button(data-bs-slide-to="2",data-bs-target="#demo")
+                            svg
+                                circle(r="10" cx="13" cy="13")       
+                    .carousel-inner.app-loichuc__sl-list
+                        .carousel-item.active.app-loichuc__sl-list__item
+                            img(src="../assets/images/THIEP_SN-PHIDOI.jpg",alt="")
+                            
+                        .carousel-item.app-loichuc__sl-list__item
+                            img(src="../assets/images/THIEP_SN-PHIDOI.jpg",alt="")
+                            
+                        .carousel-item.app-loichuc__sl-list__item
+                            img(src="../assets/images/THIEP_SN-PHIDOI.jpg",alt="")
+                           
+                    button.carousel-control-prev.app-loichuc__btn-prev(data-bs-target="#demo",data-bs-slide="prev")
+                        span.carousel-control-prev-icon
+                    button.carousel-control-next.app-loichuc__btn-next(data-bs-target="#demo",data-bs-slide="next")
+                        span.carousel-control-next-icon
+                    
+                    
+        .app-countdown
+            .container
+                .app-countdown__body
+                    span.app-countdown__body-title 
+                        img(src="../assets/images/demnguoctphcm.png",alt="")
+                    ul.app-countdown__body-list
+                        li.app-countdown__body-list__item
+                            em.ngay
+                            em Ngày
+                        li.app-countdown__body-list__space :
+                        li.app-countdown__body-list__item
+                            em.gio
+                            em Giờ
+                        li.app-countdown__body-list__space :
+                        li.app-countdown__body-list__item
+                            em.phut
+                            em Phút 
+                        li.app-countdown__body-list__space :
+                        li.app-countdown__body-list__item
+                            em.giay
+                            em Giây          
+                    p.app-countdown__body-des Nhà hàng Hương Phố, A12 Phan Văn Trị, P. 7, Q. Gò Vấp, <br>Tp. HCM 
+                .app-countdown__body.app-countdown__body2
+                    span.app-countdown__body-title  
+                        img(src="../assets/images/demnguochanoi.png",alt="")
+                    ul.app-countdown__body-list
+                        li.app-countdown__body-list__item
+                            em.ngay1
+                            em Ngày
+                        li.app-countdown__body-list__space :
+                        li.app-countdown__body-list__item
+                            em.gio1
+                            em Giờ
+                        li.app-countdown__body-list__space :
+                        li.app-countdown__body-list__item
+                            em.phut1
+                            em Phút 
+                        li.app-countdown__body-list__space :
+                        li.app-countdown__body-list__item
+                            em.giay1
+                            em Giây
+                    p.app-countdown__body-des Trung tâm tổ chức sự kiện Arena, số 1 Tăng Bạt Hổ,<br>Hai Bà Trưng, Hà Nội. 
+                          
+                p.app-countdown__des Đăng ký tham gia Offline
+                button.app-countdown__btn Tại đây
+
+        .app-sinhnhat
+            .container
+                img(src="../assets/images/title4.png",alt="").app-title
+                #demo1.carousel.slide.app-sinhnhat__sl
+                    .carousel-inner.app-sinhnhat__sl-list
+                        .carousel-item.active.app-sinhnhat__sl-list__item
+                            span 
+                                img(src="../assets/images/item3.jpg",alt="")
+                            p.app-sinhnhat__des Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+
+                        .carousel-item.app-sinhnhat__sl-list__item
+                            span 
+                                img(src="../assets/images/item3.jpg",alt="")
+                            p.app-sinhnhat__des Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+
+                        .carousel-item.app-sinhnhat__sl-list__item
+                            span 
+                                img(src="../assets/images/item3.jpg",alt="")
+                            p.app-sinhnhat__des Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+
+                    button.carousel-control-prev.app-sinhnhat__btn-prev(data-bs-target="#demo1",data-bs-slide="prev")
+                        span.carousel-control-prev-icon
+                    button.carousel-control-next.app-sinhnhat__btn-next(data-bs-target="#demo1",data-bs-slide="next")
+                        span.carousel-control-next-icon
+                    .app-sinhnhat__control.carousel-indicators
+                        button.active(data-bs-slide-to="0",data-bs-target="#demo1")
+                            svg
+                                circle(r="10" cx="13" cy="13")
+                        button(data-bs-slide-to="1",data-bs-target="#demo1")
+                            svg
+                                circle(r="10" cx="13" cy="13")
+                        button(data-bs-slide-to="2",data-bs-target="#demo1")
+                            svg
+                                circle(r="10" cx="13" cy="13") 
+                button.app-sinhnhat__btn Xem chi tiết
+
+        button.movtop.js-movtop
+    footer.footer
+        .container
+            .footer-logo
+                .footer-logo__img
+                    img(src='../assets/images/logo_vtc.png' alt='')
+                    img(src='../assets/images/logo-masang.png' alt='')
+                span TỔNG CÔNG TY TRUYỀN THÔNG ĐA PHƯƠNG TIỆN (VTC) <strong>CÔNG TY VTC CÔNG NGHỆ VÀ NỘI DUNG SỐ (VTC INTECOM)</strong>
+            .footer-info
+                span CHỊU TRÁCH NHIỆM QUẢN LÝ NỘI DUNG:
+                a(href='') Ông Trần Phương Huy    
+                table
+                    tr 
+                        td THÔNG TIN LIÊN HỆ
+                    tr
+                        td
+                            img(alt="",src="../assets/images/icon_cskh.png")
+                            a(href='tel:19001530') 1900 1530
+                        td 
+                            img(alt="",src="../assets/images/icon_web.png")
+                            a(href='hotro.vtc.vn') hotro.vtc.vn
+                    tr
+                        td
+                            img(alt="",src="../assets/images/icon_fax.png")
+                            a(href='mailto:cskh.au@vtc.vn') 024.3636.7728
+                        td
+                            img(alt="",src="../assets/images/icon_face.png")
+                            a(href='fb.com/auditionvtc') fb.com/PhiDoiVTC
+
+            .footer-address
+                .footer-address__item
+
+                    h5 TRỤ SỞ HÀ NỘI
+                    p Tòa nhà VTC 23 Lạc Trung, Quận Hai Bà Trưng, Hà Nội
+                .footer-address__item
+            
+                    h5 CHI NHÁNH THÀNH PHỐ HỒ CHÍ MINH
+                    p 259 Đồng Đen, Phường 10, Quận Tân Bình, TP. Hồ Chí Minh
+script(src="../js/bootstrap.min.js")
+script(src="../js/index.js")

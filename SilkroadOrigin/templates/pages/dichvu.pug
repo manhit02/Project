@@ -1,0 +1,283 @@
+head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="../css/style.css")
+    title Document
+body
+    header.header.headermb
+        .container
+            
+            ul.header-nav.nav.nav-tabs
+                li.nav-item.dropdown.header-nav__item1
+                    a.nav-link(href="#")
+                        img(src="../assets/images/header-home.png",alt="")
+                li.nav-item.dropdown
+                    a.nav-link Tin tức 
+                li.nav-item.dropdown
+                    a.nav-link.dropdown-toggle(data-bs-toggle="dropdown") Hướng dẫn 
+                        span
+                    ul.dropdown-menu 
+                        li
+                            a.dropdown-item Đăng ký tài khoản
+                        li 
+                            a.dropdown-item Tải và cài đặt
+                        li 
+                            a.dropdown-item Cách thức nạp
+                li
+                    a(href="#")
+                        img(src="../assets/images/header-logo.png",alt="")
+                li.nav-item.dropdown
+                    a.nav-link Giới thiệu
+                li.nav-item.dropdown
+                    a.nav-link Hỗ trợ 
+            ul.header-navmb
+                li.header-navmb__item1
+                    img(src="../assets/images/searchmb.png",alt="")
+                li.header-navmb__item2
+                    a(href="#")
+                        img(src="../assets/images/header-logo.png",alt="")
+                li.header-navmb__item3
+                    img(src="../assets/images/menuicon.png",alt="")
+                    em
+                        ul.app1-left__info.header-navmb__item3-submenu.active
+                            li.app1-left__info-item1.app1-left__info-item 
+                                p Czar123
+                                span RankLevel
+                            li.app1-left__info-item.app1-left__info-item2 
+                                span Silk:
+                                em 
+                                    img(src="../assets/images/gold.png",alt="")
+                                    span 2000
+                            li.app1-left__info-item.app1-left__info-item3
+                                span Tiêu trong<br>1 tháng:
+                                em 
+                                    img(src="../assets/images/gold.png",alt="")
+                                    span 420
+                            li.app1-left__info-item.app1-left__info-item4
+                                span Tiêu trong<br>3 tháng:
+                                em 
+                                    img(src="../assets/images/gold.png",alt="")
+                                    span 1.890
+                        button
+                            p Đăng nhập ngay
+                        ul.header-navmb__item3-submenu2
+                            li Giới thiệu
+                            li Hướng dẫn
+                            li Tin tức
+                            li Dịch vụ
+                            li Giftcode
+                            li Web Mall
+                            li Thông tin server
+                            li Cộng đồng
+                                
+            .header-download.js-dl
+                button.header-download__btn.js-showDlBtn
+                    img(src="../assets/images/b2.png",alt="")
+                a(href="#") Tải<br>game
+            button.header-nap.js-dl1 Nạp Silk
+    
+    .searchmb
+        .searchmb-body
+            input(placeholder="Nhập từ khóa tìm kiếm...")
+            img(src="../assets/images/search.png")
+    .app.app-dichvu
+        img(src="../assets/images/bgmb.png" alt="").app-dichvu__bg
+        .app-dichvu__left
+            img(src="../assets/images/header-logo.png",alt="").app-dichvu__left-logo
+            h1.app-title Dịch vụ
+            ul.app1-left__info.active.app-dichvu__info
+                    li.app1-left__info-item1.app1-left__info-item 
+                        p Czar123
+                        span RankLevel
+                    li.app1-left__info-item.app1-left__info-item2 
+                        span Silk:
+                        em 
+                            img(src="../assets/images/gold.png",alt="")
+                            span 2000
+                    li.app1-left__info-item.app1-left__info-item3
+                        span Tiêu trong<br>1 tháng:
+                        em 
+                            img(src="../assets/images/gold.png",alt="")
+                            span 420
+                    li.app1-left__info-item.app1-left__info-item4
+                        span Tiêu trong<br>3 tháng:
+                        em 
+                            img(src="../assets/images/gold.png",alt="")
+                            span 1.890
+                
+                    li.app1-left__info-item.app1-left__info-item5
+                        a(href="#") Nạp Silk
+                        
+                        a(href="#") Quản lý tài khoản
+            
+            ul.app-dichvu__left-menu.nav.nav-tabs
+                li.nav-item
+                    a(data-bs-toggle="tab" href="#").nav-link Web Mall
+                        img(src="../assets/images/dv-item4.png" alt="")
+                li.nav-item
+                    a(data-bs-toggle="tab" href="#home1").nav-link.active Giftcode
+                        img(src="../assets/images/dv-item5.png" alt="")
+                li.nav-item
+                    a(data-bs-toggle="tab" href="#home2").nav-link Reset giờ chơi
+                        img(src="../assets/images/dv-item3.png" alt="")
+                li.nav-item
+                    a(data-bs-toggle="tab" href="#home3").nav-link Quà nạp lần đầu
+                        img(src="../assets/images/dv-item2.png" alt="")
+                li.nav-item
+                    a(data-bs-toggle="tab" href="#home4").nav-link Tích nạp
+                        img(src="../assets/images/dv-item1.png" alt="")
+        
+        .app-dichvu__right
+            img(src="../assets/images/trangtri3.png",alt="").trangtri3.hidemb
+            .tab-content
+                #home1.tab-pane.active.app-dichvu__right-content
+                    h1.app-dichvu__right-head Giftcode
+                    .app-dichvu__right-body
+                        span.app-dichvu__right-body__time Thời gian đổi thưởng: <strong>01/07/2023 - 24/07/2023</strong>
+                        ul.app-dichvu__right-body__form
+                            li.app-dichvu__right-body__form-item.app-dichvu__right-body__form-item1 Máy chủ:
+                                select
+                                    option(selected) Máy chủ 1
+                                    option(value="2") Máy chủ 2
+                                    option(value="3") Máy chủ 3
+                           
+                            li.app-dichvu__right-body__form-item.app-dichvu__right-body__form-item3 Mã giftcode: 
+                                input(placeholder="Nhập giftcode") 
+                            li.app-dichvu__right-body__form-item.app-dichvu__right-body__form-item4 
+                                a(href="") Lịch sử nhập code
+                        button.app-dichvu__right-body__btn Nhận thưởng
+                        .app-dichvu__right-body__thele
+                            h2 Thể lệ nhận Giftcode
+                            ul
+                                li - Tài khoản chỉ được nhận 1 lần/1 nhân vật
+                                li - Trước khi nhận Code phải thoát Game
+                                li - Mỗi mã Code chỉ được nhận thưởng 1 lần
+                #home2.tab-pane.app-dichvu__right-content
+                    h1.app-dichvu__right-head Reset giờ chơi
+                    .app-dichvu__right-body.app-dichvu__right-body2
+                        ul.app-dichvu__right-body__form
+                            li.app-dichvu__right-body__form-item.app-dichvu__right-body__form-item5 Máy chủ:
+                                select
+                                    option(selected) Máy chủ 1
+                                    option(value="2") Máy chủ 2
+                                    option(value="3") Máy chủ 3
+                            li.app-dichvu__right-body__form-item6.app-dichvu__right-body__form-item Mã capcha: 
+                                input(placeholder="Nhập mã capcha") 
+                            li.app-dichvu__right-body__form-item.app-dichvu__right-body__form-item7
+                                span AC2<strong>vc</strong>
+                                img(src="../assets/images/reload.png" alt="")
+
+                        button.app-dichvu__right-body__btn Reset
+                        .app-dichvu__right-body__thele
+                            h2 Nội dung hoạt động
+                            ul
+                                li - Dịch vụ sử dụng cho tài khoản, tính riêng cho từng máy chủ
+                                li - Phí dịch vụ: 3 Silk/lần
+                                li 
+                                    p Lưu ý: Phải thoát khỏi trò chơi trước khi sử dụng dịch vụ.
+                #home3.tab-pane.app-dichvu__right-content
+                    h1.app-dichvu__right-head Quà nạp lần đầu
+                    .app-dichvu__right-body.app-dichvu__right-body3
+                        .app-dichvu__right-body__thele.app-dichvu__right-body__thele1
+                            h2 Thông tin chung
+                            ul
+                                li - Dịch vụ sử dụng cho tài khoản, cần chọn nhân vật để nhận thưởng
+                                li - Mỗi tài khoản được sử dụng 1 lần trong thời gian diễn ra sự kiện
+                                li
+                                    span Phần thưởng:
+                                li - Item 1
+                                li - Item 2
+                                li - ...
+                        span.app-dichvu__right-body__time.app-dichvu__right-body3__time Cần nạp từ ngày:  <strong>24/07/2023</strong>
+                        ul.app-dichvu__right-body__form
+                            li.app-dichvu__right-body__form-item.app-dichvu__right-body__form-item8 Máy chủ:
+                                select
+                                    option(selected) Máy chủ 1
+                                    option(value="2") Máy chủ 2
+                                    option(value="3") Máy chủ 3
+                            
+                        button.app-dichvu__right-body__btn Nhận thưởng
+                #home4.tab-pane.app-dichvu__right-content
+                    h1.app-dichvu__right-head Tích nạp
+                    .app-dichvu__right-body
+                        span.app-dichvu__right-body__time.app-dichvu__right-body__time1 Thời gian tích nạp yêu cầu: <strong>01/07/2023 - 24/07/2023</strong>
+                        ul.app-dichvu__right-body__form
+                            li.app-dichvu__right-body__form-item.app-dichvu__right-body__form-item9 Máy chủ:
+                                select
+                                    option(selected) Máy chủ 1
+                                    option(value="2") Máy chủ 2
+                                    option(value="3") Máy chủ 3
+                            
+                        .app-dichvu__right-body__gift
+                            ul
+                                li 
+                                    span Mốc nạp 20.000 VND
+                                    em 
+                                        span - Bùa Dịch Chuyển Phản Hồi (Số lượng: 2)
+                                        button.active Nhận thưởng
+                                        button.hide Đã nhận
+                                li 
+                                    span Mốc nạp 40.000 VND
+                                    em 
+                                        span - Búa Sửa Chữa (Số lượng: 3)<br>- Bùa Dịch Chuyển Phản Hồi (Số lượng: 3)
+                                        button.hide Nhận thưởng
+                                        button Đã nhận
+                                li 
+                                    span Mốc nạp 60.000 VND
+                                    em
+                                        span - Búa Sửa Chữa (Số lượng: 3)<br>- Bùa Dịch Chuyển Phản Hồi (Số lượng: 3)
+                                        button.active Nhận thưởng
+                                        button.hide Đã nhận
+                                li 
+                                    span Mốc nạp 80.000 VND
+                                    em
+                                        span - Búa Sửa Chữa (Số lượng: 3)<br>- Bùa Dịch Chuyển Phản Hồi (Số lượng: 3)
+                                        button.active Nhận thưởng
+                                        button.hide Đã nhận
+                                li 
+                                    span Mốc nạp 100.000 VND
+                                    em
+                                        span - Búa Sửa Chữa (Số lượng: 3)<br>- Bùa Dịch Chuyển Phản Hồi (Số lượng: 3)
+                                        button.active Nhận thưởng
+                                        button.hide Đã nhận
+    footer.footer.footermb
+        .container
+            .footer-logo
+                .footer-logo__img
+                    img(src='../assets/images/logo_vtc.png' alt='')
+                    img(src='../assets/images/logo_sro.png' alt='')
+                span TỔNG CÔNG TY TRUYỀN THÔNG ĐA PHƯƠNG TIỆN (VTC) <strong>CÔNG TY VTC CÔNG NGHỆ VÀ NỘI DUNG SỐ (VTC INTECOM)</strong>
+            .footer-info
+                span CHỊU TRÁCH NHIỆM QUẢN LÝ NỘI DUNG:
+                a(href='') Ông Trần Phương Huy    
+                table
+                    tr 
+                        td THÔNG TIN LIÊN HỆ
+                    tr
+                        td
+                            img(alt="",src="../assets/images/icon_cskh.png")
+                            a(href='tel:19001530') 1900 1530
+                        td 
+                            img(alt="",src="../assets/images/icon_web.png")
+                            a(href='hotro.vtc.vn') hotro.vtc.vn
+                    tr
+                        td
+                            img(alt="",src="../assets/images/icon_fax.png")
+                            a(href='mailto:cskh.au@vtc.vn') 024.3636.7728
+                        td
+                            img(alt="",src="../assets/images/icon_face.png")
+                            a(href='fb.com/auditionvtc') fb.com/PhiDoiVTC
+
+            .footer-address
+                .footer-address__item
+
+                    h5 TRỤ SỞ HÀ NỘI
+                    p Tòa nhà VTC 23 Lạc Trung, Quận Hai Bà Trưng, Hà Nội
+                .footer-address__item
+            
+                    h5 CHI NHÁNH THÀNH PHỐ HỒ CHÍ MINH
+                    p 259 Đồng Đen, Phường 10, Quận Tân Bình, TP. Hồ Chí Minh
+
+script(src="../js/bootstrap.min.js")
+script(src="../js/index.js")
